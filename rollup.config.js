@@ -6,9 +6,10 @@ import url from '@rollup/plugin-url';
 import svelte from 'rollup-plugin-svelte';
 import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
-import sveltePreprocess from 'svelte-preprocess';
+// import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import config from 'sapper/config/rollup.js';
+import { preprocess } from './svelte.config';
 import pkg from './package.json';
 
 const mode = process.env.NODE_ENV;
@@ -34,11 +35,11 @@ export default {
 				},
 			}),
 			svelte({
-				preprocess: sveltePreprocess({ sourceMap: dev }),
+				preprocess, //: sveltePreprocess({ sourceMap: dev }),
 				compilerOptions: {
 					dev,
 					hydratable: true
-				}
+				},
 			}),
 			url({
 				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
@@ -89,13 +90,13 @@ export default {
 				},
 			}),
 			svelte({
-				preprocess: sveltePreprocess({ sourceMap: dev }),
+				preprocess, //: sveltePreprocess({ sourceMap: dev }),
 				compilerOptions: {
 					dev,
 					generate: 'ssr',
 					hydratable: true
 				},
-				emitCss: false
+				emitCss: false,
 			}),
 			url({
 				sourceDir: path.resolve(__dirname, 'src/node_modules/images'),
