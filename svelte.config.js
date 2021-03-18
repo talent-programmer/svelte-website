@@ -6,6 +6,6 @@ const dev = mode === 'development';
 
 export const preprocess = {
   sourceMap: dev,
-  ...autoProcess({ postcss: true }),
+  ...autoProcess({ postcss: true, scss: true }),
   ...mdsvex()
 };
