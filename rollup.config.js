@@ -6,7 +6,6 @@ import url from '@rollup/plugin-url';
 import svelte from 'rollup-plugin-svelte';
 import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
-// import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import config from 'sapper/config/rollup.js';
 import { preprocess } from './svelte.config';
@@ -35,7 +34,8 @@ export default {
 				},
 			}),
 			svelte({
-				preprocess, //: sveltePreprocess({ sourceMap: dev }),
+				preprocess,
+				extensions: ['.svelte', '.svx'],
 				compilerOptions: {
 					dev,
 					hydratable: true
@@ -90,7 +90,8 @@ export default {
 				},
 			}),
 			svelte({
-				preprocess, //: sveltePreprocess({ sourceMap: dev }),
+				preprocess,
+				extensions: ['.svelte', '.svx'],
 				compilerOptions: {
 					dev,
 					generate: 'ssr',
