@@ -17,6 +17,7 @@ module.exports = {
         'sand-dark': 'var(--sand-dark)',
         'sand-light': 'var(--sand-light)',
         'offwhite': 'var(--offwhite)',
+        'white': 'var(--white)',
 
         gray: {
           900: 'var(--black)',
