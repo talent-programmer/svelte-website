@@ -7,5 +7,5 @@ const dev = mode === "development";
 export const preprocess = {
   sourceMap: dev,
   ...autoProcess({ postcss: true, scss: true }),
-  ...mdsvex(),
+  ...mdsvex({ extensions: [".md"] }),
 };
