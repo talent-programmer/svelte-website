@@ -1,15 +1,15 @@
-import path from 'path';
-import resolve from '@rollup/plugin-node-resolve';
-import replace from '@rollup/plugin-replace';
-import commonjs from '@rollup/plugin-commonjs';
-import url from '@rollup/plugin-url';
-import svelte from 'rollup-plugin-svelte';
 import babel from '@rollup/plugin-babel';
+import commonjs from '@rollup/plugin-commonjs';
+import config from 'sapper/config/rollup.js';
+import path from 'path';
+import pkg from './package.json';
+import { preprocess } from './svelte.config';
+import replace from '@rollup/plugin-replace';
+import resolve from '@rollup/plugin-node-resolve';
+import svelte from 'rollup-plugin-svelte';
 import { terser } from 'rollup-plugin-terser';
 import typescript from '@rollup/plugin-typescript';
-import config from 'sapper/config/rollup.js';
-import { preprocess } from './svelte.config';
-import pkg from './package.json';
+import url from '@rollup/plugin-url';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -115,23 +115,23 @@ export default {
 		onwarn,
 	},
 
-	serviceworker: {
-		input: config.serviceworker.input().replace(/\.js$/, '.ts'),
-		output: config.serviceworker.output(),
-		plugins: [
-			resolve(),
-			replace({
-				preventAssignment: true,
-				values:{
-					'process.browser': true,
-					'process.env.NODE_ENV': JSON.stringify(mode)
-				},
-			}),
-			commonjs(),
-			typescript({ sourceMap: dev }),
-			!dev && terser()
-		],
-		preserveEntrySignatures: false,
-		onwarn,
-	}
+	// serviceworker: {
+	// 	input: config.serviceworker.input().replace(/\.js$/, '.ts'),
+	// 	output: config.serviceworker.output(),
+	// 	plugins: [
+	// 		resolve(),
+	// 		replace({
+	// 			preventAssignment: true,
+	// 			values:{
+	// 				'process.browser': true,
+	// 				'process.env.NODE_ENV': JSON.stringify(mode)
+	// 			},
+	// 		}),
+	// 		commonjs(),
+	// 		typescript({ sourceMap: dev }),
+	// 		!dev && terser()
+	// 	],
+	// 	preserveEntrySignatures: false,
+	// 	onwarn,
+	// }
 };
