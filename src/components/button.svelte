@@ -27,7 +27,7 @@
   }
 
   button :global() {
-    color: #F9F9F9;
+    color: #f9f9f9;
   }
 </style>
 

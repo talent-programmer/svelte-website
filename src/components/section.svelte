@@ -1,9 +1,9 @@
 <style>
-    section {
-        margin: var(--xx-large) 0;
-    }
+  section {
+    margin: var(--xx-large) 0;
+  }
 </style>
 
 <section>
-    <slot />
+  <slot />
 </section>
