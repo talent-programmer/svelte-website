@@ -1,21 +1,15 @@
-<script lang="ts" context="module">
-    export type FeatureProps = {
-        title: string
-        paragraph: string
-        moreButton: { text: string; href: string }
-        documentationLink: string
-        preview: { name: string; alt: string }
-    }
-</script>
-
 <script lang="ts">
+    import type { Feature } from '../types/feature.type';
     import Section from "./section.svelte";
 
-    export let title: string = "";
-    export let paragraph: string;
-    export let moreButton: { text: string; href: string };
-    export let documentationLink: string;
-    export let preview: { name: string; alt: string };
+    export let feature: Feature;
+    const {
+        documentationLink,
+        moreButton,
+        paragraph,
+        preview,
+        title
+    } = feature;
 </script>
 
 

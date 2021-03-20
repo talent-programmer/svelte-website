@@ -1,6 +1,6 @@
-import type { FeatureProps } from '../components/feature.svelte'
+import type { Feature } from '../types/feature.type';
 
-export const features: FeatureProps[] = [
+export const features: Feature[] = [
     {
         title: 'Introducing Pre-builds',
         paragraph: 'We invented prebuilds so application code, configuration and infrastructure can all be stored as machine-executable code in your git repositories and applied to dev environments automatically and continuously.',
@@ -8,9 +8,10 @@ export const features: FeatureProps[] = [
             text: 'More on prebuilds',
             href: '/docs/prebuilds/'
         },
-        // documentationLink: '',
+        documentationLink: null,
         preview: {
-            name: 'terminal.png'
+            name: 'terminal.png',
+            alt: 'A terminal that displays Gitpod prebuild output.'
         }
     }
 ]

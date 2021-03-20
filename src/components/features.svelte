@@ -5,7 +5,5 @@ import Feature from "./feature.svelte";
 </script>
 
 {#each features as feature}
-    <Feature 
-        {...feature}
-    />
+    <Feature {feature} />
 {/each}

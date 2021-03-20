@@ -12,6 +12,6 @@ import Testimonials from "../components/index/testimonials.svelte";
 
 <Hero />
 <ChooseProject />
-<Features features={features} />
+<Features {features} />
 <SectionScrennshot />
 <Testimonials />
