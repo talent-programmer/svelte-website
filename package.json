@@ -1,7 +1,11 @@
 {
-  "name": "TODO",
-  "description": "TODO",
-  "version": "0.0.1",
+  "name": "gitpod-website",
+  "description": "Gitpod.io Website",
+  "version": "2.0.0",
+  "private": true,
+  "keywords": [
+    "svelte"
+  ],
   "scripts": {
     "watch:css": "postcss src/assets/global.pcss -o static/global.css -w",
     "watch:dev": "sapper dev --ext '.svx .svelte'",
