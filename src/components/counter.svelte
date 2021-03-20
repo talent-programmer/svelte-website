@@ -6,4 +6,5 @@
   setInterval(() => counter++, 1000);
 </script>
 
-<span>{counter}</span> {counter === 1 ? "second" : "seconds"}
+<span>{counter}</span>
+{counter === 1 ? "second" : "seconds"}

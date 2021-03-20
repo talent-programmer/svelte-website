@@ -7,7 +7,7 @@
 
 {#if $menuState}
   <div class="sm:hidden">
-    {#each navItems as {href, label}}
+    {#each navItems as { href, label }}
       <NavItem {href}>{label}</NavItem>
     {/each}
   </div>

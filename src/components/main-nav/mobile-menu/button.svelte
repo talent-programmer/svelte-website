@@ -2,7 +2,7 @@
   import menuState from "./state";
 </script>
 
-<button on:click={() => $menuState = !$menuState}>
+<button on:click={() => ($menuState = !$menuState)}>
   <svg
     width="50"
     height="26"
