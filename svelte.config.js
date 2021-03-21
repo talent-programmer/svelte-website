@@ -1,6 +1,6 @@
 import autoProcess from "svelte-preprocess";
 import { mdsvex } from "mdsvex";
-import remarkCopyLinkedFiles from "remark-copy-linked-files";
+import remarkDocsSetImagePath from "./src/utils/remark-docs-set-image-path";
 
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
@@ -10,14 +10,6 @@ export const preprocess = {
   ...autoProcess({ postcss: true, scss: true }),
   ...mdsvex({
     extensions: [".md"],
-    remarkPlugins: [
-      [
-        remarkCopyLinkedFiles,
-        {
-          destinationDir: "static/images/docs",
-          staticPath: "/images/docs",
-        },
-      ],
-    ],
+    remarkPlugins: [remarkDocsSetImagePath],
   }),
 };
