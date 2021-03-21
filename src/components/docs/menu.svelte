@@ -110,13 +110,13 @@
   <ul>
     {#each MENU as menuItem}
       <li>
-        <a href={menuItem.path}>{menuItem.title}</a>
+        <a href={menuItem.path} rel="prefetch">{menuItem.title}</a>
       </li>
 
       {#if menuItem.subMenu}
         {#each menuItem.subMenu as sub}
           <li>
-            <a href={sub.path}>{sub.title}</a>
+            <a href={sub.path} rel="prefetch">{sub.title}</a>
           </li>
         {/each}
       {/if}
