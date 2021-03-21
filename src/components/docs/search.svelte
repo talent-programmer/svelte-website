@@ -23,6 +23,23 @@
   });
 </script>
 
+<style>
+  input {
+    background: url("/mag-glass.svg") 10px center / 20px 20px no-repeat
+      rgb(255, 255, 255);
+  }
+
+  :global(.algolia-autocomplete) {
+    display: block !important; /* DocSearch adds inline styles, !important helps us take control */
+  }
+
+  :global(div
+      .algolia-autocomplete.algolia-autocomplete-right
+      .ds-dropdown-menu) {
+    left: 0 !important; /* DocSearch adds inline styles, !important helps us take control */
+  }
+</style>
+
 <svelte:head>
   <link
     rel="stylesheet"
@@ -33,9 +50,15 @@
     src="https://cdn.jsdelivr.net/npm/docsearch.js@{docSearchJSVersion}/dist/cdn/docsearch.min.js"></script>
 </svelte:head>
 
-<input
-  bind:this={docSearchInput}
-  type="search"
-  placeholder="Search"
-  id={docSearchInputSelector}
-/>
+<div class="w-full">
+  <label for={docSearchInputSelector} class="sr-only">Search</label>
+  <div class="relative">
+    <input
+      bind:this={docSearchInput}
+      type="search"
+      placeholder="Search"
+      id={docSearchInputSelector}
+      class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-white text-gray-600 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm"
+    />
+  </div>
+</div>
