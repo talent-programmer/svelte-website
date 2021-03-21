@@ -35,7 +35,7 @@ If it is not yet exposed, because it is not listed in the `.gitpod.yml`, the not
 If it is already exposed, either through the `.gitpod.yml` or by manually exposing it, the notification asks
 whether and how to open it.
 
-![Ports Notification](./images/ports-notification.png)
+![Ports Notification](../../../static/images/docs/ports-notification.png)
 
 To change this behavior you can provide the property `onOpen`.
 It has four possible values:
@@ -47,7 +47,7 @@ It has four possible values:
 
 Any changes to the `.gitpod.yml` will have effect immediately.
 
-![.gitpod.yml containing ports configuration](./images/ports-onOpen.png)
+![.gitpod.yml containing ports configuration](../../../static/images/docs/ports-onOpen.png)
 
 ## Configure port visibility
 

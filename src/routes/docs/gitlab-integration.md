@@ -6,7 +6,7 @@ GitLab comes with a [native Gitpod integration](https://docs.gitlab.com/ce/integ
 
 When the Gitpod integration is enabled in GitLab, users can choose to start a Gitpod workspace as an alternative to the GitLab Web IDE directly from GitLab. Simply click on the dropdown arrow next to the `Web IDE` split button on the project or merge request page, and choose “Gitpod”. The Gitpod workspace will open in a new browser tab. Then, the next time you visit a GitLab page, the last used action will be pre-selected.
 
-![GitLab Integration](images/gitlab-integration/gitpod_button_project_page.png)
+![GitLab Integration](../../../static/images/docs/gitlab-integration/gitpod_button_project_page.png)
 
 To launch new Gitpod workspaces for issues, branches, specific commits, etc. you can also prefix any GitLab URL with `gitpod.io/#` as described in the [Getting Started](/docs/getting-started) page, or use the [browser extension](/docs/browser-extension/) to add a convenient Gitpod button to every GitLab page.
 

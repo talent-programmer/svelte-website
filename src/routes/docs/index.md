@@ -16,7 +16,7 @@ This is what is at the heart of Gitpod: **an open platform that removes all fric
 
 Gitpod seamlessly integrates in your workflow and works with all major git hosting platforms including GitHub, GitLab and Bitbucket. It understands the context you are in and adjusts your dev environment accordingly. For example, if you create a Gitpod workspace from a Pull or Merge Request, Gitpod will open a fully-initialized dev environment in code-review mode.
 
-![gitpod-architecture](./images/gitpod-architecture.png)
+![gitpod-architecture](../../../static/images/docs/gitpod-architecture.png)
 
 At its core Gitpod relies on a **client-server architecture** where the client can either be:
 

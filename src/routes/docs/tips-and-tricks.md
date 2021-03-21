@@ -15,7 +15,7 @@ shortcut:
 
 - <kbd>F1</kbd>
 
-![Command Palette](./images/command_palette.jpg)
+![Command Palette](../../../static/images/docs/command_palette.jpg)
 
 ### Command Palette Context
 
@@ -23,14 +23,14 @@ The command palette lists only those commands that are available in the current 
 example, the `Go To Line...` command shows in the palette only when a code editor is opened and has
 focus.
 
-![Command Palette Context Example: Go to Line](./images/go_to_line_w_editor.jpg)
+![Command Palette Context Example: Go to Line](../../../static/images/docs/go_to_line_w_editor.jpg)
 
 ## Color Themes
 
 Gitpod opens in its _dark theme_. If you prefer a lighter experience, you can switch to the _light
 theme_. Simply use the command palette and select `Change Color Theme`.
 
-![Change Color Theme](./images/light-theme.png)
+![Change Color Theme](../../../static/images/docs/light-theme.png)
 
 ## Open File
 
@@ -40,7 +40,7 @@ To quickly open any file using the keyboard, press:
 
 It will let you search, find, and open any file by name.
 
-![Open File](./images/open-file.png)
+![Open File](../../../static/images/docs/open-file.png)
 
 ## Search in Workspace
 

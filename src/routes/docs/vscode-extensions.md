@@ -31,7 +31,7 @@ You can also install extensions at the user level. This can be useful for extens
 
 To do this, simply select `Install for (user)` when prompted by the IDE while installing an extension:
 
-<img src="./images/install-extension-for-user.png">
+<img src="../../../static/images/docs/install-extension-for-user.png">
 
 ## Built-in Extensions
 

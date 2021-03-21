@@ -127,11 +127,11 @@ shows the state of the prebuild:
 
 <div class="table-container">
 
-| <div style="width:140px">Button color</div>                            | Prebuild state                                                                                                                                            |
-| ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Review in Gitpod (prebuild building)](./images/prebuild-ongoing.svg) | the prebuild is currently running. Opening a workspace now will show the log output of the prebuild. Once the prebuild is done, your workspace will open. |
-| ![Review in Gitpod (prebuild done)](./images/prebuild-done.svg)        | the prebuild is done. A new workspace on this branch/PR will make use of this prebuild.                                                                   |
-| ![Review in Gitpos (prebuild failed)](./images/prebuild-failed.svg)    | the prebuild failed or timed out. A new workspace on this branch/PR will open the prebuild and show you the log output.                                   |
+| <div style="width:140px">Button color</div>                                               | Prebuild state                                                                                                                                            |
+| ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Review in Gitpod (prebuild building)](../../../static/images/docs/prebuild-ongoing.svg) | the prebuild is currently running. Opening a workspace now will show the log output of the prebuild. Once the prebuild is done, your workspace will open. |
+| ![Review in Gitpod (prebuild done)](../../../static/images/docs/prebuild-done.svg)        | the prebuild is done. A new workspace on this branch/PR will make use of this prebuild.                                                                   |
+| ![Review in Gitpos (prebuild failed)](../../../static/images/docs/prebuild-failed.svg)    | the prebuild failed or timed out. A new workspace on this branch/PR will open the prebuild and show you the log output.                                   |
 
 </div>
 
