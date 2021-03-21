@@ -38,7 +38,17 @@ module.exports = {
           900: "var(--salmon)",
         },
       },
-      fontSize: {},
+      fontSize: {
+        h1: "var(--h1)",
+        h2: "var(--h2)",
+        h3: "var(--h3)",
+        h4: "var(--h4)",
+        h5: "var(--h5)",
+        h6: "var(--h6)",
+      },
+      maxWidth: {
+        row: "var(--row-max-width)",
+      },
       spacing: {
         "xx-large": "160px",
         "x-large": "72px",
