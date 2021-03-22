@@ -1,3 +1,7 @@
+---
+section: configuration
+---
+
 # Configure Your Project
 
 Gitpod dev environments are started with a single click. In order to make sure they come fully initialized and with the tools you need, you should provide a configuration file.

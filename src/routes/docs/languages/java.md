@@ -1,3 +1,7 @@
+---
+section: languages-and-frameworks
+---
+
 # Java in Gitpod
 
 Gitpod comes with great support for Java builtin. Still, depending on your particular project you might want to further optimize the experience.

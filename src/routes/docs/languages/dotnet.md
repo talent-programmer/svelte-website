@@ -1,3 +1,7 @@
+---
+section: languages-and-frameworks
+---
+
 # .NET in Gitpod
 
 ## Example Repositories

@@ -1,3 +1,7 @@
+---
+section: workspaces
+---
+
 # Collaboration & Sharing of Workspaces
 
 There are two different ways to share your workspaces:

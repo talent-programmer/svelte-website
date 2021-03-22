@@ -1,3 +1,7 @@
+---
+section: ide
+---
+
 # Tips & Tricks
 
 - [Command Palette](#command-palette)

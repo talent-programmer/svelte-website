@@ -1,3 +1,7 @@
+---
+section: getting-started
+---
+
 # Example Projects
 
 Here are a few example projects that have already been configured for Gitpod.

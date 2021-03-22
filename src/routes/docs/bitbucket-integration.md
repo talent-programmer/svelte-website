@@ -1,3 +1,7 @@
+---
+section: integrations
+---
+
 # Bitbucket Integration
 
 Gitpod comes with a [Bitbucket](https://bitbucket.org/) integration that allows you to start Gitpod workspaces from any Bitbucket project.

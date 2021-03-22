@@ -1,3 +1,7 @@
+---
+section: ide
+---
+
 # Pull Requests
 
 Gitpod lets you follow the standard GitHub flow. It does not require any detours or

@@ -1,3 +1,7 @@
+---
+section: configuration
+---
+
 # Environment Variables
 
 You can pass environment variables into your workspace.

@@ -1,3 +1,7 @@
+---
+section: ide
+---
+
 # Search
 
 There are several ways to perform a search and to find things in the workspace:

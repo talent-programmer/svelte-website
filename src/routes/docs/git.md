@@ -1,3 +1,7 @@
+---
+section: ide
+---
+
 # Git Integration
 
 Theia integrates closely with Git by offering convenient UIs on top of the command line `git`

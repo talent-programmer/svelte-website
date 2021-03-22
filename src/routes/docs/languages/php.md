@@ -1,3 +1,7 @@
+---
+section: languages-and-frameworks
+---
+
 # PHP in Gitpod
 
 Gitpod supports PHP right out of the box, but more advanced features such as debugging can be configured, so here is how to do it!

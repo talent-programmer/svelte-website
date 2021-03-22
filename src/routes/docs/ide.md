@@ -1,3 +1,7 @@
+---
+section: ide
+---
+
 # Theia – Gitpod's IDE
 
 The IDE in Gitpod is based on the open-source project [Theia](https://theia-ide.org). It is hosted

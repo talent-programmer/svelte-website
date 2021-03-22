@@ -1,3 +1,7 @@
+---
+section: languages-and-frameworks
+---
+
 # Kotlin in Gitpod
 
 To work with Kotlin in Gitpod, you will need to properly configure your repository. Here is how to do it.

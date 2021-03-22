@@ -1,3 +1,7 @@
+---
+section: integrations
+---
+
 # Browser Extension
 
 Creating a workspace is as easy as prefixing any GitHub URL with `gitpod.io/#`.

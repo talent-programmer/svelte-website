@@ -1,3 +1,7 @@
+---
+section: configuration
+---
+
 # Prebuilds
 
 Whenever your code changes (e.g. when new commits are pushed to your repository), Gitpod can prebuild workspaces, i.e. run the init commands in your `.gitpod.yml` before you even start a workspace.

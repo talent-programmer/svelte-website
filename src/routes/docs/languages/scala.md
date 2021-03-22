@@ -1,3 +1,7 @@
+---
+section: languages-and-frameworks
+---
+
 # Scala in Gitpod
 
 Welcome, Scala programmer. Today we will show you how to configure Gitpod for your project.

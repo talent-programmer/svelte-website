@@ -1,3 +1,7 @@
+---
+section: workspaces
+---
+
 # Command Line Interface
 
 Gitpod supports a command line interface that is available in each workspace terminal called `gp`:

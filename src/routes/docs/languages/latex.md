@@ -1,3 +1,7 @@
+---
+section: languages-and-frameworks
+---
+
 # LaTeX in Gitpod
 
 This tutorial will demonstrate how to configure Gitpod to work with [LaTeX](https://www.latex-project.org/) files. You can find a complete [example repository](https://github.com/ptrottier/latex) at the end.

@@ -1,3 +1,7 @@
+---
+section: languages-and-frameworks
+---
+
 # Ruby in Gitpod
 
 It's relatively easy to set up your Ruby project in Gitpod.

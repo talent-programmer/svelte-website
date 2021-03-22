@@ -1,3 +1,7 @@
+---
+section: configuration
+---
+
 # Editor Configuration
 
 Gitpod uses [Theia](https://github.com/eclipse-theia/theia) as its IDE which can be configured using VS Code setting files.

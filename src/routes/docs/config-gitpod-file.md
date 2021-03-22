@@ -1,3 +1,7 @@
+---
+section: configuration
+---
+
 # .gitpod.yml
 
 - [Checked-in Gitpod Config File](#checked-in-gitpod-config-file)

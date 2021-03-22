@@ -1,3 +1,7 @@
+---
+section: languages-and-frameworks
+---
+
 # R in Gitpod
 
 To work with R in Gitpod, you will need to properly configure your repository. Here is how to do it.

@@ -1,3 +1,7 @@
+---
+section: languages-and-frameworks
+---
+
 # Julia in Gitpod
 
 ## Example Repositories

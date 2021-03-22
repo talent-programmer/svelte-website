@@ -1,3 +1,7 @@
+---
+section: getting-started
+---
+
 # Getting Started
 
 [Gitpod](https://www.gitpod.io) is an open source platform for automated and ready-to-code development environments that blends into your existing workflow.

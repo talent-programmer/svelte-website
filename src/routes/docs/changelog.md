@@ -1,3 +1,7 @@
+---
+section: changelog
+---
+
 # Changelog
 
 A curated, chronologically ordered list of notable changes in [gitpod.io](https://www.gitpod.io/).

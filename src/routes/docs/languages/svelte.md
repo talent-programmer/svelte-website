@@ -1,3 +1,7 @@
+---
+section: languages-and-frameworks
+---
+
 # Svelte in Gitpod
 
 To work with Svelte in Gitpod, you will need to properly configure your repository. Here is how to do that, assuming that you're using the official sveltejs [template](https://github.com/sveltejs/template) which uses Rollup:

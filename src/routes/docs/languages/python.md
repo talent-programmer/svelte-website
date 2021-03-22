@@ -1,3 +1,7 @@
+---
+section: languages-and-frameworks
+---
+
 # Python in Gitpod
 
 Gitpod comes with great support for Python built-in. Still, depending on your project, you might want to further optimize the experience.

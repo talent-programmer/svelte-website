@@ -1,3 +1,7 @@
+---
+section: languages-and-frameworks
+---
+
 # JavaScript in Gitpod
 
 Gitpod comes with great built-in support for JavaScript, TypeScript, and tools like Node.js, npm, and Yarn pre-installed. Still, depending on your project, you might want to further optimize the experience.

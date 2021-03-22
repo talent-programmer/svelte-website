@@ -1,3 +1,7 @@
+---
+section: languages-and-frameworks
+---
+
 # Deno in Gitpod
 
 It's easy to set up Deno in Gitpod.

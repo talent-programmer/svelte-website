@@ -1,3 +1,7 @@
+---
+section: integrations
+---
+
 # GitHub Integration
 
 Gitpod comes with a [GitHub](https://github.com/) integration that allows you to start Gitpod workspaces from any GitHub project.

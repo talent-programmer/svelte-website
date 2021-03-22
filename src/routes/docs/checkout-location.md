@@ -1,3 +1,7 @@
+---
+section: configuration
+---
+
 # Checkout and Workspace Location
 
 Older Go projects without module support need a <a href="https://golang.org/doc/code.html#Organization" target="_blank">specific workspace layout</a>:
@@ -12,7 +16,6 @@ how we do that for the example
 <a href="https://github.com/gitpod-io/definitely-gp/blob/master/go-gin-app/.gitpod.yml" target="_blank">go-gin-app</a> repository:
 
 ```yaml
-
 ---
 checkoutLocation: "go/src/github.com/demo-apps/go-gin-app"
 workspaceLocation: "."

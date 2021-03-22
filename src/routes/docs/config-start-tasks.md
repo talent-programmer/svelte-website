@@ -1,3 +1,7 @@
+---
+section: configuration
+---
+
 # Start Tasks
 
 When starting or restarting a workspace you typically want to run certain tasks.

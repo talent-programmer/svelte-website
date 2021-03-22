@@ -1,3 +1,7 @@
+---
+section: ide
+---
+
 # Code Reviews
 
 Let us have a look how we can perform a code review on GitHub with Gitpod. We continue the example

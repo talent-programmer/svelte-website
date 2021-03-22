@@ -1,3 +1,7 @@
+---
+section: ide
+---
+
 # Fork a Repository
 
 Forking a repository in Gitpod is a simple 3 step process:

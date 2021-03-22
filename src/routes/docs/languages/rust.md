@@ -1,3 +1,7 @@
+---
+section: languages-and-frameworks
+---
+
 # Rust in Gitpod
 
 Welcome, Rustacean!
@@ -62,8 +66,7 @@ The Rust Test Explorer makes it easy to run Rust tests.
 
 ### Crates
 
-> **_Note: This extension outputs emojis by default if the crate version is set at the latest. You can disable this by using `crates.upToDateDecorator` option in your preferences_**
-> <br>
+> **_Note: This extension outputs emojis by default if the crate version is set at the latest. You can disable this by using `crates.upToDateDecorator` option in your preferences_** > <br>
 
 ![A crates extension demo](.../../../static/images/docs/cratesDemo.gif)
 The VSCode extension Crates makes it easier to manage your Cargo dependency versions.

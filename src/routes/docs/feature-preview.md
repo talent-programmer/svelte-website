@@ -1,3 +1,7 @@
+---
+section: feature-preview
+---
+
 # Feature Preview
 
 You can enable Feature Preview from the [Settings](https://gitpod.io/settings/). This will enable a beta preview of some of the latest functionalities and features that are being actively developed. Some of them are user-facing features while others take place in the backstage.

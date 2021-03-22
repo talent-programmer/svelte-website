@@ -1,3 +1,7 @@
+---
+section: workspaces
+---
+
 # Life of a Workspace
 
 - [Timeouts](#timeouts)

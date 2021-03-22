@@ -1,3 +1,7 @@
+---
+section: languages-and-frameworks
+---
+
 # Vue.js in Gitpod
 
 To work with Vue.js in Gitpod, you will need to properly configure your repository. Here is how to do it.

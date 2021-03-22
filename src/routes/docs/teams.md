@@ -1,3 +1,7 @@
+---
+section: subscriptions
+---
+
 # Create a Team
 
 From [gitpod.io/teams/](https://gitpod.io/teams/), you can purchase and manage Gitpod subscriptions for your entire team with one centralized billing.

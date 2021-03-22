@@ -1,3 +1,7 @@
+---
+section: subscriptions
+---
+
 # Professional Open Source
 
 It wouldn't have been possible for us to create Gitpod without all of the amazing open-source work it's built upon. And still, we're developing huge parts of Gitpod out in the open.

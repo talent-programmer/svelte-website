@@ -1,3 +1,7 @@
+---
+section: configuration
+---
+
 # Exposing Ports
 
 If you want to access services running in your workspace, e.g. a development HTTP server on port `8080`,
