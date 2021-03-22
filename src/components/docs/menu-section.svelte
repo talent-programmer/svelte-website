@@ -4,9 +4,9 @@
 
   export let menuItem;
 
-  $: isActiveSection =
-    $docsCurrentSectionStore &&
-    menuItem.path.endsWith(`${$docsCurrentSectionStore}/`);
+  $: isActiveSection = $docsCurrentSectionStore
+    ? menuItem.path.endsWith(`${$docsCurrentSectionStore}/`)
+    : false;
 </script>
 
 <style>
