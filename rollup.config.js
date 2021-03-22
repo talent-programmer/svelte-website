@@ -36,7 +36,7 @@ export default {
       }),
       svelte({
         preprocess,
-        extensions: [".svelte", ".svx"],
+        extensions: [".svelte", ".md"],
         compilerOptions: {
           dev,
           hydratable: true,
@@ -100,7 +100,7 @@ export default {
       }),
       svelte({
         preprocess,
-        extensions: [".svelte", ".svx"],
+        extensions: [".svelte", ".md"],
         compilerOptions: {
           dev,
           generate: "ssr",

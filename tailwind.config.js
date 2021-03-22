@@ -10,6 +10,9 @@ module.exports = {
         "gitpod-kumquat-gradient":
           "linear-gradient(137.41deg, #FFAD33 14.37%, #FF8A00 91.32%)",
       },
+      borderRadius: {
+        "4xl": "2rem",
+      },
       colors: {
         black: "var(--black)",
         "dark-grey": "var(--dark-grey)",
@@ -38,7 +41,17 @@ module.exports = {
           900: "var(--salmon)",
         },
       },
-      fontSize: {},
+      fontSize: {
+        h1: "var(--h1)",
+        h2: "var(--h2)",
+        h3: "var(--h3)",
+        h4: "var(--h4)",
+        h5: "var(--h5)",
+        h6: "var(--h6)",
+      },
+      maxWidth: {
+        row: "var(--row-max-width)",
+      },
       spacing: {
         "xx-large": "160px",
         "x-large": "72px",
