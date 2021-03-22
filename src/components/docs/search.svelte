@@ -5,9 +5,11 @@
   const docSearchInputSelector = "search-doc-input";
 
   let docSearchInput;
+  let docSearchScript;
+  let docSearchScriptLoaded = false;
 
-  const initDocSearch = () => {
-    if (docSearchInput) {
+  $: if (docSearchInput && (docSearchScript || docSearchScriptLoaded)) {
+    window.docsearch &&
       window.docsearch({
         apiKey: "1a880f3060e9ff81ff84087fc90878fc",
         indexName: "gitpod",
@@ -15,12 +17,11 @@
         // Set debug to true to inspect the dropdown
         debug: false,
       });
-    }
-  };
+  }
 
-  onMount(() => {
-    initDocSearch();
-  });
+  const processDocSearchScriptLoadEvent = () => {
+    docSearchScriptLoaded = true;
+  };
 </script>
 
 <style>
@@ -46,7 +47,8 @@
     href="https://cdn.jsdelivr.net/npm/docsearch.js@{docSearchJSVersion}/dist/cdn/docsearch.min.css"
   />
   <script
-    on:load={initDocSearch}
+    on:load={processDocSearchScriptLoadEvent}
+    bind:this={docSearchScript}
     src="https://cdn.jsdelivr.net/npm/docsearch.js@{docSearchJSVersion}/dist/cdn/docsearch.min.js"></script>
 </svelte:head>
 
