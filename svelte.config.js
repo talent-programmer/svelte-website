@@ -11,6 +11,9 @@ export const preprocess = {
   ...autoProcess({ postcss: true, scss: true }),
   ...mdsvex({
     extensions: [".md"],
+    layout: {
+      docs: "./src/components/docs/content-layout.svelte",
+    },
     remarkPlugins: [
       remarkDocsSetImagePath,
       [

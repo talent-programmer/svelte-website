@@ -10,6 +10,9 @@ module.exports = {
         "gitpod-kumquat-gradient":
           "linear-gradient(137.41deg, #FFAD33 14.37%, #FF8A00 91.32%)",
       },
+      borderRadius: {
+        "4xl": "2rem",
+      },
       colors: {
         black: "var(--black)",
         "dark-grey": "var(--dark-grey)",

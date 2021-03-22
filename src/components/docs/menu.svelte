@@ -1,5 +1,5 @@
 <script lang="ts">
-  import MenuLink from "./menu-link.svelte";
+  import MenuSection from "./menu-section.svelte";
 
   // This file is used to define entries in the side menu
   interface MenuEntry {
@@ -111,20 +111,7 @@
 <div class="inline-block">
   <ul class="p-6 space-y-6">
     {#each MENU as menuItem}
-      <li>
-        <MenuLink href={menuItem.path} class="leading-loose text-h6"
-          >{menuItem.title}</MenuLink
-        >
-        {#if menuItem.subMenu}
-          <ul class="ml-6">
-            {#each menuItem.subMenu as sub}
-              <li>
-                <MenuLink href={sub.path}>{sub.title}</MenuLink>
-              </li>
-            {/each}
-          </ul>
-        {/if}
-      </li>
+      <MenuSection {menuItem} />
     {/each}
   </ul>
 </div>
