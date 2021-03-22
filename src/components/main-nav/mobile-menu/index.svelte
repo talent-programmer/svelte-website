@@ -5,10 +5,19 @@
   export let navItems = [];
 </script>
 
+<style lang="scss">
+  .nav-items {
+    list-style: none;
+    text-align: center;
+    background: var(--white);
+    padding: var(--large) 0;
+  }
+</style>
+
 {#if $menuState}
-  <div class="sm:hidden">
+  <ul class="sm:hidden nav-items">
     {#each navItems as { href, label }}
       <NavItem {href}>{label}</NavItem>
     {/each}
-  </div>
+  </ul>
 {/if}

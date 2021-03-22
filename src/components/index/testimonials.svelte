@@ -1,5 +1,6 @@
 <script>
   import Section from "../section.svelte";
+  import Brands from "./brands.svelte";
   import Testimonial from "./testimonial.svelte";
 </script>
 
@@ -9,6 +10,7 @@
   }
 
   .testimonials {
+    min-width: 1000px;
     display: flex;
   }
 </style>
@@ -21,5 +23,6 @@
       <Testimonial />
       <Testimonial />
     </div>
+    <Brands />
   </Section>
 </div>
