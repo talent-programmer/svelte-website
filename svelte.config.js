@@ -12,8 +12,8 @@ export const preprocess = {
   ...mdsvex({
     extensions: [".md"],
     layout: {
-      blog: "./src/components/blog/content-layout.svelte",
-      docs: "./src/components/docs/content-layout.svelte",
+      blog: "./src/components/blog/blog-content-layout.svelte",
+      docs: "./src/components/docs/docs-content-layout.svelte",
     },
     remarkPlugins: [
       remarkSetImagePath,

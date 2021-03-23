@@ -1,10 +1,11 @@
 <script>
   export let date;
   export let author;
+  export let slug;
   // export let subtitle;
   export let title;
-  export let image;
-  // export let teaserImage;
+  // export let image;
+  export let teaserImage;
   // export let excerpt;
   // export let slug;
 
@@ -66,7 +67,7 @@
 </style>
 
 <img
-  src="/images/blog/{image}"
+  src="/images/blog/{slug}/{teaserImage}"
   alt={`Preview image for the blog post titled ${title}`}
 />
 <div class="p-8">
