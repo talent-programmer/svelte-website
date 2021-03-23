@@ -10,7 +10,7 @@
     "watch:css": "postcss src/assets/global.pcss -o static/global.css -w",
     "watch:dev": "sapper dev --ext '.md .svelte'",
     "clean": "run-p clean:*",
-    "clean:css": "rm static/global.css",
+    "clean:css": "rm -f static/global.css",
     "clean:dev": "rm -fr ./__sapper__",
     "dev": "npm run clean && run-p watch:*",
     "copyDocsImages": "cp ./",
