@@ -9,8 +9,10 @@
   "scripts": {
     "watch:css": "postcss src/assets/global.pcss -o static/global.css -w",
     "watch:dev": "sapper dev --ext '.md .svelte'",
-    "clean": "rm -fr ./__sapper__",
-    "dev": "run-p watch:*",
+    "clean": "run-p clean:*",
+    "clean:css": "rm static/global.css",
+    "clean:dev": "rm -fr ./__sapper__",
+    "dev": "npm run clean && run-p watch:*",
     "copyDocsImages": "cp ./",
     "build": "run-s build:css build:sapper",
     "build:css": "NODE_ENV=production postcss src/assets/global.pcss -o static/global.css",
