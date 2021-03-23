@@ -1,12 +1,12 @@
 ---
-date: Thu, 02 Jul 2020 14:00:00 UTC
 author: jankeromnes
-subtitle: Instant dev environments for all Bitbucket projects
-title: Gitpod for Bitbucket 🚀
-image: /bitbucket-integration.jpg
-teaserImage: /bitbucket-post-header.jpg
-excerpt: "Today, we’re excited to bring you instant development environments for all Bitbucket projects. Simply type  in front of any Bitbucket"
+date: Thu, 02 Jul 2020 14:00:00 UTC
+excerpt: Today, we’re excited to bring you instant development environments for all Bitbucket projects. Simply type  in front of any Bitbucket
+image: bitbucket-integration.jpg
 slug: bitbucket
+subtitle: Instant dev environments for all Bitbucket projects
+teaserImage: bitbucket-post-header.jpg
+title: Gitpod for Bitbucket 🚀
 ---
 
 Today, we're excited to bring you instant development environments for all Bitbucket projects.

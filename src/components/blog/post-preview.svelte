@@ -7,7 +7,7 @@
 <div class="mb-10 max-w-xl bg-gray-100 rounded-4xl">
   <a href="/blog/{post.slug}">
     <img
-      src="/images/blog/{post.image}"
+      src="/images/blog/{post.slug}/{post.image}"
       alt={`Preview image for the blog post titled ${post.title}`}
     />
     <div class="p-8">
