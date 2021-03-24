@@ -35,7 +35,7 @@ A workspace comprises your whole development environment and gives you similar c
 - Your personal IDE extensions, themes, editor prefs
 - Full [Docker support](https://www.gitpod.io/blog/root-docker-and-vscode/#docker)
 
-\*_Jetbrain's IDEs, Jupyter Notebook, Jupyter Labs are already available in [private beta](https://www.gitpod.io/contact/)._
+\*_Jetbrain's IDEs, Jupyter Notebook, Jupyter Labs are already available in [private beta](https://www.gitpod.io/contact)._
 
 <h3 class="h4">🏗 Dev-environments-as-code</h3>
 

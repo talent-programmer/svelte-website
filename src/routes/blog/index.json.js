@@ -14,7 +14,8 @@ const generatePost = (dirent) => {
 const posts = fs
   .readdirSync(BLOG_POSTS_BASE_DIR, { withFileTypes: true })
   .filter((dirent) => dirent.isFile() && dirent.name.endsWith(".md"))
-  .map(generatePost);
+  .map(generatePost)
+  .sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
 
 export const get = (_req, res) => {
   res.writeHead(200, {
