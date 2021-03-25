@@ -43,14 +43,21 @@
       font-style: normal;
     }
 
+    :global(p + h2),
+    :global(h2 ~ h2) {
+      margin-top: var(--medium);
+    }
+
     :global(p + h3),
-    :global(p + .h3) {
+    :global(p + .h3),
+    :global(h3 ~ h3),
+    :global(h3 ~ .h3) {
       margin-top: 8.8rem;
     }
 
     // Video
     :global(p > iframe) {
-      margin: var(--medium) 0;
+      margin-top: var(--medium);
     }
 
     // Code blocks
@@ -65,7 +72,8 @@
         align-items: center;
       }
 
-      &.language-null {
+      &.language-null,
+      &.language-text {
         display: block;
         padding: 2rem 2.4rem;
         background: var(--sand-dark);
