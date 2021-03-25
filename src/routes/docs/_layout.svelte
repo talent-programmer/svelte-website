@@ -1,7 +1,7 @@
 <script>
   import Menu from "../../components/docs/menu.svelte";
   import Search from "../../components/docs/search.svelte";
-  import EditInGitpodButton from "../../components/docs/edit-in-gitpod-button.svelte";
+  // import EditInGitpodButton from "../../components/docs/edit-in-gitpod-button.svelte";
 </script>
 
 <div class="flex mx-auto max-w-row">
@@ -10,7 +10,7 @@
   </div>
   <div class="w-3/5">
     <Search />
-    <EditInGitpodButton />
+    <!-- <EditInGitpodButton /> -->
     <slot />
   </div>
 </div>
