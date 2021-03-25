@@ -39,10 +39,19 @@
       @include h3;
     }
 
+    :global(a) {
+      font-weight: 700;
+
+      &:hover {
+        color: var(--brand-ripe);
+      }
+    }
+
     :global(h3 em) {
       font-style: normal;
     }
 
+    // Spacing
     :global(p + h2),
     :global(h2 ~ h2) {
       margin-top: var(--medium);
@@ -55,9 +64,16 @@
       margin-top: 8.8rem;
     }
 
-    // Video
+    :global(p + p) {
+      margin-top: var(--micro);
+    }
+
     :global(p > iframe) {
       margin-top: var(--medium);
+    }
+
+    :global(li + li) {
+      margin-top: var(--macro);
     }
 
     // Code blocks
@@ -73,10 +89,15 @@
       }
 
       &[class*="language"] {
+        overflow: auto;
         display: block;
         padding: 2rem 2.4rem;
         background: var(--sand-dark);
       }
+    }
+
+    :global(pre) {
+      margin: var(--micro) 0;
     }
 
     :global(blockquote) {
@@ -88,6 +109,19 @@
       :global(code) {
         background: var(--brand-almost-ripe);
       }
+    }
+
+    :global(table) {
+      border-radius: 1.6rem;
+      overflow: hidden;
+    }
+
+    :global(thead) {
+      background: var(--sand-dark);
+    }
+
+    :global(tbody) {
+      background: var(--offwhite);
     }
   }
 </style>
