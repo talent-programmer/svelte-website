@@ -55,7 +55,7 @@
     src="https://cdn.jsdelivr.net/npm/docsearch.js@{docSearchJSVersion}/dist/cdn/docsearch.min.js"></script>
 </svelte:head>
 
-<div class="w-full">
+<div class="w-full mb-24">
   <label for={docSearchInputSelector} class="sr-only">Search</label>
   <div class="relative">
     <input
