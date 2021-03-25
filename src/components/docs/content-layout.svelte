@@ -72,8 +72,7 @@
         align-items: center;
       }
 
-      &.language-null,
-      &.language-text {
+      &[class*="language"] {
         display: block;
         padding: 2rem 2.4rem;
         background: var(--sand-dark);
