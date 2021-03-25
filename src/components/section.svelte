@@ -1,3 +1,7 @@
+<script>
+  export let id;
+</script>
+
 <style>
   section {
     margin: var(--xx-large) 0;
@@ -8,6 +12,6 @@
   }
 </style>
 
-<section>
+<section {id}>
   <slot />
 </section>

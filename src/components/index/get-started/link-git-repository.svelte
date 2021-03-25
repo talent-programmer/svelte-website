@@ -30,11 +30,11 @@
     }
   }
 
-  .link--light-grey {
+  /* .link--light-grey {
     display: inline-block;
     margin-top: var(--micro);
     font-size: var(--h6);
-  }
+  } */
 
   .prefix {
     display: inline-block;
@@ -62,7 +62,7 @@
     <img src="/gitlab-white.svg" alt="GitLab" />
     Link with GitLab
   </a>
-  <a href="#" class="link--light-grey">Third-party providers ↗</a>
+  <!-- <a href="#" class="link--light-grey">Third-party providers ↗</a> -->
 </div>
 <p class="text-large">
   Or prefix any GitLab, GitHub or Bitbucket URL with

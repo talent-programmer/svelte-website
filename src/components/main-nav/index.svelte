@@ -56,7 +56,9 @@
       </NavItems>
     </div>
     <div class="hidden sm:flex sm:justify-between sm:items-center">
-      <a class="btn btn--small btn--dark">Login</a>
+      <a href="https://gitpod.io/login/" class="btn btn--small btn--dark"
+        >Login</a
+      >
     </div>
     <div class="flex items-center sm:hidden">
       <MobileMenuButton />

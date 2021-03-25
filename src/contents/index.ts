@@ -11,7 +11,7 @@ export const features: Feature[] = [
       text: "More on prebuilds",
       href: "/docs/prebuilds/",
     },
-    documentationLink: null,
+    documentationLink: "/docs/prebuilds/",
     preview: {
       name: "terminal.png",
       alt: "A terminal that displays Gitpod prebuild output.",

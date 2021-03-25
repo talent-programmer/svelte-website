@@ -6,8 +6,15 @@
 /* --- Base Setup --- */
 /* -------------------------------------- */
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 :root {
@@ -53,7 +60,7 @@ html {
 
   --border-light: 1px solid var(--sand-dark);
 
-  @media(max-width: 1140px) {
+  @media (max-width: 1140px) {
     --h1: 4.8rem;
     --h2: 4rem;
     --h3: 3.2rem;
@@ -87,23 +94,22 @@ body {
   margin: 0 auto;
   max-width: var(--row-max-width);
 
-  @media(max-width: 1032px) {
+  @media (max-width: 1032px) {
     width: 94%;
   }
 
-  @media(min-width: 1141px) {
+  @media (min-width: 1141px) {
     width: 92%;
   }
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     width: 100%;
     padding: 0 var(--micro);
   }
 
-  @media(max-width: 375px) {
+  @media (max-width: 375px) {
     padding: var(--macro);
   }
-
 }
 
 /* -------------------------------------- */
@@ -112,7 +118,7 @@ body {
 
 a {
   color: var(--black);
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .link--light-grey {
@@ -128,16 +134,30 @@ a {
   cursor: pointer;
 }
 
+.btn-wrapper {
+  --gap: var(--micro);
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+  width: calc(100% + var(--gap));
+  @media (max-width: ${sizes.breakpoints.sm}) {
+    justify-content: center;
+  }
+  & > * {
+    margin: var(--gap) 0 0 var(--gap);
+  }
+}
+
 .btn--brand {
   background: var(--brand-almost-ripe);
   border-radius: 1.6rem;
   padding: 1.2rem var(--x-small);
-  
-  @media(min-width: 1141px) {
+
+  @media (min-width: 1141px) {
     min-width: 160px;
   }
 
-  @media(max-width: 868px) {
+  @media (max-width: 868px) {
     padding: 1.2rem var(--xx-small);
   }
 }
@@ -185,7 +205,7 @@ h6 {
   font-size: var(--h2);
   line-height: 118.5%;
 
-  @media(max-width: 375px) {
+  @media (max-width: 375px) {
     margin-bottom: var(--x-small);
   }
 }
@@ -238,7 +258,7 @@ h6 {
   line-height: 133.33%;
 }
 
-@media(max-width: 375px) {
+@media (max-width: 375px) {
   .text-large {
     font-size: var(--p-medium);
   }

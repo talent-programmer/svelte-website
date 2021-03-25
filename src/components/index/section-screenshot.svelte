@@ -2,26 +2,32 @@
   import Section from "../section.svelte";
 
   const buttons = [
-    {
-      icon: "safari.svg",
-      text: "Safari Extension",
-      href: "",
-    },
+    // {
+    //   icon: "safari.svg",
+    //   text: "Safari Extension",
+    //   href: "",
+    // },
     {
       icon: "chrome.svg",
       text: "Chrome Extension",
-      href: "",
+      href:
+        "https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki",
     },
     {
-      icon: "windows.svg",
-      text: "Windows Client",
-      href: "",
+      icon: "firefox.svg",
+      text: "Firefox Extension",
+      href: "https://addons.mozilla.org/firefox/addon/gitpod/",
     },
-    {
-      icon: "apple.svg",
-      text: "MacOS Client",
-      href: "",
-    },
+    // {
+    //   icon: "windows.svg",
+    //   text: "Windows Client",
+    //   href: "",
+    // },
+    // {
+    //   icon: "apple.svg",
+    //   text: "MacOS Client",
+    //   href: "",
+    // },
   ];
 </script>
 
@@ -32,6 +38,7 @@
 
   .screenshot {
     display: block;
+    margin: 0 auto;
     margin-bottom: -48px;
 
     @media (max-width: 768px) {
@@ -49,10 +56,8 @@
     }
   }
 
-  .buttons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    gap: var(--micro);
+  .btn-wrapper {
+    justify-content: center;
   }
 
   .button {
@@ -64,7 +69,6 @@
     border-radius: 8px;
     color: var(--black);
     font-weight: 600;
-    min-width: 19rem;
 
     img {
       display: inline-block;
@@ -86,7 +90,7 @@
         centralizes all source code and never stores it on insecure machines and
         networks.
       </p>
-      <div class="buttons">
+      <div class="btn-wrapper">
         {#each buttons as { href, icon, text }}
           <a {href} target="_blank" class="button text-medium">
             <img src={`/${icon}`} alt={text} />

@@ -66,7 +66,7 @@
   }
 </style>
 
-<a href={`https://gitpod.io#${githubUrl}`} class="project">
+<a href={`https://gitpod.io#${githubUrl}`} target="_blank" class="project">
   <div class="project__left">
     <img src={`/${logo}`} {alt} class="project__logo" />
     <h4 class="h6">{title}</h4>

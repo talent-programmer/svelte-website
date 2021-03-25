@@ -111,7 +111,7 @@
       <div class="hero__action">
         <div class="hero__try-now text-small">
           <div>
-            <a href="#" class="btn btn--brand">Try Now</a>
+            <a href="#get-started" class="btn btn--brand">Try Now</a>
           </div>
           <p>
             Give an example space a try right now.
@@ -125,7 +125,7 @@
             <img src="/github.svg" alt="GitHub" />
             <img src="/gitlab.svg" alt="GitLab" />
           </div>
-          <div>GitHub Stars</div>
+          <!-- <div>GitHub Stars</div> -->
         </div>
       </div>
     </div>

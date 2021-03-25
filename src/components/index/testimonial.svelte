@@ -22,8 +22,16 @@
       margin-right: 1.2rem;
     }
 
-    &:not(:last-child) {
-      margin-right: var(--xx-small);
+    @media (min-width: 769px) {
+      &:not(:last-child) {
+        margin-right: var(--xx-small);
+      }
+    }
+
+    @media (max-width: 768px) {
+      &:not(:last-child) {
+        margin-bottom: var(--xx-small);
+      }
     }
   }
 </style>

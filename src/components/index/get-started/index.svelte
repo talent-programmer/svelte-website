@@ -32,10 +32,6 @@
     }
 
     &:not(:last-child) {
-      @media (min-width: 945px) {
-        margin-right: var(--small);
-      }
-
       @media (max-width: 944px) {
         margin-bottom: var(--small);
       }
@@ -44,7 +40,7 @@
 </style>
 
 <div class="row">
-  <Section>
+  <Section id="get-started">
     <h2 class="h2">Get started now</h2>
     <div class="wrapper">
       <div class="card">
