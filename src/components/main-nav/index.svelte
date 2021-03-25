@@ -1,5 +1,4 @@
 <script>
-  import Button from "../button.svelte";
   import LogoWrapper from "./logo-wrapper.svelte";
   import MobileMenu from "./mobile-menu/index.svelte";
   import MobileMenuButton from "./mobile-menu/button.svelte";
@@ -30,8 +29,24 @@
   ];
 </script>
 
-<nav>
-  <div class="py-5 px-3 flex justify-between lg:py-4 lg:px-7">
+<style>
+  nav {
+    height: var(--header-height);
+    padding: 2rem var(--x-small);
+    color: var(--black);
+
+    @media (max-width: 768px) {
+      padding: 2rem var(--micro);
+    }
+
+    @media (max-width: 375px) {
+      padding: 2rem var(--macro);
+    }
+  }
+</style>
+
+<nav class="nav text-small">
+  <div class="flex justify-between">
     <LogoWrapper />
     <div class="hidden sm:flex sm:justify-between sm:items-center">
       <NavItems>
@@ -41,7 +56,9 @@
       </NavItems>
     </div>
     <div class="hidden sm:flex sm:justify-between sm:items-center">
-      <Button>Login</Button>
+      <a href="https://gitpod.io/login/" class="btn btn--small btn--dark"
+        >Login</a
+      >
     </div>
     <div class="flex items-center sm:hidden">
       <MobileMenuButton />

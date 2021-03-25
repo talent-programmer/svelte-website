@@ -1,4 +1,5 @@
 <script>
+  import Footer from "../components/footer.svelte";
   import Nav from "../components/main-nav/index.svelte";
 </script>
 
@@ -6,3 +7,4 @@
 <main>
   <slot />
 </main>
+<Footer />
