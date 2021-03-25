@@ -6,53 +6,82 @@
   $: $docsCurrentSectionStore = section;
 </script>
 
-<style>
-  .content :global(blockquote) {
-    @apply my-14 p-8 rounded-lg bg-orange-700;
+<style lang="scss">
+  @mixin h3 {
+    font-size: var(--p-large);
+    line-height: 3.2rem;
   }
 
-  .content :global(blockquote code) {
-    @apply p-2 rounded-lg bg-orange-900;
-  }
+  .content {
+    // Typography
+    :global(h1),
+    :global(h2),
+    :global(h3) {
+      margin-bottom: var(--xx-small);
+      font-weight: 700;
+    }
 
-  .content :global(code) {
-    @apply p-2 rounded-lg bg-orange-700;
-  }
+    :global(h1) {
+      font-size: 4.8rem;
+      line-height: 5.6rem;
+    }
 
-  .content :global(pre) {
-    @apply p-8 rounded-lg bg-gray-300 overflow-x-scroll;
-  }
+    :global(h2) {
+      font-size: var(--h4);
+      line-height: 4rem;
 
-  .content :global(pre code) {
-    @apply bg-transparent;
-  }
+      &.h3 {
+        @include h3;
+      }
+    }
 
-  .content :global(h1) {
-    @apply text-h1;
-  }
+    :global(h3) {
+      @include h3;
+    }
 
-  .content :global(h2) {
-    @apply text-h2;
-  }
+    :global(h3 em) {
+      font-style: normal;
+    }
 
-  .content :global(h3) {
-    @apply text-h3;
-  }
+    :global(p + h3),
+    :global(p + .h3) {
+      margin-top: 8.8rem;
+    }
 
-  .content :global(h4) {
-    @apply text-h4;
-  }
+    // Video
+    :global(p > iframe) {
+      margin: var(--medium) 0;
+    }
 
-  .content :global(h5) {
-    @apply text-h5;
-  }
+    // Code blocks
+    :global(code) {
+      min-height: 3.2rem;
+      padding: 0 0.8rem;
+      border-radius: 1.2rem;
+      background: var(--brand-light);
 
-  .content :global(h6) {
-    @apply text-h6;
-  }
+      &:not([class]) {
+        display: inline-flex;
+        align-items: center;
+      }
 
-  .content :global(p) {
-    @apply my-8;
+      &.language-null {
+        display: block;
+        padding: 2rem 2.4rem;
+        background: var(--sand-dark);
+      }
+    }
+
+    :global(blockquote) {
+      margin: 3.2rem 0;
+      padding: 2.4rem;
+      border-radius: 1.2rem;
+      background: var(--brand-light);
+
+      :global(code) {
+        background: var(--brand-almost-ripe);
+      }
+    }
   }
 </style>
 
