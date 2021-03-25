@@ -2,26 +2,32 @@
   import Section from "../section.svelte";
 
   const buttons = [
-    {
-      icon: "safari.svg",
-      text: "Safari Extension",
-      href: "",
-    },
+    // {
+    //   icon: "safari.svg",
+    //   text: "Safari Extension",
+    //   href: "",
+    // },
     {
       icon: "chrome.svg",
       text: "Chrome Extension",
-      href: "",
+      href:
+        "https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki",
     },
     {
-      icon: "windows.svg",
-      text: "Windows Client",
-      href: "",
+      icon: "firefox.svg",
+      text: "Firefox Extension",
+      href: "https://addons.mozilla.org/firefox/addon/gitpod/",
     },
-    {
-      icon: "apple.svg",
-      text: "MacOS Client",
-      href: "",
-    },
+    // {
+    //   icon: "windows.svg",
+    //   text: "Windows Client",
+    //   href: "",
+    // },
+    // {
+    //   icon: "apple.svg",
+    //   text: "MacOS Client",
+    //   href: "",
+    // },
   ];
 </script>
 
@@ -32,11 +38,15 @@
 
   .screenshot {
     display: block;
+    margin: 0 auto;
     margin-bottom: -48px;
+
+    @media (max-width: 768px) {
+      margin-bottom: -20px;
+    }
   }
 
   .content {
-    font-size: var(--p-large);
     text-align: center;
     max-width: 900px;
     margin: auto;
@@ -46,10 +56,8 @@
     }
   }
 
-  .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--micro);
+  .btn-wrapper {
+    justify-content: center;
   }
 
   .button {
@@ -57,7 +65,6 @@
     align-items: center;
     padding: var(--macro) 1.1rem;
     justify-content: center;
-    font-size: var(--p-medium);
     background: var(--white);
     border-radius: 8px;
     color: var(--black);
@@ -77,15 +84,15 @@
     <h2 class="h2">Remote-first. Secure by Design.</h2>
     <img class="screenshot" src="/gitpod-screenshot.png" alt="Gitpod" />
     <div class="content">
-      <p>
+      <p class="text-large">
         You no longer need an over-powered laptop to code, Gitpod works just as
         smoothly on a Chromebook or iPad. All you need is a browser. Gitpod
         centralizes all source code and never stores it on insecure machines and
         networks.
       </p>
-      <div class="buttons">
+      <div class="btn-wrapper">
         {#each buttons as { href, icon, text }}
-          <a {href} target="_blank" class="button">
+          <a {href} target="_blank" class="button text-medium">
             <img src={`/${icon}`} alt={text} />
             {text}
           </a>

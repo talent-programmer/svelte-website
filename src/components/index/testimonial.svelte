@@ -3,7 +3,6 @@
     width: 400px;
     padding: var(--x-small);
     background: var(--white);
-    font-size: var(--p-small);
     border-radius: 16px;
 
     p + p {
@@ -20,15 +19,24 @@
       height: 5rem;
       width: 5rem;
       border-radius: 50%;
+      margin-right: 1.2rem;
     }
 
-    &:not(:last-child) {
-      margin-right: var(--xx-small);
+    @media (min-width: 769px) {
+      &:not(:last-child) {
+        margin-right: var(--xx-small);
+      }
+    }
+
+    @media (max-width: 768px) {
+      &:not(:last-child) {
+        margin-bottom: var(--xx-small);
+      }
     }
   }
 </style>
 
-<div class="testimonial">
+<div class="testimonial text-small">
   <p>
     12 lines of configuration gives me a 1-click development setup, installs
     dependencies and starts the dev servers for 3 APIs and 1 frontend

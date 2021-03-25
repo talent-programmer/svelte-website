@@ -11,24 +11,50 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+
     &__text {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       flex: 0 0 50%;
-      margin-top: var(--medium);
-      font-size: var(--p-large);
+
+      @media (min-width: 801px) {
+        margin: var(--medium) 0;
+      }
     }
 
     &__preview {
-      flex: 0 0 48%;
+      flex: 0 0 45%;
+
+      @media (max-width: 800px) {
+        margin-top: var(--small);
+
+        img {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
 
       img {
+        display: block;
+        max-height: 500px;
         border-radius: 2rem;
+        box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &__buttons {
+      @media (max-width: 850px) {
+        margin-top: var(--xx-small);
       }
     }
 
     .btn {
+      margin-bottom: var(--micro);
+
       &:not(:last-child) {
         margin-right: var(--micro);
       }
@@ -39,9 +65,9 @@
 <div class="row">
   <Section>
     <div class="feature">
-      <div class="feature__text">
+      <div class="feature__text text-large">
         <div>
-          <h2 class="h3">{title}</h2>
+          <h2 class="h5">{title}</h2>
           <p>{paragraph}</p>
         </div>
         <div class="feature__buttons">
