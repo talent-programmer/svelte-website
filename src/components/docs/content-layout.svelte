@@ -6,14 +6,10 @@
   $: $docsCurrentSectionStore = section;
 </script>
 
-<style lang="scss">
-  .content {
-    :global {
-      @import "../../assets/docs";
-    }
-  }
+<style lang="scss" global>
+  @import "../../assets/docs";
 </style>
 
-<div class="content">
+<div class="content-docs">
   <slot />
 </div>
