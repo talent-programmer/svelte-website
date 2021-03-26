@@ -600,7 +600,7 @@
   Complete and return this form only if you wish to withdraw from the contract.
 </p>
 
-<div className="model">
+<div class="model">
   <div>-- begin model withdrawal form --</div>
   <p>
     To<br /> Gitpod GmbH represented by: Sven Efftinge, Moritz Eysholdt, Dr. Jan
