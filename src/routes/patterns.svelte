@@ -2,7 +2,6 @@
   import type {
     Patterns,
   } from "../types/pattern.type";
- // import Feature from "../components/education/feature.svelte";
 
 </script>
 <style lang="scss">
