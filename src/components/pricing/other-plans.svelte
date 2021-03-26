@@ -11,6 +11,10 @@
     display: flex;
     padding: var(--small) var(--xx-small) var(--small);
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
     &__header {
       flex: 0 0 35%;
     }

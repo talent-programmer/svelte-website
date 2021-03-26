@@ -9,6 +9,14 @@
     border-radius: 16px;
     background: var(--sand-dark);
 
+    @media (max-width: 768px) {
+      padding: var(--xx-small);
+    }
+
+    @media (max-width: 375px) {
+      padding: var(--micro);
+    }
+
     &:not(:last-child) {
       margin-bottom: var(--xx-small);
     }
@@ -17,16 +25,31 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      @media (max-width: 768px) {
+        align-items: flex-start;
+      }
     }
 
     &__toggle {
+      flex: 0 0 2.4rem;
+      display: block;
       height: 2.4rem;
       width: 2.4rem;
       outline: none;
+      margin-left: var(--micro);
+
+      @media (max-width: 768px) {
+        margin-top: 3px;
+      }
     }
 
     &__arrow {
       transition: all 0.2s;
+    }
+
+    &__text {
+      margin-top: var(--micro);
     }
 
     & :global(a) {
@@ -35,13 +58,13 @@
   }
 
   .h5 {
-    margin-bottom: var(--micro);
+    margin-bottom: 0;
   }
 </style>
 
 <div class="faq">
   <div class="faq__top">
-    <h3 class="h5">{title}</h3>
+    <h3 class="h5 faq__title">{title}</h3>
     <button
       on:click={() => {
         shown = !shown;
