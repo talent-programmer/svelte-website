@@ -15,6 +15,8 @@
     border-radius: 1.6rem;
     box-shadow: var(--shadow);
     transition: all 0.2s;
+    margin-bottom: var(--small);
+    width: 302px;
 
     &:hover {
       box-shadow: var(--shadow-brand);
