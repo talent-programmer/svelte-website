@@ -1,7 +1,4 @@
 .content-docs {
-  h1 {
-    color: red;
-  }
   @mixin h3 {
     font-size: var(--p-large);
     line-height: 3.2rem;
