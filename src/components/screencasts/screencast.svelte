@@ -63,8 +63,6 @@
   time {
     font-size: var(--fine-print);
   }
-
-
 </style>
 
 <article>
@@ -72,11 +70,11 @@
   <div style="background-image: url({screencast.tile})">
     <data>Screencast {screencastNumberPadded}</data>
     <h2 class="text-large">{screencast.title}</h2>
-    <LogoWrapper height="24"/>
+    <!-- TODO: move css out of logo so we can change teh size -->
+    <LogoWrapper/>
 
     <!-- Preview image. TODO: What do we want to show here? -->
   </div>
   <time>Duration: {screencastDurationMinutes}m {screencastDurationSeconds}s</time>
   <p>{screencast.description}</p>
-<!-- TODO: Hover effect as per Figma design -->
 </article>
