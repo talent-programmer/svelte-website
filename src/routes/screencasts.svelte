@@ -3,11 +3,24 @@
   import screencasts from "../contents/screencasts";
 </script>
 
+<style type="scss">
+  h1 {
+    text-align: center;
+  }
+  section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 400px));
+    gap: 60px 20px;
+    justify-content: center;
+    padding: 0 20px;
+  }
+</style>
+
 <h1>Get started with a screencast</h1>
-
-{#each screencasts as screencast, index}
-  <Screencast {screencast} screencastNumber={index + 1} />
-{/each}
-
+<section>
+  {#each screencasts as screencast, index}
+    <Screencast {screencast} screencastNumber={index + 1} />
+  {/each}
+</section>
 <!-- Explore Gitpod card -->
 <!-- Wait for https://github.com/gitpod-io/website-kumquat/pull/39 and reuse the component created there -->
