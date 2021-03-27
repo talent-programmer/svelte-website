@@ -1,9 +1,3 @@
-<script lang="ts">
-  import type {
-    Patterns,
-  } from "../types/pattern.type";
-
-</script>
 <style lang="scss">
   // DO NOT COPY THIS! For reference only. 
   // The colors will automatically update if the variable values update. 
@@ -51,7 +45,8 @@
 
   // layout for the colors
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-auto-rows: minmax(100px, auto);
   gap: 1rem;
   li {
     display: flex;
@@ -63,7 +58,8 @@
       width: 100px;
       height: 100px;
       border-radius: 50%;
-      border: 1px solid;
+      border: 1px solid var(--divider);
+      flex: 0 0 100px;
     }
   }
 
