@@ -2,26 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* -------------------------------------- */
-/* --- Base Setup --- */
-/* -------------------------------------- */
-
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
   --font: "ABCDiatype", sans-serif;
 
   --black: #12100c;
-  --dark-grey: #565451;
+  --dark-grey: #12100c;
+  /* --dark-grey: #565451; */
   --light-grey: #999795;
   --brand-almost-ripe: #ffb45b;
   --brand-ripe: #ff8a00;
@@ -55,7 +53,7 @@ html {
   --small: 4.8rem;
   --x-small: 3.2rem;
   --xx-small: 2.4rem;
-  --micro: 1.6rem;
+  --micro: 1.6rem; /* should we invert micro and macro? */
   --macro: 0.8rem;
 
   --shadow: 0rem 1rem 2.4rem 0rem rgba(0, 0, 0, 0.08);
@@ -85,6 +83,69 @@ body {
   color: var(--dark-grey);
   background: var(--sand-light);
   overflow-x: hidden;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove margin, padding and list styles on ul, ol elements with a class attribute (leave content lists alone. may need to revisit this */
+ul[class],
+ol[class] {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+/* Ensure accessibility. Remove outline if we may miss images in prod */
+img:not([alt]) {
+  filter: blur(10px);
+  outline: 10px solid;
+}
+
+/* margin on everything except first child.  */
+main > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make site accessible for those who request it, no matter what! */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* -------------------------------------- */
@@ -120,7 +181,7 @@ body {
 
 a {
   color: var(--black);
-  transition: all 0.2s;
+  transition: all 0.2s 50ms;
 }
 
 .link--light-grey {
@@ -128,12 +189,12 @@ a {
   color: var(--light-grey);
 }
 
-.btn {
+.btn,
+[class|="btn"] {
   display: inline-block;
   text-align: center;
-  color: var(--black);
   font-weight: 600;
-  cursor: pointer;
+  border-radius: 1em; /* em, not rem, so based on font size, and auto responsive */
 }
 
 .btn-wrapper {
@@ -142,7 +203,7 @@ a {
   flex-wrap: wrap;
   margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
   width: calc(100% + var(--gap));
-  @media (max-width: ${sizes.breakpoints.sm}) {
+  @media (max-width: ${sizes.breakpoints.sm}) { /* TW */
     justify-content: center;
   }
   & > * {
@@ -152,7 +213,6 @@ a {
 
 .btn--brand {
   background: var(--brand-almost-ripe);
-  border-radius: 1.6rem;
   padding: 1.2rem var(--x-small);
 
   @media (min-width: 1141px) {
@@ -167,9 +227,9 @@ a {
 .btn--small {
   font-size: var(--btn-small);
   padding: var(--macro) var(--x-small);
-  border-radius: 1.2rem;
 }
 
+// we may want to come up with purpose names instead of color names. like primary / secondary / etc.
 .btn--salmon {
   background: var(--salmon);
 }
@@ -193,16 +253,15 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--black);
-  font-weight: 600;
+  font-weight: 600; /* this is default. it's removed in TW. Should we just remove it from the TW reset? */
 }
 
-.h1 {
+h1, .h1 {
   font-size: var(--h1);
   line-height: 110%;
 }
 
-.h2 {
+h2, .h2 {
   margin-bottom: var(--small);
   font-size: var(--h2);
   line-height: 118.5%;
@@ -212,25 +271,25 @@ h6 {
   }
 }
 
-.h3 {
+h3, .h3 {
   margin-bottom: var(--macro);
   font-size: var(--h3);
   line-height: 133.33%;
 }
 
-.h4 {
+h4, .h4 {
   margin-bottom: var(--macro);
   font-size: var(--h4);
   line-height: 125%;
 }
 
-.h5 {
+h5, .h5 {
   font-size: var(--h5);
   margin-bottom: var(--macro);
   line-height: 143%;
 }
 
-.h6 {
+h6, .h6 {
   font-size: var(--h6);
   line-height: 120%;
 }
@@ -264,12 +323,4 @@ h6 {
   .text-large {
     font-size: var(--p-medium);
   }
-}
-
-/* -------------------------------------- */
-/* --- Objects --- */
-/* -------------------------------------- */
-
-img {
-  object-fit: contain;
 }

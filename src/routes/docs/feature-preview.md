@@ -33,4 +33,4 @@ You can choose between 2 options:
 - Theia
 - Code
 
-> There is also a private beta for allowing a custom IDE image for the default IDE. If you are interested, feel free to reach out through the [contact form](https://www.gitpod.io/contact/).
+> There is also a private beta for allowing a custom IDE image for the default IDE. If you are interested, feel free to reach out through the [contact form](https://www.gitpod.io/contact).
