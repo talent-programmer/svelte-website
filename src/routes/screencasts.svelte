@@ -6,6 +6,7 @@
 <style type="scss">
   h1 {
     text-align: center;
+    margin-bottom: 2em;
   }
   section {
     display: grid;
@@ -16,7 +17,7 @@
   }
 </style>
 
-<h1>Get started with a screencast</h1>
+<h1 class="h3">Get started with a screencast</h1>
 <section>
   {#each screencasts as screencast, index}
     <Screencast {screencast} screencastNumber={index + 1} />
