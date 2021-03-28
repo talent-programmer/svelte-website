@@ -1,6 +1,6 @@
 import autoProcess from "svelte-preprocess";
 import { mdsvex } from "mdsvex";
-import remarkDocsSetImagePath from "./src/utils/remark-docs-set-image-path";
+import remarkSetImagePath from "./src/utils/remark-set-image-path";
 import remarkEmbedVideo from "./src/utils/remark-embed-video";
 
 const mode = process.env.NODE_ENV;
@@ -12,10 +12,11 @@ export const preprocess = {
   ...mdsvex({
     extensions: [".md"],
     layout: {
-      docs: "./src/components/docs/content-layout.svelte",
+      blog: "./src/components/blog/blog-content-layout.svelte",
+      docs: "./src/components/docs/docs-content-layout.svelte",
     },
     remarkPlugins: [
-      remarkDocsSetImagePath,
+      remarkSetImagePath,
       [
         remarkEmbedVideo,
         {
