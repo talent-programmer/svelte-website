@@ -5,6 +5,7 @@
 <style lang="scss">
   .h2 {
     text-align: center;
+    text-transform: capitalize;
   }
 
   .plan {
