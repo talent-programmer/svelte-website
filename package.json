@@ -17,7 +17,7 @@
     "build": "run-s build:css build:sapper",
     "build:css": "NODE_ENV=production postcss src/assets/global.pcss -o static/global.css",
     "build:sapper": "sapper build --ext '.md .svelte'",
-    "build:export": "sapper export --ext '.md .svelte'",
+    "build:export": "sapper export --ext '.md .svelte' --entry '/ /extension-activation'",
     "export": "run-s clean build:css build:export",
     "start": "node __sapper__/build",
     "serve": "serve ___sapper__/export",
