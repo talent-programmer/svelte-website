@@ -6,7 +6,6 @@
 
   const { description, image = "images/media-image.jpg", title, type } =
     data || {};
-  console.log(data, image);
 
   const { page } = stores();
   const url = `https://${$page.host}${$page.path}`;

@@ -16,7 +16,6 @@
     month: "short",
     day: "numeric",
   });
-  console.log("blog layout");
 </script>
 
 <style lang="scss" global>
