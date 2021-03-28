@@ -130,7 +130,7 @@
       </div>
     </div>
     <div class="hero__illustration">
-      <img src="/illustration.png" alt="Gitpod in a Nutshell" />
+      <img src="/images/illustration.png" alt="Gitpod in a Nutshell" />
     </div>
   </div>
 </div>

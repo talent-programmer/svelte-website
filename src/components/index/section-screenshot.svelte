@@ -67,7 +67,7 @@
 <div class="row">
   <Section>
     <h2 class="h2">Remote-first. Secure by Design.</h2>
-    <img class="screenshot" src="/gitpod-screenshot.png" alt="Gitpod" />
+    <img class="screenshot" src="/images/gitpod-screenshot.png" alt="Gitpod" />
     <div class="content">
       <p class="text-large">
         You no longer need an over-powered laptop to code, Gitpod works just as
