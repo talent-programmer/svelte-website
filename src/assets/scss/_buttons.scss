@@ -1,6 +1,6 @@
-// -------------------------------------- */
-// --- Buttons & Links --- */
-// -------------------------------------- */
+/* -------------------------------------- */
+/* --- Buttons & Links --- */
+/* -------------------------------------- */
 
 a {
   color: var(--black);
@@ -39,12 +39,12 @@ a {
   &.btn-tertiary {
     background-color: var(--black);
     color: var(--white);
-  } 
+  }
   &.btn-quaternary {
     background-color: var(--white);
     &:hover,
-    &:focus  {
-      background-image: linear-gradient(#00000005,#00000005);
+    &:focus {
+      background-image: linear-gradient(#00000005, #00000005);
     }
   }
 }
@@ -54,10 +54,12 @@ a {
 .btn-tertiary {
   &:hover,
   &:focus {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    );
   }
 }
-
 
 .btn-wrapper {
   --gap: var(--micro);
@@ -65,7 +67,7 @@ a {
   flex-wrap: wrap;
   margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
   width: calc(100% + var(--gap));
-  @media (max-width: 40rem) { 
+  @media (max-width: 40rem) {
     justify-content: center;
   }
   & > * {
@@ -73,8 +75,7 @@ a {
   }
 }
 
-
-// DEPRECATED
+/* DEPRECATED */
 .btn--brand {
   background: var(--brand-almost-ripe);
   padding: 0.75rem var(--x-small);

@@ -33,7 +33,7 @@ dd {
   margin: 0;
 }
 
-// Remove margin, padding and list styles on ul, ol elements with a class attribute (leave content lists alone. may need to revisit this */
+/* Remove margin, padding and list styles on ul, ol elements with a class attribute (leave content lists alone. may need to revisit this */
 ul[class],
 ol[class] {
   margin: 0;
@@ -41,7 +41,7 @@ ol[class] {
   list-style: none;
 }
 
-// Make images easier to work with */
+/* Make images easier to work with */
 img,
 picture {
   max-width: 100%;
@@ -49,18 +49,18 @@ picture {
   object-fit: contain;
 }
 
-// Ensure accessibility. Remove outline if we may miss images in prod */
+/* Ensure accessibility. Remove outline if we may miss images in prod */
 img:not([alt]) {
   filter: blur(10px);
   outline: 10px solid;
 }
 
-// margin on everything except first child.  */
+/* margin on everything except first child.  */
 main > * + * {
   margin-top: 1em;
 }
 
-// Inherit fonts for inputs and buttons */
+/* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
@@ -68,7 +68,7 @@ select {
   font: inherit;
 }
 
-// Make site accessible for those who request it, no matter what! 
+/* Make site accessible for those who request it, no matter what! */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
