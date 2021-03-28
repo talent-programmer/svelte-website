@@ -109,6 +109,17 @@
       <li><p class="h6">.h6 class</p></li>
     </ul>
     </section>
+    <section>
+      <h2>Buttons</h2>
+      <ul>
+        <li><a href="/" class="btn">btn</a></li>
+        <li><a href="/" class="btn-conversion">btn-conversion</a></li>
+        <li><a href="/" class="btn-primary">btn-primary</a></li>
+        <li><a href="/" class="btn-secondary">btn-secondary</a></li>
+        <li><a href="/" class="btn-tertiary">btn-tertiary</a></li>
+        <li><a href="/" class="btn-quaternary">btn-quaternary</a></li>
+      </ul>
+    </section>
   </article>
   <hr/>
   <header>
