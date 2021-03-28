@@ -64,6 +64,13 @@
   }
 
 }
+// layout for the page
+section {margin-bottom: 3rem; padding: 0 3vw;}
+:not(li) > h2:first-child {text-decoration: underline dashed 3px var(--brand-almost-ripe); text-align: center }
+h2 + h3, 
+ul + h3 {
+  text-decoration: underline dashed 3px var(--brand-almost-ripe);
+}
 
 </style>
 
