@@ -12,18 +12,18 @@
     justify-content: space-between;
     background: var(--off-white);
     padding: var(--x-small) var(--large) var(--medium);
-    border-radius: 1.6rem;
+    border-radius: 16px;
     box-shadow: var(--shadow);
     transition: all 0.2s;
     margin-bottom: var(--small);
-    width: 302px;
+    width: 304px;
 
     &:hover {
       box-shadow: var(--shadow-brand);
     }
 
     .h3 {
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.25rem;
     }
 
     &__duration {
@@ -42,10 +42,10 @@
       &::before {
         content: url("/tick.svg");
         position: absolute;
-        left: -3.5rem;
+        left: -2.188rem;
         display: inline-block;
-        height: 2.2rem;
-        width: 2.2rem;
+        height: 1.375rem;
+        width: 1.375rem;
       }
 
       &:not(:last-child) {
