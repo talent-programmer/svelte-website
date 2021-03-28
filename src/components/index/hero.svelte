@@ -84,8 +84,8 @@
       }
 
       img {
-        height: 3rem;
-        width: 3rem;
+        height: 30px;
+        width: 30px;
       }
     }
 

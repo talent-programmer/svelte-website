@@ -63,10 +63,10 @@
   .button {
     display: flex;
     align-items: center;
-    padding: var(--macro) 1.1rem;
+    padding: var(--macro) 0.75rem;
     justify-content: center;
     background: var(--white);
-    border-radius: 8px;
+    border-radius: 0.5em;
     color: var(--black);
     font-weight: 600;
 
@@ -74,7 +74,7 @@
       display: inline-block;
       height: 24px;
       width: 24px;
-      margin-right: 1rem;
+      margin-right: 0.625rem;
     }
   }
 </style>

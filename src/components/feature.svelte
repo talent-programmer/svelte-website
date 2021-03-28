@@ -41,8 +41,8 @@
       img {
         display: block;
         max-height: 500px;
-        border-radius: 2rem;
-        box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+        border-radius: 1.25rem;
+        box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.1);
       }
     }
 

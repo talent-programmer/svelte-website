@@ -32,15 +32,15 @@
 <style>
   nav {
     height: var(--header-height);
-    padding: 2rem var(--x-small);
+    padding: 1.25rem var(--x-small);
     color: var(--black);
 
     @media (max-width: 768px) {
-      padding: 2rem var(--micro);
+      padding: 1.25rem var(--micro);
     }
 
     @media (max-width: 375px) {
-      padding: 2rem var(--macro);
+      padding: 1.25rem var(--macro);
     }
   }
 </style>
