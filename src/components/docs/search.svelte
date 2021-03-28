@@ -24,10 +24,13 @@
   };
 </script>
 
-<style>
+<style lang="scss">
   input {
-    background: url("/mag-glass.svg") 10px center / 20px 20px no-repeat
-      rgb(255, 255, 255);
+    background: url("/mag-glass.svg") 10px center / 24px 24px no-repeat
+      var(--white);
+    box-shadow: var(--shadow);
+    height: var(--small);
+    font-size: var(--p-medium);
   }
 
   :global(.algolia-autocomplete) {
@@ -52,7 +55,7 @@
     src="https://cdn.jsdelivr.net/npm/docsearch.js@{docSearchJSVersion}/dist/cdn/docsearch.min.js"></script>
 </svelte:head>
 
-<div class="w-full">
+<div class="w-full mb-24">
   <label for={docSearchInputSelector} class="sr-only">Search</label>
   <div class="relative">
     <input
@@ -60,7 +63,7 @@
       type="search"
       placeholder="Search"
       id={docSearchInputSelector}
-      class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-white text-gray-600 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900 sm:text-sm"
+      class="block w-full pl-16 pr-3 py-4 border border-transparent rounded-3xl leading-5 bg-white text-gray-600 placeholder-gray-500 focus:outline-none focus:bg-white focus:border-white focus:ring-white focus:text-gray-900"
     />
   </div>
 </div>

@@ -10,17 +10,28 @@
 </script>
 
 <style>
+  .menu-item {
+    padding: 0 var(--xx-small);
+    font-size: var(--p-large);
+  }
+
+  .submenu {
+    font-size: var(--p-medium);
+    line-height: var(--x-small);
+  }
+
   .isActiveSection {
-    @apply bg-white shadow-2xl;
+    @apply bg-white;
+    @apply py-9;
+    border-radius: 1.6rem;
+    box-shadow: var(--shadow);
   }
 </style>
 
-<li class:isActiveSection class="px-8 rounded-4xl">
-  <MenuLink href={menuItem.path} class="leading-loose text-h6"
-    >{menuItem.title}</MenuLink
-  >
-  {#if menuItem.subMenu}
-    <ul class="ml-6">
+<li class:isActiveSection class="menu-item">
+  <MenuLink href={menuItem.path} class="text-h6">{menuItem.title}</MenuLink>
+  {#if menuItem.subMenu && isActiveSection}
+    <ul class="ml-6 mt-4 submenu">
       {#each menuItem.subMenu as sub}
         <li>
           <MenuLink href={sub.path}>{sub.title}</MenuLink>
