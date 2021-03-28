@@ -16,6 +16,7 @@
     month: "short",
     day: "numeric",
   });
+  console.log("blog layout");
 </script>
 
 <style lang="scss" global>
@@ -27,7 +28,7 @@
     description: excerpt,
     title,
     type: "article",
-    image: `https://www.gitpod.io/images/blog/${slug}/${image}`,
+    image: `images/blog/${slug}/${image}`,
   }}
 />
 

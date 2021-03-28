@@ -4,5 +4,5 @@ export type OpenGraph = {
   description: string;
   title: string;
   type: Type;
-  image: string;
+  image?: string;
 };
