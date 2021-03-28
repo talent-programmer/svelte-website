@@ -5,15 +5,15 @@
 
 <style lang="scss">
   img {
-    width: 9.5rem;
+    width: 5.9375rem;
   }
 
   .brand {
-    flex-basis: calc(14% - 2.2rem);
+    flex-basis: calc(14% - 1.375rem);
     display: flex;
     border: 2px solid transparent;
     justify-content: center;
-    margin: 1.2rem;
+    margin: 0.75rem;
 
     img {
       height: 100%;
@@ -25,12 +25,12 @@
     }
 
     .fcc {
-      filter: grayscale(100%) contrast(0%);
       -webkit-filter: grayscale(100%) contrast(0%);
+      filter: grayscale(100%) contrast(0%);
 
       @media (min-width: 841px) {
-        width: 13rem;
-        transform: translateX(-1rem);
+        width: 8.125rem;
+        transform: translateX(-0.625rem);
       }
     }
 

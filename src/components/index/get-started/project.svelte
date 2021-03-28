@@ -7,9 +7,9 @@
   .project {
     display: flex;
     justify-content: space-between;
-    padding: 1rem var(--micro);
+    padding: 0.625rem var(--micro);
     background: var(--off-white);
-    border-radius: 2rem;
+    border-radius: 1.25rem;
     transition: all 0.2s;
 
     @media (max-width: 454px) {
@@ -22,14 +22,14 @@
     }
 
     &__logo {
-      width: 3.6rem;
+      width: 2.25rem;
       margin-right: var(--micro);
       filter: grayscale(100%) opacity(0.5);
       -webkit-filter: grayscale(100%) opacity(0.5);
       transition: all 0.2s;
 
       @media (max-width: 454px) {
-        width: 2.5rem;
+        width: 25px;
         margin-right: var(--macro);
       }
     }

@@ -16,10 +16,10 @@
 
     img {
       display: block;
-      height: 5rem;
-      width: 5rem;
+      height: 50px;
+      width: 50px;
       border-radius: 50%;
-      margin-right: 1.2rem;
+      margin-right: 0.75rem;
     }
 
     @media (min-width: 769px) {

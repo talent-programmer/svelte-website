@@ -23,9 +23,6 @@
   .card {
     flex: 0 0 49%;
     text-align: center;
-    padding: var(--medium);
-    background: var(--white);
-    border-radius: 20px;
 
     @media (max-width: 1140px) {
       padding: var(--small) var(--x-small);

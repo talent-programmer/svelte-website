@@ -7,7 +7,7 @@
     .btn {
       display: flex;
       padding: var(--macro) var(--x-small);
-      border-radius: 1.2rem;
+      border-radius: 0.75rem;
       color: var(--white);
 
       &:not(:last-child) {
