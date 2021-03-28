@@ -1,0 +1,62 @@
+:root {
+  --font: "ABCDiatype", sans-serif;
+
+  --black: #12100c;
+  --dark-grey: #12100cb3;
+  /* --dark-grey: #565451; */
+  --light-grey: #999795;
+  --brand-almost-ripe: #ffb45b;
+  --brand-ripe: #ff8a00;
+  --brand-gradient: linear-gradient(137.41deg, #ffad33 14.37%, #ff8a00 91.32%);
+  --brand-light: #ffe4bc;
+  --salmon: #ffb0ae;
+  --divider: #dadada;
+  --sand-dark: #ece7e5;
+  --sand-light: #f3f1f0;
+  --off-white: #f9f9f9;
+  --white: #fff;
+
+  --h1: 5rem;
+  --h2: 3.375rem;
+  --h3: 3rem;
+  --h4: 2rem;
+  --h5: 1.75rem;
+  --h6: 1.25rem;
+  --p-large: 1.5rem;
+  --p-medium: 1.125rem;
+  --p-small: 1rem;
+  --btn-small: 0.875rem;
+  --fine-print: 0.75rem;
+
+  --header-height: 5rem;
+  --row-max-width: 83.75rem;
+  --xx-large: 10rem;
+  --x-large: 4.5rem;
+  --large: 4rem;
+  --medium: 3.5rem;
+  --small: 3rem;
+  --x-small: 2rem;
+  --xx-small: 1.5rem;
+  --micro: 1rem; /* should we invert micro and macro? */
+  --macro: 0.5rem;
+
+  --shadow: 0rem 1rem 2.4rem 0rem rgba(0, 0, 0, 0.08);
+
+  --border-light: 1px solid var(--sand-dark);
+
+  @media (max-width: 1140px) {
+    --h1: 3rem;
+    --h2: 2.5rem;
+    --h3: 2rem;
+    --h4: 1.5rem;
+    --h5: 1.25rem;
+    --h6: 1.123rem;
+    --p-large: 1.125rem;
+    --p-medium: 1rem;
+    --p-small: 0.875rem;
+    --btn-small: 0.75rem;
+    --fine-print: 0.75rem;
+
+    --small: 2.5rem;
+  }
+}
