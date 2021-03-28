@@ -26,7 +26,7 @@
 
 <style lang="scss">
   input {
-    background: url("/mag-glass.svg") 10px center / 24px 24px no-repeat
+    background: url("/svg/mag-glass.svg") 10px center / 24px 24px no-repeat
       var(--white);
     box-shadow: var(--shadow);
     height: var(--small);

@@ -4,17 +4,17 @@
     {
       href: "https://twitter.com/gitpod",
       alt: "Twitter",
-      icon: "twitter-brand.svg",
+      icon: "svg/brands/twitter.svg",
     },
     {
       href: "https://github.com/gitpod-io",
       alt: "GitHub",
-      icon: "github-brand.svg",
+      icon: "svg/brands/github.svg",
     },
     {
       href: "https://community.gitpod.io/",
       alt: "Discourse",
-      icon: "discourse-brand.svg",
+      icon: "svg/brands/discourse.svg",
     },
   ];
 </script>

@@ -121,16 +121,16 @@
         </div>
         <div class="hero__stars">
           <div class="hero__icons">
-            <img src="/bitbucket.svg" alt="Bitbucket" />
-            <img src="/github.svg" alt="GitHub" />
-            <img src="/gitlab.svg" alt="GitLab" />
+            <img src="/svg/bitbucket.svg" alt="Bitbucket logo" />
+            <img src="/svg/github.svg" alt="GitHub logo" />
+            <img src="/svg/gitlab.svg" alt="GitLab logo" />
           </div>
           <!-- <div>GitHub Stars</div> -->
         </div>
       </div>
     </div>
     <div class="hero__illustration">
-      <img src="/illustration.png" alt="Gitpod in a Nutshell" />
+      <img src="/images/illustration.png" alt="Gitpod in a Nutshell" />
     </div>
   </div>
 </div>
