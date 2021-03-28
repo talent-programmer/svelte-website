@@ -1,6 +1,6 @@
 <script>
-  import Screencast from "../components/screencasts/screencast.svelte";
-  import screencasts from "../contents/screencasts";
+  import Screencast from "../../components/screencasts/screencast.svelte";
+  import screencasts from "../../contents/screencasts";
 </script>
 
 <style type="scss">

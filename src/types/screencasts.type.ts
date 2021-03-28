@@ -6,6 +6,7 @@ type RelatedDocs = {
 export type Screencast = {
   description: string;
   duration: number;
+  nextScreencast?: number;
   relatedDocs: RelatedDocs[];
   tile: string;
   title: string;
