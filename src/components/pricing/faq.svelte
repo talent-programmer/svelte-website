@@ -1,6 +1,5 @@
 <script>
   export let title;
-  let shown = false;
 </script>
 
 <style lang="scss">
@@ -25,27 +24,29 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
 
       @media (max-width: 768px) {
         align-items: flex-start;
       }
     }
 
-    &__toggle {
-      flex: 0 0 2.4rem;
+    &__arrow {
+      flex: 0 0 1.5rem;
       display: block;
-      height: 2.4rem;
-      width: 2.4rem;
+      height: 1.5rem;
+      width: 1.5rem;
       outline: none;
       margin-left: var(--micro);
+      transition: all 0.2s;
 
       @media (max-width: 768px) {
-        margin-top: 3px;
+        margin-top: 0.188rem;
       }
-    }
-
-    &__arrow {
-      transition: all 0.2s;
     }
 
     &__text {
@@ -60,26 +61,18 @@
   .h5 {
     margin-bottom: 0;
   }
+
+  details[open] .faq__arrow {
+    transform: rotate(180deg);
+  }
 </style>
 
-<div class="faq">
-  <div class="faq__top">
+<details class="faq">
+  <summary class="faq__top">
     <h3 class="h5 faq__title">{title}</h3>
-    <button
-      on:click={() => {
-        shown = !shown;
-      }}
-      class="faq__toggle"
-    >
-      <img
-        class="faq__arrow"
-        src="/arrow.svg"
-        alt="Arrow"
-        style={`transform: ${shown ? "rotate(180deg)" : "rotate(0)"}`}
-      />
-    </button>
-  </div>
-  <div class="faq__text" style={`display: ${shown ? "block" : "none"}`}>
+    <img class="faq__arrow" src="/arrow.svg" alt="Arrow" />
+  </summary>
+  <div class="faq__text">
     <slot />
   </div>
-</div>
+</details>
