@@ -51,15 +51,15 @@
 </p>
 <div class="buttons">
   <a href="#" class="btn btn--dark">
-    <img src="/octocat-white.svg" alt="GitHub Octocat" />
+    <img src="/svg/brands/octocat-white.svg" alt="GitHub Octocat" />
     Link with GitHub
   </a>
   <a href="#" class="btn btn--bitbucket">
-    <img src="/bitbucket-white.svg" alt="Bitbucket" />
+    <img src="/svg/brands/bitbucket-white.svg" alt="Bitbucket" />
     Link with Bitbucket
   </a>
   <a href="#" class="btn btn--gitlab">
-    <img src="/gitlab-white.svg" alt="GitLab" />
+    <img src="/svg/brands/gitlab-white.svg" alt="GitLab" />
     Link with GitLab
   </a>
   <!-- <a href="#" class="link--light-grey">Third-party providers ↗</a> -->

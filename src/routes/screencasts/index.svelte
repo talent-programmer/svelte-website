@@ -1,7 +1,7 @@
 <script>
-  import Screencast from "../components/screencasts/screencast.svelte";
-  import OpenGraph from "../components/open-graph.svelte";
-  import screencasts from "../contents/screencasts";
+  import OpenGraph from "../../components/open-graph.svelte";
+  import Screencast from "../../components/screencasts/screencast.svelte";
+  import screencasts from "../../contents/screencasts";
 </script>
 
 <style type="scss">

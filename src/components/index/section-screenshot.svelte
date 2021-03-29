@@ -2,32 +2,17 @@
   import Section from "../section.svelte";
 
   const buttons = [
-    // {
-    //   icon: "safari.svg",
-    //   text: "Safari Extension",
-    //   href: "",
-    // },
     {
-      icon: "chrome.svg",
+      icon: "svg/browsers/chrome.svg",
       text: "Chrome Extension",
       href:
         "https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki",
     },
     {
-      icon: "firefox.svg",
+      icon: "svg/browsers/firefox.svg",
       text: "Firefox Extension",
       href: "https://addons.mozilla.org/firefox/addon/gitpod/",
     },
-    // {
-    //   icon: "windows.svg",
-    //   text: "Windows Client",
-    //   href: "",
-    // },
-    // {
-    //   icon: "apple.svg",
-    //   text: "MacOS Client",
-    //   href: "",
-    // },
   ];
 </script>
 
@@ -82,7 +67,7 @@
 <div class="row">
   <Section>
     <h2 class="h2">Remote-first. Secure by Design.</h2>
-    <img class="screenshot" src="/gitpod-screenshot.png" alt="Gitpod" />
+    <img class="screenshot" src="/images/gitpod-screenshot.png" alt="Gitpod" />
     <div class="content">
       <p class="text-large">
         You no longer need an over-powered laptop to code, Gitpod works just as

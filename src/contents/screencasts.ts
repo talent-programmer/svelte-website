@@ -1,7 +1,9 @@
 import type { Screencast } from "../types/screencasts.type";
 
+let id = 1;
 const screencasts: Screencast[] = [
   {
+    nextScreencast: id++,
     title: "Always Ready-To-Code",
     description:
       "How to get a full dev environment in your browser with the click of a button and be immediately ready-to-code.",
@@ -15,6 +17,7 @@ const screencasts: Screencast[] = [
     ],
   },
   {
+    nextScreencast: id++,
     title: "Personalize Your Workspace",
     description:
       "How to customize and configure Gitpod for your personal needs and those of your team.",
@@ -28,6 +31,7 @@ const screencasts: Screencast[] = [
     ],
   },
   {
+    nextScreencast: id++,
     title: "Fully Automate Your Dev Setup",
     description:
       "Understanding the automation benefits that arise from the concept of dev-environment-as-code.",
@@ -42,6 +46,7 @@ const screencasts: Screencast[] = [
     ],
   },
   {
+    nextScreencast: id++,
     title: "Continuously Prebuild Your Project",
     description:
       "How to make Gitpod load in a blink by prebuilding your project ahead-of-time, continuously.",
@@ -51,6 +56,7 @@ const screencasts: Screencast[] = [
     relatedDocs: [{ path: "/prebuilds/", title: "Prebuilt Workspaces" }],
   },
   {
+    nextScreencast: id++,
     title: "Fresh Dev Environments For Each New Task",
     description:
       "Discover ephemeral/disposable workspaces and start fresh for each new task with just a single click. Pure magic!",

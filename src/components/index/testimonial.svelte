@@ -1,3 +1,10 @@
+<script lang="ts">
+  import type { Testimonial } from "../../types/testimonial.type";
+  export let testimonial: Testimonial;
+
+  const { name, avatar, role, org, text, tweetId, twitterHandle } = testimonial;
+</script>
+
 <style lang="scss">
   .testimonial {
     width: 400px;
@@ -37,18 +44,12 @@
 </style>
 
 <div class="testimonial text-small">
-  <p>
-    12 lines of configuration gives me a 1-click development setup, installs
-    dependencies and starts the dev servers for 3 APIs and 1 frontend
-    application. It also ensures the Svelte extension is installed for all team
-    members.
-  </p>
-  <p>How? With @gitpod!</p>
+  <div>{@html text}</div>
   <div class="testimonial__author">
-    <img src="mike-nikles.jpg" alt="Mike Nikles" />
+    <img src={`/${avatar}`} alt={name} />
     <div>
-      <h3>Mike Nikles</h3>
-      <p>Software Architect @Google</p>
+      <h3 class="text-small">{name}</h3>
+      <p>{role} {@html org}</p>
     </div>
   </div>
 </div>

@@ -1,5 +1,5 @@
 <script>
-  import { features } from "../contents/index";
+  import { features, testimonials } from "../contents/index";
 
   import Features from "../components/features.svelte";
   import ChooseProject from "../components/index/choose-project.svelte";
@@ -22,5 +22,5 @@
 <ChooseProject />
 <Features {features} />
 <SectionScreenshot />
-<Testimonials />
+<Testimonials {testimonials} />
 <GetStarted />
