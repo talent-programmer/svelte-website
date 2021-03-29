@@ -11,7 +11,7 @@ title: Gitpod Self-Hosted 0.4.0
 
 We are excited to announce the new release of Gitpod Self-Hosted in version 0.4.0. Gitpod Self-Hosted allows everyone to set-up and run a service with the same features as gitpod.io in your cloud or corporate network.
 
-<h2 class="h3">How Does it Work?</h2>
+<h2>How Does it Work?</h2>
 
 Gitpod Self-Hosted runs on Kubernetes and is easily installed via "helm install". On gitpod.io you can find detailed documentation and some automation to install Gitpod on [vanilla Kubernetes](https://www.gitpod.io/docs/self-hosted/0.4.0/install/install-on-kubernetes/) or [on Google Cloud Platform](https://www.gitpod.io/docs/self-hosted/0.4.0/install/install-on-gcp-script/). For the next release, we plan to add support for AWS, Azure, and OpenShift.
 
@@ -24,7 +24,7 @@ Operating Gitpod in production on gitpod.io has enabled us to battle-harden this
 This release ships a plethora of bugfixes and improvements, particularly in the area of GitLab integration.
 There is one major feature that I want to show in more detail since you can't try this on gitpod.io:
 
-<h2 class="h3">New Admin UI</h2>
+<h2>New Admin UI</h2>
 
 This release ships with a new web UI for administrative tasks. The UI is particularly handy when providing support fo users.
 It allows for easy listing and searching of users and worksapces.
@@ -34,7 +34,7 @@ When selecting a user, the UI will show the user's details and workspaces, as yo
 
 To try the new admin interface in Gitpod Self-Hosted, you'll need to assign the "admin" privilege to your user and open /admin in your browser.
 
-<h2 class="h3">Getting Started</h2>
+<h2>Getting Started</h2>
 
 The fastest way to get started is by installing Gitpod Self-Hosted [on Google Cloud Platform](https://www.gitpod.io/docs/self-hosted/0.4.0/install/install-on-gcp-script/). There is also more in-depth documentation available on how to install Gitpod on [vanilla Kubernetes](https://www.gitpod.io/docs/self-hosted/0.4.0/install/install-on-kubernetes/).
 

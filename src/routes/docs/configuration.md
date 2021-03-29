@@ -64,7 +64,7 @@ Once the new configuration is merged into the project, you should install (or re
 
 Read more on [Prebuilt Workspaces here](/docs/prebuilds/).
 
-<h2 class="h3">Additional Information</h2>
+<h2>Additional Information</h2>
 
 - [Exposing Ports](/docs/config-ports/)
 - [VS Code Extensions](/docs/vscode-extensions/)
