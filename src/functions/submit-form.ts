@@ -75,7 +75,7 @@ exports.handler = function (event: APIGatewayEvent, _: Context, callback: any) {
     .then((response) =>
       callback(null, {
         statusCode: response.statusCode,
-        body: email + " added",
+        body: JSON.stringify(email) + " added",
       })
     )
     .catch((err) => {
