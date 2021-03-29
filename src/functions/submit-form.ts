@@ -78,5 +78,8 @@ exports.handler = function (event: APIGatewayEvent, _: Context, callback: any) {
         body: email + " added",
       })
     )
-    .catch((err) => callback(err, null));
+    .catch((err) => {
+      console.error(err);
+      callback(err, null);
+    });
 };
