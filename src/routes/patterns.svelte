@@ -102,6 +102,8 @@
      </ul>
      <h3>class Headings</h3>
      <ul>
+
+      <li><p class="homeh1">.homeh1 class</p></li>
       <li><p class="h1">.h1 class</p></li>
       <li><p class="h2">.h2 class</p></li>
       <li><p class="h3">.h3 class</p></li>
