@@ -1,7 +1,10 @@
-<script>
+<script lang="ts">
   import Section from "../section.svelte";
   import Brands from "./brands.svelte";
   import Testimonial from "./testimonial.svelte";
+  import type { Testimonial as TestimonialType } from "../../types/testimonial.type";
+
+  export let testimonials: TestimonialType[];
 </script>
 
 <style lang="scss">
@@ -23,9 +26,9 @@
   <Section>
     <h2 class="h2">Widespread already.</h2>
     <div class="testimonials">
-      <Testimonial />
-      <Testimonial />
-      <Testimonial />
+      {#each testimonials as testimonial}
+        <Testimonial {testimonial} />
+      {/each}
     </div>
     <Brands />
   </Section>
