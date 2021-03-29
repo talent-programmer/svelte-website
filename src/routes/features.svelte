@@ -65,13 +65,13 @@ section h3:first-child + p {
   </div>
   <div>
     <!-- TODO: Insert the terminal output animation from the homepage -->
-    <img src="http://placekitten.com/400/400" alt="" role="presentation">
+    <img src="//placekitten.com/400/400" alt="" role="presentation">
   </div>
 </article>
 
 <article>
   <div>
-    <img src="http://placekitten.com/400/400" alt="" role="presentation">
+    <img src="//placekitten.com/400/400" alt="" role="presentation">
     <!-- TODO: Insert "Preparing workspace" images -->
   </div>
   <div>
@@ -87,7 +87,7 @@ section h3:first-child + p {
 
 <section class="cards double">
   <div class="card">
-    <img src="http://placekitten.com/350/150" alt="" role="presentation">
+    <img src="//placekitten.com/350/150" alt="" role="presentation">
     <!-- TODO: Insert emojis -->
     <h2 class="h5">Collaboration with Workspace Sharing</h2>
     <p>
@@ -98,7 +98,7 @@ section h3:first-child + p {
   <div class="card">
     <!-- TODO: Insert terminal image -->
 
-    <img src="http://placekitten.com/350/150" alt="" role="presentation">
+    <img src="//placekitten.com/350/150" alt="" role="presentation">
     <h2 class="h5">Full linux machine <span>(incl sudo/docker)</span></h2>
     <p>
       Instantly start a container in the cloud based on your Docker image.
@@ -110,7 +110,7 @@ section h3:first-child + p {
 <section class="cards triple">
   <div class="card">
     <!-- TODO: Insert icon -->
-    <img src="http://placekitten.com/250/100" role="presentation"  alt="">
+    <img src="//placekitten.com/250/100" role="presentation"  alt="">
     <h3 class="h6">Customize your workspace</h3>
     <p>
       Tweak your environment to suit your needs. From themes to extensions you
@@ -120,7 +120,7 @@ section h3:first-child + p {
   </div>
   <div class="card">
     <!-- TODO: Insert icon -->
-    <img src="http://placekitten.com/250/100" alt="" role="presentation">
+    <img src="//placekitten.com/250/100" alt="" role="presentation">
     <h3 class="h6">GitLab, GitHub, and Bitbucket Integration</h3>
     <p>
       Start your workflow from your Git hosting platform and let Gitpod beam you
@@ -130,7 +130,7 @@ section h3:first-child + p {
   </div>
   <div class="card">
     <!-- TODO: Insert icon -->
-    <img src="http://placekitten.com/250/100" role="presentation" alt="">
+    <img src="//placekitten.com/250/100" role="presentation" alt="">
     <h3 class="h6">Code Reviews Within the IDE</h3>
     <p>
       Open pull requests in Gitpod to run, navigate, and review the code. Reply
