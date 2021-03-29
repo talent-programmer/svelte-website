@@ -25,4 +25,9 @@
   <meta property="og:title" content={title} />
   <meta property="og:type" content={type} />
   <meta property="og:url" content={url} />
+
+  <!-- https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@gitpod" />
+  <meta name="twitter:creator" content="@gitpod" />
 </svelte:head>
