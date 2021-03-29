@@ -1,3 +1,4 @@
+
 <style lang="scss">
 .halfimages article,
 .cards {
@@ -43,8 +44,21 @@ section h3:first-child + p {
 }
 </style>
 
-<header>
-  <h1 class="h3">Features</h1>
+
+<script>
+  import OpenGraph from "../components/open-graph.svelte";
+</script>
+
+<OpenGraph
+  data={{
+    description:
+      "Learn about Gitpod's collaboration tools, workspace snapshots, supported programming languages, and much more.",
+    title: "Features",
+    type: "website",
+  }}
+/>
+<h1 class="h3">Features</h1>
+
 <p>
   Gitpod will always have a free-to-use option. For those looking for a little
   more we have a few powerful solutions.

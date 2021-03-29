@@ -483,6 +483,6 @@
   <footer>
   <hr title="Information about this document"/>
   <p>This <code>footer</code> starts with an <code>hr</code>, followed by two <code>p</code>s. It is not the main footer, but rather a footer within the main area of the document.</p>
-  <p>Last update: <time>2021-03-26</time>.</p>
+  <p>Last update: <time>2021-03-29</time>.</p>
   </footer>
   

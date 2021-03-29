@@ -4,6 +4,7 @@
     EducationPricing,
   } from "../types/education.type";
   import Feature from "../components/education/feature.svelte";
+  import OpenGraph from "../components/open-graph.svelte";
 
   const features: EducationFeature[] = [
     {
@@ -111,28 +112,59 @@
   ];
 </script>
 
-<h1>Focus on teaching code, not tedious setups!</h1>
-<p>
-  Gitpod simplifies the onboarding process, makes coding accessible from any
-  device, and provides a productive learning environment.
-</p>
-<button>Choose an option</button>
-<h2>For Schools, Universities, and Coding Bootcamps</h2>
+<style type="scss">
+  header {
+    text-align: center;
+    margin: 0 auto 5em;
+    max-width: 600px;
+  }
+  h2 {
+    text-align: center;
+  }
+</style>
 
-{#each features as feature}
-  <Feature {feature} />
-{/each}
+<OpenGraph
+  data={{
+    description:
+      "Gitpod simplifies the onboarding process, makes coding accessible from anywhere, and provides a productive learning environment.",
+    title: "Education",
+    type: "website",
+  }}
+/>
+<header>
+  <h1 class="h3">Focus on teaching code, not tedious setups!</h1>
+  <p>
+    Gitpod simplifies the onboarding process, makes coding accessible from any
+    device, and provides a productive learning environment.
+  </p>
+  <p>
+    <a href="" class="btn btn--brand">Choose an option</a
+    ><!-- where does this go? -->
+  </p>
+</header>
 
-<h2>Education pricing</h2>
-<p>
-  You have the choice to either host Gitpod yourself or to use our cloud
-  infrastructure.
-</p>
-<div>
-  <!-- TODO: Pricing table. What's the best approach to support the hover effect per row and style individual colums as cards? -->
-</div>
+<section class="features">
+  <h2>For Schools, Universities, and Coding Bootcamps</h2>
 
-<div>
-  <p>Explore Gitpod</p>
-  <p>Automated and ephemeral dev environments in the cloud.</p>
-</div>
+  {#each features as feature}
+    <Feature {feature} />
+  {/each}
+</section>
+
+<section>
+  <h2>Education pricing</h2>
+  <p>
+    You have the choice to either host Gitpod yourself or to use our cloud
+    infrastructure.
+  </p>
+  <div>
+    <!-- TODO: Pricing table. What's the best approach to support the hover effect per row and style individual colums as cards? -->
+  </div>
+</section>
+
+<section>
+  <div class="subhero">
+    <p>Explore Gitpod</p>
+    <p>Automated and ephemeral dev environments in the cloud.</p>
+  </div>
+</section>

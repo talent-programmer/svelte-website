@@ -47,7 +47,9 @@
 
 <nav class="nav text-small">
   <div class="flex justify-between">
-    <LogoWrapper />
+    <a href="/" aria-label="Gitpod">
+      <LogoWrapper />
+    </a>
     <div class="hidden sm:flex sm:justify-between sm:items-center">
       <NavItems>
         {#each navItems as { href, label }}
