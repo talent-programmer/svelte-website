@@ -78,8 +78,12 @@
         <a href="/features" class="btn btn--normal btn--brand">See Features</a>
       </div>
       <div class="explore__illustration">
-        <img src="/explore-illustration.png" alt="Gitpod in a Nutshell" />
-        <img src="/illustration.png" class="small" alt="Gitpod in a Nutshell" />
+        <img src="/images/illustration.png" alt="Gitpod in a Nutshell" />
+        <img
+          src="/images/illustration-small.png"
+          class="small"
+          alt="Gitpod in a Nutshell"
+        />
       </div>
     </div>
   </Section>
