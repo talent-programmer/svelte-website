@@ -2,7 +2,10 @@
   import menuState from "./state";
 </script>
 
-<button on:click={() => ($menuState = !$menuState)}>
+<button
+  on:click={() => ($menuState = !$menuState)}
+  aria-label="Show / hiide nav items"
+>
   <svg
     width="50"
     height="26"
