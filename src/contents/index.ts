@@ -185,7 +185,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     name: "Michael Friedrich",
-    avatar: "michael.jpg",
+    avatar: "michael-friedrich.jpg",
     org: `<a href="https://twitter.com/gitlab" target="_blank">
         @GitLab
       </a>`,
@@ -242,7 +242,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     name: "Mrugesh Mohapatra",
-    avatar: "mrugesh.jpg",
+    avatar: "mrugesh-mohapatra.jpg",
     org: `
       <a href="https://twitter.com/freeCodeCamp" target="_blank">
         @freeCodeCamp
@@ -287,7 +287,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     name: "Jonathan Lister Parsons",
-    avatar: "jayfresh.jpg",
+    avatar: "jonathan-lister-parsons.jpg",
     org: `
       <a href="https://twitter.com/pensionbee" target="_blank">
         @PensionBee
@@ -309,7 +309,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     name: "Alejandro",
-    avatar: "alejandro.jpeg",
+    avatar: "alejandro-sanchez.jpeg",
     org: `
       <a href="https://twitter.com/4GeeksAcademy" target="_blank">
         @4GeeksAcademy
@@ -331,7 +331,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     name: "ROKU",
-    avatar: "roku.jpg",
+    avatar: "roman-kuba.jpg",
     org: `
       <a href="https://twitter.com/gitlab" target="_blank">
         @GitLab
@@ -382,7 +382,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     name: "Marcel van Remmerden",
-    avatar: "marcel.jpg",
+    avatar: "marcel-van-remmerden.jpg",
     org: `
       <a href="https://twitter.com/GitLab" target="_blank">
         @GitLab
@@ -402,7 +402,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     name: "Brendan O’Leary",
-    avatar: "brenden-o-leary.jpg",
+    avatar: "brendan-o-leary.jpg",
     org: `
       <a href="https://twitter.com/GitLab" target="_blank">
         @GitLab
@@ -474,7 +474,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     name: "Yo",
-    avatar: "yo.jpg",
+    avatar: "yogi.jpg",
     org: `
       <a href="https://twitter.com/Taskord" target="_blank">
         @Taskord

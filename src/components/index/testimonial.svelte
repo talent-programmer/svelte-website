@@ -7,44 +7,54 @@
 
 <style lang="scss">
   .testimonial {
-    flex: 0 0 23rem;
-    padding: 1.5rem;
-  }
-  h3 {
-    margin-bottom: 0;
-  }
-  p {
-    margin-bottom: var(--xx-small);
-  }
- 
-  .testimonial__author {
-    display: flex;
-    margin-top: var(--micro);
-    gap: 0.75rem;
-  }
-  img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-  }
-  @media (min-width: 769px) {
-    .testimonial:not(:last-child) {
+    width: 400px;
+    padding: var(--x-small);
+    background: var(--white);
+    border-radius: 16px;
+
+    &__author {
+      display: flex;
+      margin-top: var(--micro);
+    }
+
+    img {
+      display: block;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin-right: 0.75rem;
+    }
+
+    &:not(:last-child) {
       margin-right: var(--xx-small);
     }
-  }
-  @media (max-width: 768px) {
-    .testimonial:not(:last-child) {
-      margin-bottom: var(--xx-small);
+
+    @media (max-width: 768px) {
+      width: 320px;
+      padding: var(--micro) var(--xx-small);
+
+      &:not(:last-child) {
+        margin-bottom: var(--xx-small);
+      }
     }
+
+    & :global(a) {
+      color: #00a3ff;
+      font-weight: 600;
+    }
+  }
+
+  h3.text-small {
+    margin-bottom: 0;
   }
   
 </style>
 
 <div class="testimonial card">
   <!-- TODO: Nisar, this breaks "npm run export". I need to look into it when you open your PR to finish the testimonial work. -->
-  <div class="quote"><!--{@html text}--></div>
+  <div>{@html text}</div>
   <div class="testimonial__author">
-    <img src={`/${avatar}`} alt={name} />
+    <img src={`/images/avatars/${avatar}`} alt={name} />
     <div>
       <h3 class="text-small">{name}</h3>
       <p>{role} {@html org}</p>

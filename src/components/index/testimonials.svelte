@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Carousel from "@beyonk/svelte-carousel";
   import Section from "../section.svelte";
   import Brands from "./brands.svelte";
   import Testimonial from "./testimonial.svelte";
@@ -11,24 +12,16 @@
   h1 {
     text-align: center;
   }
-
-  .testimonials {
-    display: flex;
-    @media (max-width: 768px) {
-      flex-flow: row wrap;
-      align-items: center;
-    }
-  }
 </style>
 
 <div class="row">
   <Section>
-    <h1>Widespread already.</h1>
-    <div class="testimonials">
+    <h2 class="h2">Widespread already.</h2>
+    <Carousel dots={false} controls={false}>
       {#each testimonials as testimonial}
         <Testimonial {testimonial} />
       {/each}
-    </div>
+    </Carousel>
     <Brands />
   </Section>
 </div>
