@@ -64,6 +64,13 @@
   }
 
 }
+// layout for the page (we shouldn't have any, but the titles of sections needed to be distinct from unstyled headings)
+section {margin-bottom: 3rem; padding: 0 3vw;}
+:not(li) > h2:first-child {text-decoration: underline dashed 3px var(--brand-almost-ripe); text-align: center }
+h2 + h3, 
+ul + h3 {
+  text-decoration: underline dashed 3px var(--brand-almost-ripe);
+}
 
 </style>
 
@@ -108,6 +115,17 @@
       <li><p class="h5">.h5 class</p></li>
       <li><p class="h6">.h6 class</p></li>
     </ul>
+    </section>
+    <section>
+      <h2>Buttons</h2>
+      <ul>
+        <li><a href="/" class="btn">class: btn</a></li>
+        <li><a href="/" class="btn-conversion">btn-conversion</a></li>
+        <li><a href="/" class="btn-primary">btn-primary</a></li>
+        <li><a href="/" class="btn-secondary">btn-secondary</a></li>
+        <li><a href="/" class="btn-tertiary">btn-tertiary</a></li>
+        <li><a href="/" class="btn-quaternary">btn-quaternary</a></li>
+      </ul>
     </section>
   </article>
   <hr/>
