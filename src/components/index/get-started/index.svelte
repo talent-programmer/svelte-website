@@ -5,7 +5,7 @@
 </script>
 
 <style lang="scss">
-  .h2 {
+  h1 {
     text-align: center;
   }
 
@@ -38,7 +38,7 @@
 
 <div class="row">
   <Section id="get-started">
-    <h2 class="h2">Get started now</h2>
+    <h1>Get started now</h1>
     <div class="wrapper">
       <div class="card">
         <LinkGitRepository />

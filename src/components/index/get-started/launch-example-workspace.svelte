@@ -13,7 +13,7 @@
   }
 </style>
 
-<h3 class="h4">Launch an example workspace</h3>
+<h3>Launch an example workspace</h3>
 <p class="text-large">Dive into one of our example workspaces</p>
 <div class="projects">
   {#each projects as project}

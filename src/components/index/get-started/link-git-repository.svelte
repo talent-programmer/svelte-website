@@ -9,11 +9,15 @@
       padding: var(--macro) var(--x-small);
       border-radius: 0.75rem;
       color: var(--white);
+      place-items: center;
 
       &:not(:last-child) {
         margin-bottom: var(--micro);
       }
 
+      &--github {
+        background: #000000;
+      }
       &--bitbucket {
         background: #2684ff;
       }
@@ -45,12 +49,12 @@
   }
 </style>
 
-<h3 class="h4">Link Git repository</h3>
+<h3>Link Git repository</h3>
 <p class="text-large">
   1-click-link to you chosen provider to jump into your own projects
 </p>
 <div class="buttons">
-  <a href="#" class="btn btn--dark">
+  <a href="#" class="btn btn--github">
     <img src="/svg/brands/octocat-white.svg" alt="GitHub Octocat" />
     Link with GitHub
   </a>

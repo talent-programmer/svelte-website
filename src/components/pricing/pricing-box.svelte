@@ -22,8 +22,9 @@
       box-shadow: var(--shadow-brand);
     }
 
-    .h3 {
+    .h1 {
       margin-bottom: 0.25rem;
+      font-weight: bold;
     }
 
     &__duration {
@@ -62,13 +63,13 @@
 
 <div class="box">
   <div>
-    <h2 class="h5">{title}</h2>
-    <div class="h3 bold">{price}</div>
+    <h2 class="h4">{title}</h2>
+    <div class="h1">{price}</div>
     <div class="box__duration">
       {#if duration}
         {duration}
       {:else}
-        <span>&nbsp</span>
+        <span>&nbsp;</span>
       {/if}
     </div>
     <ul class="box__list">
@@ -77,5 +78,5 @@
       {/each}
     </ul>
   </div>
-  <a href={btnHref} class="btn btn--normal btn--sand-dark">{btnText}</a>
+  <a href={btnHref} class="btn">{btnText}</a>
 </div>

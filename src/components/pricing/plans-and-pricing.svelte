@@ -12,7 +12,7 @@
 
 <div class="row">
   <Section>
-    <h1 class="h2">Plans and pricing</h1>
+    <h1>Plans and pricing</h1>
     <PricingBoxes {pricingPlans} />
   </Section>
 </div>

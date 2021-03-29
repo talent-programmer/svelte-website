@@ -7,7 +7,7 @@
     width: 95%;
   }
 
-  h2 {
+  h1 {
     text-align: center;
 
     @media (max-width: 1140px) {
@@ -28,7 +28,7 @@
 
 <Section>
   <div class="row">
-    <h2 class="h2">
+    <h1>
       Choose project,
       <br />
       <strike>
@@ -37,6 +37,6 @@
       </strike>
       <br />
       start coding.
-    </h2>
+    </h1>
   </div>
 </Section>

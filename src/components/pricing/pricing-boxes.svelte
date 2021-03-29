@@ -9,11 +9,12 @@
   div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
   }
 </style>
 
-<div>
+<div class="cards">
   {#each pricingPlans as pricing}
     <PricingBox {pricing} />
   {/each}

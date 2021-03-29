@@ -14,7 +14,7 @@ html {
 body {
   font-family: var(--font);
   font-size: var(--p-medium);
-  color: var(--dark-grey);
+  color: var(--black);
   background: var(--sand-light);
   overflow-x: hidden;
   min-height: 100vh;
@@ -36,8 +36,8 @@ dd {
 }
 
 /* Remove margin, padding and list styles on ul, ol elements with a class attribute (leave content lists alone. may need to revisit this */
-ul[class],
-ol[class] {
+ul:where([class]),
+ol:where([class]) {
   margin: 0;
   padding: 0;
   list-style: none;

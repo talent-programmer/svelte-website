@@ -8,15 +8,14 @@
 </script>
 
 <style lang="scss">
-  h2 {
+  h1 {
     text-align: center;
   }
 
   .testimonials {
     display: flex;
-
     @media (max-width: 768px) {
-      flex-direction: column;
+      flex-flow: row wrap;
       align-items: center;
     }
   }
@@ -24,7 +23,7 @@
 
 <div class="row">
   <Section>
-    <h2 class="h2">Widespread already.</h2>
+    <h1>Widespread already.</h1>
     <div class="testimonials">
       {#each testimonials as testimonial}
         <Testimonial {testimonial} />

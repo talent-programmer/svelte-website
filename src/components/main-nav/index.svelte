@@ -58,7 +58,7 @@
       </NavItems>
     </div>
     <div class="hidden sm:flex sm:justify-between sm:items-center">
-      <a href="https://gitpod.io/login/" class="btn btn--small btn--dark"
+      <a href="https://gitpod.io/login/" class="btn-tertiary"
         >Login</a
       >
     </div>
