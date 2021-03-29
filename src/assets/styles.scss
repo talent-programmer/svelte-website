@@ -12,18 +12,4 @@
 /* ---------------------------- */
 
 @import "scss/_text_blobs.scss";
-/* The below styles override the default Layout of the carousel slider */
-
-.slides {
-  & > div {
-    display: flex;
-    & > * {
-      float: none !important;
-      width: auto !important;
-
-      &:not(:last-child) {
-        margin-right: var(--xx-small);
-      }
-    }
-  }
-}
+@import "scss/_index.scss";
