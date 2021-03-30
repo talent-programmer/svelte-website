@@ -1,4 +1,5 @@
-.text-blob { // for text heavy content such as TOS
+.text-blob {
+  /* for text heavy content such as TOS */
   margin-top: 5rem;
   width: 50rem;
   max-width: 98vw;
@@ -9,30 +10,35 @@
   --h4: 1.75rem;
   --h5: 1.25rem;
   line-height: 1.75;
-   p, li {
-     margin-bottom: 1rem;
-   }
-   ol.toc > li::marker {
-     font-size: var(--h3);
-     font-weight: bold;
-     color: inherit;
-   }
-   ol.toc {
-     ul, ol {
-       margin-left: 2rem;
-     }
-   }
-   [type] ::marker {
+  p,
+  li {
+    margin-bottom: 1rem;
+  }
+  ol.toc > li::marker {
+    font-size: var(--h3);
+    font-weight: bold;
+    color: inherit;
+  }
+  ol.toc {
+    ul,
+    ol {
+      margin-left: 2rem;
+    }
+  }
+  [type] ::marker {
     color: var(--brand-ripe);
   }
   ul {
-    list-style: '-' outside;
+    list-style: "-" outside;
   }
-   h2, h3, h4, h5 {
-   margin: 1em 0;
-   }
-   a {
-     text-decoration: underline;
-     font-weight: bold;
-   }
- }
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 1em 0;
+  }
+  a {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
