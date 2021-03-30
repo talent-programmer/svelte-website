@@ -17,7 +17,7 @@
 </script>
 
 <style lang="scss">
-  h2 {
+  h1 {
     text-align: center;
   }
 
@@ -38,6 +38,7 @@
 
     p {
       margin: var(--small) 0;
+      color: var(--dark-grey);
     }
   }
 
@@ -66,7 +67,7 @@
 
 <div class="row">
   <Section>
-    <h2 class="h2">Remote-first. Secure by Design.</h2>
+    <h1>Remote-first. Secure by Design.</h1>
     <img class="screenshot" src="/images/gitpod-screenshot.png" alt="Gitpod" />
     <div class="content">
       <p class="text-large">

@@ -15,7 +15,7 @@
 </style>
 
 <div class="card">
-  <h3 class="h5">{feature.title}</h3>
+  <h3 class="h4">{feature.title}</h3>
   <p>{@html feature.description}</p>
 </div>
 

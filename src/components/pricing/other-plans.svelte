@@ -3,7 +3,7 @@
 </script>
 
 <style lang="scss">
-  .h2 {
+  h1 {
     text-align: center;
     text-transform: capitalize;
   }
@@ -39,18 +39,18 @@
 </style>
 
 <div class="row">
-  <h2 class="h2">Open source, self hosting, and Students</h2>
+  <h1>Open source, self hosting, and Students</h1>
   <div class="plans">
     {#each otherPlans as p}
       <div class="plan divider">
         <div class="plan__header">
-          <h3 class="h5">{p.title}</h3>
+          <h3 class="h4">{p.title}</h3>
         </div>
         <div class="plan__body">
           {#each p.paragraphs as para}
             <p>{@html para}</p>
           {/each}
-          <a href={p.btnHref} class="btn btn--normal btn--sand-dark"
+          <a href={p.btnHref} class="btn"
             >{p.btnText}</a
           >
         </div>

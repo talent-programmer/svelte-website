@@ -18,7 +18,7 @@
 
     &__left {
       display: flex;
-      align-items: center;
+      place-items: center;
     }
 
     &__logo {
@@ -31,14 +31,6 @@
       @media (max-width: 454px) {
         width: 25px;
         margin-right: var(--macro);
-      }
-    }
-
-    .btn {
-      opacity: 0;
-
-      @media (max-width: 427px) {
-        display: none;
       }
     }
 
@@ -55,21 +47,24 @@
         -webkit-filter: grayscale(0) opacity(1);
       }
 
-      .btn {
+      .btn-tertiary  {
         opacity: 1;
       }
     }
   }
-
-  .h6 {
-    color: inherit;
-  }
+  .btn-tertiary {
+      opacity: 0;
+      font-weight: normal;
+      @media (max-width: 427px) {
+        display: none;
+      }
+    }
 </style>
 
 <a href={`https://gitpod.io#${githubUrl}`} target="_blank" class="project">
   <div class="project__left">
     <img src={`/${logo}`} {alt} class="project__logo" />
-    <h4 class="h6">{title}</h4>
+    <h5>{title}</h5>
   </div>
-  <span class="btn btn--small btn--dark">Launch workspace</span>
+  <span class="btn-tertiary">Launch workspace</span>
 </a>
