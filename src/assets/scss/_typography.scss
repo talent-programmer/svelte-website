@@ -11,14 +11,13 @@ h6 {
   font-weight: 600; /* this is default. it's removed in TW. Should we just remove it from the TW reset? */
 }
 
-h1,
-.h1 {
+.homeh1 {
   font-size: var(--h1);
   line-height: 110%;
 }
 
-h2,
-.h2 {
+h1,
+.h1 {
   margin-bottom: var(--small);
   font-size: var(--h2);
   line-height: 118.5%;
@@ -28,29 +27,29 @@ h2,
   }
 }
 
-h3,
-.h3 {
+h2,
+.h2 {
   margin-bottom: var(--macro);
   font-size: var(--h3);
   line-height: 133.33%;
 }
 
-h4,
-.h4 {
+h3,
+.h3 {
   margin-bottom: var(--macro);
   font-size: var(--h4);
   line-height: 125%;
 }
 
-h5,
-.h5 {
+h4,
+.h4 {
   font-size: var(--h5);
   margin-bottom: var(--macro);
   line-height: 143%;
 }
 
-h6,
-.h6 {
+h5,
+.h5 {
   font-size: var(--h6);
   line-height: 120%;
 }

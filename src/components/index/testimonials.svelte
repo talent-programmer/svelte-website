@@ -9,7 +9,7 @@
 </script>
 
 <style lang="scss">
-  h2 {
+  h1 {
     text-align: center;
   }
 </style>

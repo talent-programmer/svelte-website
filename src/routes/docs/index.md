@@ -2,7 +2,7 @@
 
 [Gitpod](https://www.gitpod.io) is an open source platform for automated and **ready-to-code development environments** that blends into your existing workflow. It enables developers to describe their dev environment as code and **start instant and fresh development environments for each new task** directly from your browser.
 
-<h2 class="h3">Gitpod does to Dev Environments what Docker did to Servers 🐳</h2>
+<h2>Gitpod does to Dev Environments what Docker did to Servers 🐳</h2>
 
 Today we are emotionally attached (for better or worse) to our dev environments, give them names & massage them over time. They are pets - similar to servers before docker took advantage of `namespaces` and `cgroups` in Linux and turned these nice puppies into cattle.
 
@@ -12,7 +12,7 @@ This is what is at the heart of Gitpod: **an open platform that removes all fric
 
 `youtube: d6D-OUPnJeg`
 
-<h2 class="h3">Gitpod Concepts</h2>
+<h2>Gitpod Concepts</h2>
 
 Gitpod seamlessly integrates in your workflow and works with all major git hosting platforms including GitHub, GitLab and Bitbucket. It understands the context you are in and adjusts your dev environment accordingly. For example, if you create a Gitpod workspace from a Pull or Merge Request, Gitpod will open a fully-initialized dev environment in code-review mode.
 
@@ -25,7 +25,7 @@ At its core Gitpod relies on a **client-server architecture** where the client c
 
 Server-side Gitpod is a Kubernetes application that understands the context from GitLab, GitHub and Bitbucket and spins up containerized dev environments. Under the hood is a **customizable Linux container**, which we call your _workspace_.
 
-<h3 class="h4">🗳 Workspace</h3>
+<h3>🗳 Workspace</h3>
 
 A workspace comprises your whole development environment and gives you similar capabilities to a Linux machine. Compared to the latter it is however **pre-configured and optimized for your individual development workflow**. Each workspace includes:
 
@@ -37,7 +37,7 @@ A workspace comprises your whole development environment and gives you similar c
 
 \*_Jetbrain's IDEs, Jupyter Notebook, Jupyter Labs are already available in [private beta](https://www.gitpod.io/contact)._
 
-<h3 class="h4">🏗 Dev-environments-as-code</h3>
+<h3>🏗 Dev-environments-as-code</h3>
 
 Spinning up dev environments is easily repeatable and reproducible, because Gitpod applies lessons learned from infrastructure-as-code allowing you to **automate, version-control and share dev environments across your team**. We call this [dev-environments-as-code](https://www.gitpod.io/blog/dev-env-as-code/).
 
@@ -61,7 +61,7 @@ Only with [prebuilds enabled](https://www.gitpod.io/docs/prebuilds/#enable-prebu
 
 More on [prebuilds](https://www.gitpod.io/docs/prebuilds/).
 
-<h2 class="h3">Next Steps</h2>
+<h2>Next Steps</h2>
 
 With Gitpod you start treating your dev environments as something ephemeral: you start them, you code, you push your code, and you forget about them. For your next task, you'll use a fresh dev environment.
 

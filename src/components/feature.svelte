@@ -7,6 +7,9 @@
 </script>
 
 <style lang="scss">
+  p {
+    color: var(--dark-grey);
+  }
   .feature {
     display: flex;
     justify-content: space-between;
@@ -65,18 +68,16 @@
 <div class="row">
   <Section>
     <div class="feature">
-      <div class="feature__text text-large">
-        <div>
-          <h2 class="h5">{title}</h2>
+      <div class="feature__text">
+        <div class="text-large">
+          <h2 class="h3">{title}</h2>
           <p>{paragraph}</p>
         </div>
         <div class="feature__buttons">
-          <a href={moreButton.href} class="btn btn--small btn--almost-ripe">
+          <a href={moreButton.href} class="btn-primary">
             {moreButton.text}
           </a>
-          <a href={documentationLink} class="btn btn--small btn--salmon">
-            Documentation
-          </a>
+          <a href={documentationLink} class="btn-secondary"> Documentation </a>
         </div>
       </div>
       <div class="feature__preview">

@@ -103,7 +103,7 @@
 <div class="row">
   <div class="hero">
     <div class="hero__text">
-      <h1 class="h1">Ready When <br /> You Are.</h1>
+      <h1 class="homeh1">Ready When <br /> You Are.</h1>
       <p class="hero__intro-text text-large">
         Spin up fresh, automated dev environments for each task, in the cloud,
         in seconds. Or take a day to configure them the old way, up to you.
@@ -111,8 +111,7 @@
       <div class="hero__action">
         <div class="hero__try-now text-small">
           <div>
-            <a href="#get-started" class="btn btn--normal btn--brand">Try Now</a
-            >
+            <a href="#get-started" class="btn-conversion">Try Now</a>
           </div>
           <p>
             Give an example space a try right now.

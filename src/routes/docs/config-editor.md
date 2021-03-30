@@ -15,7 +15,7 @@ User settings override workspace settings and can be configured through the pref
 
 The available properties and their possible values are proposed in the editor and are the same as in VS Code.
 
-<h2 class="h3">Example Configuration</h2>
+<h2>Example Configuration</h2>
 
 File `settings.json` follows JSON syntax as follows:
 

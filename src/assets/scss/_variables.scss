@@ -29,7 +29,7 @@
   --fine-print: 0.75rem;
 
   --header-height: 5rem;
-  --row-max-width: 83.75rem;
+  --row-max-width: 98vw;
   --xx-large: 10rem;
   --x-large: 4.5rem;
   --large: 4rem;
@@ -41,7 +41,7 @@
   --macro: 0.5rem;
 
   --shadow: 0rem 1rem 2.4rem 0rem rgba(0, 0, 0, 0.08);
-
+  --shadow-brand: 0px 11px 39px var(--brand-almost-ripe);
   --border-light: 1px solid var(--sand-dark);
 
   @media (max-width: 1140px) {

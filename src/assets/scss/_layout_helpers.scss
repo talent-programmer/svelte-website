@@ -10,13 +10,13 @@ main {
   }
 }
 main > header:first-child,
-.header  {
-    text-align: center;
-    margin: 0 auto 5em;
-    max-width: 600px;
+.header {
+  text-align: center;
+  margin: 0 auto 5em;
+  max-width: 600px;
 }
 
-main > header, 
+main > header,
 main > section {
   margin-bottom: 8rem;
 }
@@ -24,7 +24,7 @@ main > section {
 .row {
   width: 90%;
   margin: 0 auto;
-  max-width: var(--row-max-width);
+  max-width: 98vw;
 
   @media (max-width: 1032px) {
     width: 94%;
