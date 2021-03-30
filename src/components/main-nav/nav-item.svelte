@@ -5,6 +5,4 @@
 <style lang="scss">
 </style>
 
-<li class="">
-  <a {href}><slot /></a>
-</li>
+<a {href}><slot /></a>
