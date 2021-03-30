@@ -346,7 +346,6 @@ export const testimonials: Testimonial[] = [
           </a>
           is just super nice to use. Very impressed by the performance!
         </p>
-      </>
     `,
     twitterHandle: "Codebryo",
     tweetId: "1331252316255768578",
@@ -467,7 +466,6 @@ export const testimonials: Testimonial[] = [
           ("Online workspace" tab). You'll have app running and will be editing
           code in 3min from clicking "Launch" button.
         </p>
-      </>
     `,
     twitterHandle: "joonaslehtinen",
     tweetId: "1238597160121200640",
