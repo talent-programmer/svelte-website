@@ -42,7 +42,7 @@
 
 <div class="testimonial card">
   <!-- TODO: Nisar, this breaks "npm run export". I need to look into it when you open your PR to finish the testimonial work. -->
-  <div class="quote">{@html text}</div> 
+  <div class="quote"><!--{@html text}--></div>
   <div class="testimonial__author">
     <img src={`/${avatar}`} alt={name} />
     <div>
