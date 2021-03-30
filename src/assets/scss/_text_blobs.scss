@@ -1,5 +1,6 @@
-.text-blob {
-  /* for text heavy content such as TOS */
+// for large chunks of text
+
+.text-blob { 
   margin-top: 5rem;
   width: 50rem;
   max-width: 98vw;
@@ -25,11 +26,11 @@
       margin-left: 2rem;
     }
   }
-  [type] ::marker {
+  ::marker {
     color: var(--brand-ripe);
   }
   ul {
-    list-style: "-" outside;
+    list-style: "- " outside;
   }
   h2,
   h3,

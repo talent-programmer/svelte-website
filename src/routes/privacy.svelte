@@ -9,6 +9,7 @@
     type: "website",
   }}
 />
+<article class="text-blob">
 <h1>Privacy Policy</h1>
 
 <p>
@@ -37,10 +38,8 @@
 
 <h2 id="short">In Short</h2>
 
-<table>
-  <tr>
-    <td>Controller</td>
-    <td>
+<ul>
+<li><h3>Controller</h3>
       <p>
         Gitpod GmbH<br /> Am Germaniahafen 1, 24143 Kiel/Germany<br />
         registered with the commercial register of the local court
@@ -54,14 +53,10 @@
         >.
       </p>
       <p>This privacy policy also contains further data controllers.</p>
-    </td>
-  </tr>
-  <tr>
-    <td
-      >Purpose and Legal Basis of Processing Data; Provision and Recipients of
-      Data</td
-    >
-    <td>
+
+  </li>
+  <li><h3>Purpose and Legal Basis of Processing Data; Provision and Recipients of
+      Data</h3>
       <p>Your data will be used for the following purposes:</p>
       <ul>
         <li>to provide the functioning Website,</li>
@@ -100,22 +95,20 @@
         you refrain from providing such data you may face legal disadvantages,
         for example, limited or no possibility of using our Service.
       </p>
-    </td>
-  </tr>
-  <tr>
-    <td>Transfer of Data outside of the EU</td>
-    <td>
+
+  </li>
+<li>
+  <h3>Transfer of Data outside of the EU</h3>
       <p>
         In course of data processing by us data may be transferred to third
         countries, i.e. countries outside the EU. This may happen via
         implementation of third party providers such as cloud services and
         external service partners which process data on our behalf.
       </p>
-    </td>
-  </tr>
-  <tr>
-    <td>Your Rights</td>
-    <td>
+
+  </li>
+<li>
+  <h3>Your Rights</h3>
       <p>
         You have the right to withdraw your consent relating to the use of data
         any time with effect for the future when such data processing is based
@@ -144,29 +137,27 @@
         http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080<br
         />
       </p>
-    </td>
-  </tr>
-  <tr>
-    <td>Period for Storing Data; Deletion</td>
-    <td>
+
+  </li>
+<li>
+  <h3>Period for Storing Data; Deletion</h3>
       <p>
         The data are deleted if such data are no longer necessary for the
         purpose of processing.
       </p>
-    </td>
-  </tr>
-  <tr>
-    <td>Data Security</td>
-    <td>
+
+  </li>
+<li>
+  <h3>Data Security</h3>
       <p>
         We have implemented measures to ensure data and IT security. The Website
         is operated through a safe SSL-connection. If an SSL-connection is
         activated third parties are prevented from reading any data that are
         transferred by you to us.
       </p>
-    </td>
-  </tr>
-</table>
+
+  </li>
+</ul>
 
 <h2 id="detailed">More Detailed Information</h2>
 
@@ -913,3 +904,4 @@
   please contact <a href="mailto:data@gitpod.io">data@gitpod.io</a>. Further
   details may be found here: <a href="/imprint/">https://gitpod.io/imprint/</a>
 </p>
+</article>
