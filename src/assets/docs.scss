@@ -1,8 +1,5 @@
 .content-docs {
-  @mixin h3 {
-    font-size: var(--p-large);
-    line-height: 2rem;
-  }
+  line-height: 2rem;
 
   // Typography
   h1,
@@ -26,7 +23,8 @@
 
   h3,
   .h3 {
-    @include h3;
+    font-size: var(--p-large);
+    line-height: 2rem;
   }
 
   a {
@@ -76,36 +74,34 @@
     margin: var(--micro) 0;
   }
 
+  ol {
+    margin-left: 2rem;
+    list-style-type: decimal;
+  }
+
   li + li {
     margin-top: var(--macro);
   }
 
   // Code blocks
-  code {
-    min-height: 2rem;
-    padding: 0 0.5rem;
+  :not(pre) > code {
+    padding: 0.35rem 0.5rem;
     border-radius: 0.75rem;
     background: var(--brand-light);
-
-    &:not([class]) {
-      display: inline-flex;
-      align-items: center;
-    }
-
-    &[class*="language"] {
-      overflow: auto;
-      display: block;
-      padding: 1.25rem 1.5rem;
-      background: var(--sand-dark);
-    }
-
-    &.language-Dockerfile {
-      background: var(--off-white);
-    }
+    white-space: pre;
   }
 
   pre {
+    overflow: auto;
+    display: block;
     margin: var(--micro) 0;
+    padding: 1.25rem 1.5rem;
+    border-radius: 0.75rem;
+    background: var(--sand-dark);
+
+    &:not(.language-null) {
+      background: var(--off-white);
+    }
   }
 
   blockquote {
