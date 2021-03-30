@@ -18,7 +18,7 @@
     text-align: center;
     background: var(--off-white);
     padding: var(--x-large) 0;
-    box-shadow: var(--shadow);
+    box-shadow: 0px 0.625rem 1.5rem -0.625rem rgba(0, 0, 0, 0.08);
 
     :global(a) {
       font-size: var(--p-large);
