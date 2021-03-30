@@ -19,6 +19,7 @@
     type: "website",
   }}
 />
+<article class="text-blob">
 <h1>Gitpod Terms of Service</h1>
 
 <p>
@@ -56,8 +57,9 @@
   the contract, unless we explicitly and in writing agree that these provisions
   shall be valid.
 </p>
-
-<h2>A. Creating an Account and Conclusion of the Agreement</h2>
+<ol type="A" class="toc">
+  <li>
+<h2>Creating an Account and Conclusion of the Agreement</h2>
 <p>
   It is a prerequisite to use the Service of Gitpod having an existing account
   of Customer at https://github.com operated by GitHub Inc., 88 Colin P Kelly Jr
@@ -108,8 +110,9 @@
   our Service. A login is only possible via the access data assigned to the
   Customer by Gitpod (user name and password).
 </p>
-
-<h2>B. Support and Consulting</h2>
+</li>
+<li>
+<h2>Support and Consulting</h2>
 <p>
   Usually Gitpod does not offer any integration, support and consulting services
   as part of the Service. Within its sole discretion Gitpod may offer support
@@ -118,8 +121,9 @@
 <p>
   The Customer’s rights in case of defects of the Service remain unaffected.
 </p>
-
-<h2>C. Rights of Use and Licenses; Open Source</h2>
+</li>
+<li>
+<h2>Rights of Use and Licenses; Open Source</h2>
 <p>
   We retain ownership of all intellectual property rights of any kind related to
   the Website and Service unless explicitly granted to you pursuant to this
@@ -136,8 +140,9 @@
   The Customer is aware that the Service contains open source components and
   such components are governed by the respective open source licenses.
 </p>
-
-<h2>D. Fees and Payment</h2>
+</li>
+<li>
+<h2>Fees and Payment</h2>
 <p>
   Depending on the time of using the Service and subscription plan available on
   the Website chosen by Customer Gitpod demands from the Customer a fee for
@@ -160,8 +165,9 @@
   finalized within the Service. No further costs or fees shall arise for the
   Customer as Consumer when making a payment.
 </p>
-
-<h2>E. Availability</h2>
+</li>
+<li>
+<h2>Availability</h2>
 <p>
   Our Services are generally available on the Website. Exceptions are: Back-up
   processes, system maintenance, system or database repair work, unavailability
@@ -169,10 +175,11 @@
   disruptions on a low level. Customers’ rights in case of defects remain
   unaffected.
 </p>
-
-<h2>F. Liability</h2>
+</li>
+<li>
+<h2>Liability</h2>
 <p>We are liable without limitation for</p>
-<ol>
+<ol type="A">
   <li>damages caused deliberately or due to gross negligence by Gitpod;</li>
   <li>damages arising out of death, injury to body or health;</li>
   <li>
@@ -201,8 +208,9 @@
   Customer shall also be held responsible for all its legal representatives,
   assistants and any assigned users of the Service according to Section 278 BGB.
 </p>
-
-<h2>G. Warranty for Material Defects and Guarantees</h2>
+</li>
+<li>
+<h2>Warranty for Material Defects and Guarantees</h2>
 <p>
   We are liable for material defects according to the valid legal regulations if
   the Customer is a Consumer. The limitation period begins with access to the
@@ -227,9 +235,10 @@
   We do not offer any guarantees for our Service without an expressly given
   confirmation.
 </p>
-
-<h2>H. Customer's General Obligations</h2>
-<ol>
+</li>
+<li>
+<h2>Customer's General Obligations</h2>
+<ol type="1">
   <li>
     <strong>True Data and Fair use:</strong> You must fill in all required fields
     in the sign-up sheet truthfully and completely. You must respect and abide these
@@ -257,8 +266,9 @@
     <a href="/privacy/">privacy policy</a>.
   </li>
 </ol>
-
-<h2 id="fair-use">I. Fair and Acceptable Use; Indemnification</h2>
+</li>
+<li>
+<h2 id="fair-use">Fair and Acceptable Use; Indemnification</h2>
 <p>
   Gitpod Services are to be used for lawful software development, demoing,
   showcasing or debugging the resulting software and/or teaching software
@@ -266,7 +276,7 @@
   and you must, in particular, not nor allow others through your Gitpod account
   to:
 </p>
-<ol>
+<ol type="1">
   <li>breach any applicable laws, not limited to a specific jurisdiction;</li>
   <li>
     post, host, upload, communicate or transmit content that is unlawful,
@@ -320,8 +330,9 @@
     causes to others and us provided you are held responsible for such breach.</strong
   >
 </p>
-
-<h2>J. Customer Data; Indemnification</h2>
+</li>
+<li>
+<h2>Customer Data; Indemnification</h2>
 <p>
   The Customer has the possibility within his account to upload content and
   code, including but not limited to programs, technical data, personal data (<strong
@@ -352,13 +363,14 @@
     causes to others and us provided you are held responsible for such breach.</strong
   >
 </p>
-
-<h2>K. Blocking Rights</h2>
+</li>
+<li>
+<h2>Blocking Rights</h2>
 <p>
   In addition to our termination rights, we have the right to the following
   blocking measures:
 </p>
-<ol>
+<ol type="1">
   <li>
     In case a Customer is in breach of Section I. or a reasonable suspicion
     thereon considering the reasonable interests of the Customer temporarily
@@ -457,8 +469,9 @@
   Gitpod is neither obliged to take part in alternative dispute resolutions
   before a consumer dispute settlement commission or will do so voluntarily.
 </p>
-
-<h2>M. Term and Termination</h2>
+</li>
+<li>
+<h2>Term and Termination</h2>
 <p>
   This Agreement is effective as of your creation of the Gitpod account and
   remains effective until terminated. You as Customer or Gitpod may each
@@ -485,14 +498,17 @@
   Material Defects and Guarantee (Section G.), Term (Section M.),
   Confidentiality (Section O.) and Miscellaneous (Section Q.) shall survive.
 </p>
-
-<h2>N. Privacy and Data</h2>
+</li>
+<li>
+<h2>Privacy and Data</h2>
 <p>
   We will process your data according to the German and European data protection
   laws. For details please refer to our <a href="/privacy/">privacy policy </a>.
 </p>
 
-<h2>O. Confidentiality</h2>
+</li>
+<li>
+<h2>Confidentiality</h2>
 <p>
   Both Customer and Gitpod agree not to, and shall ensure that their employees,
   agents and advisors do not, disclose to third parties, nor use for any purpose
@@ -517,7 +533,9 @@
   party about the requirement or respectively the request for disclosure.
 </p>
 
-<h2>P. Terms of Service Changes</h2>
+</li>
+<li>
+<h2>Terms of Service Changes</h2>
 <p>
   We may change these Terms of Service as well as related documentation at any
   time at our sole discretion. We will inform you at least in text form that the
@@ -531,7 +549,9 @@
   terms and conditions shall remain in force.
 </p>
 
-<h2>Q. Miscellaneous</h2>
+</li>
+<li>
+<h2>Miscellaneous</h2>
 <p>
   You are not allowed to assign, transfer or delegate these Terms of Service to
   any person or entity at any time given, except for certain rights as
@@ -567,7 +587,7 @@
 
 <h2>Transfer of the Agreement to Another Party</h2>
 <p>You agree that we may transfer this Agreement to:</p>
-<ol>
+<ol type="1">
   <li>
     <strong>Gitpod, Inc.</strong>, a corporation incorporated and validly
     existing under the laws of the State of Delaware, United States, registered
@@ -605,7 +625,8 @@
   Agreement to Gitpod, Inc. Other rights you may have to terminate the Agreement
   with or without cause shall remain unaffected.
 </p>
-
+</li>
+</ol>
 <h2 id="withdrawal-form">Appendix: Model Withdrawal Form</h2>
 <p>
   Complete and return this form only if you wish to withdraw from the contract.
@@ -632,3 +653,4 @@
   <p>(*) Delete where inapplicable.</p>
   <div>-- end model withdrawal form --</div>
 </div>
+</article>
