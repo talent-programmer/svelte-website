@@ -2,56 +2,56 @@
   import menuState from "./state";
 </script>
 
+<style lang="scss">
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    width: 3rem;
+    text-align: center;
+    border-radius: 0.75rem;
+    background: var(--black);
+
+    @media (min-width: 769px) {
+      display: none;
+    }
+  }
+
+  svg {
+    display: inline-block;
+  }
+</style>
+
 <button
   on:click={() => ($menuState = !$menuState)}
   aria-label="Show / hiide nav items"
 >
-  <svg
-    width="50"
-    height="26"
-    viewBox="0 0 50 26"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <g filter="url(#filter0_d)">
-      <rect x="1" width="48" height="24" rx="12" fill="#12100C" />
-      <rect x="17" y="8" width="16" height="2" rx="1" fill="#F4F2F1" />
-      <rect x="17" y="14" width="16" height="2" rx="1" fill="#F3F1F0" />
-    </g>
-    <defs>
-      <filter
-        id="filter0_d"
-        x="0"
-        y="0"
-        width="50"
-        height="26"
-        filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
-      >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feColorMatrix
-          in="SourceAlpha"
-          type="matrix"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        />
-        <feOffset dy="1" />
-        <feGaussianBlur stdDeviation="0.5" />
-        <feColorMatrix
-          type="matrix"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-        />
-        <feBlend
-          mode="normal"
-          in2="BackgroundImageFix"
-          result="effect1_dropShadow"
-        />
-        <feBlend
-          mode="normal"
-          in="SourceGraphic"
-          in2="effect1_dropShadow"
-          result="shape"
-        />
-      </filter>
-    </defs>
-  </svg>
+  {#if $menuState}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      width="12"
+      height="12"
+      viewBox="0 0 12 12"
+    >
+      <path
+        fill="#F3F1F0"
+        fillRule="evenodd"
+        d="M10.242 11.657a1 1 0 001.414-1.414L7.413 6l4.243-4.243A1 1 0 0010.242.343L5.999 4.586 1.757.343A1 1 0 10.342 1.757L4.585 6 .342 10.243a1 1 0 001.415 1.414l4.242-4.243 4.243 4.243z"
+        clipRule="evenodd"
+      />
+    </svg>
+  {:else}
+    <svg
+      width="16"
+      height="8"
+      viewBox="0 0 16 8"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="16" height="2" rx="1" fill="#F4F2F1" />
+      <rect y="6" width="16" height="2" rx="1" fill="#F3F1F0" />
+    </svg>
+  {/if}
 </button>
