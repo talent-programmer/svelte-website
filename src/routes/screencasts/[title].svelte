@@ -12,7 +12,7 @@
 
 <script lang="ts">
   import type { Screencast as ScreencastType } from "../../types/screencasts.type";
-  import Screencast from "../../components/screencasts/screencast.svelte";
+  import ScreencastPreview from "../../components/screencasts/preview.svelte";
   import YouTubeEmbed from "../../components/youtube-embed.svelte";
 
   export let screencast: ScreencastType;
@@ -37,7 +37,7 @@
 
 {#if screencast.nextScreencast}
   <h2>Next up...</h2>
-  <Screencast
+  <ScreencastPreview
     screencast={screencasts[screencast.nextScreencast]}
     screencastNumber={screencast.nextScreencast}
   />
