@@ -132,13 +132,13 @@
   }}
 />
 <header>
-  <h1 class="h3">Focus on teaching code, not tedious setups!</h1>
+  <h1 class="h2">Focus on teaching code, not tedious setups!</h1>
   <p>
     Gitpod simplifies the onboarding process, makes coding accessible from any
     device, and provides a productive learning environment.
   </p>
   <p>
-    <a href="" class="btn btn--brand">Choose an option</a
+    <a href="" class="btn-conversion">Choose an option</a
     ><!-- where does this go? -->
   </p>
 </header>

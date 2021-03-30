@@ -21,7 +21,7 @@
 
 <div class="row">
   <Section>
-    <h2 class="h2">FAQs</h2>
+    <h1>FAQs</h1>
     <Faq title="Can I always use Gitpod for free?">
       <p>
         Yes! Gitpod is always for free for public repositories for up to 50h per

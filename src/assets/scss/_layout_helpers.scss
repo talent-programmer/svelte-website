@@ -24,7 +24,6 @@ main > section {
 .row {
   width: 90%;
   margin: 0 auto;
-  max-width: var(--row-max-width);
 
   @media (max-width: 1032px) {
     width: 94%;
