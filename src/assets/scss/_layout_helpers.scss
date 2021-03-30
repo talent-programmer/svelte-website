@@ -3,20 +3,20 @@
 /* -------------------------------------- */
 
 main {
-  /* max-width: 71.25rem; */
+  max-width: 90rem;
   margin: auto;
   @media (max-width: 73rem) {
     max-width: 98vw;
   }
 }
 main > header:first-child,
-.header  {
-    text-align: center;
-    margin: 0 auto 5em;
-    max-width: 600px;
+.header {
+  text-align: center;
+  margin: 0 auto 5em;
+  max-width: 600px;
 }
 
-main > header, 
+main > header,
 main > section {
   margin-bottom: 8rem;
 }
