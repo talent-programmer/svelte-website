@@ -72,12 +72,17 @@
       display: none;
     }
   }
+
+  .bg-off-white {
+    background: var(--sand-light);
+
+    @media (max-width: 768px) {
+      background: var(--off-white);
+    }
+  }
 </style>
 
-<nav
-  class="nav text-small"
-  style={`background: ${$menuState ? "var(--off-white)" : ""}`}
->
+<nav class={`nav text-small ${$menuState ? "bg-off-white" : ""}`}>
   <div class="wrapper">
     <a href="/" aria-label="Gitpod">
       <LogoWrapper />
