@@ -91,7 +91,7 @@
         regard to the processing of personal data, on the free movement of such
         data ("General Data Protection Regulation", GDPR) as well as in the
         Federal Data Protection Act <em>(Bundesdatenschutzgesetz, BDSG)</em> and
-        the German Telemedia Act <em>(Telemediengesetz, TMG) </em>
+        the German Telemedia Act <em>(Telemediengesetz, TMG) </em>.
       </p>
       <p>
         We as well as our external service partners receive your data for
