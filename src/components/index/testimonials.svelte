@@ -9,15 +9,21 @@
 </script>
 
 <style lang="scss">
-  h1 {
+  h2 {
     text-align: center;
   }
 </style>
 
 <div class="row">
   <Section>
-    <h2 class="h2">Widespread already.</h2>
-    <Carousel dots={false} controls={false}>
+    <h2 class="h1">Widespread already.</h2>
+    <Carousel
+      controls={false}
+      perPage={{
+        900: 2,
+        1400: 3,
+      }}
+    >
       {#each testimonials as testimonial}
         <Testimonial {testimonial} />
       {/each}
