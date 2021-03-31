@@ -2,6 +2,7 @@
   font-family: "ABCDiatype";
   font-style: normal;
   font-weight: 400;
+  font-display: optional;
   src: url("./fonts/ABCDiatype-Regular.woff") format("woff");
 }
 
@@ -9,6 +10,7 @@
   font-family: "ABCDiatype";
   font-style: bold;
   font-weight: 600;
+  font-display: optional;
   src: url("./fonts/ABCDiatype-Bold.woff") format("woff");
 }
 
@@ -16,11 +18,13 @@
     font-family: 'ABCDiatype';
     font-style: italic;
     font-weight: 400;
+    font-dsiplay: optional;
     src: url('./fonts/ABCDiatype-RegularItalic.woff') format('woff');
 }
 @font-face {
     font-family: 'ABCDiatype';
     font-style: italic;
+    font-display: optional;
     font-weight: 600;
     src: url('./fonts/ABCDiatype-BoldItalic.woff') format('woff');
 } */
