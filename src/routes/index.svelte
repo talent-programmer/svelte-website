@@ -1,5 +1,6 @@
 <script>
-  import { features, testimonials } from "../contents/index";
+  import { testimonials } from "../contents/home/index";
+  import { features } from "../contents/home/features";
 
   import Features from "../components/features.svelte";
   import ChooseProject from "../components/index/choose-project.svelte";

@@ -1,15 +1,21 @@
 <script lang="ts">
   import type { Feature } from "../types/feature.type";
+  import Console from "./console.svelte";
   import Section from "./section.svelte";
 
   export let feature: Feature;
-  const { documentationLink, moreButton, paragraph, preview, title } = feature;
+  const {
+    documentationLink,
+    moreButton,
+    paragraph,
+    title,
+    terminalSource,
+  } = feature;
 </script>
 
 <style lang="scss">
-
   p {
-      color: var(--dark-grey);
+    color: var(--dark-grey);
   }
   .feature {
     display: flex;
@@ -32,6 +38,7 @@
 
     &__preview {
       flex: 0 0 45%;
+      max-height: 500px;
 
       @media (max-width: 800px) {
         margin-top: var(--small);
@@ -55,7 +62,7 @@
         margin-top: var(--xx-small);
       }
     }
-    
+
     .btn {
       margin-bottom: var(--micro);
 
@@ -78,13 +85,13 @@
           <a href={moreButton.href} class="btn-primary">
             {moreButton.text}
           </a>
-          <a href={documentationLink} class="btn-secondary">
-            Documentation
-          </a>
+          <a href={documentationLink} class="btn-secondary"> Documentation </a>
         </div>
       </div>
       <div class="feature__preview">
-        <img src={`/${preview.name}`} alt={preview.alt} />
+        {#if terminalSource}
+          <Console source={terminalSource} />
+        {/if}
       </div>
     </div>
   </Section>
