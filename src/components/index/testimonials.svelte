@@ -12,6 +12,23 @@
   h2 {
     text-align: center;
   }
+
+  :global(.slides) {
+    margin-bottom: var(--small);
+  }
+
+  :global(.slides) > :global(div) > :global(div) {
+    display: flex;
+    justify-content: center;
+  }
+
+  :global(.carousel) :global(li) {
+    background-color: #cecdcd !important;
+
+    &.active {
+      background-color: #999 !important;
+    }
+  }
 </style>
 
 <div class="row">
