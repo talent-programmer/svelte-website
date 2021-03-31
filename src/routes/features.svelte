@@ -28,6 +28,15 @@
     min-width: 400px;
     align-self: stretch;
   }
+  .cards img {
+    margin: 0 auto 1em;
+  }
+  .double img {
+    height: 223px;
+  }
+  .triple img {
+    height: 90px;
+  }
   .cards.triple > div {
     flex: 0 1 calc(33% - 2rem);
     min-width: 300px;
@@ -48,6 +57,11 @@
   section h3:first-child,
   section h3:first-child + p {
     text-align: center;
+  }
+  .brief > img {
+    width: 1100px;
+    max-width: 90vw;
+    margin: 2rem auto;
   }
 </style>
 
@@ -84,13 +98,13 @@
     </div>
     <div>
       <!-- TODO: Insert the terminal output animation from the homepage -->
-      <img src="//placekitten.com/400/400" alt="" role="presentation" />
+      <img src="images/features/features-1.png" alt="" role="presentation" />
     </div>
   </article>
 
   <article>
     <div>
-      <img src="//placekitten.com/400/400" alt="" role="presentation" />
+      <img src="images/features/features-2.png" alt="" role="presentation" />
       <!-- TODO: Insert "Preparing workspace" images -->
     </div>
     <div>
@@ -106,7 +120,7 @@
 
 <section class="cards double">
   <div class="card">
-    <img src="//placekitten.com/350/150" alt="" role="presentation" />
+    <img src="images/features/features-3.png" alt="" role="presentation" />
     <!-- TODO: Insert emojis -->
     <h2 class="h4">Collaboration with Workspace Sharing</h2>
     <p>
@@ -117,7 +131,7 @@
   <div class="card">
     <!-- TODO: Insert terminal image -->
 
-    <img src="//placekitten.com/350/150" alt="" role="presentation" />
+    <img src="images/features/features-4.png" alt="" role="presentation" />
     <h2 class="h4">Full linux machine <span>(incl sudo/docker)</span></h2>
     <p>
       Instantly start a container in the cloud based on your Docker image.
@@ -129,7 +143,13 @@
 <section class="cards triple">
   <div class="card">
     <!-- TODO: Insert icon -->
-    <img src="//placekitten.com/250/100" role="presentation" alt="" />
+
+    <img
+      src="images/features/features-5.png"
+      alt=""
+      role="presentation"
+      height="90"
+    />
     <h3 class="h5">Customize your workspace</h3>
     <p>
       Tweak your environment to suit your needs. From themes to extensions you
@@ -139,18 +159,20 @@
   </div>
   <div class="card">
     <!-- TODO: Insert icon -->
-    <img src="//placekitten.com/250/100" alt="" role="presentation" />
+
+    <img src="images/features/features-6.png" alt="" role="presentation" />
     <h3 class="h5">GitLab, GitHub, and Bitbucket Integration</h3>
     <p>
       Start your workflow from your Git hosting platform and let Gitpod beam you
       in a ready-to-code dev environment.
     </p>
     <!-- TODO: Figure out where to link to: -->
-    <a href="">More about Integrations</a>
+    <a href="TODO:">More about Integrations</a>
   </div>
   <div class="card">
     <!-- TODO: Insert icon -->
-    <img src="//placekitten.com/250/100" role="presentation" alt="" />
+
+    <img src="images/features/features-7.png" alt="" role="presentation" />
     <h3 class="h5">Code Reviews Within the IDE</h3>
     <p>
       Open pull requests in Gitpod to run, navigate, and review the code. Reply
@@ -160,18 +182,24 @@
   </div>
 </section>
 
-<section>
+<section class="brief">
   <h2>VS Code and extensions in your browser</h2>
   <p>
     Install any VS Code extension with one click via the integrated
     vendor-neutral marketplace Open VSX.
   </p>
   <!-- TODO: Insert the VS Code Gitpod theme screenshot -->
+
+  <img
+    src="images/features/features-screenshot.png"
+    alt=""
+    role="presentation"
+  />
 </section>
 
-<section>
+<section class="brief">
   <h2>Get started with screencasts</h2>
-  <div>
+  <div class="screencasts">
     {#each firstThreeScreencasts as screencast, index}
       <ScreencastPreview {screencast} screencastNumber={index + 1} />
     {/each}

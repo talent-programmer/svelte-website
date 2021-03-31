@@ -1,0 +1,8 @@
+.screencasts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 400px));
+  gap: 60px 20px;
+  justify-content: center;
+  padding: 0 20px;
+  margin: 2rem auto;
+}

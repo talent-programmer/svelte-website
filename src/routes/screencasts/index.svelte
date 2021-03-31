@@ -9,13 +9,6 @@
     text-align: center;
     margin-bottom: 2em;
   }
-  section {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 400px));
-    gap: 60px 20px;
-    justify-content: center;
-    padding: 0 20px;
-  }
 </style>
 
 <OpenGraph
@@ -26,7 +19,7 @@
   }}
 />
 <h1 class="h3">Get started with a screencast</h1>
-<section>
+<section class="screencasts">
   {#each screencasts as screencast, index}
     <Screencast {screencast} screencastNumber={index + 1} />
   {/each}

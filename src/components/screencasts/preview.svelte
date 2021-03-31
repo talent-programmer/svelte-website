@@ -19,15 +19,19 @@
     display: flex;
     flex-flow: column;
     margin-bottom: 16px;
-    &:hover {
+    &:hover,
+    &:focus {
       position: relative;
     }
     &:hover::after,
-    &:hover::before {
+    &:hover::before,
+    &:focus::after,
+    &:focus::before {
       content: "";
       position: absolute;
     }
-    &:hover::after {
+    &:hover::after,
+    &:focus::after {
       top: 0;
       left: 0;
       right: 0;
@@ -35,7 +39,8 @@
       background: rgba(18, 16, 12, 0.7);
       border-radius: inherit;
     }
-    &:hover::before {
+    &:hover::before,
+    &:focus::before {
       border: transparent solid;
       border-width: 20px 36px;
       border-left-color: white;

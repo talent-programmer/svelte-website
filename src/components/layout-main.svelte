@@ -1,5 +1,6 @@
 <style>
   main {
+    /* what does this do? */
     display: flex;
     flex-direction: column;
     flex: 1;
