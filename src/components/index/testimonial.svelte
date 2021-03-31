@@ -47,7 +47,6 @@
   h3.text-small {
     margin-bottom: 0;
   }
-  
 </style>
 
 <div class="testimonial text-small">

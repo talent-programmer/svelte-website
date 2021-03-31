@@ -7,9 +7,8 @@
 </script>
 
 <style lang="scss">
-
   p {
-      color: var(--dark-grey);
+    color: var(--dark-grey);
   }
   .feature {
     display: flex;
@@ -55,7 +54,7 @@
         margin-top: var(--xx-small);
       }
     }
-    
+
     .btn {
       margin-bottom: var(--micro);
 
@@ -78,9 +77,7 @@
           <a href={moreButton.href} class="btn-primary">
             {moreButton.text}
           </a>
-          <a href={documentationLink} class="btn-secondary">
-            Documentation
-          </a>
+          <a href={documentationLink} class="btn-secondary"> Documentation </a>
         </div>
       </div>
       <div class="feature__preview">

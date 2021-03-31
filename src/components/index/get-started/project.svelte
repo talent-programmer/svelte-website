@@ -47,18 +47,18 @@
         -webkit-filter: grayscale(0) opacity(1);
       }
 
-      .btn-tertiary  {
+      .btn-tertiary {
         opacity: 1;
       }
     }
   }
   .btn-tertiary {
-      opacity: 0;
-      font-weight: normal;
-      @media (max-width: 427px) {
-        display: none;
-      }
+    opacity: 0;
+    font-weight: normal;
+    @media (max-width: 427px) {
+      display: none;
     }
+  }
 </style>
 
 <a href={`https://gitpod.io#${githubUrl}`} target="_blank" class="project">

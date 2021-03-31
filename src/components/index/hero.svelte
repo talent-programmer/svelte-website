@@ -111,8 +111,7 @@
       <div class="hero__action">
         <div class="hero__try-now text-small">
           <div>
-            <a href="#get-started" class="btn-conversion">Try Now</a
-            >
+            <a href="#get-started" class="btn-conversion">Try Now</a>
           </div>
           <p>
             Give an example space a try right now.
