@@ -7,10 +7,10 @@
 
 <style lang="scss">
   .testimonial {
-    width: 400px;
-    padding: var(--x-small);
+    width: 25rem;
+    padding: 1.5rem;
     background: var(--white);
-    border-radius: 16px;
+    border-radius: 1rem;
 
     &__author {
       display: flex;
@@ -25,13 +25,16 @@
       margin-right: 0.75rem;
     }
 
+    h3 {
+      margin-bottom: 0;
+    }
+
     &:not(:last-child) {
       margin-right: var(--xx-small);
     }
 
     @media (max-width: 768px) {
       width: 320px;
-      padding: var(--micro) var(--xx-small);
 
       &:not(:last-child) {
         margin-bottom: var(--xx-small);
@@ -39,13 +42,9 @@
     }
 
     & :global(a) {
-      color: #00a3ff;
+      color: var(--blue);
       font-weight: 600;
     }
-  }
-
-  h3.text-small {
-    margin-bottom: 0;
   }
 </style>
 

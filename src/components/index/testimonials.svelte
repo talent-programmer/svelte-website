@@ -22,11 +22,16 @@
     justify-content: center;
   }
 
-  :global(.carousel) :global(li) {
-    background-color: #cecdcd !important;
+  :global(.carousel.carousel.carousel) :global(li) {
+    background-color: #cecdcd;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: #999;
+    }
 
     &.active {
-      background-color: #999 !important;
+      background-color: #999;
     }
   }
 </style>
