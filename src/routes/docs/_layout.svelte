@@ -3,8 +3,8 @@
   import Search from "../../components/docs/search.svelte";
 </script>
 
-<div class="flex mx-auto max-w-row">
-  <div class="w-2/5">
+<div class="row flex mx-auto px-8 py-10 w-screen">
+  <div class="w-2/5 pt-20">
     <Menu />
   </div>
   <div class="w-3/5">

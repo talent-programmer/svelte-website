@@ -3,7 +3,7 @@ import visit from "unist-util-visit";
 const youtubeEmbedRegex = new RegExp(`\(youtube\):\(\.\*\)`, "i");
 
 const embedVideoHtml = (videoId, options) => `
-<iframe
+<div class="video-container"><iframe
   title=""
   width="${options.width}"
   height="${options.height}"
@@ -12,7 +12,7 @@ const embedVideoHtml = (videoId, options) => `
   ${options.noIframeBorder ? 'style="border:0"' : ""}
   allowfullscreen
   sandbox="allow-same-origin allow-scripts allow-popups">
-</iframe>`;
+</iframe></div>`;
 
 const visitor = (options) => (node) => {
   if (node.type === "inlineCode") {

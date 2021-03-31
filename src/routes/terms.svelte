@@ -150,8 +150,8 @@
         Customer a fee for using its Service based on <strong
           >"Gitpod-Hours (GPh)"</strong
         >
-        which is our internal unit to express amounts, credits and debits of
-        Service use (the
+        which is our internal unit to express amounts, credits and debits of Service
+        use (the
         <strong>"Fee"</strong>). The description, options and total amount of
         such Fee shall be based on the current list shown on the Website or as
         provided to Customer in text form.

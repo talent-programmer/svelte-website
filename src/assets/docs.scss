@@ -1,8 +1,5 @@
 .content-docs {
-  @mixin h3 {
-    font-size: var(--p-large);
-    line-height: 2rem;
-  }
+  line-height: 1.8;
 
   // Typography
   h1,
@@ -12,22 +9,22 @@
     font-weight: 700;
   }
 
-  h1 {
+  h1,
+  .h1 {
     font-size: 3rem;
     line-height: 3.5rem;
   }
 
-  h2 {
+  h2,
+  .h2 {
     font-size: var(--h4);
     line-height: 2.5rem;
-
-    &.h3 {
-      @include h3;
-    }
   }
 
-  h3 {
-    @include h3;
+  h3,
+  .h3 {
+    font-size: var(--p-large);
+    line-height: 2rem;
   }
 
   a {
@@ -43,7 +40,8 @@
   }
 
   // Spacing
-  * + h2 {
+  * + h2,
+  * + .h2 {
     margin-top: var(--medium);
   }
 
@@ -67,7 +65,7 @@
     margin-top: var(--micro);
   }
 
-  p > iframe {
+  p > .video-container {
     margin-top: var(--medium);
   }
 
@@ -76,36 +74,55 @@
     margin: var(--micro) 0;
   }
 
-  li + li {
-    margin-top: var(--macro);
+  ol {
+    margin-left: var(--x-small);
+    list-style-type: decimal;
+  }
+
+  ul {
+    padding-left: var(--x-small);
+
+    > li {
+      position: relative;
+
+      &::before {
+        content: "—";
+        position: absolute;
+        left: calc(var(--x-small) * -1);
+        color: var(--brand-ripe);
+      }
+    }
+  }
+
+  li {
+    + li {
+      margin-top: var(--macro);
+    }
+
+    &::marker {
+      color: var(--brand-ripe);
+    }
   }
 
   // Code blocks
-  code {
-    min-height: 2rem;
-    padding: 0 0.5rem;
+  :not(pre) > code {
+    padding: 0.3rem 0.5rem;
     border-radius: 0.75rem;
     background: var(--brand-light);
-
-    &:not([class]) {
-      display: inline-flex;
-      align-items: center;
-    }
-
-    &[class*="language"] {
-      overflow: auto;
-      display: block;
-      padding: 1.25rem 1.5rem;
-      background: var(--sand-dark);
-    }
-
-    &.language-Dockerfile {
-      background: var(--off-white);
-    }
+    white-space: pre;
   }
 
   pre {
+    overflow: auto;
+    display: block;
     margin: var(--micro) 0;
+    padding: 1.25rem 1.5rem;
+    border-radius: 0.75rem;
+    background: var(--sand-dark);
+
+    &:not(.language-null) {
+      background: var(--off-white);
+    }
   }
 
   blockquote {
@@ -137,12 +154,12 @@
 
   th,
   td {
-    @apply py-5 px-10;
+    @apply py-3 px-6;
     @apply text-left;
   }
 
   td {
-    @apply py-6;
+    @apply py-4;
   }
 
   th {
@@ -161,5 +178,29 @@
 
   tr + tr {
     @apply border-t border-solid border-gray-400;
+  }
+
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    max-width: 100%;
+    max-height: 315px;
+    width: 560px;
+    margin: auto;
+
+    &::after {
+      display: block;
+      content: "";
+      padding-top: 56.25%;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
