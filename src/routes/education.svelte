@@ -138,7 +138,7 @@
     device, and provides a productive learning environment.
   </p>
   <p>
-    <a href="" class="btn-conversion">Choose an option</a
+    <a href="TODO:" class="btn-conversion">Choose an option</a
     ><!-- where does this go? -->
   </p>
 </header>
