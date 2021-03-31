@@ -1,5 +1,5 @@
 .content-docs {
-  line-height: 2rem;
+  line-height: 1.8;
 
   // Typography
   h1,
@@ -75,17 +75,38 @@
   }
 
   ol {
-    margin-left: 2rem;
+    margin-left: var(--x-small);
     list-style-type: decimal;
   }
 
-  li + li {
-    margin-top: var(--macro);
+  ul {
+    padding-left: var(--x-small);
+
+    > li {
+      position: relative;
+
+      &::before {
+        content: "—";
+        position: absolute;
+        left: calc(var(--x-small) * -1);
+        color: var(--brand-ripe);
+      }
+    }
+  }
+
+  li {
+    + li {
+      margin-top: var(--macro);
+    }
+
+    &::marker {
+      color: var(--brand-ripe);
+    }
   }
 
   // Code blocks
   :not(pre) > code {
-    padding: 0.35rem 0.5rem;
+    padding: 0.3rem 0.5rem;
     border-radius: 0.75rem;
     background: var(--brand-light);
     white-space: pre;
