@@ -23,15 +23,15 @@
   }
 
   :global(.carousel.carousel.carousel) :global(li) {
-    background-color: #cecdcd;
+    background-color: var(--divider);
     transition: all 0.2s;
 
     &:hover {
-      background-color: #999;
+      background-color: var(--light-grey);
     }
 
     &.active {
-      background-color: #999;
+      background-color: var(--light-grey);
     }
   }
 </style>
