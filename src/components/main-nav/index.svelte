@@ -3,7 +3,8 @@
   import MobileMenu from "./mobile-menu/index.svelte";
   import MobileMenuButton from "./mobile-menu/button.svelte";
   import NavItem from "./nav-item.svelte";
-  import NavItems from "./nav-items.svelte";
+  import menuState from "./mobile-menu/state";
+  import LoginButton from "./login-button.svelte";
 
   const navItems = [
     {
@@ -29,9 +30,12 @@
   ];
 </script>
 
-<style>
+<style lang="scss">
   nav {
     height: var(--header-height);
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 1.25rem var(--x-small);
     color: var(--black);
 
@@ -43,28 +47,55 @@
       padding: 1.25rem var(--macro);
     }
   }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .items {
+    display: flex;
+    align-items: center;
+
+    :global(a:not(:last-child)) {
+      margin-right: var(--small);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .items {
+      display: none;
+    }
+
+    .login {
+      display: none;
+    }
+  }
+
+  .bg-off-white {
+    background: var(--sand-light);
+
+    @media (max-width: 768px) {
+      background: var(--off-white);
+    }
+  }
 </style>
 
-<nav class="nav text-small">
-  <div class="flex justify-between">
+<nav class={`nav text-small ${$menuState ? "bg-off-white" : ""}`}>
+  <div class="wrapper">
     <a href="/" aria-label="Gitpod">
       <LogoWrapper />
     </a>
-    <div class="hidden sm:flex sm:justify-between sm:items-center">
-      <NavItems>
-        {#each navItems as { href, label }}
-          <NavItem {href}>{label}</NavItem>
-        {/each}
-      </NavItems>
+    <div class="items">
+      {#each navItems as { href, label }}
+        <NavItem {href}>{label}</NavItem>
+      {/each}
     </div>
-    <div class="hidden sm:flex sm:justify-between sm:items-center">
-      <a href="https://gitpod.io/login/" class="btn-tertiary"
-        >Login</a
-      >
+    <div class="login">
+      <LoginButton />
     </div>
-    <div class="flex items-center sm:hidden">
-      <MobileMenuButton />
-    </div>
+    <MobileMenuButton />
   </div>
   <MobileMenu {navItems} />
 </nav>

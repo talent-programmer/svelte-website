@@ -1,4 +1,5 @@
 <script>
+  import LoginButton from "../login-button.svelte";
   import NavItem from "../nav-item.svelte";
   import menuState from "./state";
 
@@ -6,18 +7,38 @@
 </script>
 
 <style lang="scss">
-  .nav-items {
-    list-style: none;
+  .items {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
     text-align: center;
-    background: var(--white);
-    padding: var(--large) 0;
+    background: var(--off-white);
+    padding: var(--x-large) 0;
+    box-shadow: 0px 0.625rem 1.5rem -0.625rem rgba(0, 0, 0, 0.08);
+
+    :global(a) {
+      font-size: var(--p-large);
+
+      &:not(:last-child) {
+        margin-bottom: var(--x-small);
+      }
+    }
+
+    @media (min-width: 769px) {
+      display: none;
+    }
   }
 </style>
 
 {#if $menuState}
-  <ul class="sm:hidden nav-items">
+  <div class="items">
     {#each navItems as { href, label }}
       <NavItem {href}>{label}</NavItem>
     {/each}
-  </ul>
+    <LoginButton />
+  </div>
 {/if}

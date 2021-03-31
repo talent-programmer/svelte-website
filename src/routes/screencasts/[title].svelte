@@ -12,16 +12,25 @@
 
 <script lang="ts">
   import type { Screencast as ScreencastType } from "../../types/screencasts.type";
-  import Screencast from "../../components/screencasts/screencast.svelte";
+  import ScreencastPreview from "../../components/screencasts/preview.svelte";
   import YouTubeEmbed from "../../components/youtube-embed.svelte";
 
   export let screencast: ScreencastType;
 </script>
 
-<h1>{screencast.title}</h1>
-<p>{screencast.description}</p>
+<style>
+  .related {
+    margin: 2rem auto;
+  }
+</style>
+
+<header>
+  <h1>{screencast.title}</h1>
+  <p>{screencast.description}</p>
+</header>
+
 <YouTubeEmbed embedId={screencast.youtubeId} title={screencast.title} />
-<p>
+<p class="related">
   Related documentation:
   {#each screencast.relatedDocs as relatedDoc, i}
     <a href="/docs{relatedDoc.path}">{relatedDoc.title}</a>
@@ -36,9 +45,11 @@
 </p>
 
 {#if screencast.nextScreencast}
-  <h2>Next up...</h2>
-  <Screencast
-    screencast={screencasts[screencast.nextScreencast]}
-    screencastNumber={screencast.nextScreencast}
-  />
+  <div class="screencasts">
+    <h2>Next up...</h2>
+    <ScreencastPreview
+      screencast={screencasts[screencast.nextScreencast]}
+      screencastNumber={screencast.nextScreencast}
+    />
+  </div>
 {/if}
