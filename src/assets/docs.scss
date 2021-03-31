@@ -156,11 +156,6 @@
   td {
     @apply py-3 px-6;
     @apply text-left;
-
-    // C++ docs table has empty cells for some reason
-    &:empty {
-      display: none;
-    }
   }
 
   td {
