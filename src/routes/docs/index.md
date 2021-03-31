@@ -10,7 +10,11 @@ With Gitpod it is the same - we treat dev environments as automated resources yo
 
 This is what is at the heart of Gitpod: **an open platform that removes all friction of manually setting up and maintaining dev environments** allowing yourself and your team to build applications quicker and more collaboratively.
 
+<div class="video-container">
+
 `youtube: d6D-OUPnJeg`
+
+</div>
 
 <h2>Gitpod Concepts</h2>
 

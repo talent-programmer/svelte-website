@@ -14,7 +14,11 @@ To install a VS Code extension in Gitpod, simply go to the left vertical menu, a
 
 Here’s a short screencast:
 
+<div class="video-container">
+
 `youtube: eD_GQ2lQug8`
+
+</div>
 
 Once an extension is installed, your project's `.gitpod.yml` is updated automatically. You can also directly edit this file to install or remove extensions manually.
 

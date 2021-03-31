@@ -6,7 +6,11 @@ section: configuration
 
 Gitpod dev environments are started with a single click. In order to make sure they come fully initialized and with the tools you need, you should provide a configuration file.
 
+<div class="video-container">
+
 `youtube: ZgY6a78mAnQ`
+
+</div>
 
 ## Setup Assistant
 
