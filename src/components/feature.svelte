@@ -38,7 +38,6 @@
 
     &__preview {
       flex: 0 0 45%;
-      max-height: 500px;
 
       @media (max-width: 800px) {
         margin-top: var(--small);
