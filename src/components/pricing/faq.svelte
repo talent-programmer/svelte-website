@@ -25,6 +25,7 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
+      outline: none;
 
       &::-webkit-details-marker {
         display: none;
