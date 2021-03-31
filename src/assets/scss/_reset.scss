@@ -48,7 +48,9 @@ ol[type="A"] {
 ol[type="1"] {
   list-style: outside decimal;
 }
-
+ol[type="I"] {
+  list-style: outside upper-roman;
+}
 
 /* Make images easier to work with */
 img,
