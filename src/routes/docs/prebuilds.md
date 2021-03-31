@@ -8,11 +8,7 @@ Whenever your code changes (e.g. when new commits are pushed to your repository)
 
 Then, when you do create a new workspace on a branch, or Pull/Merge Request, for which a prebuild exists, this workspace will load much faster, because all dependencies will have been already downloaded ahead of time, and your code will be already compiled.
 
-<div class="video-container">
-
 `youtube: KR8ESjGYsXI`
-
-</div>
 
 ## Enable Prebuilt Workspaces
 

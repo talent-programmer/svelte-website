@@ -9,11 +9,7 @@ There are two different ways to share your workspaces:
 - [Sharing Running Workspaces](#sharing-running-workspaces)
 - [Sharing Snapshots](#sharing-snapshots)
 
-<div class="video-container">
-
 `youtube: 9RftoWFzJ2s`
-
-</div>
 
 ## Sharing Running Workspaces
 

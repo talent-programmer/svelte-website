@@ -15,11 +15,7 @@ You can start using Gitpod with one or more of the following ways:
 - Enable [GitLab Integration](#gitlab-integration)
 - Quick start using an [Example Project](#example-project) or [OSS Project](#gitpodified-open-source-project)
 
-<div class="video-container">
-
 `youtube: ZZ0_TQ6UApY`
-
-</div>
 
 ## Prefixed URL
 

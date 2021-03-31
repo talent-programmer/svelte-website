@@ -65,7 +65,7 @@
     margin-top: var(--micro);
   }
 
-  p + .video-container {
+  p > .video-container {
     margin-top: var(--medium);
   }
 
@@ -188,6 +188,7 @@
   .video-container {
     position: relative;
     overflow: hidden;
+    display: block;
     max-width: 100%;
     max-height: 315px;
     width: 560px;
