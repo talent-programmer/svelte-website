@@ -584,7 +584,7 @@
         processor we will offer and enter into a respective separate data
         processing agreement with such customer whereas such data processing
         agreement may be requested via email to
-        <a href="mailto:data@gitpod.io">data@gitpod.io</a>
+        <a href="mailto:data@gitpod.io">data@gitpod.io</a>.
       </p>
 
       <p>
@@ -750,7 +750,7 @@
 
       <p>
         For more information please refer to this privacy policy or contact us
-        via <a href="mailto:data@gitpod.io">data@gitpod.io</a>
+        via <a href="mailto:data@gitpod.io">data@gitpod.io</a>.
       </p>
 
       <h3>Automated Decision Making including Profiling</h3>
@@ -849,7 +849,7 @@
 
       <p>
         If you wish to make use of your rights mentioned above please send an
-        email to <a href="mailto:data@gitpod.io">data@gitpod.io</a>
+        email to <a href="mailto:data@gitpod.io">data@gitpod.io</a>.
       </p>
 
       <p>
@@ -945,7 +945,7 @@
         For any inquiries and additional questions about processing personal
         data please contact <a href="mailto:data@gitpod.io">data@gitpod.io</a
         >Further details may be found here:
-        <a href="/imprint/">https://gitpod.io/imprint/</a>
+        <a href="/imprint/">https://gitpod.io/imprint/</a>.
       </p>
     </li>
   </ol>
