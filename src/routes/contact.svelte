@@ -50,15 +50,71 @@
 </script>
 
 <style>
+  form {
+    max-width: 45rem;
+    margin: auto;
+  }
   input {
     all: unset;
     font: inherit;
   }
-  label,
-  legend {
-    display: block;
+  [type="radio"],
+  [tyoe="checkbox"] {
+    position: absolute;
   }
-  [type="radio"] + label {
+  label,
+  legend,
+  [type="email"],
+  [type="text"] {
+    display: block;
+    color: var(--dark-grey);
+    margin-bottom: 0.5rem;
+  }
+  [type="email"],
+  [type="text"],
+  textarea {
+    width: 100%;
+  }
+  li {
+    margin-bottom: 2rem;
+  }
+  fieldset,
+  [type="checkbox"] + label {
+    display: flex;
+    gap: 1rem;
+  }
+  fieldset {
+    flex-flow: row wrap;
+  }
+  legend {
+    flex: 100%;
+  }
+  [type="email"],
+  [type="text"],
+  [type="radio"] + label,
+  textarea {
+    border: 1px solid var(--divider);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5em;
+  }
+
+  [type="checkbox"] + label::before {
+    content: "";
+    border: 1px solid var(--divider);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0.5em;
+  }
+  [type="checkbox"]:checked + label::before {
+    content: "X";
+  }
+  [type="radio"]:hover + label,
+  [type="radio"]:focus + label,
+  [type="radio"]:checked + label {
+    border-color: currentColor;
+  }
+  [type="radio"]:checked + label {
+    background-color: var(--sand-light);
   }
 </style>
 
