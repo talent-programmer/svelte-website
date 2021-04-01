@@ -1,4 +1,4 @@
-const tailwind = require("tailwindcss");
+const tailwind = require("@tailwindcss/jit");
 const cssnano = require("cssnano");
 const postcssImport = require("postcss-import");
 const presetEnv = require("postcss-preset-env")({
