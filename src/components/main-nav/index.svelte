@@ -1,10 +1,10 @@
 <script>
-  import LogoWrapper from "./logo-wrapper.svelte";
   import MobileMenu from "./mobile-menu/index.svelte";
   import MobileMenuButton from "./mobile-menu/button.svelte";
   import NavItem from "./nav-item.svelte";
   import menuState from "./mobile-menu/state";
   import LoginButton from "./login-button.svelte";
+  import Logo from "../svgs/logo.svelte";
 
   const navItems = [
     {
@@ -85,7 +85,7 @@
 <nav class={`nav text-small ${$menuState ? "bg-off-white" : ""}`}>
   <div class="wrapper">
     <a href="/" aria-label="Gitpod" on:click={() => ($menuState = !menuState)}>
-      <LogoWrapper />
+      <Logo />
     </a>
     <div class="items">
       {#each navItems as { href, label }}
