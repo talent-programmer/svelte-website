@@ -15,6 +15,7 @@ a {
 [class|="btn"],
 .btn {
   display: inline-block;
+  margin-top: 1rem;
   text-align: center;
   font-weight: 600;
   padding: 0.5rem 1.5rem;
@@ -70,6 +71,17 @@ a {
   &:focus {
     background-image: linear-gradient(#00000005, #00000005);
   }
+}
+
+/* Unique buttons */
+.btn-green {
+  background-color: var(--transparent-green);
+  color: var(--green);
+}
+.btn-green:hover,
+.btn-green:focus {
+  background-color: var(--green);
+  color: var(--off-vhite);
 }
 
 .btn-wrapper {
