@@ -52,9 +52,10 @@
       }
     }
   }
+
   .btn-tertiary {
     opacity: 0;
-    font-weight: normal;
+
     @media (max-width: 427px) {
       display: none;
     }
