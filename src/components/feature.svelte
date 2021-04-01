@@ -21,6 +21,7 @@
   .feature {
     display: flex;
     justify-content: space-between;
+    min-height: 340px;
 
     @media (max-width: 800px) {
       flex-direction: column;
@@ -73,7 +74,11 @@
           <h2 class="h3">{title}</h2>
           <p>{paragraph}</p>
         </div>
-        <div class="feature__buttons buttons-wrapper">
+        <div
+          class={`feature__buttons ${
+            moreButton && documentationLink ? "buttons-wrapper" : ""
+          }`}
+        >
           <a href={moreButton.href} class="btn-primary">
             {moreButton.text}
           </a>

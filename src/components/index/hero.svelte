@@ -53,10 +53,6 @@
           display: flex;
           gap: var(--micro);
         }
-
-        @media (max-width: 375px) {
-          justify-content: space-between;
-        }
       }
     }
 
