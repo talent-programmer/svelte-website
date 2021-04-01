@@ -10,6 +10,9 @@
       description:
         "If you are looking for help for common requests pease visit our community.",
       title: "Ask the community",
+      image: "contact-1.png",
+      imgHeight: "130",
+      imgWidth: "142",
     },
     {
       btnHref: "/docs",
@@ -17,6 +20,9 @@
       description:
         "If you want to find out if you are elegible for our professional open source programm you can check out our docs.",
       title: "Professional Open Source",
+      image: "contact-2.png",
+      imgHeight: "130",
+      imgWidth: "142",
     },
   ];
 
@@ -61,7 +67,7 @@
     color: var(--dark-grey);
   }
   [type="radio"],
-  [tyoe="checkbox"] {
+  [type="checkbox"] {
     position: absolute;
   }
   label,
@@ -108,6 +114,7 @@
     padding: 0.25rem;
     border-radius: 0.5em;
     background-clip: content-box;
+    display: inline-block;
   }
   [type="checkbox"]:checked + label::before {
     background-color: currentColor;

@@ -66,6 +66,9 @@ main > section {
   justify-content: center;
   max-width: 98vw;
 }
+.cards img {
+  margin: 0 auto 1em;
+}
 @media (min-width: 50rem) {
   .halfimages article:nth-of-type(odd) > :first-of-type {
     order: 2;

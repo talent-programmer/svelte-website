@@ -6,6 +6,13 @@
 
 <div class="card">
   <!-- TOOD: Display the image -->
+  <img
+    src="images/contact/{contactCard.image}"
+    height={contactCard.imgHeight}
+    width={contactCard.imgWidth}
+    alt=""
+    role="presentation"
+  />
   <h2>{contactCard.title}</h2>
   <p>{contactCard.description}</p>
   <a href={contactCard.btnHref}>{contactCard.btnText}</a>
