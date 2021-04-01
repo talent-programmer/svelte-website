@@ -93,8 +93,8 @@ a {
   text-decoration-color: var(--brand-ripe);
   text-underline-offset: 0.25em;
 }
-a:hover,
-a:focus {
+a[href]:hover,
+a[href]:focus {
   text-decoration: underline solid var(--brand-ripe);
 }
 /* low specificity. easy to overwrite */

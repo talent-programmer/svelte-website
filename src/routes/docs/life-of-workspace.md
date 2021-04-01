@@ -4,7 +4,7 @@ section: workspaces
 
 # Life of a Workspace
 
-- [Timeouts](#timeouts)
+- [Timeouts](docs/life-of-workspace/#timeouts)
 - [Garbage Collection](#garbage-collection)
 - [Changes Are Saved](#changes-are-saved)
 
@@ -12,7 +12,7 @@ Gitpod makes creating fresh workspaces as easy as [clicking a button on a GitHub
 Gitpod's continuous dev environments encourages you to create fresh workspaces rather than restarting older ones.
 This ensures that you are starting from a clean slate with proper configuration.
 
-## Timeouts
+## <a id="timeouts">Timeouts</a>
 
 Any running workspace will automatically stop after some time of inactivity. Normally, this timeout is 30 minutes but is extended to **60 minutes if you have the _Unlimited_ plan**.
 Furthermore, _Unlimited_ users can manually boost the timeout of a workspace to 180 minutes. This comes in handy, e.g. in case you want to go out for a longer lunch or meeting and don't like restarting your workspace when coming back.
