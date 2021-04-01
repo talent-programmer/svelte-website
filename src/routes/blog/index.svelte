@@ -1,7 +1,6 @@
 <script lang="ts" context="module">
-  export async function load(loadInput) {
-    const response = await loadInput.fetch(`blog.json`);
-    const posts = await response.json();
+  export async function load({ session }) {
+    const posts = session.posts;
     return { props: { posts } };
   }
 </script>
