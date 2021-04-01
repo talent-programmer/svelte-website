@@ -12,6 +12,7 @@
 
     @media (max-width: 768px) {
       flex-direction: column;
+      border-radius: 1rem;
     }
 
     &__text {
@@ -19,7 +20,7 @@
       flex: 0 0 45%;
 
       @media (max-width: 768px) {
-        padding: var(--micro) var(--xx-small);
+        padding: var(--xx-small);
       }
     }
 
@@ -56,7 +57,7 @@
 
       @media (max-width: 768px) {
         .small {
-          padding: var(--macro) var(--x-small) var(--x-small);
+          padding: var(--macro) var(--xx-small) var(--x-small);
         }
       }
     }
