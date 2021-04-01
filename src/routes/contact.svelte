@@ -54,9 +54,11 @@
     max-width: 45rem;
     margin: auto;
   }
-  input {
+  input,
+  textarea {
     all: unset;
     font: inherit;
+    color: var(--dark-grey);
   }
   [type="radio"],
   [tyoe="checkbox"] {
@@ -103,10 +105,13 @@
     border: 1px solid var(--divider);
     height: 2rem;
     width: 2rem;
+    padding: 0.25rem;
     border-radius: 0.5em;
+    background-clip: content-box;
   }
   [type="checkbox"]:checked + label::before {
-    content: "X";
+    background-color: currentColor;
+    border-color: currentColor;
   }
   [type="radio"]:hover + label,
   [type="radio"]:focus + label,
