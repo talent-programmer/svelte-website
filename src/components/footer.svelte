@@ -173,7 +173,7 @@
 
     <div class="footer__bottom">
       <div class="footer__copy">
-        <LogoTextless /><span>Copyright &copy; Gitpod</span>
+        <a href="/"><LogoTextless /></a><span>Copyright &copy; Gitpod</span>
       </div>
       <div class="footer__social">
         {#each socialLinks as link}
