@@ -5,7 +5,7 @@
 </script>
 
 <div class="mb-10 max-w-xl bg-gray-100 rounded-4xl">
-  <a href="/blog/{post.slug}">
+  <a href="/blog/{post.slug}" sveltekit:prefetch>
     <img
       src="/images/blog/{post.slug}/{post.image}"
       alt={`Preview image for the blog post titled ${post.title}`}

@@ -13,6 +13,6 @@
 <a
   class:active={href.indexOf($page.path) >= 0}
   {href}
-  rel="prefetch"
+  sveltekit:prefetch
   {...$$props}><slot /></a
 >
