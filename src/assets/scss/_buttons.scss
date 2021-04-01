@@ -31,7 +31,8 @@ a {
   }
 }
 
-.btn {
+.btn,
+.btn-cta {
   background-color: var(--sand-dark);
   &:hover,
   &:focus {
@@ -81,6 +82,12 @@ a {
 .btn-green:focus {
   background-color: var(--green);
   color: var(--off-vhite);
+}
+
+.btn-cta {
+  font-size: var(--p-medium);
+  padding: 0.75rem 2rem;
+  border-radius: 1rem;
 }
 
 .buttons-wrapper {

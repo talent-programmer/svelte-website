@@ -59,16 +59,8 @@
     }
   }
 
-  .btn {
+  .btn-cta {
     align-self: center;
-    font-size: var(--p-medium);
-    padding: 0.75rem 2rem;
-    border-radius: 1rem;
-
-    &:hover,
-    &:focus {
-      background: var(--brand-almost-ripe);
-    }
   }
 </style>
 
@@ -89,5 +81,5 @@
       {/each}
     </ul>
   </div>
-  <a href={btnHref} class="btn">{btnText}</a>
+  <a href={btnHref} class="btn-cta">{btnText}</a>
 </div>
