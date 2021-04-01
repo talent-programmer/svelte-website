@@ -66,9 +66,15 @@ img:not([alt]) {
   outline: 10px solid;
 }
 
-/* margin on everything except first child.  */
-main > * + * {
-  margin-top: 1em;
+/* margin bottom on everything  */
+main > * {
+  margin-bottom: 1em;
+}
+
+a,
+summary,
+button {
+  cursor: pointer;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -87,4 +93,17 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+a {
+  text-decoration-color: var(--brand-ripe);
+  text-underline-offset: 0.25em;
+}
+a:hover,
+a:focus {
+  text-decoration: underline solid var(--brand-ripe);
+}
+/* low specificity. easy to overwrite */
+a[class] {
+  text-decoration: none;
 }

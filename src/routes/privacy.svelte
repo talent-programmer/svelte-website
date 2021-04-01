@@ -613,9 +613,10 @@
         When using the Gitpod Service your data may also be processed by third
         party providers as set forth in this privacy policy, for example <a
           href="#freshchat">FreshChat</a
-        >For details please refer to <a href="#details-III" /> above as well as
-        <a href="#details-VI" />
-        and <a href="#details-VII" /> below.
+        >For details please refer to <a href="#details-III">III</a> above as
+        well as
+        <a href="#details-VI">VI</a>
+        and <a href="#details-VII">VIII</a> below.
       </p>
 
       <p>

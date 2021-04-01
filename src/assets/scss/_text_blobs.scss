@@ -36,7 +36,11 @@
 .text-blob h5 {
   margin: 1em 0;
 }
-.text-blob a {
+.text-blob a,
+.text-blob a:hover,
+.text-blob a:focus {
   text-decoration: underline;
-  font-weight: bold;
+}
+.text-blob a {
+  text-decoration: underline solid var(--brand-ripe);
 }
