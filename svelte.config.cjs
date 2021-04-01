@@ -11,24 +11,24 @@ module.exports = {
 
   kit: {
     adapter: adapterNetlify(),
-    // amp: false,
-    // appDir: '_app',
-    // files: {
-    // 	assets: 'static',
-    // 	hooks: 'src/hooks',
-    // 	lib: 'src/components',
-    // 	routes: 'src/routes',
-    // 	template: 'src/app.html'
-    // },
-    // hydrate: true,
-    // prerender: {
-    // 	crawl: true,
-    // 	enabled: true,
-    // 	force: false,
-    // 	pages: ['*']
-    // },
-    // router: true,
-    // ssr: true,
+    amp: false,
+    appDir: "_app",
+    files: {
+      assets: "static",
+      hooks: "src/hooks",
+      lib: "src/components",
+      routes: "src/routes",
+      template: "src/app.html",
+    },
+    hydrate: true,
+    prerender: {
+      crawl: true,
+      enabled: true,
+      force: false,
+      pages: ["*"],
+    },
+    router: true,
+    ssr: true,
     target: "#svelte",
     vite: () => ({
       ssr: {
