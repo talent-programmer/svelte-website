@@ -37,6 +37,10 @@
       }
     }
 
+    .btn-conversion {
+      margin-top: 0;
+    }
+
     &__action {
       margin-top: var(--small);
       align-items: end;
@@ -48,10 +52,6 @@
         display: grid;
         grid-template-columns: 32% 2fr;
         gap: var(--xx-small);
-
-        @media (max-width: 1140px) {
-          grid-template-columns: 29% 2fr;
-        }
 
         @media (max-width: 972px) {
           display: flex;
