@@ -10,6 +10,7 @@
     paragraph,
     title,
     terminalSource,
+    image,
   } = feature;
 </script>
 
@@ -61,14 +62,6 @@
         margin-top: var(--xx-small);
       }
     }
-
-    .btn {
-      margin-bottom: var(--micro);
-
-      &:not(:last-child) {
-        margin-right: var(--micro);
-      }
-    }
   }
 </style>
 
@@ -80,16 +73,21 @@
           <h2 class="h3">{title}</h2>
           <p>{paragraph}</p>
         </div>
-        <div class="feature__buttons">
+        <div class="feature__buttons buttons-wrapper">
           <a href={moreButton.href} class="btn-primary">
             {moreButton.text}
           </a>
-          <a href={documentationLink} class="btn-secondary"> Documentation </a>
+          {#if documentationLink}
+            <a href={documentationLink} class="btn-secondary">Documentation </a>
+          {/if}
         </div>
       </div>
       <div class="feature__preview">
         {#if terminalSource}
           <Console source={terminalSource} />
+        {/if}
+        {#if image}
+          <img src={image.src} alt={image.alt} />
         {/if}
       </div>
     </div>
