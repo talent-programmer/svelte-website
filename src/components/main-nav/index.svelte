@@ -84,7 +84,7 @@
 
 <nav class={`nav text-small ${$menuState ? "bg-off-white" : ""}`}>
   <div class="wrapper">
-    <a href="/" aria-label="Gitpod">
+    <a href="/" aria-label="Gitpod" on:click={() => ($menuState = !menuState)}>
       <LogoWrapper />
     </a>
     <div class="items">

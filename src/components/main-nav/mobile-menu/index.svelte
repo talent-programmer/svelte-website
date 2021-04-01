@@ -19,6 +19,7 @@
     background: var(--off-white);
     padding: var(--x-large) 0;
     box-shadow: 0px 0.625rem 1.5rem -0.625rem rgba(0, 0, 0, 0.08);
+    z-index: 1;
 
     :global(a) {
       font-size: var(--p-large);
@@ -37,7 +38,9 @@
 {#if $menuState}
   <div class="items">
     {#each navItems as { href, label }}
-      <NavItem {href}>{label}</NavItem>
+      <NavItem {href} on:click={() => ($menuState = !$menuState)}
+        >{label}</NavItem
+      >
     {/each}
     <LoginButton />
   </div>
