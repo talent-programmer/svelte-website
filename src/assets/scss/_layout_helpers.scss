@@ -51,3 +51,50 @@ main > section {
     padding: var(--macro);
   }
 }
+
+/* CARDS */
+.halfimages {
+  /* cards have the margin */
+  margin-bottom: 0;
+}
+.halfimages article,
+.cards {
+  display: flex;
+  grid-gap: 2rem;
+  flex-flow: row wrap;
+  margin-bottom: 2rem;
+  justify-content: center;
+  max-width: 98vw;
+}
+@media (min-width: 50rem) {
+  .halfimages article:nth-of-type(odd) > :first-of-type {
+    order: 2;
+  }
+  .halfimages img {
+    max-width: 100%;
+  }
+}
+.halfimages article > div {
+  flex: 0 1 calc(50% - 2rem);
+  min-width: 400px;
+  align-self: center;
+}
+.halfimages article p {
+  margin-bottom: 2rem;
+}
+.cards.double > div {
+  flex: 0 1 calc(50% - 1rem);
+  min-width: 400px;
+  align-self: stretch;
+}
+.cards.triple > div {
+  flex: 0 1 calc(33% - 2rem);
+  min-width: 300px;
+  align-self: stretch;
+  text-align: center;
+}
+.triple .card {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 33% 3rem 1fr 1.5rem;
+}

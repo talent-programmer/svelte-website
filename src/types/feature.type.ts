@@ -3,5 +3,6 @@ export type Feature = {
   paragraph: string;
   moreButton: { text: string; href: string };
   documentationLink: string;
-  preview: { name: string; alt: string };
+  preview?: { name: string; alt: string };
+  terminalSource?: string;
 };

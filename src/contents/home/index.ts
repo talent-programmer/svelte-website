@@ -1,24 +1,6 @@
-import type { Brand } from "../types/brand.type";
-import type { Feature } from "../types/feature.type";
-import type { Project } from "../types/project.type";
-import type { Testimonial } from "../types/testimonial.type";
-
-export const features: Feature[] = [
-  {
-    title: "Introducing Pre-builds",
-    paragraph:
-      "We invented prebuilds so application code, configuration and infrastructure can all be stored as machine-executable code in your git repositories and applied to dev environments automatically and continuously.",
-    moreButton: {
-      text: "More on prebuilds",
-      href: "/docs/prebuilds/",
-    },
-    documentationLink: "/docs/prebuilds/",
-    preview: {
-      name: "terminal.png",
-      alt: "A terminal that displays Gitpod prebuild output.",
-    },
-  },
-];
+import type { Brand } from "../../types/brand.type";
+import type { Project } from "../../types/project.type";
+import type { Testimonial } from "../../types/testimonial.type";
 
 export const brands: Brand[] = [
   {

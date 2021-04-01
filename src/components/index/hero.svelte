@@ -39,7 +39,7 @@
 
     &__action {
       margin-top: var(--small);
-
+      align-items: end;
       @media (max-width: 972px) {
         margin-top: var(--xx-small);
       }

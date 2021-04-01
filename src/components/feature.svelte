@@ -1,9 +1,16 @@
 <script lang="ts">
   import type { Feature } from "../types/feature.type";
+  import Console from "./console.svelte";
   import Section from "./section.svelte";
 
   export let feature: Feature;
-  const { documentationLink, moreButton, paragraph, preview, title } = feature;
+  const {
+    documentationLink,
+    moreButton,
+    paragraph,
+    title,
+    terminalSource,
+  } = feature;
 </script>
 
 <style lang="scss">
@@ -81,7 +88,9 @@
         </div>
       </div>
       <div class="feature__preview">
-        <img src={`/${preview.name}`} alt={preview.alt} />
+        {#if terminalSource}
+          <Console source={terminalSource} />
+        {/if}
       </div>
     </div>
   </Section>

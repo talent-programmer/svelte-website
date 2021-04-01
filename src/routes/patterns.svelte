@@ -158,6 +158,10 @@
       <li><a href="/" class="btn-tertiary">btn-tertiary</a></li>
       <li><a href="/" class="btn-quaternary">btn-quaternary</a></li>
     </ul>
+    <h2>One off buttons (don't use)</h2>
+    <ul class="patterns">
+      <li><a href="/" class="btn-green">Non-standard: btn-green</a></li>
+    </ul>
   </section>
 </article>
 <hr />
