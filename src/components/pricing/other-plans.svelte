@@ -50,9 +50,7 @@
           {#each p.paragraphs as para}
             <p>{@html para}</p>
           {/each}
-          <a href={p.btnHref} class="btn"
-            >{p.btnText}</a
-          >
+          <a href={p.btnHref} class="btn">{p.btnText}</a>
         </div>
       </div>
     {/each}
