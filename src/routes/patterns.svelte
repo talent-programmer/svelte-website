@@ -1,7 +1,3 @@
-<script>
-  import { hrtime } from "node:process";
-</script>
-
 <style lang="scss">
   // DO NOT COPY THIS! For reference only.
   // The colors will automatically update if the variable values update.
@@ -155,28 +151,16 @@
   <section>
     <h2>Buttons</h2>
     <ul class="patterns">
-      <li>
-        <a href="/" class="btn">class: btn</a>
-      </li>
-      <li>
-        <a href="/" class="btn-conversion">btn-conversion</a>
-      </li>
-      <li>
-        <a href="/" class="btn-primary">btn-primary</a>
-      </li>
-      <li>
-        <a href="/" class="btn-secondary">btn-secondary</a>
-      </li>
-      <li>
-        <a href="/" class="btn-tertiary">btn-tertiary</a>
-      </li>
-      <li>
-        <a href="/" class="btn-quaternary">btn-quaternary</a>
-      </li>
+      <li><a href="/" class="btn">class: btn</a></li>
+      <li><a href="/" class="btn-conversion">btn-conversion</a></li>
+      <li><a href="/" class="btn-primary">btn-primary</a></li>
+      <li><a href="/" class="btn-secondary">btn-secondary</a></li>
+      <li><a href="/" class="btn-tertiary">btn-tertiary</a></li>
+      <li><a href="/" class="btn-quaternary">btn-quaternary</a></li>
     </ul>
-    <h3>Special use case buttons</h3>
+    <h2>One off buttons (don't use)</h2>
     <ul class="patterns">
-      <li><a href="/" class="btn-green">Environmental: btn-green</a></li>
+      <li><a href="/" class="btn-green">Non-standard: btn-green</a></li>
     </ul>
   </section>
 </article>
