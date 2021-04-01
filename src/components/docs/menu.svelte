@@ -108,16 +108,8 @@
   ];
 </script>
 
-<style>
-  .menu {
-    @apply p-6;
-  }
-</style>
-
-<div class="inline-block">
-  <ul class="menu space-y-6">
-    {#each MENU as menuItem}
-      <MenuSection {menuItem} />
-    {/each}
-  </ul>
-</div>
+<ul class="space-y-6">
+  {#each MENU as menuItem}
+    <MenuSection {menuItem} />
+  {/each}
+</ul>

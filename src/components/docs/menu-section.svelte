@@ -4,9 +4,11 @@
 
   export let menuItem;
 
-  $: isActiveSection = $docsCurrentSectionStore
-    ? menuItem.path.endsWith(`${$docsCurrentSectionStore}/`)
-    : false;
+  $: sectionPath = $docsCurrentSectionStore
+    ? `${$docsCurrentSectionStore}\/`
+    : "";
+  $: regex = new RegExp(`\/docs\/${sectionPath}$`);
+  $: isActiveSection = regex.test(menuItem.path);
 </script>
 
 <style>

@@ -3,11 +3,33 @@
   import Search from "../../components/docs/search.svelte";
 </script>
 
-<div class="row flex mx-auto px-8 py-10 w-screen">
-  <div class="w-2/5 pt-20">
+<style>
+  .docs-layout {
+    @apply py-10;
+
+    @media (min-width: 769px) {
+      @apply flex;
+    }
+  }
+
+  .menu {
+    @media (min-width: 769px) {
+      @apply w-2/5 pt-24 pr-8;
+    }
+  }
+
+  .doc-contents {
+    @media (min-width: 769px) {
+      @apply w-3/5;
+    }
+  }
+</style>
+
+<div class="docs-layout row">
+  <div class="menu">
     <Menu />
   </div>
-  <div class="w-3/5">
+  <div class="doc-contents">
     <Search />
     <slot />
   </div>
