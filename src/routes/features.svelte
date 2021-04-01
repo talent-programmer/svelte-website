@@ -7,27 +7,6 @@
 </script>
 
 <style lang="scss">
-  .halfimages article,
-  .cards {
-    display: flex;
-    grid-gap: 2rem;
-    flex-flow: row wrap;
-    margin-bottom: 2rem;
-    justify-content: center;
-  }
-  .halfimages article > div {
-    flex: 0 1 calc(50% - 2rem);
-    min-width: 400px;
-    align-self: center;
-  }
-  .halfimages article p {
-    margin-bottom: 2rem;
-  }
-  .cards.double > div {
-    flex: 0 1 calc(50% - 2rem);
-    min-width: 400px;
-    align-self: stretch;
-  }
   .cards img {
     margin: 0 auto 1em;
   }
@@ -37,21 +16,12 @@
   .triple img {
     height: 90px;
   }
-  .cards.triple > div {
-    flex: 0 1 calc(33% - 2rem);
-    min-width: 300px;
-    align-self: stretch;
-    text-align: center;
-  }
   .triple h3 {
     min-height: 3rem;
   }
-  .triple .card {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 33% 3rem 1fr 1.5rem;
-  }
+
   .triple a {
+    /* TOD0: better contrast for AA */
     color: var(--brand-ripe);
   }
   section h3:first-child,
@@ -84,6 +54,10 @@
 <section class="halfimages">
   <article>
     <div>
+      <!-- TODO: Insert the terminal output animation from the homepage -->
+      <img src="images/features/features-1.png" alt="" role="presentation" />
+    </div>
+    <div>
       <h2 class="h3">Save Time with Prebuilt Workspaces</h2>
       <p class="text-large">
         Gitpod continuously builds your git branches like a CI server. This
@@ -95,10 +69,6 @@
           >More about Prebuilt Workspaces</a
         >
       </p>
-    </div>
-    <div>
-      <!-- TODO: Insert the terminal output animation from the homepage -->
-      <img src="images/features/features-1.png" alt="" role="presentation" />
     </div>
   </article>
 
