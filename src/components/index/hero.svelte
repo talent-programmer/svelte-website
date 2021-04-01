@@ -5,7 +5,7 @@
     justify-content: space-between;
     margin-top: var(--x-small);
 
-    @media (max-width: 642px) {
+    @media (max-width: 647px) {
       flex-direction: column;
       max-width: 450px;
       margin-left: auto;
@@ -24,7 +24,7 @@
         flex: 0 0 50%;
       }
 
-      @media (max-width: 692px) {
+      @media (max-width: 698px) {
         flex: 0 0 54%;
       }
     }
