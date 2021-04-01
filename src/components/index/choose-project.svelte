@@ -22,7 +22,7 @@
     let options = {
       root: null,
       rootMargin: "0px",
-      threshold: 1,
+      threshold: [0.7],
     };
 
     let observer = new IntersectionObserver(beTouching, options);
@@ -92,6 +92,10 @@
     .mobile {
       display: none;
     }
+  }
+
+  span {
+    transition: all 0.2s;
   }
 
   :global(.strikethrough) {
