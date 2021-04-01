@@ -21,9 +21,8 @@
     "build:css:global": "NODE_ENV=production postcss src/assets/global.scss -o static/global.css",
     "build:css:styles": "NODE_ENV=production postcss src/assets/styles.scss -o static/styles.css",
     "build:svelte": "svelte-kit build",
-    "build:export": "svelte-kit build",
     "build:functions": "netlify-lambda build src/functions",
-    "export": "run-s clean build:functions build:css build:export",
+    "deploy": "run-s clean build:functions build:css build:svelte",
     "start": "svelte-kit start",
     "validate": "svelte-check"
   },
