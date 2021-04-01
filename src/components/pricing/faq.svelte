@@ -25,6 +25,7 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
+      outline: none;
 
       &::-webkit-details-marker {
         display: none;
@@ -58,7 +59,7 @@
     }
   }
 
-  .h5 {
+  .h4 {
     margin-bottom: 0;
   }
 
@@ -69,7 +70,7 @@
 
 <details class="faq">
   <summary class="faq__top">
-    <h3 class="h4 faq__title">{title}</h3>
+    <h3 class="h4">{title}</h3>
     <img class="faq__arrow" src="/arrow.svg" alt="Arrow" />
   </summary>
   <div class="faq__text">
