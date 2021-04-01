@@ -49,6 +49,19 @@
   };
 </script>
 
+<style>
+  input {
+    all: unset;
+    font: inherit;
+  }
+  label,
+  legend {
+    display: block;
+  }
+  [type="radio"] + label {
+  }
+</style>
+
 <OpenGraph
   data={{
     description: "Reach out if you have any questions regarding Gitpod.",
@@ -56,61 +69,82 @@
     type: "website",
   }}
 />
-<h1>Contact us</h1>
-<p>Please reach out if you have any questions regarding Gitpod.</p>
+<header>
+  <h1>Contact us</h1>
+  <p>Please reach out if you have any questions regarding Gitpod.</p>
+</header>
 
-<div>
+<div class="cards double">
   {#each contactCards as contactCard}
     <Card {contactCard} />
   {/each}
 </div>
 
-<form on:submit|preventDefault={handleSubmit}>
-  <div>
-    <label for="name">Name*</label>
-    <input id="name" bind:value={formData.name} type="text" required />
-  </div>
-  <div>
-    <label for="email">E-Mail*</label>
-    <input id="email" bind:value={formData.email} type="email" required />
-  </div>
-
-  <div>
-    <span>Please choose a subject</span>
-    {#each subjects as subject, index}
-      <input
-        id="subject-{index}"
-        type="radio"
-        bind:group={formData.selectedSubject}
-        value={subject}
-      />
-      <label for="subject-{index}">{subject}</label>
-    {/each}
-  </div>
-
-  <div>
-    <label for="message">Your message*</label>
-    <textarea
-      id="message"
-      bind:value={formData.message}
-      cols="30"
-      rows="10"
-      required
-    />
-  </div>
-
-  <div>
-    <input
-      id="consent"
-      bind:value={formData.consent}
-      type="checkbox"
-      required
-    />
-    <label for="consent"
-      >I consent to having this website store my submitted information so that a
-      support staff can respond to my inquiry.</label
-    >
-  </div>
-
-  <button>Send message</button>
-</form>
+<section class="card">
+  <form on:submit|preventDefault={handleSubmit}>
+    <ul>
+      <li>
+        <label for="name">Name*</label>
+        <input
+          id="name"
+          bind:value={formData.name}
+          type="text"
+          autocomplete="name"
+          required
+        />
+      </li>
+      <li>
+        <label for="email">E-Mail*</label>
+        <input
+          id="email"
+          bind:value={formData.email}
+          type="email"
+          required
+          autocomplete="email"
+        />
+      </li>
+      <li>
+        <fieldset>
+          <legend>Please choose a subject</legend>
+          {#each subjects as subject, index}
+            <input
+              id="subject-{index}"
+              type="radio"
+              bind:group={formData.selectedSubject}
+              value={subject}
+              name="subject"
+            />
+            <label for="subject-{index}">{subject}</label>
+          {/each}
+        </fieldset>
+      </li>
+      <li>
+        <div>
+          <label for="message">Your message*</label>
+          <textarea
+            id="message"
+            bind:value={formData.message}
+            cols="30"
+            rows="10"
+            required
+          />
+        </div>
+      </li>
+      <li>
+        <input
+          id="consent"
+          bind:value={formData.consent}
+          type="checkbox"
+          required
+        />
+        <label for="consent"
+          >I consent to having this website store my submitted information so
+          that a support staff can respond to my inquiry.</label
+        >
+      </li>
+      <li>
+        <button class="btn-conversion">Send message</button>
+      </li>
+    </ul>
+  </form>
+</section>
