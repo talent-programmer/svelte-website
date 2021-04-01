@@ -72,8 +72,8 @@
   }
 </style>
 
-<div class="row">
-  <Section>
+<Section>
+  <div class="row">
     <div class="feature">
       <div class="feature__text">
         <div class="text-large">
@@ -93,5 +93,5 @@
         {/if}
       </div>
     </div>
-  </Section>
-</div>
+  </div>
+</Section>

@@ -2,12 +2,20 @@
   export let id;
 </script>
 
-<style>
+<style lang="scss">
   section {
-    margin: var(--xx-large) 0;
+    margin-top: var(--xx-large);
+
+    &:last-of-type {
+      margin-bottom: var(--xx-large);
+    }
 
     @media (max-width: 972px) {
-      margin: var(--x-large) 0;
+      margin-top: var(--x-large);
+
+      &:last-of-type {
+        margin-bottom: var(--x-large);
+      }
     }
   }
 </style>

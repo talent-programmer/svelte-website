@@ -9,6 +9,7 @@
 
   h1 {
     text-align: center;
+    margin-bottom: 0;
 
     @media (max-width: 1140px) {
       max-width: 800px;

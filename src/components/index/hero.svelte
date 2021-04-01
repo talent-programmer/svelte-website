@@ -37,10 +37,6 @@
       }
     }
 
-    .btn-conversion {
-      margin-top: 0;
-    }
-
     &__action {
       margin-top: var(--small);
       align-items: end;

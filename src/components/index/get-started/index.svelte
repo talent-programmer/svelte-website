@@ -36,8 +36,8 @@
   }
 </style>
 
-<div class="row">
-  <Section id="get-started">
+<Section id="get-started">
+  <div class="row">
     <h1>Get started now</h1>
     <div class="wrapper">
       <div class="card">
@@ -47,5 +47,5 @@
         <LaunchExampleWorkspace />
       </div>
     </div>
-  </Section>
-</div>
+  </div>
+</Section>

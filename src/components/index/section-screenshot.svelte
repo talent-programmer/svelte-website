@@ -42,7 +42,7 @@
     }
   }
 
-  .btn-wrapper {
+  .buttons-wrapper {
     justify-content: center;
   }
 
@@ -65,8 +65,8 @@
   }
 </style>
 
-<div class="row">
-  <Section>
+<Section>
+  <div class="row">
     <h1>Remote-first. Secure by Design.</h1>
     <img class="screenshot" src="/images/gitpod-screenshot.png" alt="Gitpod" />
     <div class="content">
@@ -76,7 +76,7 @@
         centralizes all source code and never stores it on insecure machines and
         networks.
       </p>
-      <div class="btn-wrapper">
+      <div class="buttons-wrapper">
         {#each buttons as { href, icon, text }}
           <a {href} target="_blank" class="button text-medium">
             <img src={`/${icon}`} alt={text} />
@@ -85,5 +85,5 @@
         {/each}
       </div>
     </div>
-  </Section>
-</div>
+  </div>
+</Section>
