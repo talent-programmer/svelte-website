@@ -1,12 +1,12 @@
 <script lang="ts" context="module">
   import screencasts from "../../contents/screencasts";
 
-  export const preload = async function (this, page) {
+  export const load = async function ({ page }) {
     const { title } = page.params;
     const screencast = screencasts.find(
       (s) => s.title.toLocaleLowerCase().replace(/\s/g, "-") === title
     );
-    return { screencast };
+    return { props: { screencast } };
   };
 </script>
 

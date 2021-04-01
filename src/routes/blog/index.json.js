@@ -17,9 +17,6 @@ const posts = fs
   .map(generatePost)
   .sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
 
-export const get = (_req, res) => {
-  res.writeHead(200, {
-    "Content-Type": "application/json",
-  });
-  res.end(JSON.stringify(posts));
-};
+export const get = () => ({
+  body: posts,
+});

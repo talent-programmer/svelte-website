@@ -5,7 +5,7 @@
   export let menuItem;
 
   $: isActiveSection = $docsCurrentSectionStore
-    ? menuItem.path.endsWith(`${$docsCurrentSectionStore}/`)
+    ? menuItem.path.indexOf($docsCurrentSectionStore) >= 0
     : false;
 </script>
 
