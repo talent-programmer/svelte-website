@@ -11,12 +11,16 @@
     flex-direction: column;
     justify-content: space-between;
     background: var(--off-white);
-    padding: var(--x-small) var(--large) var(--medium);
+    padding: var(--x-small) var(--medium) var(--medium);
     border-radius: 16px;
     box-shadow: var(--shadow);
     transition: all 0.2s;
-    margin-bottom: var(--small);
-    width: 304px;
+    margin: 0 var(--micro) var(--x-small);
+    width: 295px;
+
+    @media (max-width: 1140px) {
+      padding: var(--x-small) var(--large) var(--medium);
+    }
 
     &:hover {
       box-shadow: var(--shadow-brand);
@@ -55,9 +59,16 @@
     }
   }
 
-  .btn:hover,
-  .btn:focus {
-    background: var(--brand-almost-ripe);
+  .btn {
+    align-self: center;
+    font-size: var(--p-medium);
+    padding: 0.75rem 2rem;
+    border-radius: 1rem;
+
+    &:hover,
+    &:focus {
+      background: var(--brand-almost-ripe);
+    }
   }
 </style>
 
