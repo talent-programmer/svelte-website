@@ -1,5 +1,5 @@
 <script>
-  import { brands } from "../../contents";
+  import { brands } from "../../contents/home";
   import Brand from "./brand.svelte";
 </script>
 

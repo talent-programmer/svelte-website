@@ -10,6 +10,9 @@
       description:
         "If you are looking for help for common requests pease visit our community.",
       title: "Ask the community",
+      image: "contact-1.png",
+      imgHeight: "130",
+      imgWidth: "142",
     },
     {
       btnHref: "/docs",
@@ -17,6 +20,9 @@
       description:
         "If you want to find out if you are elegible for our professional open source programm you can check out our docs.",
       title: "Professional Open Source",
+      image: "contact-2.png",
+      imgHeight: "130",
+      imgWidth: "142",
     },
   ];
 
@@ -54,68 +60,6 @@
     max-width: 45rem;
     margin: auto;
   }
-  input {
-    all: unset;
-    font: inherit;
-  }
-  [type="radio"],
-  [tyoe="checkbox"] {
-    position: absolute;
-  }
-  label,
-  legend,
-  [type="email"],
-  [type="text"] {
-    display: block;
-    color: var(--dark-grey);
-    margin-bottom: 0.5rem;
-  }
-  [type="email"],
-  [type="text"],
-  textarea {
-    width: 100%;
-  }
-  li {
-    margin-bottom: 2rem;
-  }
-  fieldset,
-  [type="checkbox"] + label {
-    display: flex;
-    gap: 1rem;
-  }
-  fieldset {
-    flex-flow: row wrap;
-  }
-  legend {
-    flex: 100%;
-  }
-  [type="email"],
-  [type="text"],
-  [type="radio"] + label,
-  textarea {
-    border: 1px solid var(--divider);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5em;
-  }
-
-  [type="checkbox"] + label::before {
-    content: "";
-    border: 1px solid var(--divider);
-    height: 2rem;
-    width: 2rem;
-    border-radius: 0.5em;
-  }
-  [type="checkbox"]:checked + label::before {
-    content: "X";
-  }
-  [type="radio"]:hover + label,
-  [type="radio"]:focus + label,
-  [type="radio"]:checked + label {
-    border-color: currentColor;
-  }
-  [type="radio"]:checked + label {
-    background-color: var(--sand-light);
-  }
 </style>
 
 <OpenGraph
@@ -139,6 +83,7 @@
 <section class="card">
   <form on:submit|preventDefault={handleSubmit}>
     <ul>
+      <!-- add class="error" to the li when the content of that li are not valid -->
       <li>
         <label for="name">Name*</label>
         <input
@@ -175,16 +120,14 @@
         </fieldset>
       </li>
       <li>
-        <div>
-          <label for="message">Your message*</label>
-          <textarea
-            id="message"
-            bind:value={formData.message}
-            cols="30"
-            rows="10"
-            required
-          />
-        </div>
+        <label for="message">Your message*</label>
+        <textarea
+          id="message"
+          bind:value={formData.message}
+          cols="30"
+          rows="10"
+          required
+        />
       </li>
       <li>
         <input
@@ -199,7 +142,9 @@
         >
       </li>
       <li>
-        <button class="btn-conversion">Send message</button>
+        <button type="submit" class="btn-conversion" disabled
+          >Send message</button
+        >
       </li>
     </ul>
   </form>

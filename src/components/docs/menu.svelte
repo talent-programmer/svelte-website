@@ -44,31 +44,6 @@
       M("Bitbucket Integration", "bitbucket-integration"),
       M("Browser Extension", "browser-extension"),
     ]),
-    M("Feature Preview", "feature-preview"),
-    M("Gitpod Self-Hosted", "self-hosted/latest/self-hosted", [
-      M(
-        "Install on Google Cloud Platform",
-        "self-hosted/latest/install/install-on-gcp-script"
-      ),
-      M(
-        "Install on Amazon Web Services",
-        "self-hosted/latest/install/install-on-aws-script"
-      ),
-      M(
-        "Install on self-managed Kubernetes",
-        "self-hosted/latest/install/install-on-kubernetes"
-      ),
-      M("Configure Ingress", "self-hosted/latest/install/configure-ingress"),
-      M("Configure OAuth", "self-hosted/latest/install/oauth"),
-      M("Configure a Database", "self-hosted/latest/install/database"),
-      M(
-        "Configure a Docker Registry",
-        "self-hosted/latest/install/docker-registry"
-      ),
-      M("Configure Storage", "self-hosted/latest/install/storage"),
-      M("Configure Nodes", "self-hosted/latest/install/nodes"),
-      M("Configure Workspaces", "self-hosted/latest/install/workspaces"),
-    ]),
     M("Languages & Frameworks", "languages-and-frameworks", [
       M("JavaScript", "languages/javascript"),
       M("Python", "languages/python"),
@@ -92,13 +67,30 @@
       M("Pandas", "languages/python/#pandas"),
       M("Deno", "languages/deno"),
     ]),
-    M("Theia – Gitpod's IDE", "ide", [
-      M("Tips & Tricks", "tips-and-tricks"),
-      M("Git Integration", "git"),
-      M("Search", "search"),
-      M("Fork a Repository", "fork-a-repo"),
-      M("Pull Requests", "pull-requests"),
-      M("Code Reviews", "code-reviews"),
+    // M("Feature Preview", "feature-preview"),
+    M("Gitpod Self-Hosted", "self-hosted/latest/self-hosted", [
+      M(
+        "Install on Google Cloud Platform",
+        "self-hosted/latest/install/install-on-gcp-script"
+      ),
+      M(
+        "Install on Amazon Web Services",
+        "self-hosted/latest/install/install-on-aws-script"
+      ),
+      M(
+        "Install on self-managed Kubernetes",
+        "self-hosted/latest/install/install-on-kubernetes"
+      ),
+      M("Configure Ingress", "self-hosted/latest/install/configure-ingress"),
+      M("Configure OAuth", "self-hosted/latest/install/oauth"),
+      M("Configure a Database", "self-hosted/latest/install/database"),
+      M(
+        "Configure a Docker Registry",
+        "self-hosted/latest/install/docker-registry"
+      ),
+      M("Configure Storage", "self-hosted/latest/install/storage"),
+      M("Configure Nodes", "self-hosted/latest/install/nodes"),
+      M("Configure Workspaces", "self-hosted/latest/install/workspaces"),
     ]),
     M("Subscriptions", "subscriptions", [
       M("Professional Open Source", "professional-open-source"),

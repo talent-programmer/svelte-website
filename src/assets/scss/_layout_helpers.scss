@@ -24,8 +24,7 @@ main > header:first-child {
   margin-bottom: 2rem;
 }
 
-main > header,
-main > section {
+main > header {
   margin-bottom: 8rem;
 }
 
@@ -65,6 +64,9 @@ main > section {
   margin-bottom: 2rem;
   justify-content: center;
   max-width: 98vw;
+}
+.cards img {
+  margin: 0 auto 1em;
 }
 @media (min-width: 50rem) {
   .halfimages article:nth-of-type(odd) > :first-of-type {

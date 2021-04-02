@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Carousel from "@beyonk/svelte-carousel";
   import Section from "../section.svelte";
   import Brands from "./brands.svelte";
   import Testimonial from "./testimonial.svelte";
@@ -8,27 +9,47 @@
 </script>
 
 <style lang="scss">
-  h1 {
+  h2 {
     text-align: center;
   }
 
-  .testimonials {
+  :global(.slides) {
+    margin-bottom: var(--small);
+  }
+
+  :global(.slides) > :global(div) > :global(div) {
     display: flex;
-    @media (max-width: 768px) {
-      flex-flow: row wrap;
-      align-items: center;
+    justify-content: center;
+  }
+
+  :global(.carousel.carousel.carousel) :global(li) {
+    background-color: var(--divider);
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: var(--light-grey);
+    }
+
+    &.active {
+      background-color: var(--light-grey);
     }
   }
 </style>
 
-<div class="row">
-  <Section>
-    <h1>Widespread already.</h1>
-    <div class="testimonials">
+<Section>
+  <div class="row">
+    <h2 class="h1">Widespread already.</h2>
+    <Carousel
+      controls={false}
+      perPage={{
+        900: 2,
+        1400: 3,
+      }}
+    >
       {#each testimonials as testimonial}
         <Testimonial {testimonial} />
       {/each}
-    </div>
+    </Carousel>
     <Brands />
-  </Section>
-</div>
+  </div>
+</Section>

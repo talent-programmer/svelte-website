@@ -12,7 +12,7 @@ export const pricingPlans: Pricing[] = [
   {
     title: "Personal",
     price: isEurope() ? "€8" : "$9",
-    duration: "per user/month",
+    duration: "Per User/Month",
     features: [
       "100 hours/month",
       "Private & Public Repos",
@@ -25,7 +25,7 @@ export const pricingPlans: Pricing[] = [
   {
     title: "Professional",
     price: isEurope() ? "€24" : "$29",
-    duration: "per user/month",
+    duration: "Per User/Month",
     features: ["All in personal plus", "Unlimited hours", "Teams"],
     btnText: "Buy Now",
     btnHref: "https://gitpod.io/subscription/",
@@ -33,7 +33,7 @@ export const pricingPlans: Pricing[] = [
   {
     title: "Unleashed",
     price: isEurope() ? "€36" : "$42",
-    duration: "per user/month",
+    duration: "Per User/Month",
     features: [
       "All in Professional plus",
       "16 Parallel Workspaces",

@@ -5,7 +5,7 @@
     justify-content: space-between;
     margin-top: var(--x-small);
 
-    @media (max-width: 642px) {
+    @media (max-width: 647px) {
       flex-direction: column;
       max-width: 450px;
       margin-left: auto;
@@ -24,7 +24,7 @@
         flex: 0 0 50%;
       }
 
-      @media (max-width: 692px) {
+      @media (max-width: 698px) {
         flex: 0 0 54%;
       }
     }
@@ -49,17 +49,9 @@
         grid-template-columns: 32% 2fr;
         gap: var(--xx-small);
 
-        @media (max-width: 1140px) {
-          grid-template-columns: 29% 2fr;
-        }
-
         @media (max-width: 972px) {
           display: flex;
           gap: var(--micro);
-        }
-
-        @media (max-width: 375px) {
-          justify-content: space-between;
         }
       }
     }

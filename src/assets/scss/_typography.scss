@@ -14,10 +14,14 @@ h6 {
 .homeh1 {
   font-size: var(--h1);
   line-height: 110%;
+
+  @media (max-width: 375px) {
+    margin-bottom: var(--micro);
+  }
 }
 
 h1,
-.h1 { 
+.h1 {
   margin-bottom: var(--small);
   font-size: var(--h2);
   line-height: 118.5%;

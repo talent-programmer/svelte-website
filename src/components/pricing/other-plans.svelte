@@ -11,6 +11,7 @@
   .plan {
     display: flex;
     padding: var(--small) var(--xx-small) var(--small);
+    border-bottom: 1px solid var(--divider);
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -33,7 +34,7 @@
     margin-bottom: var(--xx-small);
   }
 
-  .btn {
+  .btn-cta {
     margin-top: var(--small);
   }
 </style>
@@ -50,9 +51,7 @@
           {#each p.paragraphs as para}
             <p>{@html para}</p>
           {/each}
-          <a href={p.btnHref} class="btn"
-            >{p.btnText}</a
-          >
+          <a href={p.btnHref} class="btn-cta">{p.btnText}</a>
         </div>
       </div>
     {/each}

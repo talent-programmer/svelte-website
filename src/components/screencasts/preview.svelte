@@ -1,6 +1,6 @@
 <script lang="ts">
-  import LogoWrapper from "../main-nav/logo-wrapper.svelte";
   import type { Screencast } from "../../types/screencasts.type";
+  import Logo from "../svgs/logo.svelte";
 
   export let screencast: Screencast;
   export let screencastNumber: number;
@@ -69,7 +69,7 @@
     <data>Screencast {screencastNumberPadded}</data>
     <h2 class="text-large">{screencast.title}</h2>
     <!-- TODO: move css out of logo so we can change teh size -->
-    <LogoWrapper />
+    <Logo />
 
     <!-- Preview image. TODO: What do we want to show here? -->
   </div>
