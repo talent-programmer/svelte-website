@@ -1,5 +1,7 @@
 const adapterNetlify = require("@sveltejs/adapter-netlify");
 const { mdsvex } = require("mdsvex");
+const headings = require("remark-autolink-headings");
+const slug = require("remark-slug");
 const sveltePreprocess = require("svelte-preprocess");
 const pkg = require("./package.json");
 const remarkSetImagePath = require("./src/utils/remark-set-image-path.cjs");
@@ -47,6 +49,8 @@ module.exports = {
         docs: "./src/components/docs/docs-content-layout.svelte",
       },
       remarkPlugins: [
+        slug,
+        headings,
         remarkSetImagePath,
         [
           remarkEmbedVideo,
