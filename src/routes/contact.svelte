@@ -60,84 +60,6 @@
     max-width: 45rem;
     margin: auto;
   }
-  input,
-  textarea {
-    all: unset;
-    font: inherit;
-    color: var(--dark-grey);
-  }
-  [type="radio"],
-  [type="checkbox"] {
-    position: absolute;
-  }
-  label,
-  legend,
-  [type="email"],
-  [type="text"] {
-    display: block;
-    color: var(--dark-grey);
-    margin-bottom: 0.5rem;
-  }
-  [type="email"],
-  [type="text"],
-  textarea {
-    width: 100%;
-  }
-  li {
-    margin-bottom: 2rem;
-  }
-  fieldset,
-  [type="checkbox"] + label {
-    display: flex;
-    gap: 1rem;
-  }
-  fieldset {
-    flex-flow: row wrap;
-  }
-  legend {
-    flex: 100%;
-  }
-  [type="email"],
-  [type="text"],
-  [type="radio"] + label,
-  textarea {
-    border: 1px solid var(--divider);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5em;
-  }
-
-  [type="checkbox"] + label::before {
-    content: "";
-    border: 1px solid var(--divider);
-    height: 2rem;
-    width: 2rem;
-    padding: 0.25rem;
-    border-radius: 0.5em;
-    background-clip: content-box;
-    display: inline-block;
-  }
-  .error,
-  .error *,
-  .error :not(:checked) + label::before {
-    border-color: var(--error);
-    color: var(--error);
-  }
-  .error [type="checkbox"] + label {
-    color: var(--dark-gray);
-  }
-  [type="checkbox"]:checked + label::before {
-    background-color: currentColor;
-    border-color: currentColor;
-  }
-  [type="radio"]:hover + label,
-  [type="radio"]:focus + label {
-    border-color: currentColor;
-  }
-  [type="radio"]:checked + label {
-    background-image: var(--brand-gradient);
-    font-weight: bold;
-    color: var(--black);
-  }
 </style>
 
 <OpenGraph
@@ -161,6 +83,7 @@
 <section class="card">
   <form on:submit|preventDefault={handleSubmit}>
     <ul>
+      <!-- add class="error" to the li when the content of that li are not valid -->
       <li>
         <label for="name">Name*</label>
         <input
@@ -207,7 +130,6 @@
         />
       </li>
       <li>
-        <!-- add class="error" when not valid -->
         <input
           id="consent"
           bind:value={formData.consent}
@@ -220,7 +142,9 @@
         >
       </li>
       <li>
-        <button class="btn-conversion">Send message</button>
+        <button type="submit" class="btn-conversion" disabled
+          >Send message</button
+        >
       </li>
     </ul>
   </form>
