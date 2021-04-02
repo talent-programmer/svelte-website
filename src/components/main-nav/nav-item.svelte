@@ -5,4 +5,4 @@
 <style lang="scss">
 </style>
 
-<a {href} sveltekit:prefetch><slot /></a>
+<a {href} on:click sveltekit:prefetch><slot /></a>

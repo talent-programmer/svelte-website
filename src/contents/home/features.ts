@@ -9,7 +9,6 @@ export const features: Feature[] = [
       text: "More on prebuilds",
       href: "/docs/prebuilds/",
     },
-    documentationLink: "/docs/prebuilds/",
     terminalSource: `gitpod /workspace/nushell $ cargo install --path . --features=stable
     Blocking waiting for file lock on package cache
   Installing nu v0.28.0 (/workspace/nushell)

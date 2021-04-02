@@ -28,8 +28,8 @@
     }
 
     img {
-      height: 2.8rem;
-      width: 2.8rem;
+      height: 1.75rem;
+      width: 1.75rem;
       margin-right: var(--micro);
     }
   }
@@ -54,15 +54,15 @@
   1-click-link to you chosen provider to jump into your own projects
 </p>
 <div class="buttons">
-  <a href="#" class="btn btn--github">
+  <a href="https://gitpod.io/login" class="btn btn--github">
     <img src="/svg/brands/octocat-white.svg" alt="GitHub Octocat" />
     Link with GitHub
   </a>
-  <a href="#" class="btn btn--bitbucket">
+  <a href="https://gitpod.io/login" class="btn btn--bitbucket">
     <img src="/svg/brands/bitbucket-white.svg" alt="Bitbucket" />
     Link with Bitbucket
   </a>
-  <a href="#" class="btn btn--gitlab">
+  <a href="https://gitpod.io/login" class="btn btn--gitlab">
     <img src="/svg/brands/gitlab-white.svg" alt="GitLab" />
     Link with GitLab
   </a>

@@ -36,8 +36,8 @@
   }
 </style>
 
-<div class="row">
-  <Section>
+<Section>
+  <div class="row">
     <h2 class="h1">Widespread already.</h2>
     <Carousel>
       {#each testimonials as testimonial}
@@ -45,5 +45,5 @@
       {/each}
     </Carousel>
     <Brands />
-  </Section>
-</div>
+  </div>
+</Section>

@@ -15,7 +15,6 @@ a {
 [class|="btn"],
 .btn {
   display: inline-block;
-  margin-top: 1rem;
   text-align: center;
   font-weight: 600;
   padding: 0.5rem 1.5rem;
@@ -31,10 +30,9 @@ a {
     );
   }
 }
-[class|="btn"] + [class|="btn"] {
-  margin-left: 1rem;
-}
-.btn {
+
+.btn,
+.btn-cta {
   background-color: var(--sand-dark);
   &:hover,
   &:focus {
@@ -47,6 +45,7 @@ a {
   font-size: var(--p-medium);
   line-height: 1.25;
   background-color: var(--brand-almost-ripe);
+  border-radius: 1rem;
   @media (min-width: 1141px) {
     min-width: 10rem;
   }
@@ -57,6 +56,7 @@ a {
 }
 .btn-primary {
   background-color: var(--brand-almost-ripe);
+  margin-right: var(--micro);
 }
 .btn-secondary {
   background-color: var(--salmon);
@@ -84,15 +84,19 @@ a {
   color: var(--off-vhite);
 }
 
-.btn-wrapper {
+.btn-cta {
+  font-size: var(--p-medium);
+  padding: 0.75rem 2rem;
+  border-radius: 1rem;
+}
+
+.buttons-wrapper {
   --gap: var(--micro);
   display: flex;
   flex-wrap: wrap;
   margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
   width: calc(100% + var(--gap));
-  @media (max-width: 40rem) {
-    justify-content: center;
-  }
+
   & > * {
     margin: var(--gap) 0 0 var(--gap);
   }

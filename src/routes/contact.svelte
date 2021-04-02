@@ -10,6 +10,9 @@
       description:
         "If you are looking for help for common requests pease visit our community.",
       title: "Ask the community",
+      image: "contact-1.png",
+      imgHeight: "130",
+      imgWidth: "142",
     },
     {
       btnHref: "/docs",
@@ -17,6 +20,9 @@
       description:
         "If you want to find out if you are elegible for our professional open source programm you can check out our docs.",
       title: "Professional Open Source",
+      image: "contact-2.png",
+      imgHeight: "130",
+      imgWidth: "142",
     },
   ];
 
@@ -61,7 +67,7 @@
     color: var(--dark-grey);
   }
   [type="radio"],
-  [tyoe="checkbox"] {
+  [type="checkbox"] {
     position: absolute;
   }
   label,
@@ -108,18 +114,29 @@
     padding: 0.25rem;
     border-radius: 0.5em;
     background-clip: content-box;
+    display: inline-block;
+  }
+  .error,
+  .error *,
+  .error :not(:checked) + label::before {
+    border-color: var(--error);
+    color: var(--error);
+  }
+  .error [type="checkbox"] + label {
+    color: var(--dark-gray);
   }
   [type="checkbox"]:checked + label::before {
     background-color: currentColor;
     border-color: currentColor;
   }
   [type="radio"]:hover + label,
-  [type="radio"]:focus + label,
-  [type="radio"]:checked + label {
+  [type="radio"]:focus + label {
     border-color: currentColor;
   }
   [type="radio"]:checked + label {
-    background-color: var(--sand-light);
+    background-image: var(--brand-gradient);
+    font-weight: bold;
+    color: var(--black);
   }
 </style>
 
@@ -180,18 +197,17 @@
         </fieldset>
       </li>
       <li>
-        <div>
-          <label for="message">Your message*</label>
-          <textarea
-            id="message"
-            bind:value={formData.message}
-            cols="30"
-            rows="10"
-            required
-          />
-        </div>
+        <label for="message">Your message*</label>
+        <textarea
+          id="message"
+          bind:value={formData.message}
+          cols="30"
+          rows="10"
+          required
+        />
       </li>
       <li>
+        <!-- add class="error" when not valid -->
         <input
           id="consent"
           bind:value={formData.consent}

@@ -7,9 +7,6 @@
 </script>
 
 <style lang="scss">
-  .cards img {
-    margin: 0 auto 1em;
-  }
   .double img {
     height: 223px;
   }
