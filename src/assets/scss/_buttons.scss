@@ -101,3 +101,7 @@ a {
     margin: var(--gap) 0 0 var(--gap);
   }
 }
+
+p:last-child [class|="btn"] {
+  margin-top: 1rem;
+}

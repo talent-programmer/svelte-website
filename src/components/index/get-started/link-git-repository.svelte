@@ -10,6 +10,15 @@
       border-radius: 0.75rem;
       color: var(--white);
       place-items: center;
+      transition: all 0.2s;
+
+      &:hover,
+      &:focus {
+        background-image: linear-gradient(
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.1)
+        );
+      }
 
       &:not(:last-child) {
         margin-bottom: var(--micro);

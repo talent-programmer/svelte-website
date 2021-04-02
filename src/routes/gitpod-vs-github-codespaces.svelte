@@ -78,8 +78,10 @@
 <div class="brief">
   <h2>Ready to feel the difference?</h2>
   <p>Spin up an example workspace now, just link your git provider</p>
-  <a href="TODO:" class="btn-conversion">Try Now</a>
-  <!-- TODO: Insert "Try now" button. What does it do? Should be the same behaviour as on the homepage -->
+  <p>
+    <a href="TODO:" class="btn-conversion">Try Now</a>
+  </p>
+  <!-- TODO: Try now button locaton. Should be the same behaviour as on the homepage -->
 </div>
 
 <div class="halfimages">
@@ -130,10 +132,12 @@
       carbon-neutral cloud servers (GCP). All the power, with a lower cost to
       our planet.
     </p>
-    <a
-      href="https://cloud.google.com/sustainability"
-      class="btn-green"
-      target="_blank">More on GCP carbon neutral</a
-    >
+    <p>
+      <a
+        href="https://cloud.google.com/sustainability"
+        class="btn-green"
+        target="_blank">More on GCP carbon neutral</a
+      >
+    </p>
   </div>
 </div>
