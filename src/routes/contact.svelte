@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { ContactCard } from "../types/contact-card.type";
+  import type { Email } from "../functions/submit-form";
   import Card from "../components/contact/card.svelte";
   import OpenGraph from "../components/open-graph.svelte";
 
@@ -35,23 +36,95 @@
   ];
 
   let formData: {
-    consent: string;
-    email: string;
-    message: string;
-    name: string;
-    selectedSubject: string;
+    consent: {
+      el: HTMLInputElement;
+      valid: boolean;
+      value: boolean;
+    };
+    email: {
+      el: HTMLInputElement;
+      valid: boolean;
+      value: string;
+    };
+    message: {
+      el: HTMLTextAreaElement;
+      valid: boolean;
+      value: string;
+    };
+    name: {
+      el: HTMLInputElement;
+      valid: boolean;
+      value: string;
+    };
+    selectedSubject: {
+      el: HTMLInputElement;
+      valid: boolean;
+      value: string;
+    };
   } = {
-    consent: "",
-    email: "",
-    message: "",
-    name: "",
-    selectedSubject: "",
+    consent: {
+      el: null,
+      valid: false,
+      value: false,
+    },
+    email: {
+      el: null,
+      valid: false,
+      value: "",
+    },
+    message: {
+      el: null,
+      valid: false,
+      value: "",
+    },
+    name: {
+      el: null,
+      valid: false,
+      value: "",
+    },
+    selectedSubject: {
+      el: null,
+      valid: false,
+      value: "",
+    },
   };
+  let isFormDirty = false;
+  let isEmailSent = false;
 
-  const handleSubmit = () => {
-    console.log(formData);
-    // TODO: Implement form validation
-    // TODO: Submit Netlify form. See https://github.com/gitpod-io/website/blob/master/src/pages/contact.tsx#L148
+  $: isFormValid = Object.values(formData).every((field) => field.valid);
+
+  const handleSubmit = async () => {
+    isFormDirty = true;
+    if (!isFormValid) {
+      return;
+    }
+
+    const email: Email = {
+      from: {
+        email: formData.email.value,
+        name: formData.name.value,
+      },
+      subject:
+        formData.selectedSubject.value +
+        "  (from " +
+        formData.email.value +
+        ")",
+      message: formData.message.value,
+    };
+
+    try {
+      const response = await fetch("/.netlify/functions/submit-form", {
+        method: "POST",
+        body: JSON.stringify(email),
+      });
+      if (response.ok) {
+        isEmailSent = true;
+      } else {
+        console.error(response.statusText);
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
 </script>
 
@@ -81,37 +154,50 @@
 </div>
 
 <section class="card">
-  <form on:submit|preventDefault={handleSubmit}>
+  <form on:submit|preventDefault={handleSubmit} novalidate>
     <ul>
-      <!-- add class="error" to the li when the content of that li are not valid -->
-      <li>
+      <li class:error={isFormDirty && !formData.name.valid}>
         <label for="name">Name*</label>
         <input
           id="name"
-          bind:value={formData.name}
+          bind:value={formData.name.value}
+          bind:this={formData.name.el}
+          on:change={() => {
+            formData.name.valid =
+              formData.name.value && formData.name.el.checkValidity();
+          }}
           type="text"
           autocomplete="name"
-          required
         />
       </li>
-      <li>
+      <li class:error={isFormDirty && !formData.email.valid}>
         <label for="email">E-Mail*</label>
         <input
           id="email"
-          bind:value={formData.email}
+          bind:value={formData.email.value}
+          bind:this={formData.email.el}
+          on:change={() => {
+            formData.email.valid =
+              formData.email.value && formData.email.el.checkValidity();
+          }}
           type="email"
-          required
           autocomplete="email"
         />
       </li>
-      <li>
+      <li class:error={isFormDirty && !formData.selectedSubject.valid}>
         <fieldset>
           <legend>Please choose a subject</legend>
           {#each subjects as subject, index}
             <input
               id="subject-{index}"
               type="radio"
-              bind:group={formData.selectedSubject}
+              bind:group={formData.selectedSubject.value}
+              bind:this={formData.selectedSubject.el}
+              on:change={() => {
+                formData.selectedSubject.valid =
+                  formData.selectedSubject.value &&
+                  formData.selectedSubject.el.validity.valid;
+              }}
               value={subject}
               name="subject"
             />
@@ -119,22 +205,30 @@
           {/each}
         </fieldset>
       </li>
-      <li>
+      <li class:error={isFormDirty && !formData.message.valid}>
         <label for="message">Your message*</label>
         <textarea
           id="message"
-          bind:value={formData.message}
+          bind:value={formData.message.value}
+          bind:this={formData.message.el}
+          on:change={() => {
+            formData.message.valid =
+              formData.message.value && formData.message.el.validity.valid;
+          }}
           cols="30"
           rows="10"
-          required
         />
       </li>
-      <li>
+      <li class:error={isFormDirty && !formData.consent.valid}>
         <input
           id="consent"
-          bind:value={formData.consent}
+          bind:checked={formData.consent.value}
+          bind:this={formData.consent.el}
+          on:change={() => {
+            formData.consent.valid =
+              formData.consent.value && formData.consent.el.validity.valid;
+          }}
           type="checkbox"
-          required
         />
         <label for="consent"
           >I consent to having this website store my submitted information so
@@ -142,10 +236,15 @@
         >
       </li>
       <li>
-        <button type="submit" class="btn-conversion" disabled
-          >Send message</button
+        <button
+          type="submit"
+          class="btn-conversion"
+          disabled={isFormDirty && !isFormValid}>Send message</button
         >
       </li>
     </ul>
   </form>
+  {#if isEmailSent}
+    <p>Thank you! We'll get back to you soon.</p>
+  {/if}
 </section>
