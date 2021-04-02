@@ -34,7 +34,7 @@
   {#if menuItem.subMenu && isActiveSection}
     <ul class="submenu">
       {#each menuItem.subMenu as sub}
-        <li>
+        <li class="mb-0">
           <MenuLink href={sub.path}>{sub.title}</MenuLink>
         </li>
       {/each}
