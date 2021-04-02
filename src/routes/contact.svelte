@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { ContactCard } from "../types/contact-card.type";
+  import type { Form } from "../types/form.type";
   import type { Email } from "../functions/submit-form";
   import Card from "../components/contact/card.svelte";
   import OpenGraph from "../components/open-graph.svelte";
@@ -35,37 +36,11 @@
     "Student Unlimited: Get Verified as a Student",
   ];
 
-  let formData: {
-    consent: {
-      el: HTMLInputElement;
-      valid: boolean;
-      value: boolean;
-    };
-    email: {
-      el: HTMLInputElement;
-      valid: boolean;
-      value: string;
-    };
-    message: {
-      el: HTMLTextAreaElement;
-      valid: boolean;
-      value: string;
-    };
-    name: {
-      el: HTMLInputElement;
-      valid: boolean;
-      value: string;
-    };
-    selectedSubject: {
-      el: HTMLInputElement;
-      valid: boolean;
-      value: string;
-    };
-  } = {
+  const formData: Form = {
     consent: {
       el: null,
       valid: false,
-      value: false,
+      checked: false,
     },
     email: {
       el: null,
@@ -222,11 +197,11 @@
       <li class:error={isFormDirty && !formData.consent.valid}>
         <input
           id="consent"
-          bind:checked={formData.consent.value}
+          bind:checked={formData.consent.checked}
           bind:this={formData.consent.el}
           on:change={() => {
             formData.consent.valid =
-              formData.consent.value && formData.consent.el.validity.valid;
+              formData.consent.checked && formData.consent.el.validity.valid;
           }}
           type="checkbox"
         />
