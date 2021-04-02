@@ -100,7 +100,7 @@
   ];
 </script>
 
-<ul class="space-y-6">
+<ul class="space-y-8">
   {#each MENU as menuItem}
     <MenuSection {menuItem} />
   {/each}

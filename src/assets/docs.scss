@@ -1,5 +1,5 @@
 .content-docs {
-  line-height: 1.8;
+  line-height: 190%;
 
   // Typography
   h1,
@@ -11,20 +11,17 @@
 
   h1,
   .h1 {
-    font-size: 3rem;
-    line-height: 3.5rem;
+    font-size: var(--h3);
   }
 
   h2,
   .h2 {
     font-size: var(--h4);
-    line-height: 2.5rem;
   }
 
   h3,
   .h3 {
     font-size: var(--p-large);
-    line-height: 2rem;
   }
 
   a {
@@ -91,6 +88,9 @@
   }
 
   li {
+    // overide _forms.scss
+    margin-bottom: 0;
+
     + li {
       margin-top: var(--macro);
     }
