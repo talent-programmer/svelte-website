@@ -7,6 +7,12 @@
     padding: var(--medium);
     border-radius: 16px;
     background: var(--sand-dark);
+    border: 1px solid transparent;
+
+    &:hover,
+    &:focus {
+      border: 1px solid #fff;
+    }
 
     @media (max-width: 768px) {
       padding: var(--xx-small);
