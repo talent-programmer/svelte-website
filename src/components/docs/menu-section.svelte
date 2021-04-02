@@ -11,6 +11,7 @@
 
 <style>
   .menu-item {
+    display: inline-block;
     @apply px-6;
     font-size: var(--p-large);
   }
@@ -29,15 +30,17 @@
   }
 </style>
 
-<li class:isActiveSection class="menu-item">
-  <MenuLink href={menuItem.path} class="text-h6">{menuItem.title}</MenuLink>
-  {#if menuItem.subMenu && isActiveSection}
-    <ul class="submenu">
-      {#each menuItem.subMenu as sub}
-        <li>
-          <MenuLink href={sub.path}>{sub.title}</MenuLink>
-        </li>
-      {/each}
-    </ul>
-  {/if}
+<li>
+  <div class:isActiveSection class="menu-item">
+    <MenuLink href={menuItem.path} class="text-h6">{menuItem.title}</MenuLink>
+    {#if menuItem.subMenu && isActiveSection}
+      <ul class="submenu">
+        {#each menuItem.subMenu as sub}
+          <li>
+            <MenuLink href={sub.path}>{sub.title}</MenuLink>
+          </li>
+        {/each}
+      </ul>
+    {/if}
+  </div>
 </li>
