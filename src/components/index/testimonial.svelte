@@ -2,59 +2,38 @@
   import type { Testimonial } from "../../types/testimonial.type";
   export let testimonial: Testimonial;
 
-  const { name, avatar, role, org, text, tweetId, twitterHandle } = testimonial;
+  const { name, avatar, role, org, text } = testimonial;
 </script>
 
 <style lang="scss">
   .testimonial {
-    width: 25rem;
-    padding: 1.5rem;
-    background: var(--white);
-    border-radius: 1rem;
-
-    &__author {
-      display: flex;
-      margin-top: var(--micro);
-    }
-
-    img {
-      display: block;
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
-      margin-right: 0.75rem;
-    }
-
-    h3 {
-      margin-bottom: 0;
-    }
-
-    &:not(:last-child) {
-      margin-right: var(--xx-small);
-    }
+    scroll-snap-align: start;
 
     @media (max-width: 768px) {
       width: 320px;
-
-      &:not(:last-child) {
-        margin-bottom: var(--xx-small);
-      }
     }
-
-    & :global(a) {
-      color: var(--blue);
-      font-weight: 600;
-    }
+  }
+  .testimonial :global(a) {
+    color: var(--blue);
+    font-weight: 600;
   }
 </style>
 
-<div class="testimonial text-small">
-  <div>{@html text}</div>
-  <div class="testimonial__author">
-    <img src={`/images/avatars/${avatar}`} alt={name} />
-    <div>
-      <h3 class="text-small">{name}</h3>
-      <p>{role} {@html org}</p>
+<div class="my-2 text-small">
+  <div
+    class="testimonial w-96 p-6 overflow-hidden rounded-2xl shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+  >
+    <div>{@html text}</div>
+    <div class="mt-4 flex">
+      <img
+        src={`/images/avatars/${avatar}`}
+        alt={name}
+        class="w-12 h-12 rounded-full"
+      />
+      <div class="ml-3">
+        <h3 class="mb-0 text-small">{name}</h3>
+        <p>{role} {@html org}</p>
+      </div>
     </div>
   </div>
 </div>

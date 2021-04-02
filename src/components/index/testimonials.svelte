@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Carousel from "@beyonk/svelte-carousel";
+  import Carousel from "../carousel.svelte";
   import Section from "../section.svelte";
   import Brands from "./brands.svelte";
   import Testimonial from "./testimonial.svelte";
@@ -39,13 +39,7 @@
 <Section>
   <div class="row">
     <h2 class="h1">Widespread already.</h2>
-    <Carousel
-      controls={false}
-      perPage={{
-        900: 2,
-        1400: 3,
-      }}
-    >
+    <Carousel>
       {#each testimonials as testimonial}
         <Testimonial {testimonial} />
       {/each}
