@@ -4,7 +4,7 @@
 
 a {
   color: var(--black);
-  transition: all 0.2s;
+  transition: all 0.2s 50ms;
 }
 
 .link--light-grey {
@@ -25,10 +25,10 @@ a {
 
 .btn,
 .btn-cta {
-  background: var(--sand-dark);
+  background-color: var(--sand-dark);
   &:hover,
   &:focus {
-    background: var(--brand-almost-ripe);
+    background-color: var(--brand-almost-ripe);
     background-image: none;
   }
 }
@@ -37,7 +37,7 @@ a {
   padding: 0.75em 2em;
   font-size: var(--p-medium);
   line-height: 1.25;
-  background: var(--brand-almost-ripe);
+  background-color: var(--brand-almost-ripe);
   border-radius: 1rem;
 
   @media (min-width: 1141px) {
@@ -50,7 +50,7 @@ a {
 }
 
 .btn-primary {
-  background: var(--brand-almost-ripe);
+  background-color: var(--brand-almost-ripe);
   margin-right: var(--micro);
 }
 
@@ -58,41 +58,41 @@ a {
 .btn-primary {
   &:hover,
   &:focus {
-    background: var(--brand-hover);
+    background-color: var(--brand-hover);
   }
 }
 
 .btn-secondary {
-  background: var(--salmon);
+  background-color: var(--salmon);
 
   &:hover,
   &:focus {
-    background: var(--salmon-hover);
+    background-color: var(--salmon-hover);
   }
 }
 
 .btn-tertiary {
-  background: var(--black);
+  background-color: var(--black);
   color: var(--white);
 
   &:hover,
   &:focus {
-    background: var(--black-hover);
+    background-color: var(--black-hover);
   }
 }
 
 .btn-quaternary {
-  background: var(--white);
+  background-color: var(--white);
 }
 
 /* Unique buttons */
 .btn-green {
-  background: var(--transparent-green);
+  background-color: var(--transparent-green);
   color: var(--green);
 }
 .btn-green:hover,
 .btn-green:focus {
-  background: var(--green);
+  background-color: var(--green);
   color: var(--off-vhite);
 }
 
@@ -102,22 +102,22 @@ a {
   border-radius: 1rem;
 }
 
-.btn-white {
+.btn-otherbrand {
   display: flex;
   align-items: center;
   padding: var(--macro) 0.75rem;
   justify-content: center;
-  background: var(--white);
+  background-color: var(--white);
   border-radius: 0.5em;
   color: var(--black);
 
   &:hover,
   &:focus {
-    background: var(--off-white);
+    background-color: var(--off-white);
   }
 }
 
-.btn-white img {
+.btn-otherbrand img {
   display: inline-block;
   height: 24px;
   width: 24px;
