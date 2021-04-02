@@ -13,18 +13,3 @@
   font-display: swap;
   src: url("./fonts/ABCDiatype-Bold.woff") format("woff");
 }
-
-/* @font-face {
-    font-family: 'ABCDiatype';
-    font-style: italic;
-    font-weight: 400;
-    font-dsiplay: swap;
-    src: url('./fonts/ABCDiatype-RegularItalic.woff') format('woff');
-}
-@font-face {
-    font-family: 'ABCDiatype';
-    font-style: italic;
-    font-display: swap;
-    font-weight: 600;
-    src: url('./fonts/ABCDiatype-BoldItalic.woff') format('woff');
-} */
