@@ -3,4 +3,7 @@ export type ContactCard = {
   btnText: string;
   description: string;
   title: string;
+  image: string;
+  imgHeight: string;
+  imgWidth: string;
 };
