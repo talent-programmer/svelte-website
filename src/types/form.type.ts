@@ -3,6 +3,7 @@ type Field = {
   valid: boolean;
   value?: string;
   checked?: boolean;
+  selected?: string[];
 };
 
 export type Form = {
