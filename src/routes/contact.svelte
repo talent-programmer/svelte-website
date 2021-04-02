@@ -125,7 +125,7 @@
   .error.error [type] + label {
     color: var(--dark-grey);
   }
-  [type="checkbox"]:checked {
+  [type="checkbox"]:checked + label::before {
     background-image: var(--brand-gradient);
     color: var(--black);
     content: "✓";
@@ -226,7 +226,9 @@
         >
       </li>
       <li>
-        <button class="btn-conversion" disabled>Send message</button>
+        <button type="submit" class="btn-conversion" disabled
+          >Send message</button
+        >
       </li>
     </ul>
   </form>
