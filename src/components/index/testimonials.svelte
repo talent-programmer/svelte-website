@@ -36,8 +36,8 @@
   }
 </style>
 
-<div class="row">
-  <Section>
+<Section>
+  <div class="row">
     <h2 class="h1">Widespread already.</h2>
     <Carousel
       controls={false}
@@ -51,5 +51,5 @@
       {/each}
     </Carousel>
     <Brands />
-  </Section>
-</div>
+  </div>
+</Section>
