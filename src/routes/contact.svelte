@@ -113,8 +113,8 @@
     width: 2rem;
     padding: 0.25rem;
     border-radius: 0.5em;
-    background-clip: content-box;
     display: inline-block;
+    text-align: right;
   }
   .error,
   .error *,
@@ -122,12 +122,13 @@
     border-color: var(--error);
     color: var(--error);
   }
-  .error [type="checkbox"] + label {
-    color: var(--dark-gray);
+  .error.error [type] + label {
+    color: var(--dark-grey);
   }
-  [type="checkbox"]:checked + label::before {
-    background-color: currentColor;
-    border-color: currentColor;
+  [type="checkbox"]:checked {
+    background-image: var(--brand-gradient);
+    color: var(--black);
+    content: "✓";
   }
   [type="radio"]:hover + label,
   [type="radio"]:focus + label {
@@ -137,6 +138,11 @@
     background-image: var(--brand-gradient);
     font-weight: bold;
     color: var(--black);
+  }
+  .btn-conversion:disabled {
+    background-color: var(--sand-dark);
+    color: var(--dark-gray);
+    cursor: default;
   }
 </style>
 
@@ -161,6 +167,7 @@
 <section class="card">
   <form on:submit|preventDefault={handleSubmit}>
     <ul>
+      <!-- add class="error" to the li when the content of that li are not valid -->
       <li>
         <label for="name">Name*</label>
         <input
@@ -207,7 +214,6 @@
         />
       </li>
       <li>
-        <!-- add class="error" when not valid -->
         <input
           id="consent"
           bind:value={formData.consent}
@@ -220,7 +226,7 @@
         >
       </li>
       <li>
-        <button class="btn-conversion">Send message</button>
+        <button class="btn-conversion" disabled>Send message</button>
       </li>
     </ul>
   </form>
