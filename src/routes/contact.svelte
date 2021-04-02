@@ -243,8 +243,8 @@
         >
       </li>
     </ul>
+    {#if isEmailSent}
+      <p>Thank you! We'll get back to you soon.</p>
+    {/if}
   </form>
-  {#if isEmailSent}
-    <p>Thank you! We'll get back to you soon.</p>
-  {/if}
 </section>
