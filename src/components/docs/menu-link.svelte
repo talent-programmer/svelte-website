@@ -11,7 +11,7 @@
 </style>
 
 <a
-  class:active={href.indexOf($page.path) >= 0}
+  class:active={href === $page.path || href === `${$page.path}/`}
   {href}
   sveltekit:prefetch
   {...$$props}><slot /></a
