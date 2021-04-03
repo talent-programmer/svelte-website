@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script lang="ts">
   import type { Email } from "../functions/submit-form";
   import type { Form } from "../types/form.type";

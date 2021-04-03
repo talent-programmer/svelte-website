@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import OpenGraph from "../components/open-graph.svelte";
 </script>
@@ -22,7 +26,7 @@
   <article class="card">
     <div>
       <img
-        src="images/codespace/spaces-1.png"
+        src="/images/codespace/spaces-1.png"
         alt=""
         role="presentation"
         width="550"
@@ -52,7 +56,7 @@
   <article class="card">
     <div>
       <img
-        src="images/codespace/spaces-2.png"
+        src="/images/codespace/spaces-2.png"
         alt=""
         role="presentation"
         width="550"
@@ -88,7 +92,7 @@
   <article class="card">
     <div>
       <img
-        src="images/codespace/spaces-3.png"
+        src="/images/codespace/spaces-3.png"
         alt=""
         role="presentation"
         width="550"

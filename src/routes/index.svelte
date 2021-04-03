@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import { testimonials } from "../contents/home/index";
   import { features } from "../contents/home/features";
