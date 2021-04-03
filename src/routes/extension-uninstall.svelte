@@ -48,6 +48,10 @@
     }
 
     const email: Email = {
+      from: {
+        email: "contact+browserextension@gitpod.io",
+        name: "Contact - Browser Extension Uninstall",
+      },
       subject: "Why did I uninstall the browser extension?",
       feedback: formData.reason.selected.reduce(
         (result, reason) =>
