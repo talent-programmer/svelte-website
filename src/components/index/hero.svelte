@@ -51,7 +51,13 @@
 
         @media (max-width: 972px) {
           display: flex;
-          gap: var(--micro);
+          gap: initial;
+
+          & > * {
+            &:not(:last-child) {
+              margin-right: var(--micro);
+            }
+          }
         }
       }
     }
@@ -64,20 +70,36 @@
           font-size: var(--btn-small);
         }
       }
+
+      @media (max-width: 360px) {
+        br {
+          display: none;
+        }
+      }
     }
 
     &__icons {
       display: flex;
       justify-content: space-between;
       width: 120px;
+      padding: 0 var(--macro);
 
       @media (min-width: 1141px) {
         width: 160px;
       }
 
+      @media (max-width: 768px) {
+        width: 145px;
+      }
+
       img {
-        height: 30px;
-        width: 30px;
+        height: 29px;
+        width: 29px;
+
+        @media (max-width: 1140px) {
+          height: 27px;
+          width: 27px;
+        }
       }
     }
 
