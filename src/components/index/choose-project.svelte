@@ -117,7 +117,7 @@
     transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
   }
 
-  @keyframes strikethrough {
+  @keyframes -global-strikethrough {
     from {
       transform: scaleX(0);
       background: var(--light-grey);
