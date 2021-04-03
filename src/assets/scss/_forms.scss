@@ -30,7 +30,9 @@ li {
 fieldset,
 [type="checkbox"] + label {
   display: flex;
-  gap: 1rem;
+}
+[type="checkbox"] + label::before {
+  margin-right: var(--micro);
 }
 fieldset {
   flex-flow: row wrap;
