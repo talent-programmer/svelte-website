@@ -112,6 +112,13 @@
     max-width: 45rem;
     margin: auto;
   }
+  fieldset ul {
+    display: flex;
+    flex-flow: wrap;
+  }
+  fieldset li {
+    margin: 0 1rem 0 0;
+  }
 </style>
 
 <OpenGraph
@@ -166,22 +173,26 @@
       <li class:error={isFormDirty && !formData.selectedSubject.valid}>
         <fieldset>
           <legend>Please choose a subject</legend>
-          {#each subjects as subject, index}
-            <input
-              id="subject-{index}"
-              type="radio"
-              bind:group={formData.selectedSubject.value}
-              bind:this={formData.selectedSubject.el}
-              on:change={() => {
-                formData.selectedSubject.valid =
-                  formData.selectedSubject.value &&
-                  formData.selectedSubject.el.validity.valid;
-              }}
-              value={subject}
-              name="subject"
-            />
-            <label for="subject-{index}">{subject}</label>
-          {/each}
+          <ul>
+            {#each subjects as subject, index}
+              <li>
+                <input
+                  id="subject-{index}"
+                  type="radio"
+                  bind:group={formData.selectedSubject.value}
+                  bind:this={formData.selectedSubject.el}
+                  on:change={() => {
+                    formData.selectedSubject.valid =
+                      formData.selectedSubject.value &&
+                      formData.selectedSubject.el.validity.valid;
+                  }}
+                  value={subject}
+                  name="subject"
+                />
+                <label for="subject-{index}">{subject}</label>
+              </li>
+            {/each}
+          </ul>
         </fieldset>
       </li>
       <li class:error={isFormDirty && !formData.message.valid}>
