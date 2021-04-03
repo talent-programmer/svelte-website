@@ -1,6 +1,7 @@
 <script>
   import Menu from "../../components/docs/menu.svelte";
   import Search from "../../components/docs/search.svelte";
+  import "../../assets/docs.scss";
 </script>
 
 <style>
