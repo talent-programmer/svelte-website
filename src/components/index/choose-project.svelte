@@ -43,6 +43,13 @@
     const beTouching = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
+          Object.entries(animatedTexts).forEach(([, texts]) =>
+            texts.forEach((text) => {
+              text.isVisible = false;
+            })
+          );
+          animatedTexts = animatedTexts; // This triggers Svelte's reactivity
+        } else {
           let t = 0;
           Object.entries(animatedTexts).forEach(([, texts]) =>
             texts.forEach((text) => {
@@ -53,19 +60,12 @@
               t = t + 400;
             })
           );
-        } else {
-          Object.entries(animatedTexts).forEach(([, texts]) =>
-            texts.forEach((text) => {
-              text.isVisible = false;
-            })
-          );
-          animatedTexts = animatedTexts; // This triggers Svelte's reactivity
         }
       });
     };
 
     const observer = new IntersectionObserver(beTouching, options);
-    const target = document.querySelector("#observer-target");
+    const target = document.querySelector("#choose-project-observer-target");
     observer.observe(target);
 
     return () => {
@@ -157,7 +157,7 @@
 
 <div class="row">
   <Section>
-    <h2 class="h1" id="observer-target">
+    <h2 class="h1">
       Choose project,
       <br />
       {#each Object.entries(animatedTexts) as [device, texts]}
