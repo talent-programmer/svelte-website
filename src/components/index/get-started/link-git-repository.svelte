@@ -14,10 +14,7 @@
 
       &:hover,
       &:focus {
-        background-image: linear-gradient(
-          rgba(255, 255, 255, 0.1),
-          rgba(255, 255, 255, 0.1)
-        );
+        opacity: 0.9;
       }
 
       &:not(:last-child) {
@@ -26,7 +23,14 @@
 
       &--github {
         background: #000000;
+
+        &:hover,
+        &:focus {
+          opacity: 1;
+          background: var(--black-hover);
+        }
       }
+
       &--bitbucket {
         background: #2684ff;
       }

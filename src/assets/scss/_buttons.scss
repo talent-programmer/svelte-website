@@ -18,17 +18,9 @@ a {
   text-align: center;
   font-weight: 600;
   padding: 0.5rem 1.5rem;
-  line-height: 1.125;
   border-radius: 0.75em;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
   font-size: var(--btn-small);
-  &:hover,
-  &:focus {
-    background-image: linear-gradient(
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.1)
-    );
-  }
 }
 
 .btn,
@@ -40,12 +32,14 @@ a {
     background-image: none;
   }
 }
+
 .btn-conversion {
   padding: 0.75em 2em;
   font-size: var(--p-medium);
   line-height: 1.25;
   background-color: var(--brand-almost-ripe);
   border-radius: 1rem;
+
   @media (min-width: 1141px) {
     min-width: 10rem;
   }
@@ -54,23 +48,41 @@ a {
     padding: 0.75rem var(--xx-small);
   }
 }
+
 .btn-primary {
   background-color: var(--brand-almost-ripe);
   margin-right: var(--micro);
 }
+
+.btn-conversion,
+.btn-primary {
+  &:hover,
+  &:focus {
+    background-color: var(--brand-hover);
+  }
+}
+
 .btn-secondary {
   background-color: var(--salmon);
+
+  &:hover,
+  &:focus {
+    background-color: var(--salmon-hover);
+  }
 }
+
 .btn-tertiary {
   background-color: var(--black);
   color: var(--white);
-}
-.btn-quaternary {
-  background-color: var(--white);
+
   &:hover,
   &:focus {
-    background-image: linear-gradient(#00000005, #00000005);
+    background-color: var(--black-hover);
   }
+}
+
+.btn-quaternary {
+  background-color: var(--white);
 }
 
 /* Unique buttons */
@@ -88,6 +100,28 @@ a {
   font-size: var(--p-medium);
   padding: 0.75rem 2rem;
   border-radius: 1rem;
+}
+
+.btn-otherbrand {
+  display: flex;
+  align-items: center;
+  padding: var(--macro) 0.75rem;
+  justify-content: center;
+  background-color: var(--white);
+  border-radius: 0.5em;
+  color: var(--black);
+
+  &:hover,
+  &:focus {
+    background-color: var(--off-white);
+  }
+}
+
+.btn-otherbrand img {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin-right: 0.625rem;
 }
 
 .buttons-wrapper {

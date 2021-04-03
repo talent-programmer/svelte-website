@@ -45,24 +45,6 @@
   .buttons-wrapper {
     justify-content: center;
   }
-
-  .button {
-    display: flex;
-    align-items: center;
-    padding: var(--macro) 0.75rem;
-    justify-content: center;
-    background: var(--white);
-    border-radius: 0.5em;
-    color: var(--black);
-    font-weight: 600;
-
-    img {
-      display: inline-block;
-      height: 24px;
-      width: 24px;
-      margin-right: 0.625rem;
-    }
-  }
 </style>
 
 <Section>
@@ -78,7 +60,7 @@
       </p>
       <div class="buttons-wrapper">
         {#each buttons as { href, icon, text }}
-          <a {href} target="_blank" class="button text-medium">
+          <a {href} target="_blank" class="btn-otherbrand text-medium">
             <img src={`/${icon}`} alt={text} />
             {text}
           </a>
