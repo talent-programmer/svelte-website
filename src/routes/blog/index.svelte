@@ -1,8 +1,7 @@
 <script lang="ts" context="module">
-  export async function preload() {
-    const response = await this.fetch(`blog.json`);
-    const posts = await response.json();
-    return { posts };
+  export async function load({ session }) {
+    const posts = session.posts;
+    return { props: { posts } };
   }
 </script>
 

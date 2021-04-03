@@ -1,9 +1,7 @@
 <script lang="ts">
-  import { stores } from "@sapper/app";
+  import { page } from "$app/stores";
 
   export let href: string;
-
-  const { page } = stores();
 </script>
 
 <style>
@@ -12,6 +10,9 @@
   }
 </style>
 
-<a class:active={$page.path === href} {href} rel="prefetch" {...$$props}
-  ><slot /></a
+<a
+  class:active={href.indexOf($page.path) >= 0}
+  {href}
+  sveltekit:prefetch
+  {...$$props}><slot /></a
 >

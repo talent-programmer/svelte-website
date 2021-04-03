@@ -6,9 +6,9 @@
   $: $docsCurrentSectionStore = section;
 </script>
 
-<style lang="scss" global>
+<!-- <style lang="scss" global>
   @import "../../assets/docs";
-</style>
+</style> -->
 
 <div class="content-docs">
   <slot />

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { stores } from "@sapper/app";
+  import { page } from "$app/stores";
   import type { OpenGraph } from "../types/open-graph.type";
 
   export let data: OpenGraph;
@@ -7,7 +7,6 @@
   const { description, image = "images/media-image.jpg", title, type } =
     data || {};
 
-  const { page } = stores();
   const url = `https://${$page.host}${$page.path}`;
 </script>
 

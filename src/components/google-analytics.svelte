@@ -1,6 +1,6 @@
 <script>
   // This component is taken from https://angelblanco.dev/articles/add-gtag-analytics-to-sapper/ and adjusted to meet Gitpod requirements.
-  import { stores } from "@sapper/app";
+  import { page } from "$app/stores";
   import { onMount } from "svelte";
 
   // Pass or harcode your google analytics tracking id
@@ -9,7 +9,6 @@
   export let domain = "https://www.googletagmanager.com";
 
   let mounted = false;
-  const { page } = stores();
   const gtagOptions = {
     anonymizeIp: true,
   };
