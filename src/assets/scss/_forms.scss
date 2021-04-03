@@ -73,6 +73,10 @@ textarea {
   background-image: var(--brand-gradient);
   color: var(--black);
 }
+[type="checkbox"] + label:hover::before,
+[type="checkbox"] + label:focus::before {
+  border-color: var(--dark-grey);
+}
 [type="radio"]:hover + label,
 [type="radio"]:focus + label {
   border-color: currentColor;
