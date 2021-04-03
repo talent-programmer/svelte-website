@@ -7,7 +7,7 @@
 <div class="card">
   <!-- TOOD: Display the image -->
   <img
-    src="images/contact/{contactCard.image}"
+    src="/images/contact/{contactCard.image}"
     height={contactCard.imgHeight}
     width={contactCard.imgWidth}
     alt=""
