@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script lang="ts">
   import type { ContactCard } from "../types/contact-card.type";
   import type { Form } from "../types/form.type";
