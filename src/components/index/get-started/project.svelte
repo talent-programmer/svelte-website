@@ -34,6 +34,12 @@
       }
     }
 
+    .btn-tertiary {
+      max-width: 9rem;
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+
     &:not(:last-child) {
       margin-bottom: var(--micro);
     }
