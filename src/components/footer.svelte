@@ -106,6 +106,10 @@
     }
   }
 
+  .logo-wrapper {
+    transform: translateY(-2px);
+  }
+
   sup {
     color: var(--brand-ripe);
   }
@@ -172,7 +176,9 @@
 
     <div class="footer__bottom">
       <div class="footer__copy">
-        <a href="/"><LogoTextless /></a><span>Copyright &copy; Gitpod</span>
+        <a href="/"><div class="logo-wrapper"><LogoTextless /></div></a><span
+          >Copyright &copy; Gitpod</span
+        >
       </div>
       <div class="footer__social">
         {#each socialLinks as link}
