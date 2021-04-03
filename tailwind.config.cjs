@@ -13,7 +13,6 @@ module.exports = {
           ([_match, group, ..._rest]) => group
         ),
       ],
-      keyframes: true,
     },
   },
   darkMode: false, // or 'media' or 'class'
