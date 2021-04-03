@@ -26,7 +26,7 @@
   <article class="card">
     <div>
       <img
-        src="images/codespace/spaces-1.png"
+        src="/images/codespace/spaces-1.png"
         alt=""
         role="presentation"
         width="550"
@@ -56,7 +56,7 @@
   <article class="card">
     <div>
       <img
-        src="images/codespace/spaces-2.png"
+        src="/images/codespace/spaces-2.png"
         alt=""
         role="presentation"
         width="550"
@@ -92,7 +92,7 @@
   <article class="card">
     <div>
       <img
-        src="images/codespace/spaces-3.png"
+        src="/images/codespace/spaces-3.png"
         alt=""
         role="presentation"
         width="550"
