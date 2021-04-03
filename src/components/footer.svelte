@@ -49,7 +49,7 @@
           margin-bottom: var(--xx-small);
         }
 
-        @media (max-width: 420px) {
+        @media (max-width: 500px) {
           flex: 0 0 35%;
         }
       }
@@ -109,6 +109,11 @@
   sup {
     color: var(--brand-ripe);
   }
+
+  a {
+    color: var(--dark-grey);
+    text-decoration-color: var(--brand-ripe);
+  }
 </style>
 
 <div class="footer__container">
@@ -125,12 +130,6 @@
             >Gitpod vs GitHub <br />Codespaces
           </a>
         </li>
-      </ul>
-      <ul>
-        <li>Solutions</li>
-        <li><a href="/education/">Education</a></li>
-        <li><a href="/recruiting/">Recruiting</a></li>
-        <li><a href="/vendor/">Vendor</a></li>
       </ul>
       <ul>
         <li>Developer</li>
