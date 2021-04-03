@@ -1,0 +1,10 @@
+@keyframes strikethrough {
+  from {
+    transform: scaleX(0);
+    background: var(--light-grey);
+  }
+  to {
+    transform: scaleX(1);
+    background: var(--light-grey);
+  }
+}

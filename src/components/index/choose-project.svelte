@@ -116,17 +116,6 @@
     animation: strikethrough 1s 0.5s cubic-bezier(0.55, 0, 0.1, 1) 1 forwards;
     transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
   }
-
-  @keyframes -global-strikethrough {
-    from {
-      transform: scaleX(0);
-      background: var(--light-grey);
-    }
-    to {
-      transform: scaleX(1);
-      background: var(--light-grey);
-    }
-  }
 </style>
 
 <div class="row">
