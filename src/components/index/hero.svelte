@@ -146,11 +146,11 @@
             <!-- Place this tag where you want the button to render. -->
             <a
               class="github-button"
-              href="https://github.com/ntkme/github-buttons"
+              href="https://github.com/gitpod-io/gitpod"
               data-icon="octicon-star"
               data-size="large"
               data-show-count="true"
-              aria-label="Star ntkme/github-buttons on GitHub">Star</a
+              aria-label="Star the Gitpod Repo on GitHub">Star</a
             >
           </div>
         </div>
