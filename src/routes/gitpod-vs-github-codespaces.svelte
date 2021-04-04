@@ -309,7 +309,7 @@
       manually-maintained environments.
     </p>
     <p>
-      <a href="TODO:" class="btn-primary">Try Now</a>
+      <a href="/#get-started" class="btn-primary">Try Now</a>
     </p>
   </div>
   <div class="card">
