@@ -1,4 +1,6 @@
 <script>
+  import { page } from "$app/stores";
+
   export let href;
 </script>
 
@@ -11,10 +13,19 @@
     }
   }
 
+  .active {
+    color: var(--black);
+  }
+
   a:hover,
   a:focus {
     color: var(--black);
   }
 </style>
 
-<a {href} on:click sveltekit:prefetch><slot /></a>
+<a
+  class:active={href.indexOf($page.path) >= 0}
+  {href}
+  on:click
+  sveltekit:prefetch><slot /></a
+>
