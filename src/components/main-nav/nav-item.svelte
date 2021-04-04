@@ -2,6 +2,9 @@
   import { page } from "$app/stores";
 
   export let href;
+
+  $: isActivePage =
+    $page.path === "/" ? /\/$/.test(href) : href.indexOf($page.path) >= 0;
 </script>
 
 <style lang="scss">
@@ -23,9 +26,4 @@
   }
 </style>
 
-<a
-  class:active={href.indexOf($page.path) >= 0}
-  {href}
-  on:click
-  sveltekit:prefetch><slot /></a
->
+<a class:active={isActivePage} {href} on:click sveltekit:prefetch><slot /></a>
