@@ -16,12 +16,9 @@
     }
   }
 
-  .active {
-    color: var(--black);
-  }
-
   a:hover,
-  a:focus {
+  a:focus,
+  .active {
     color: var(--black);
   }
 </style>
