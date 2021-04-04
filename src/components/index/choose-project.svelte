@@ -96,8 +96,9 @@
       max-width: 23.75rem;
     }
 
-    @media (max-width: 365px) {
+    @media (max-width: 382px) {
       font-size: 1.7rem;
+      min-width: 292px;
     }
   }
 

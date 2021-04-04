@@ -54,9 +54,12 @@
   }
 
   .btn-tertiary {
+    max-width: 9rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     opacity: 0;
 
-    @media (max-width: 427px) {
+    @media (max-width: 500px) {
       display: none;
     }
   }
