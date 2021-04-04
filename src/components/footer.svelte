@@ -171,7 +171,7 @@
       <div class="footer__social">
         {#each socialLinks as link}
           <a href={link.href} class="footer__social-link">
-            <img src={link.icon} alt={link.alt} />
+            <img src={link.icon} alt={link.alt} height="24" width="24" />
           </a>
         {/each}
       </div>

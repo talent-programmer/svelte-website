@@ -64,7 +64,7 @@
 
 <a href={`https://gitpod.io#${githubUrl}`} target="_blank" class="project">
   <div class="project__left">
-    <img src={`/${logo}`} {alt} class="project__logo" />
+    <img src={`/${logo}`} {alt} class="project__logo" width="36" height="36" />
     <h5>{title}</h5>
   </div>
   <span class="btn-tertiary">Launch workspace</span>

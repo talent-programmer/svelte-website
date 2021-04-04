@@ -116,9 +116,24 @@
         </div>
         <div class="hero__stars">
           <div class="hero__icons">
-            <img src="/svg/bitbucket.svg" alt="Bitbucket logo" />
-            <img src="/svg/github.svg" alt="GitHub logo" />
-            <img src="/svg/gitlab.svg" alt="GitLab logo" />
+            <img
+              src="/svg/bitbucket.svg"
+              alt="Bitbucket logo"
+              width="30"
+              height="30"
+            />
+            <img
+              src="/svg/github.svg"
+              alt="GitHub logo"
+              width="30"
+              height="30"
+            />
+            <img
+              src="/svg/gitlab.svg"
+              alt="GitLab logo"
+              width="30"
+              height="30"
+            />
           </div>
           <!-- <div>GitHub Stars</div> -->
         </div>
@@ -128,6 +143,8 @@
       <img
         src="/images/illustration-placeholder.png"
         alt="Gitpod in a Nutshell"
+        width="700"
+        height="724"
       />
     </div>
   </div>

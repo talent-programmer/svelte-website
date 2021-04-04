@@ -56,7 +56,13 @@
   <article>
     <div>
       <!-- TODO: Insert the terminal output animation from the homepage -->
-      <img src="/images/features/features-1.png" alt="" role="presentation" />
+      <img
+        src="/images/features/features-1.png"
+        alt=""
+        role="presentation"
+        height="688"
+        width="688"
+      />
     </div>
     <div>
       <h2 class="h3">Save Time with Prebuilt Workspaces</h2>
@@ -75,7 +81,13 @@
 
   <article>
     <div>
-      <img src="/images/features/features-2.png" alt="" role="presentation" />
+      <img
+        src="/images/features/features-2.png"
+        alt=""
+        role="presentation"
+        height="688"
+        width="570"
+      />
       <!-- TODO: Insert "Preparing workspace" images -->
     </div>
     <div>
@@ -91,7 +103,13 @@
 
 <section class="cards double">
   <div class="card">
-    <img src="/images/features/features-3.png" alt="" role="presentation" />
+    <img
+      src="/images/features/features-3.png"
+      alt=""
+      role="presentation"
+      height="223"
+      width="382"
+    />
     <!-- TODO: Insert emojis -->
     <h2 class="h4">Collaboration with Workspace Sharing</h2>
     <p>
@@ -102,7 +120,13 @@
   <div class="card">
     <!-- TODO: Insert terminal image -->
 
-    <img src="/images/features/features-4.png" alt="" role="presentation" />
+    <img
+      src="/images/features/features-4.png"
+      alt=""
+      role="presentation"
+      height="223"
+      width="483"
+    />
     <h2 class="h4">Full linux machine <span>(incl sudo/docker)</span></h2>
     <p>
       Instantly start a container in the cloud based on your Docker image.
@@ -120,6 +144,7 @@
       alt=""
       role="presentation"
       height="90"
+      width="185"
     />
     <h3 class="h5">Customize your workspace</h3>
     <p>
@@ -131,7 +156,13 @@
   <div class="card">
     <!-- TODO: Insert icon -->
 
-    <img src="/images/features/features-6.png" alt="" role="presentation" />
+    <img
+      src="/images/features/features-6.png"
+      alt=""
+      role="presentation"
+      height="90"
+      width="322"
+    />
     <h3 class="h5">GitLab, GitHub, and Bitbucket Integration</h3>
     <p>
       Start your workflow from your Git hosting platform and let Gitpod beam you
@@ -143,7 +174,13 @@
   <div class="card">
     <!-- TODO: Insert icon -->
 
-    <img src="/images/features/features-7.png" alt="" role="presentation" />
+    <img
+      src="/images/features/features-7.png"
+      alt=""
+      role="presentation"
+      height="90"
+      width="130"
+    />
     <h3 class="h5">Code Reviews Within the IDE</h3>
     <p>
       Open pull requests in Gitpod to run, navigate, and review the code. Reply
@@ -165,6 +202,8 @@
     src="/images/features/features-screenshot.png"
     alt=""
     role="presentation"
+    height="1110"
+    width="748"
   />
 </section>
 
