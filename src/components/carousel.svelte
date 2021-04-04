@@ -1,7 +1,7 @@
 <style>
   div {
     scroll-snap-type: x mandatory;
-    scrollbar-width: thick;
+    scrollbar-width: thin;
     scrollbar-color: var(--divider) var(--white);
   }
 
