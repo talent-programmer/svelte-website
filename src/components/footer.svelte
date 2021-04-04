@@ -127,12 +127,6 @@
         </li>
       </ul>
       <ul>
-        <li>Solutions</li>
-        <li><a href="/education/">Education</a></li>
-        <li><a href="/recruiting/">Recruiting</a></li>
-        <li><a href="/vendor/">Vendor</a></li>
-      </ul>
-      <ul>
         <li>Developer</li>
         <li><a href="/#get-started">Getting started</a></li>
         <li><a href="/screencasts/">Screencasts</a></li>
