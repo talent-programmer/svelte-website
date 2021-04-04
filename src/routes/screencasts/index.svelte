@@ -2,6 +2,7 @@
   import OpenGraph from "../../components/open-graph.svelte";
   import Screencast from "../../components/screencasts/screencast.svelte";
   import screencasts from "../../contents/screencasts";
+  import Explore from "../../components/explore.svelte";
 </script>
 
 <style type="scss">
@@ -24,5 +25,4 @@
     <Screencast {screencast} screencastNumber={index + 1} />
   {/each}
 </section>
-<!-- Explore Gitpod card -->
-<!-- Wait for https://github.com/gitpod-io/website-kumquat/pull/39 and reuse the component created there -->
+<Explore />
