@@ -53,8 +53,10 @@
     type: "website",
   }}
 />
-<h1>Come join our fast-growing, venture-backed team.</h1>
-<p>Gitpod is built on a culture of trust and empathy.</p>
+<header>
+  <h1>Come join our fast-growing, venture-backed team.</h1>
+  <p>Gitpod is built on a culture of trust and empathy.</p>
+</header>
 
 <div>
   <!-- TODO: Insert team photo -->
@@ -69,18 +71,20 @@
 
 <div>
   <h2>We’re driven by a set of values</h2>
-  {#each values as value}
-    <div>
-      <img
-        src={value.icon}
-        alt={value.iconAlt}
-        height={value.iconHeight}
-        width={value.iconWidth}
-      />
-      <p><strong>{value.title}</strong></p>
-      <p>{value.description}</p>
-    </div>
-  {/each}
+  <ul>
+    {#each values as value}
+      <li>
+        <img
+          src={value.icon}
+          alt={value.iconAlt}
+          height={value.iconHeight}
+          width={value.iconWidth}
+        />
+        <p><strong>{value.title}</strong></p>
+        <p>{value.description}</p>
+      </li>
+    {/each}
+  </ul>
 </div>
 
 <div>
@@ -95,7 +99,7 @@
 
 <div>
   {#each jobs as job}
-    <!-- Reuse the accordion from src/components/pricing/faq.svelte once https://github.com/gitpod-io/website-kumquat/pull/22 is merged -->
+    <!-- Reuse the accordion from src/components/pricing/faq.svelte -->
     {job.title}
   {/each}
 </div>
