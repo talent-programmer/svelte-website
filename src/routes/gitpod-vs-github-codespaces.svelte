@@ -67,6 +67,7 @@
         alt=""
         role="presentation"
         width="550"
+        height="414"
       />
       <p>
         <small
@@ -92,29 +93,44 @@
       <li>Pricing (Hosted)</li>
       <li>License</li>
       <li class="hasIcon">
-        <img src="/svg/github.svg" alt="GitHub" /> GitHub Integration
+        <img src="/svg/github.svg" alt="GitHub" width="35" height="34" /> GitHub
+        Integration
       </li>
 
       <li class="hasIcon">
-        <img src="/svg/gitlab.svg" alt="GitLab" />GitLab Integration
+        <img src="/svg/gitlab.svg" alt="GitLab" width="35" height="30" />GitLab
+        Integration
       </li>
 
       <li class="hasIcon">
-        <img src="/svg/bitbucket.svg" alt="Bitbucket" /> Bitbucket Integration
+        <img src="/svg/bitbucket.svg" alt="Bitbucket" width="35" height="29" /> Bitbucket
+        Integration
       </li>
 
       <li class="hasIcon">
-        <img src="/svg/brands/gcp.svg" alt="Google Cloud Platform" /> Self-Host on
-        GCP
+        <img
+          src="/svg/brands/gcp.svg"
+          alt="Google Cloud Platform"
+          width="35"
+          height="28"
+        /> Self-Host on GCP
       </li>
 
       <li class="hasIcon">
-        <img src="/svg/brands/aws.svg" alt="Amazon Web Services" />Self-Host on
-        AWS
+        <img
+          src="/svg/brands/aws.svg"
+          alt="Amazon Web Services"
+          width="35"
+          height="21"
+        />Self-Host on AWS
       </li>
       <li class="hasIcon">
-        <img src="/svg/brands/kubernetes.svg" alt="Kubernetes" />Self-Host on
-        Kubernetes
+        <img
+          src="/svg/brands/kubernetes.svg"
+          alt="Kubernetes"
+          width="35"
+          height="28"
+        />Self-Host on Kubernetes
       </li>
       <li>Prebuilds <span><button>?</button></span></li>
       <li>Snapshots <span><button>?</button></span></li>
