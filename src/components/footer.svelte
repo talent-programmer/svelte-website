@@ -117,6 +117,11 @@
   a {
     color: var(--dark-grey);
     text-decoration-color: var(--brand-ripe);
+
+    &:hover,
+    &:focus {
+      color: var(--black);
+    }
   }
 </style>
 
@@ -149,8 +154,9 @@
         <li>
           <a
             href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
-            target="_blank">Community</a
-          >
+            target="_blank"
+            >Community
+          </a>
         </li>
       </ul>
       <ul>
