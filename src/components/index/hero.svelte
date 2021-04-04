@@ -142,7 +142,17 @@
             <img src="/svg/github.svg" alt="GitHub logo" />
             <img src="/svg/gitlab.svg" alt="GitLab logo" />
           </div>
-          <!-- <div>GitHub Stars</div> -->
+          <div>
+            <!-- Place this tag where you want the button to render. -->
+            <a
+              class="github-button"
+              href="https://github.com/ntkme/github-buttons"
+              data-icon="octicon-star"
+              data-size="large"
+              data-show-count="true"
+              aria-label="Star ntkme/github-buttons on GitHub">Star</a
+            >
+          </div>
         </div>
       </div>
     </div>
