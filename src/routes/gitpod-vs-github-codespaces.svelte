@@ -7,6 +7,10 @@
 </script>
 
 <style>
+  .featureTable + p {
+    margin: auto;
+    max-width: 60%;
+  }
 </style>
 
 <OpenGraph
@@ -87,28 +91,28 @@
     <ul class="tableOfContents" role="presentation">
       <li>Pricing (Hosted)</li>
       <li>License</li>
-      <li>
+      <li class="hasIcon">
         <img src="/svg/github.svg" alt="GitHub" /> GitHub Integration
       </li>
 
-      <li>
+      <li class="hasIcon">
         <img src="/svg/gitlab.svg" alt="GitLab" />GitLab Integration
       </li>
 
-      <li>
+      <li class="hasIcon">
         <img src="/svg/bitbucket.svg" alt="Bitbucket" /> Bitbucket Integration
       </li>
 
-      <li>
+      <li class="hasIcon">
         <img src="/svg/brands/gcp.svg" alt="Google Cloud Platform" /> Self-Host on
         GCP
       </li>
 
-      <li>
+      <li class="hasIcon">
         <img src="/svg/brands/aws.svg" alt="Amazon Web Services" />Self-Host on
         AWS
       </li>
-      <li>
+      <li class="hasIcon">
         <img src="/svg/brands/kubernetes.svg" alt="Kubernetes" />Self-Host on
         Kubernetes
       </li>
@@ -190,7 +194,7 @@
     <dl>
       <dt>Pricing (Hosted)</dt>
       <dd>
-        <span aria-label="unknown" class="icon">?</span>
+        <span aria-label="unknown" class="icon">$$$</span>
       </dd>
       <dt>License</dt>
       <dd>Proprietary</dd>
