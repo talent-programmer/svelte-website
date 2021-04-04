@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import OpenGraph from "../components/open-graph.svelte";
   import ScreencastPreview from "../components/screencasts/preview.svelte";
@@ -52,7 +56,7 @@
   <article>
     <div>
       <!-- TODO: Insert the terminal output animation from the homepage -->
-      <img src="images/features/features-1.png" alt="" role="presentation" />
+      <img src="/images/features/features-1.png" alt="" role="presentation" />
     </div>
     <div>
       <h2 class="h3">Save Time with Prebuilt Workspaces</h2>
@@ -71,7 +75,7 @@
 
   <article>
     <div>
-      <img src="images/features/features-2.png" alt="" role="presentation" />
+      <img src="/images/features/features-2.png" alt="" role="presentation" />
       <!-- TODO: Insert "Preparing workspace" images -->
     </div>
     <div>
@@ -87,7 +91,7 @@
 
 <section class="cards double">
   <div class="card">
-    <img src="images/features/features-3.png" alt="" role="presentation" />
+    <img src="/images/features/features-3.png" alt="" role="presentation" />
     <!-- TODO: Insert emojis -->
     <h2 class="h4">Collaboration with Workspace Sharing</h2>
     <p>
@@ -98,7 +102,7 @@
   <div class="card">
     <!-- TODO: Insert terminal image -->
 
-    <img src="images/features/features-4.png" alt="" role="presentation" />
+    <img src="/images/features/features-4.png" alt="" role="presentation" />
     <h2 class="h4">Full linux machine <span>(incl sudo/docker)</span></h2>
     <p>
       Instantly start a container in the cloud based on your Docker image.
@@ -112,7 +116,7 @@
     <!-- TODO: Insert icon -->
 
     <img
-      src="images/features/features-5.png"
+      src="/images/features/features-5.png"
       alt=""
       role="presentation"
       height="90"
@@ -127,7 +131,7 @@
   <div class="card">
     <!-- TODO: Insert icon -->
 
-    <img src="images/features/features-6.png" alt="" role="presentation" />
+    <img src="/images/features/features-6.png" alt="" role="presentation" />
     <h3 class="h5">GitLab, GitHub, and Bitbucket Integration</h3>
     <p>
       Start your workflow from your Git hosting platform and let Gitpod beam you
@@ -139,7 +143,7 @@
   <div class="card">
     <!-- TODO: Insert icon -->
 
-    <img src="images/features/features-7.png" alt="" role="presentation" />
+    <img src="/images/features/features-7.png" alt="" role="presentation" />
     <h3 class="h5">Code Reviews Within the IDE</h3>
     <p>
       Open pull requests in Gitpod to run, navigate, and review the code. Reply
@@ -158,7 +162,7 @@
   <!-- TODO: Insert the VS Code Gitpod theme screenshot -->
 
   <img
-    src="images/features/features-screenshot.png"
+    src="/images/features/features-screenshot.png"
     alt=""
     role="presentation"
   />

@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script lang="ts">
   import type {
     EducationFeature,
@@ -5,6 +9,7 @@
   } from "../types/education.type";
   import Feature from "../components/education/feature.svelte";
   import OpenGraph from "../components/open-graph.svelte";
+  import Explore from "../components/explore.svelte";
 
   const features: EducationFeature[] = [
     {
@@ -162,9 +167,4 @@
   </div>
 </section>
 
-<section>
-  <div class="subhero">
-    <p>Explore Gitpod</p>
-    <p>Automated and ephemeral dev environments in the cloud.</p>
-  </div>
-</section>
+<Explore />

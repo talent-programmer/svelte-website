@@ -59,6 +59,8 @@ textarea {
   font-size: 24px;
   line-height: 1.1;
   text-align: center;
+  content: "✓";
+  color: transparent;
 }
 .error,
 .error *,
@@ -72,7 +74,10 @@ textarea {
 [type="checkbox"]:checked + label::before {
   background-image: var(--brand-gradient);
   color: var(--black);
-  content: "✓";
+}
+[type="checkbox"] + label:hover::before,
+[type="checkbox"] + label:focus::before {
+  border-color: var(--dark-grey);
 }
 [type="radio"]:hover + label,
 [type="radio"]:focus + label {
@@ -80,7 +85,7 @@ textarea {
 }
 [type="radio"]:checked + label {
   background-image: var(--brand-gradient);
-  font-weight: bold;
+  text-shadow: 0 0 1px currentColor;
   color: var(--black);
 }
 .btn-conversion:disabled {
