@@ -165,7 +165,6 @@
         <li>
           <a href="/careers/">Careers<sup>*</sup></a>
         </li>
-        <li><a href="/media-kit/">Media Kit</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
       <ul>
