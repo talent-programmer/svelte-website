@@ -14,18 +14,9 @@
       transition: all 0.2s;
 
       &:hover,
-      &:focus {
-        opacity: 0.9;
-      }
-
+      &:focus,
       &:active {
-        background: var(--white);
-        color: var(--black);
-        border: 1px solid;
-
-        path {
-          fill: var(--black);
-        }
+        opacity: 0.9;
       }
 
       &:not(:last-child) {
@@ -36,7 +27,8 @@
         background: #000000;
 
         &:hover,
-        &:focus {
+        &:focus,
+        &:active {
           opacity: 1;
           background: var(--black-hover);
         }
@@ -55,10 +47,6 @@
       height: 1.75rem;
       width: 1.75rem;
       margin-right: var(--micro);
-    }
-
-    path {
-      fill: var(--off-white);
     }
   }
 
