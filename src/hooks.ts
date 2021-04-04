@@ -1,4 +1,5 @@
-export const getSession = async () => {
+/** @type {import('@sveltejs/kit').GetSession} */
+export const getSession: import("@sveltejs/kit").GetSession = async () => {
   const posts = await Promise.all(
     Object.entries(import.meta.glob("/src/routes/blog/*.md")).map(
       async ([path, page]) => {
@@ -12,5 +13,21 @@ export const getSession = async () => {
 
   return {
     posts,
+  };
+};
+
+/** @type {import('@sveltejs/kit').Handle} */
+export const handle: import("@sveltejs/kit").Handle = async (
+  request,
+  render
+) => {
+  const response = await render(request);
+
+  return {
+    ...response,
+    headers: {
+      ...response.headers,
+      "Set-Cookie": "gitpod-user=loggedIn; Domain=.gitpod.io; Path=/",
+    },
   };
 };
