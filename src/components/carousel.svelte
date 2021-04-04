@@ -10,7 +10,7 @@
   }
 
   div::-webkit-scrollbar:horizontal {
-    height: 0.5rem;
+    height: 0.375rem;
   }
 
   div::-webkit-scrollbar-thumb {
