@@ -96,7 +96,10 @@
   <div class="hero">
     <div class="hero__text">
       <h1 class="homeh1">Ready When <br /> You Are.</h1>
-      <p class="hero__intro-text text-large">
+      <p
+        id="choose-project-observer-target"
+        class="hero__intro-text text-large"
+      >
         Spin up fresh, automated dev environments for each task, in the cloud,
         in seconds. Or take a day to configure them the old way, up to you.
       </p>
