@@ -1,5 +1,6 @@
 <script>
   import Menu from "../../components/docs/menu.svelte";
+  import MobileMenu from "../../components/docs/mobile-menu.svelte";
   import Search from "../../components/docs/search.svelte";
   import "../../assets/docs.scss";
 </script>
@@ -35,6 +36,7 @@
   </div>
   <div class="doc-contents">
     <Search />
+    <MobileMenu />
     <slot />
   </div>
 </div>

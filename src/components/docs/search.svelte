@@ -25,6 +25,14 @@
 </script>
 
 <style lang="scss">
+  .input-container {
+    @apply w-full mb-12;
+
+    @media (max-width: 768px) {
+      @apply mb-4;
+    }
+  }
+
   input {
     background: url("/svg/mag-glass.svg") 10px center / 24px 24px no-repeat
       var(--white);
@@ -55,7 +63,7 @@
     src="https://cdn.jsdelivr.net/npm/docsearch.js@{docSearchJSVersion}/dist/cdn/docsearch.min.js"></script>
 </svelte:head>
 
-<div class="w-full mb-12">
+<div class="input-container">
   <label for={docSearchInputSelector} class="sr-only">Search</label>
   <div class="relative">
     <input
