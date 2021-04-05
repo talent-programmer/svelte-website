@@ -42,6 +42,10 @@
       }
     }
 
+    &__title {
+      flex: 1;
+    }
+
     &__arrow {
       flex: 0 0 1.5rem;
       display: block;
@@ -76,14 +80,8 @@
 
 <details class="faq">
   <summary class="faq__top">
-    <h3 class="h4">{title}</h3>
-    <img
-      class="faq__arrow"
-      src="/arrow.svg"
-      alt="Arrow"
-      width="24"
-      height="24"
-    />
+    <h3 class="h4 faq__title">{title}</h3>
+    <img class="faq__arrow" src="/arrow.svg" alt="Arrow" />
   </summary>
   <div class="faq__text">
     <slot />
