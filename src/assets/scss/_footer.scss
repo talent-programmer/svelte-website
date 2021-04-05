@@ -23,17 +23,6 @@
   }
 }
 
-.footer__entries ul {
-  @media (max-width: 768px) {
-    flex: 0 0 22%;
-    margin-bottom: var(--xx-small);
-  }
-
-  @media (max-width: 500px) {
-    flex: 0 0 35%;
-  }
-}
-
 .footer__entries li:first-child {
   font-weight: 600;
   color: var(--black);
@@ -77,6 +66,16 @@
 
 .footer__social-link:not(:last-child) {
   margin-right: var(--micro);
+}
+
+.footer ul {
+  @media (max-width: 768px) {
+    margin-bottom: var(--xx-small);
+  }
+
+  @media (max-width: 500px) {
+    flex: 0 0 34%;
+  }
 }
 
 .footer .logo-wrapper {
