@@ -126,7 +126,7 @@
     {/each}
   </ul>
 
-  <h2 class="h4">Open positions</h2>
+  <h2 id="openings" class="h4">Open positions</h2>
   <p>
     If there isn't an open position for you but you'd still want to work at
     Gitpod let us know via <a href="mailto:career@gitpod.io">career@gitpod.io</a
