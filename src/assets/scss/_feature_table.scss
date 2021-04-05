@@ -3,16 +3,12 @@
 }
 .featureTable .toc img {
   width: 35px;
-  margin-right: 0.5rem;
+  position: absolute;
+  left: 0;
 }
 .featureTable .toc li {
-  font-size: var(--fine-print);
-  display: flex;
-  align-items: center;
-  padding-left: calc(35px + 0.5rem);
-}
-.featureTable .toc .hasIcon {
-  padding-left: 0;
+  padding-left: 2.8rem;
+  position: relative;
 }
 .featureTable dd,
 .featureTable dt,
@@ -91,8 +87,8 @@
   font-size: 1.5rem;
 }
 [aria-label="No"] {
-  background-color: var(--sand-dark);
-  color: var(--light-grey);
+  background-color: var(--transparent-error);
+  color: var(--error);
   font-size: 2rem;
   line-height: 0.8;
 }
