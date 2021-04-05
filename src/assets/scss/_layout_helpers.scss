@@ -14,7 +14,7 @@ main > header:first-child,
 .header,
 .brief {
   text-align: center;
-  margin: 3rem auto 5em;
+  margin: var(--xx-large) auto 5em;
   width: 100%;
 }
 main > header:first-child {
