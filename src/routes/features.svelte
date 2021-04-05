@@ -11,6 +11,21 @@
 </script>
 
 <style lang="scss">
+  header {
+    margin-bottom: 0;
+    p {
+      margin-bottom: var(--xx-large);
+    }
+  }
+
+  article {
+    margin-bottom: var(--x-large);
+  }
+
+  .double {
+    margin-bottom: var(--x-large);
+  }
+
   .double img {
     height: 223px;
   }
@@ -34,6 +49,15 @@
     width: 1100px;
     max-width: 90vw;
     margin: 2rem auto;
+  }
+
+  .brief > p {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .screencasts-container {
+    margin-top: 0;
   }
 </style>
 
@@ -66,14 +90,14 @@
       />
     </div>
     <div>
-      <h2 class="h3">Save Time with Prebuilt Workspaces</h2>
+      <h2 class="h3">Save Time with Prebuilds</h2>
       <p class="text-large">
         Gitpod continuously builds your git branches like a CI server. This
         means no more waiting for dependencies to be downloaded and builds to
         finish.
       </p>
       <p>
-        <a href="/docs/prebuilds/" class="btn-secondary"
+        <a href="/docs/prebuilds/" class="btn-primary"
           >More about Prebuilt Workspaces</a
         >
       </p>
@@ -208,7 +232,7 @@
   />
 </section>
 
-<section class="brief">
+<section class="brief screencasts-container">
   <h2>Get started with screencasts</h2>
   <div class="screencasts">
     {#each firstThreeScreencasts as screencast, index}
