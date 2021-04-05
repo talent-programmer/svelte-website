@@ -24,10 +24,6 @@
   }}
 />
 
-<svelte:head>
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-</svelte:head>
-
 <Hero />
 <ChooseProject />
 <Features {features} />
