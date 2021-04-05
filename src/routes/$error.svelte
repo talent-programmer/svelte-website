@@ -10,22 +10,7 @@
   export let error: Error;
 </script>
 
-<style>
-  .row {
-    text-align: center;
-  }
-  img {
-    width: 400px;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    filter: grayscale(60%);
-  }
-  p {
-    margin-bottom: 2rem;
-  }
-</style>
-
-<div class="row">
+<div class="error-page row">
   <Section>
     <img src="/images/illustration-small.png" alt="" />
     <h1>{status}</h1>
