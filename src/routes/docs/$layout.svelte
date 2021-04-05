@@ -6,16 +6,19 @@
 
 <style>
   .docs-layout {
-    @apply py-10;
+    @apply pb-10;
 
     @media (min-width: 769px) {
       @apply flex;
+      @apply pt-10;
     }
   }
 
   .menu {
-    @media (min-width: 769px) {
-      @apply w-2/5 pt-24 pr-8;
+    @apply w-2/5 pt-24 pr-8;
+
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 
