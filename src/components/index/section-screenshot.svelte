@@ -58,7 +58,7 @@
     <h1>Remote-first. Secure by Design.</h1>
     <img
       class="screenshot"
-      src="/images/gitpod-screenshot.png"
+      src="/images/gitpod-screenshot.jpg"
       alt="Gitpod"
       height="819"
       width="1269"
