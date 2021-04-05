@@ -81,7 +81,13 @@
 <details class="faq">
   <summary class="faq__top">
     <h3 class="h4 faq__title">{title}</h3>
-    <img class="faq__arrow" src="/arrow.svg" alt="Arrow" />
+    <img
+      class="faq__arrow"
+      width="24"
+      height="24"
+      src="/arrow.svg"
+      alt="Arrow"
+    />
   </summary>
   <div class="faq__text">
     <slot />
