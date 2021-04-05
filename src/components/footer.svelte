@@ -96,7 +96,6 @@
   }
 
   ul {
-    border: 2px solid red;
     @media (max-width: 768px) {
       margin-bottom: var(--xx-small);
     }
