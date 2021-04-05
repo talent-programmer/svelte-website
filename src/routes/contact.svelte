@@ -108,6 +108,9 @@
 </script>
 
 <style>
+  p {
+    color: var(--dark-grey);
+  }
   form {
     max-width: 45rem;
     margin: auto;
