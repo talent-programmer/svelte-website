@@ -3,6 +3,10 @@
     margin-bottom: 0;
     p {
       margin-bottom: var(--xx-large);
+
+      @media (max-width: 972px) {
+        margin-bottom: var(--x-large);
+      }
     }
   }
 </style>

@@ -77,6 +77,14 @@ main > header {
   flex: 0 1 calc(50% - 2rem);
   min-width: 400px;
   align-self: center;
+
+  @media (max-width: 768px) {
+    min-width: 350px;
+  }
+
+  @media (max-width: 400px) {
+    min-width: 300px;
+  }
 }
 .halfimages article p {
   margin-bottom: 2rem;
@@ -85,12 +93,24 @@ main > header {
   flex: 0 1 calc(50% - 1rem);
   min-width: 400px;
   align-self: stretch;
+
+  @media (max-width: 768px) {
+    min-width: 350px;
+  }
+
+  @media (max-width: 400px) {
+    min-width: 300px;
+  }
 }
 .cards.triple > div {
   flex: 0 1 calc(33% - 2rem);
   min-width: 300px;
   align-self: stretch;
   text-align: center;
+
+  @media (max-width: 768px) {
+    min-width: 280px;
+  }
 }
 .triple .card {
   display: grid;
