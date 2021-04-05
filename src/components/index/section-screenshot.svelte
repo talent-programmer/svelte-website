@@ -38,7 +38,6 @@
 
     p {
       margin: var(--small) 0;
-      color: var(--dark-grey);
     }
   }
 

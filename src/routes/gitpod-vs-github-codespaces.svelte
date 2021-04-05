@@ -23,7 +23,7 @@
 />
 <header>
   <h1>Gitpod vs GitHub Codespaces</h1>
-  <p>
+  <p class="text-large">
     Gitpod is the faster, more powerful, open-source platform that integrates
     with your individual stack.
   </p>
@@ -49,7 +49,7 @@
     </div>
     <div>
       <h2>Ready in a flash</h2>
-      <p>
+      <p class="text-large">
         Gitpod removes long init and build times by continuously pre-building
         workspaces for your project. Thereby it allows you to start coding or
         debugging immediately, from any context, at any time.
@@ -78,7 +78,7 @@
     </div>
     <div>
       <h2>Work on a mighty Linux rig</h2>
-      <p>
+      <p class="p-large">
         By leveraging cloud technologies like containers and Kubernetes, Gitpod
         achieves best-in-class resource-efficiency with scalable workspaces
         running on shared high-powered cloud servers.
@@ -280,7 +280,9 @@
 
 <div class="brief">
   <h2>Ready to feel the difference?</h2>
-  <p>Spin up an example workspace now, just link your git provider</p>
+  <p class="text-large">
+    Spin up an example workspace now, just link your git provider
+  </p>
   <p>
     <a href="TODO:" class="btn-conversion">Try Now</a>
   </p>
@@ -299,11 +301,11 @@
     </div>
     <div>
       <h2>Open-Source</h2>
-      <p>
+      <p class="text-large">
         Gitpod puts developers' interest first and thereby guarantees full
         transparency and flexibility. Integrate, don't dictate.
       </p>
-      <ul>
+      <ul class="text-large">
         <li>
           Host Gitpod yourself on GCP, AWS, Azure or self-managed Kubernetes
         </li>

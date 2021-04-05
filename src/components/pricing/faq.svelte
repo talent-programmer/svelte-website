@@ -85,7 +85,7 @@
       height="24"
     />
   </summary>
-  <div class="faq__text">
+  <div class="faq__text text-large">
     <slot />
   </div>
 </details>
