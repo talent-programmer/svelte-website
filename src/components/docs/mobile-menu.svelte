@@ -1,6 +1,4 @@
 <script lang="ts">
-  import MenuSection from "./menu-section.svelte";
-
   // This file is used to define entries in the side menu
   interface MenuEntry {
     title: string;
@@ -100,8 +98,54 @@
   ];
 </script>
 
-<ul class="space-y-8">
+<style lang="scss">
+  .mobile-menu {
+    @media (min-width: 769px) {
+      display: none;
+    }
+  }
+
+  // override _forms.scss
+  .menu-item {
+    margin-bottom: 0;
+    border-bottom: var(--border-light);
+  }
+
+  .menu-item__link {
+    display: flex;
+    align-items: center;
+    min-height: 3.375rem;
+  }
+
+  .menu-item__link-text {
+    flex: 1 1 auto;
+  }
+
+  .menu-item__link-arrow {
+    @apply ml-4;
+    flex: 0 0 auto;
+  }
+
+  .menu-item__arrow {
+    transform: rotate(-90deg);
+  }
+</style>
+
+<ul class="mobile-menu">
   {#each MENU as menuItem}
-    <MenuSection {menuItem} />
+    <li class="menu-item">
+      <a href={menuItem.path} class="menu-item__link">
+        <div class="menu-item__link-text">{menuItem.title}</div>
+        <div class="menu-item__link-arrow" aria-hidden="true">
+          <img
+            class="menu-item__arrow"
+            src="/arrow.svg"
+            alt={menuItem.title}
+            width="12"
+            height="7"
+          />
+        </div>
+      </a>
+    </li>
   {/each}
 </ul>

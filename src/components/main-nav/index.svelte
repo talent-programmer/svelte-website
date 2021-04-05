@@ -20,7 +20,7 @@
       label: "Blog",
     },
     {
-      href: "/docs",
+      href: "/docs/",
       label: "Docs",
     },
   ];
