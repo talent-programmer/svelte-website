@@ -48,8 +48,8 @@
 <header>
   <h1 class="h2">Features</h1>
   <p class="text-large">
-    Gitpod will always have a free-to-use option. For those looking for a little
-    more we have a few powerful solutions.
+    Automated workspaces that supercharge your dev workflow. Squash the time
+    between code-to-commit.
   </p>
 </header>
 
