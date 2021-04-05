@@ -1,17 +1,9 @@
-/* -------------------------------------- */
-/* --- Buttons & Links --- */
-/* -------------------------------------- */
-
+/* --------------------------------------------- */
+/* --- Buttons & Links that look like buttons--- */
+/* --------------------------------------------- */
 a {
-  color: var(--black);
   transition: all 0.2s 50ms;
 }
-
-.link--light-grey {
-  font-weight: 600;
-  color: var(--light-grey);
-}
-
 [class|="btn"],
 .btn {
   display: inline-block;
@@ -21,8 +13,8 @@ a {
   border-radius: 0.75em;
   box-shadow: var(--shadow-light);
   font-size: var(--btn-small);
+  color: var(--black);
 }
-
 .btn,
 .btn-cta {
   background-color: var(--sand-dark);
@@ -32,7 +24,6 @@ a {
     background-image: none;
   }
 }
-
 .btn-conversion {
   padding: 0.75em 2em;
   font-size: var(--p-medium);
