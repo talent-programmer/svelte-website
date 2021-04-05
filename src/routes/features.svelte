@@ -199,7 +199,7 @@
   <!-- TODO: Insert the VS Code Gitpod theme screenshot -->
 
   <img
-    src="/images/features/features-screenshot.png"
+    src="/images/features/gitpod-extensions.jpg"
     alt=""
     role="presentation"
     height="1110"
