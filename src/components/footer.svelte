@@ -4,17 +4,17 @@
     {
       href: "https://twitter.com/gitpod",
       alt: "Twitter",
-      icon: "svg/brands/twitter.svg",
+      icon: "/svg/brands/twitter.svg",
     },
     {
       href: "https://github.com/gitpod-io",
       alt: "GitHub",
-      icon: "svg/brands/github.svg",
+      icon: "/svg/brands/github.svg",
     },
     {
       href: "https://community.gitpod.io/",
       alt: "Discourse",
-      icon: "svg/brands/discourse.svg",
+      icon: "/svg/brands/discourse.svg",
     },
   ];
 </script>
@@ -49,7 +49,7 @@
           margin-bottom: var(--xx-small);
         }
 
-        @media (max-width: 420px) {
+        @media (max-width: 500px) {
           flex: 0 0 35%;
         }
       }
@@ -106,8 +106,22 @@
     }
   }
 
+  .logo-wrapper {
+    transform: translateY(-1px);
+  }
+
   sup {
     color: var(--brand-ripe);
+  }
+
+  a {
+    color: var(--dark-grey);
+    text-decoration-color: var(--brand-ripe);
+
+    &:hover,
+    &:focus {
+      color: var(--black);
+    }
   }
 </style>
 
@@ -127,12 +141,6 @@
         </li>
       </ul>
       <ul>
-        <li>Solutions</li>
-        <li><a href="/education/">Education</a></li>
-        <li><a href="/recruiting/">Recruiting</a></li>
-        <li><a href="/vendor/">Vendor</a></li>
-      </ul>
-      <ul>
         <li>Developer</li>
         <li><a href="/#get-started">Getting started</a></li>
         <li><a href="/screencasts/">Screencasts</a></li>
@@ -146,8 +154,9 @@
         <li>
           <a
             href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
-            target="_blank">Community</a
-          >
+            target="_blank"
+            >Community
+          </a>
         </li>
       </ul>
       <ul>
@@ -156,7 +165,6 @@
         <li>
           <a href="/careers/">Careers<sup>*</sup></a>
         </li>
-        <li><a href="/media-kit/">Media Kit</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
       <ul>
@@ -173,12 +181,14 @@
 
     <div class="footer__bottom">
       <div class="footer__copy">
-        <a href="/"><LogoTextless /></a><span>Copyright &copy; Gitpod</span>
+        <a href="/"><div class="logo-wrapper"><LogoTextless /></div></a><span
+          >Copyright &copy; Gitpod</span
+        >
       </div>
       <div class="footer__social">
         {#each socialLinks as link}
           <a href={link.href} class="footer__social-link">
-            <img src={link.icon} alt={link.alt} />
+            <img src={link.icon} alt={link.alt} height="24" width="24" />
           </a>
         {/each}
       </div>

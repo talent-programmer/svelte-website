@@ -7,6 +7,12 @@
     padding: var(--medium);
     border-radius: 16px;
     background: var(--sand-dark);
+    border: 1px solid transparent;
+
+    &:hover,
+    &:focus {
+      border: 1px solid #fff;
+    }
 
     @media (max-width: 768px) {
       padding: var(--xx-small);
@@ -71,7 +77,13 @@
 <details class="faq">
   <summary class="faq__top">
     <h3 class="h4">{title}</h3>
-    <img class="faq__arrow" src="/arrow.svg" alt="Arrow" />
+    <img
+      class="faq__arrow"
+      src="/arrow.svg"
+      alt="Arrow"
+      width="24"
+      height="24"
+    />
   </summary>
   <div class="faq__text">
     <slot />

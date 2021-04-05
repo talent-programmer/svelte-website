@@ -93,6 +93,7 @@
         {/if}
         {#if image}
           <img src={image.src} alt={image.alt} />
+          <!--height="{image.height}" width="{image.width}" />-->
         {/if}
       </div>
     </div>

@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script lang="ts">
   import OpenGraph from "../components/open-graph.svelte";
   import { jobs } from "../contents/careers";
@@ -6,6 +10,8 @@
     {
       icon: "",
       iconAlt: "",
+      iconHeight: "",
+      iconWidth: "",
       title: "Open and transparent",
       description:
         "We are open minded, transparent and curious. We remain students of the game, not masters of the game.",
@@ -13,6 +19,8 @@
     {
       icon: "",
       iconAlt: "",
+      iconHeight: "",
+      iconWidth: "",
       title: "Developer-first",
       description:
         "Developers architect our future. We are developers ourselves and built Gitpod to make lives of developers easier.",
@@ -20,6 +28,8 @@
     {
       icon: "",
       iconAlt: "",
+      iconHeight: "",
+      iconWidth: "",
       title: "Fully remote",
       description:
         "You can work from anywhere and schedule your working hours the way it fits best for you. We make sure you are all set and will treat you well.",
@@ -27,6 +37,8 @@
     {
       icon: "",
       iconAlt: "",
+      iconHeight: "",
+      iconWidth: "",
       title: "Frictionless",
       description:
         "Everybody should have a frictionless experience with Gitpod, our product and our comany: no hurdles, no BS, no unnecessary extra steps.",
@@ -41,8 +53,10 @@
     type: "website",
   }}
 />
-<h1>Come join our fast-growing, venture-backed team.</h1>
-<p>Gitpod is built on a culture of trust and empathy.</p>
+<header>
+  <h1>Come join our fast-growing, venture-backed team.</h1>
+  <p>Gitpod is built on a culture of trust and empathy.</p>
+</header>
 
 <div>
   <!-- TODO: Insert team photo -->
@@ -57,13 +71,20 @@
 
 <div>
   <h2>We’re driven by a set of values</h2>
-  {#each values as value}
-    <div>
-      <img src={value.icon} alt={value.iconAlt} />
-      <p><strong>{value.title}</strong></p>
-      <p>{value.description}</p>
-    </div>
-  {/each}
+  <ul>
+    {#each values as value}
+      <li>
+        <img
+          src={value.icon}
+          alt={value.iconAlt}
+          height={value.iconHeight}
+          width={value.iconWidth}
+        />
+        <p><strong>{value.title}</strong></p>
+        <p>{value.description}</p>
+      </li>
+    {/each}
+  </ul>
 </div>
 
 <div>
@@ -78,7 +99,7 @@
 
 <div>
   {#each jobs as job}
-    <!-- Reuse the accordion from src/components/pricing/faq.svelte once https://github.com/gitpod-io/website-kumquat/pull/22 is merged -->
+    <!-- Reuse the accordion from src/components/pricing/faq.svelte -->
     {job.title}
   {/each}
 </div>

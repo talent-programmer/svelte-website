@@ -1,6 +1,17 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import OpenGraph from "../components/open-graph.svelte";
 </script>
+
+<style>
+  .featureTable + p {
+    margin: auto;
+    max-width: 60%;
+  }
+</style>
 
 <OpenGraph
   data={{
@@ -22,7 +33,7 @@
   <article class="card">
     <div>
       <img
-        src="images/codespace/spaces-1.png"
+        src="/images/codespace/spaces-1.png"
         alt=""
         role="presentation"
         width="550"
@@ -52,10 +63,11 @@
   <article class="card">
     <div>
       <img
-        src="images/codespace/spaces-2.png"
+        src="/images/codespace/spaces-2.png"
         alt=""
         role="presentation"
         width="550"
+        height="414"
       />
       <p>
         <small
@@ -75,6 +87,197 @@
   </article>
 </div>
 
+<div class="featureTable">
+  <section class="card toc">
+    <ul class="tableOfContents" role="presentation">
+      <li>Pricing (Hosted)</li>
+      <li>License</li>
+      <li class="hasIcon">
+        <img src="/svg/github.svg" alt="GitHub" width="35" height="34" /> GitHub
+        Integration
+      </li>
+
+      <li class="hasIcon">
+        <img src="/svg/gitlab.svg" alt="GitLab" width="35" height="30" />GitLab
+        Integration
+      </li>
+
+      <li class="hasIcon">
+        <img src="/svg/bitbucket.svg" alt="Bitbucket" width="35" height="29" /> Bitbucket
+        Integration
+      </li>
+
+      <li class="hasIcon">
+        <img
+          src="/svg/brands/gcp.svg"
+          alt="Google Cloud Platform"
+          width="35"
+          height="28"
+        /> Self-Host on GCP
+      </li>
+
+      <li class="hasIcon">
+        <img
+          src="/svg/brands/aws.svg"
+          alt="Amazon Web Services"
+          width="35"
+          height="21"
+        />Self-Host on AWS
+      </li>
+      <li class="hasIcon">
+        <img
+          src="/svg/brands/kubernetes.svg"
+          alt="Kubernetes"
+          width="35"
+          height="28"
+        />Self-Host on Kubernetes
+      </li>
+      <li>Prebuilds <span><button>?</button></span></li>
+      <li>Snapshots <span><button>?</button></span></li>
+      <li>VS Code Extensions</li>
+      <li>iPad Support</li>
+      <li>Virtual Desktop (VNC)</li>
+      <li>Multi-IDE Support</li>
+    </ul>
+  </section>
+  <section class="card alive">
+    <h2>Gitpod</h2>
+    <dl id="gitpodPricing" class="tableColumn">
+      <dt>Pricing (Hosted)</dt>
+      <dd>Free for Open-Source</dd>
+      <dt>License</dt>
+      <dd>Open Source</dd>
+      <dt>GitHub Integration</dt>
+      <dd>
+        <span aria-label="Yes" class="icon">✓</span>
+      </dd>
+      <dt>GitLab Integration</dt>
+      <dd>
+        <span aria-label="Yes" class="icon">✓</span>
+      </dd>
+      <dt>Bitbucket Integration</dt>
+      <dd>
+        <span aria-label="Yes" class="icon">✓</span>
+      </dd>
+      <dt>Self-Host on GCP</dt>
+      <dd>
+        <span aria-label="Yes" class="icon">✓</span>
+      </dd>
+      <dt>Self-Host on AWS</dt>
+      <dd>
+        <span aria-label="Yes" class="icon">✓</span>
+      </dd>
+      <dt>Self-Host on Kubernetes</dt>
+      <dd>
+        <span aria-label="Yes" class="icon">✓</span>
+      </dd>
+      <dt>
+        Prebuilds <span>
+          <button>?</button>
+        </span>
+      </dt>
+      <dd>
+        <span aria-label="Yes" class="icon">✓</span>
+      </dd>
+      <dt>
+        Snapshots <span>
+          <button>?</button>
+        </span>
+      </dt>
+      <dd>
+        <span aria-label="Yes" class="icon">✓</span>
+      </dd>
+      <dt>VS Code Extensions</dt>
+      <dd>
+        <span aria-label="Yes" class="icon">✓</span>
+      </dd>
+      <dt>iPad Support</dt>
+      <dd>
+        <span aria-label="Yes" class="icon">✓</span>
+      </dd>
+      <dt>Virtual Desktop (VNC)</dt>
+      <dd>
+        <span aria-label="Yes" class="icon">✓</span>
+      </dd>
+      <dt>Multi-IDE Support</dt>
+      <dd>
+        <span aria-label="Yes" class="icon">✓</span>
+      </dd>
+    </dl>
+  </section>
+  <section class="card">
+    <h2 class="h4">GitHub Codespaces</h2>
+    <dl>
+      <dt>Pricing (Hosted)</dt>
+      <dd>
+        <span aria-label="unknown" class="icon">$$$</span>
+      </dd>
+      <dt>License</dt>
+      <dd>Proprietary</dd>
+      <dt>GitHub Integration</dt>
+      <dd>
+        <span aria-label="Yes" class="icon">✓</span>
+      </dd>
+      <dt>GitLab Integration</dt>
+      <dd>
+        <span aria-label="No" class="icon">𐄂</span>
+      </dd>
+      <dt>Bitbucket Integration</dt>
+      <dd>
+        <span aria-label="No" class="icon">𐄂</span>
+      </dd>
+      <dt>Self-Host on GCP</dt>
+      <dd>
+        <span aria-label="No" class="icon">𐄂</span>
+      </dd>
+      <dt>Self-Host on AWS</dt>
+      <dd>
+        <span aria-label="No" class="icon">𐄂</span>
+      </dd>
+      <dt>Self-Host on Kubernetes</dt>
+      <dd>
+        <span aria-label="No" class="icon">𐄂</span>
+      </dd>
+      <dt>
+        Prebuilds <span>
+          <button>?</button>
+        </span>
+      </dt>
+      <dd>
+        <span aria-label="No" class="icon">𐄂</span>
+      </dd>
+      <dt>Snapshots <span><button>?</button></span></dt>
+      <dd>
+        <span aria-label="No" class="icon">𐄂</span>
+      </dd>
+      <dt>VS Code Extensions</dt>
+      <dd>
+        <span aria-label="Yes" class="icon">✓</span>
+      </dd>
+      <dt>iPad Support</dt>
+      <dd>
+        <span aria-label="Yes" class="icon">✓</span>
+      </dd>
+      <dt>Virtual Desktop (VNC)</dt>
+      <dd>
+        <span aria-label="Yes" class="icon">✓</span>
+      </dd>
+      <dt>Multi-IDE Support</dt>
+      <dd>
+        <span aria-label="No" class="icon">𐄂</span>
+      </dd>
+    </dl>
+  </section>
+</div>
+<p>
+  <small
+    >Disclaimer: All information, prices, and data were last verified on Sept.
+    25, 2020. To report any incorrect or outdated information, please <a
+      href="/contact/">contact us.</a
+    ></small
+  >
+</p>
+
 <div class="brief">
   <h2>Ready to feel the difference?</h2>
   <p>Spin up an example workspace now, just link your git provider</p>
@@ -88,7 +291,7 @@
   <article class="card">
     <div>
       <img
-        src="images/codespace/spaces-3.png"
+        src="/images/codespace/spaces-3.png"
         alt=""
         role="presentation"
         width="550"
@@ -122,7 +325,7 @@
       manually-maintained environments.
     </p>
     <p>
-      <a href="TODO:" class="btn-primary">Try Now</a>
+      <a href="/#get-started" class="btn-primary">Try Now</a>
     </p>
   </div>
   <div class="card">

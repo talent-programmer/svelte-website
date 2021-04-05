@@ -2,50 +2,75 @@
   import { onMount } from "svelte";
   import Section from "../section.svelte";
 
-  const addStrikethroughs = (targets) => {
-    let t = 0;
-    targets.map((target) => {
-      setTimeout(() => {
-        target.classList.add("strikethrough");
-      }, t);
-      t = t + 400;
-    });
-  };
-
-  const removeStrikethroughs = (targets) => {
-    targets.map((target) => {
-      target.classList.remove("strikethrough");
-    });
+  let animatedTexts = {
+    desktop: [
+      {
+        isVisible: false,
+        text: "check dependencies, checkout branch, view",
+      },
+      {
+        isVisible: false,
+        text: "readme.txt, install tools, run build, run test,",
+      },
+    ],
+    mobile: [
+      {
+        isVisible: false,
+        text: "check dependencies,",
+      },
+      {
+        isVisible: false,
+        text: "checkout branch, view",
+      },
+      {
+        isVisible: false,
+        text: "readme.txt, install tools,",
+      },
+      {
+        isVisible: false,
+        text: "run build, run test,",
+      },
+    ],
   };
 
   onMount(() => {
-    let options = {
+    const options = {
       root: null,
       rootMargin: "0px",
       threshold: [0.7],
     };
 
-    let observer = new IntersectionObserver(beTouching, options);
-
-    const target = document.querySelector("#observer-target");
-
-    observer.observe(target);
-
-    function beTouching(entries, ob) {
+    const beTouching = (entries) => {
       entries.forEach((entry) => {
-        const target = entry.target;
-
-        const desktopTargets = Array.from(target.children[1].children);
-        const mobileTargets = Array.from(target.children[2].children);
         if (entry.isIntersecting) {
-          addStrikethroughs(desktopTargets);
-          addStrikethroughs(mobileTargets);
+          Object.entries(animatedTexts).forEach(([, texts]) =>
+            texts.forEach((text) => {
+              text.isVisible = false;
+            })
+          );
+          animatedTexts = animatedTexts; // This triggers Svelte's reactivity
         } else {
-          removeStrikethroughs(desktopTargets);
-          removeStrikethroughs(mobileTargets);
+          let t = 0;
+          Object.entries(animatedTexts).forEach(([, texts]) =>
+            texts.forEach((text) => {
+              setTimeout(() => {
+                text.isVisible = true;
+                animatedTexts = animatedTexts; // This triggers Svelte's reactivity
+              }, t);
+              t = t + 400;
+            })
+          );
         }
       });
-    }
+    };
+
+    const observer = new IntersectionObserver(beTouching, options);
+    const target = document.querySelector("#choose-project-observer-target");
+    observer.observe(target);
+
+    return () => {
+      observer.disconnect();
+    };
   });
 </script>
 
@@ -71,8 +96,9 @@
       max-width: 23.75rem;
     }
 
-    @media (max-width: 365px) {
+    @media (max-width: 382px) {
       font-size: 1.7rem;
+      min-width: 292px;
     }
   }
 
@@ -96,16 +122,17 @@
 
   span {
     transition: all 0.2s;
-  }
-
-  :global(.strikethrough) {
     display: inline-block;
     position: relative;
+    color: inherit;
+  }
+
+  .strikethrough {
     transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
     color: var(--light-grey);
   }
 
-  :global(.strikethrough::after) {
+  .strikethrough::after {
     content: "";
     position: absolute;
     display: block;
@@ -131,19 +158,16 @@
 
 <div class="row">
   <Section>
-    <h2 class="h1" id="observer-target">
+    <h2 class="h1">
       Choose project,
       <br />
-      <del class="desktop">
-        <span>check dependencies, checkout branch, view</span>
-        <span>readme.txt, install tools, run build, run test,</span>
-      </del>
-      <del class="mobile">
-        <span>check dependencies,</span>
-        <span>checkout branch, view</span>
-        <span>readme.txt, install tools</span>
-        <span>run build, run test,</span>
-      </del>
+      {#each Object.entries(animatedTexts) as [device, texts]}
+        <del class={device}>
+          {#each texts as { isVisible, text }}
+            <span class:strikethrough={isVisible}>{text}</span>
+          {/each}
+        </del>
+      {/each}
       <br />
       start coding.
     </h2>

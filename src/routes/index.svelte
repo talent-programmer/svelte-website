@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import { testimonials } from "../contents/home/index";
   import { features } from "../contents/home/features";
@@ -19,6 +23,11 @@
     type: "website",
   }}
 />
+
+<svelte:head>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</svelte:head>
+
 <Hero />
 <ChooseProject />
 <Features {features} />
