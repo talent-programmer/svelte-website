@@ -157,7 +157,7 @@
 <section class="cards double">
   <div class="card">
     <img
-      src="/images/features/features-3.png"
+      src="/images/features/features-3.svg"
       alt=""
       role="presentation"
       height="223"
@@ -177,7 +177,7 @@
     <!-- TODO: Insert terminal image -->
 
     <img
-      src="/images/features/features-4.png"
+      src="/images/features/features-4.svg"
       alt=""
       role="presentation"
       height="223"
@@ -198,7 +198,7 @@
     <!-- TODO: Insert icon -->
 
     <img
-      src="/images/features/features-5.png"
+      src="/images/features/features-5.svg"
       alt=""
       role="presentation"
       height="90"
@@ -215,7 +215,7 @@
     <!-- TODO: Insert icon -->
 
     <img
-      src="/images/features/features-6.png"
+      src="/images/features/features-6.svg"
       alt=""
       role="presentation"
       height="90"
@@ -233,7 +233,7 @@
     <!-- TODO: Insert icon -->
 
     <img
-      src="/images/features/features-7.png"
+      src="/images/features/features-7.svg"
       alt=""
       role="presentation"
       height="90"
