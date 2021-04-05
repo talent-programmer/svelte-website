@@ -4,7 +4,13 @@
   export let contactCard: ContactCard;
 </script>
 
-<div class="card">
+<style>
+  p {
+    color: var(--dark-grey);
+  }
+</style>
+
+<div class="card text-center">
   <!-- TOOD: Display the image -->
   <img
     src="/images/contact/{contactCard.image}"
@@ -15,5 +21,7 @@
   />
   <h2>{contactCard.title}</h2>
   <p>{contactCard.description}</p>
-  <a href={contactCard.btnHref}>{contactCard.btnText}</a>
+  <a href={contactCard.btnHref} class="btn btn-conversion m-8"
+    >{contactCard.btnText}</a
+  >
 </div>
