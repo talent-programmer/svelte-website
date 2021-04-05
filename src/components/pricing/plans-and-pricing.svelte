@@ -7,11 +7,10 @@
 <style>
   .row {
     text-align: center;
-    margin-top: 8rem;
   }
 </style>
 
-<div class="row">
+<Section>
   <h1>Plans and pricing</h1>
   <PricingBoxes {pricingPlans} />
-</div>
+</Section>
