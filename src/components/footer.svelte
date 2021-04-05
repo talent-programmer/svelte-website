@@ -49,7 +49,7 @@
           margin-bottom: var(--xx-small);
         }
 
-        @media (max-width: 420px) {
+        @media (max-width: 500px) {
           flex: 0 0 35%;
         }
       }
@@ -106,8 +106,22 @@
     }
   }
 
+  .logo-wrapper {
+    transform: translateY(-1px);
+  }
+
   sup {
     color: var(--brand-ripe);
+  }
+
+  a {
+    color: var(--dark-grey);
+    text-decoration-color: var(--brand-ripe);
+
+    &:hover,
+    &:focus {
+      color: var(--black);
+    }
   }
 </style>
 
@@ -140,8 +154,9 @@
         <li>
           <a
             href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
-            target="_blank">Community</a
-          >
+            target="_blank"
+            >Community
+          </a>
         </li>
       </ul>
       <ul>
@@ -166,12 +181,14 @@
 
     <div class="footer__bottom">
       <div class="footer__copy">
-        <a href="/"><LogoTextless /></a><span>Copyright &copy; Gitpod</span>
+        <a href="/"><div class="logo-wrapper"><LogoTextless /></div></a><span
+          >Copyright &copy; Gitpod</span
+        >
       </div>
       <div class="footer__social">
         {#each socialLinks as link}
           <a href={link.href} class="footer__social-link">
-            <img src={link.icon} alt={link.alt} />
+            <img src={link.icon} alt={link.alt} height="24" width="24" />
           </a>
         {/each}
       </div>

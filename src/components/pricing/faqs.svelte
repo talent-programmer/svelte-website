@@ -50,8 +50,13 @@
     <Faq title="How can I pay?">
       <p>All our plans can only be paid via credit card.</p>
       <div class="images">
-        <img src="/svg/brands/mastercard.svg" alt="Mastercard" />
-        <img src="/svg/brands/visa.svg" alt="Visa" />
+        <img
+          src="/svg/brands/mastercard.svg"
+          alt="Mastercard"
+          width="52"
+          height="40"
+        />
+        <img src="/svg/brands/visa.svg" alt="Visa" width="72" height="40" />
       </div>
     </Faq>
     <Faq title="Can I create a team account?">

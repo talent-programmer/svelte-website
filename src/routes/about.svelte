@@ -8,30 +8,40 @@
   const investors = [
     {
       logo: "",
+      imgHeight: "",
+      imgWidth: "",
       name: "Vertex US",
       description:
         "Vertex Ventures US partners with enterprising founders who seek to disrupt large markets.",
     },
     {
       logo: "",
+      imgHeight: "",
+      imgWidth: "",
       name: "Crane Ventures",
       description:
         "Speedinvest is one of Europe’s most active early-stage investors.",
     },
     {
       logo: "",
+      imgHeight: "",
+      imgWidth: "",
       name: "Ameet Patel",
       description:
         "Start your workflow from your Git hosting platform and let Gitpod beam you in a ready-to-code dev environment.",
     },
     {
       logo: "",
+      imgHeight: "",
+      imgWidth: "",
       name: "SpeedInvest",
       description:
         "Install any VS Code extension with one click via the integrated vendor-neutral marketplace Open VSX.",
     },
     {
       logo: "",
+      imgHeight: "",
+      imgWidth: "",
       name: "Hanno Renner",
       description:
         "Start your workflow from your Git hosting platform and let Gitpod beam you in a ready-to-code dev environment. ",
@@ -103,7 +113,12 @@
   </p>
   {#each investors as investor}
     <div>
-      <img src={investor.logo} alt="{investor.name} logo" />
+      <img
+        src={investor.logo}
+        alt="{investor.name} logo"
+        height={investor.imgHeight}
+        width={investor.imgWidth}
+      />
       <p><strong>{investor.name}</strong></p>
       <p>{investor.description}</p>
     </div>

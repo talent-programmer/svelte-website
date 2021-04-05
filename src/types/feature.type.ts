@@ -3,6 +3,6 @@ export type Feature = {
   paragraph: string;
   moreButton?: { text: string; href: string };
   documentationLink?: string;
-  image?: { src: string; alt: string };
+  image?: { src: string; alt: string; height: number; width: number };
   terminalSource?: string;
 };

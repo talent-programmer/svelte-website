@@ -45,12 +45,24 @@
   .buttons-wrapper {
     justify-content: center;
   }
+
+  .btn-otherbrand {
+    @media (max-width: 429px) {
+      width: 12rem;
+    }
+  }
 </style>
 
 <Section>
   <div class="row">
     <h1>Remote-first. Secure by Design.</h1>
-    <img class="screenshot" src="/images/gitpod-screenshot.png" alt="Gitpod" />
+    <img
+      class="screenshot"
+      src="/images/gitpod-screenshot.png"
+      alt="Gitpod"
+      height="819"
+      width="1269"
+    />
     <div class="content">
       <p class="text-large">
         You no longer need an over-powered laptop to code, Gitpod works just as
@@ -61,7 +73,7 @@
       <div class="buttons-wrapper">
         {#each buttons as { href, icon, text }}
           <a {href} target="_blank" class="btn-otherbrand text-medium">
-            <img src={`/${icon}`} alt={text} />
+            <img src={`/${icon}`} alt={text} width="24" height="24" />
             {text}
           </a>
         {/each}

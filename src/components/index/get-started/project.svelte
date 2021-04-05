@@ -54,9 +54,12 @@
   }
 
   .btn-tertiary {
+    max-width: 9rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     opacity: 0;
 
-    @media (max-width: 427px) {
+    @media (max-width: 500px) {
       display: none;
     }
   }
@@ -64,7 +67,7 @@
 
 <a href={`https://gitpod.io#${githubUrl}`} target="_blank" class="project">
   <div class="project__left">
-    <img src={`/${logo}`} {alt} class="project__logo" />
+    <img src={`/${logo}`} {alt} class="project__logo" width="36" height="36" />
     <h5>{title}</h5>
   </div>
   <span class="btn-tertiary">Launch workspace</span>

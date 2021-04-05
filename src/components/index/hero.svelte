@@ -51,7 +51,13 @@
 
         @media (max-width: 972px) {
           display: flex;
-          gap: var(--micro);
+          gap: initial;
+
+          & > * {
+            &:not(:last-child) {
+              margin-right: var(--micro);
+            }
+          }
         }
       }
     }
@@ -64,20 +70,36 @@
           font-size: var(--btn-small);
         }
       }
+
+      @media (max-width: 360px) {
+        br {
+          display: none;
+        }
+      }
     }
 
     &__icons {
       display: flex;
       justify-content: space-between;
       width: 120px;
+      padding: 0 var(--macro);
 
       @media (min-width: 1141px) {
         width: 160px;
       }
 
+      @media (max-width: 768px) {
+        width: 145px;
+      }
+
       img {
-        height: 30px;
-        width: 30px;
+        height: 29px;
+        width: 29px;
+
+        @media (max-width: 1140px) {
+          height: 27px;
+          width: 27px;
+        }
       }
     }
 
@@ -116,11 +138,36 @@
         </div>
         <div class="hero__stars">
           <div class="hero__icons">
-            <img src="/svg/bitbucket.svg" alt="Bitbucket logo" />
-            <img src="/svg/github.svg" alt="GitHub logo" />
-            <img src="/svg/gitlab.svg" alt="GitLab logo" />
+            <img
+              src="/svg/bitbucket.svg"
+              alt="Bitbucket logo"
+              width="30"
+              height="30"
+            />
+            <img
+              src="/svg/github.svg"
+              alt="GitHub logo"
+              width="30"
+              height="30"
+            />
+            <img
+              src="/svg/gitlab.svg"
+              alt="GitLab logo"
+              width="30"
+              height="30"
+            />
           </div>
-          <!-- <div>GitHub Stars</div> -->
+          <div>
+            <!-- Place this tag where you want the button to render. -->
+            <a
+              class="github-button"
+              href="https://github.com/gitpod-io/gitpod"
+              data-icon="octicon-star"
+              data-size="large"
+              data-show-count="true"
+              aria-label="Star the Gitpod Repo on GitHub">Star</a
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -128,6 +175,8 @@
       <img
         src="/images/illustration-placeholder.png"
         alt="Gitpod in a Nutshell"
+        width="700"
+        height="724"
       />
     </div>
   </div>
