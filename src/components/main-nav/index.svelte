@@ -23,10 +23,6 @@
       href: "/docs",
       label: "Docs",
     },
-    {
-      href: "/changelog",
-      label: "Changelog",
-    },
   ];
 </script>
 
