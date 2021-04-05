@@ -2,32 +2,7 @@
 /* --- Layout Helpers --- */
 /* -------------------------------------- */
 
-main {
-  max-width: 90rem;
-  width: 98vw;
-  margin: auto;
-  /* @media (max-width: 73rem) {
-    max-width: 98vw;
-  } */
-}
-main > header:first-child,
-.header,
-.brief {
-  text-align: center;
-  margin: var(--xx-large) auto 5em;
-  width: 100%;
-}
-main > header:first-child {
-  max-width: 900px;
-}
-.brief h2 {
-  margin-bottom: 2rem;
-}
-
-main > header {
-  margin-bottom: 8rem;
-}
-
+main,
 .row {
   width: 90%;
   margin: 0 auto;
@@ -49,6 +24,24 @@ main > header {
   @media (max-width: 375px) {
     padding: var(--macro);
   }
+}
+
+main > header:first-child,
+.header,
+.brief {
+  text-align: center;
+  margin: var(--xx-large) auto 5em;
+  width: 100%;
+}
+main > header:first-child {
+  max-width: 900px;
+}
+.brief h2 {
+  margin-bottom: 2rem;
+}
+
+main > header {
+  margin-bottom: 8rem;
 }
 
 /* CARDS */
