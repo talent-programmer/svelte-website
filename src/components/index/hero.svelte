@@ -1,3 +1,16 @@
+<script lang="ts">
+  import { onMount } from "svelte";
+
+  let githubStarsEl: HTMLAnchorElement;
+
+  onMount(async () => {
+    const githubButtons = await import("github-buttons");
+    githubButtons.render(githubStarsEl, (el) => {
+      githubStarsEl.parentNode.replaceChild(el, githubStarsEl);
+    });
+  });
+</script>
+
 <style lang="scss">
   .hero {
     display: flex;
@@ -158,8 +171,8 @@
             />
           </div>
           <div>
-            <!-- Place this tag where you want the button to render. -->
             <a
+              bind:this={githubStarsEl}
               class="github-button"
               href="https://github.com/gitpod-io/gitpod"
               data-icon="octicon-star"
