@@ -96,12 +96,14 @@ select {
 }
 
 a {
-  text-decoration-color: var(--brand-ripe);
+  text-decoration: underline solid;
   text-underline-offset: 0.25em;
+  color: var(--link-grey);
 }
 a:hover,
 a:focus {
-  text-decoration: underline solid var(--brand-ripe);
+  color: var(--black);
+  text-decoration: underline solid transparent;
 }
 /* low specificity. easy to overwrite */
 a[class] {
