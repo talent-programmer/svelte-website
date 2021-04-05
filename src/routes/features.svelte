@@ -3,6 +3,7 @@
 </script>
 
 <script>
+  import Header from "../components/features/header.svelte";
   import OpenGraph from "../components/open-graph.svelte";
   import ScreencastPreview from "../components/screencasts/preview.svelte";
   import screencasts from "../contents/screencasts";
@@ -11,40 +12,67 @@
 </script>
 
 <style lang="scss">
-  header {
-    margin-bottom: 0;
-    p {
-      margin-bottom: var(--xx-large);
-    }
-  }
-
   article {
     margin-bottom: var(--x-large);
   }
 
   .double {
     margin-bottom: var(--x-large);
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    a {
+      display: block;
+      margin-top: var(--micro);
+      font-size: var(--p-large);
+    }
+
+    img {
+      height: 223px;
+    }
   }
 
-  .double img {
-    height: 223px;
+  .triple {
+    img {
+      height: 90px;
+    }
+
+    h3 {
+      min-height: 3rem;
+    }
+
+    p {
+      margin: var(--xx-small) 0;
+    }
   }
 
-  .triple img {
-    height: 90px;
-  }
-  .triple h3 {
-    min-height: 3rem;
-  }
-
-  .triple a {
+  .triple a,
+  .double a {
     /* TOD0: better contrast for AA */
     color: var(--brand-ripe);
   }
+
+  .halfimages .text-large {
+    margin: var(--x-small) 0;
+  }
+
+  .halfimages .prebuilds-p {
+    margin-bottom: var(--x-large);
+  }
+
+  .double .h4 {
+    margin-bottom: var(--micro);
+  }
+
   section h3:first-child,
   section h3:first-child + p {
     text-align: center;
   }
+
   .brief > img {
     width: 1100px;
     max-width: 90vw;
@@ -69,13 +97,8 @@
     type: "website",
   }}
 />
-<header>
-  <h1 class="h2">Features</h1>
-  <p class="text-large">
-    Automated workspaces that supercharge your dev workflow. Squash the time
-    between code-to-commit.
-  </p>
-</header>
+
+<Header />
 
 <section class="halfimages">
   <article>
@@ -90,8 +113,8 @@
       />
     </div>
     <div>
-      <h2 class="h3">Save Time with Prebuilds</h2>
-      <p class="text-large">
+      <h2 class="h4">Save Time with Prebuilds</h2>
+      <p class="text-large prebuilds-p">
         Gitpod continuously builds your git branches like a CI server. This
         means no more waiting for dependencies to be downloaded and builds to
         finish.
@@ -116,11 +139,16 @@
       <!-- TODO: Insert "Preparing workspace" images -->
     </div>
     <div>
-      <h2 class="h3">Start Fresh with Ephemeral Dev Environments</h2>
+      <h2 class="h4">Start Fresh with Ephemeral Dev Environments</h2>
       <p class="text-large">
         Dev environment as code assures you are always starting from a clean
         state and never gets dragged into long-living stateful environments. The
         end of all works-on-my-machine situations.
+      </p>
+      <p style="text-align: center">
+        <a href="/blog/dev-env-as-code/" class="btn-secondary">
+          More about Dev-Environments-as-Code</a
+        >
       </p>
     </div>
   </article>
@@ -138,9 +166,12 @@
     <!-- TODO: Insert emojis -->
     <h2 class="h4">Collaboration with Workspace Sharing</h2>
     <p class="text-large">
-      Collaborate with your friends, colleagues, and clients and run software or
-      hunt down bugs together.
+      Collaborate with your friends, co-workers, and clients. Whenever you want
+      to share a reproducible example of code or hunt down a bug together,
+      simply take Snapshot.
     </p>
+
+    <a href="/docs/sharing-and-collaboration/"> More about collaboration. </a>
   </div>
   <div class="card">
     <!-- TODO: Insert terminal image -->
@@ -155,8 +186,10 @@
     <h2 class="h4">Full linux machine <span>(incl sudo/docker)</span></h2>
     <p class="text-large">
       Instantly start a container in the cloud based on your Docker image.
-      Install and confugire tools easily.
+      Install and configure tools easily.
     </p>
+
+    <a href="/docs/sharing-and-collaboration/"> More about collaboration. </a>
   </div>
 </section>
 
@@ -172,7 +205,7 @@
       width="185"
     />
     <h3 class="h5">Customize your workspace</h3>
-    <p class="p-small">
+    <p class="text-small">
       Tweak your environment to suit your needs. From themes to extensions you
       have full control over it all.
     </p>
@@ -189,7 +222,7 @@
       width="322"
     />
     <h3 class="h5">GitLab, GitHub, and Bitbucket Integration</h3>
-    <p class="p-small">
+    <p class="text-small">
       Start your workflow from your Git hosting platform and let Gitpod beam you
       in a ready-to-code dev environment.
     </p>
@@ -207,7 +240,7 @@
       width="130"
     />
     <h3 class="h5">Code Reviews Within the IDE</h3>
-    <p class="p-small">
+    <p class="text-small">
       Open pull requests in Gitpod to run, navigate, and review the code. Reply
       to comments and publish code reviews right within Gitpod.
     </p>

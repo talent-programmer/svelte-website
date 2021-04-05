@@ -32,6 +32,10 @@ main > header:first-child,
   text-align: center;
   margin: var(--xx-large) auto;
   width: 100%;
+
+  @media (max-width: 972px) {
+    margin: var(--x-large) 0;
+  }
 }
 main > header:first-child {
   max-width: 900px;
