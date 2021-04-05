@@ -130,7 +130,9 @@
 />
 <header>
   <h1>Contact us</h1>
-  <p>Please reach out if you have any questions regarding Gitpod.</p>
+  <p class="text-large">
+    Please reach out if you have any questions regarding Gitpod.
+  </p>
 </header>
 
 <div class="cards double">

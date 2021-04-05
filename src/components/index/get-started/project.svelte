@@ -34,6 +34,11 @@
       }
     }
 
+    h5 {
+      color: var(--dark-grey);
+      transition: all 0.2s;
+    }
+
     &:not(:last-child) {
       margin-bottom: var(--micro);
     }
@@ -45,6 +50,10 @@
       .project__logo {
         filter: grayscale(0) opacity(1);
         -webkit-filter: grayscale(0) opacity(1);
+      }
+
+      h5 {
+        color: var(--black);
       }
 
       .btn-tertiary {

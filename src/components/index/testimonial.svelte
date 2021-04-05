@@ -7,6 +7,7 @@
 
 <style lang="scss">
   .testimonial {
+    color: var(--black);
     scroll-snap-align: start;
 
     @media (max-width: 768px) {

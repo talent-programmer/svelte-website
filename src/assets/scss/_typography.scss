@@ -9,6 +9,7 @@ h4,
 h5,
 h6 {
   font-weight: 600; /* this is default. it's removed in TW. Should we just remove it from the TW reset? */
+  color: var(--black);
 }
 
 .homeh1 {
@@ -78,7 +79,8 @@ h5,
   line-height: 171%;
 }
 
-.fine-print {
+.fine-print,
+small {
   font-size: var(--fine-print);
   line-height: 133.33%;
 }

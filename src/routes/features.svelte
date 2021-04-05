@@ -14,6 +14,7 @@
   .double img {
     height: 223px;
   }
+
   .triple img {
     height: 90px;
   }
@@ -46,7 +47,7 @@
 />
 <header>
   <h1 class="h2">Features</h1>
-  <p>
+  <p class="text-large">
     Gitpod will always have a free-to-use option. For those looking for a little
     more we have a few powerful solutions.
   </p>
@@ -112,7 +113,7 @@
     />
     <!-- TODO: Insert emojis -->
     <h2 class="h4">Collaboration with Workspace Sharing</h2>
-    <p>
+    <p class="text-large">
       Collaborate with your friends, colleagues, and clients and run software or
       hunt down bugs together.
     </p>
@@ -128,7 +129,7 @@
       width="483"
     />
     <h2 class="h4">Full linux machine <span>(incl sudo/docker)</span></h2>
-    <p>
+    <p class="text-large">
       Instantly start a container in the cloud based on your Docker image.
       Install and confugire tools easily.
     </p>
@@ -147,7 +148,7 @@
       width="185"
     />
     <h3 class="h5">Customize your workspace</h3>
-    <p>
+    <p class="p-small">
       Tweak your environment to suit your needs. From themes to extensions you
       have full control over it all.
     </p>
@@ -164,7 +165,7 @@
       width="322"
     />
     <h3 class="h5">GitLab, GitHub, and Bitbucket Integration</h3>
-    <p>
+    <p class="p-small">
       Start your workflow from your Git hosting platform and let Gitpod beam you
       in a ready-to-code dev environment.
     </p>
@@ -182,7 +183,7 @@
       width="130"
     />
     <h3 class="h5">Code Reviews Within the IDE</h3>
-    <p>
+    <p class="p-small">
       Open pull requests in Gitpod to run, navigate, and review the code. Reply
       to comments and publish code reviews right within Gitpod.
     </p>
@@ -192,7 +193,7 @@
 
 <section class="brief">
   <h2>VS Code and extensions in your browser</h2>
-  <p>
+  <p class="text-large">
     Install any VS Code extension with one click via the integrated
     vendor-neutral marketplace Open VSX.
   </p>
