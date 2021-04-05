@@ -82,9 +82,9 @@ textarea {
   border-color: currentColor;
 }
 [type="radio"]:checked + label {
-  background-image: var(--brand-gradient);
-  text-shadow: 0 0 1px currentColor;
   color: var(--black);
+  border: 1px solid #ffb45b;
+  background: #ffb45b;
 }
 .btn-conversion:disabled {
   background-color: var(--sand-dark);
