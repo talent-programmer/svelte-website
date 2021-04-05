@@ -116,6 +116,10 @@
       }
     }
 
+    &__stars {
+      height: 2rem;
+    }
+
     &__illustration {
       max-width: 700px;
       flex: 1;
@@ -149,7 +153,7 @@
             Instantly link to your Git provider.
           </p>
         </div>
-        <div class="hero__stars">
+        <div>
           <div class="hero__icons">
             <img
               src="/svg/bitbucket.svg"
@@ -170,7 +174,7 @@
               height="30"
             />
           </div>
-          <div>
+          <div class="hero__stars">
             <a
               bind:this={githubStarsEl}
               class="github-button"
