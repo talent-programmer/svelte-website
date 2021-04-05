@@ -6,12 +6,6 @@
   import OpenGraph from "../components/open-graph.svelte";
 </script>
 
-<style>
-  .model {
-    color: var(--dark-grey);
-  }
-</style>
-
 <OpenGraph
   data={{
     description: "Gitpod's terms of service.",
@@ -676,7 +670,7 @@
     contract.
   </p>
 
-  <div class="model card">
+  <div class="card">
     <div>-- begin model withdrawal form --</div>
     <p>
       To<br /> Gitpod GmbH represented by: Sven Efftinge, Moritz Eysholdt, Dr.

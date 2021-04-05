@@ -29,11 +29,13 @@
     .h1 {
       margin-bottom: 0.25rem;
       font-weight: bold;
+      color: var(--black);
     }
 
     &__duration {
-      color: var(--light-grey);
       margin-bottom: var(--xx-small);
+      color: var(--light-grey);
+      font-weight: 600;
     }
 
     &__list {
@@ -43,6 +45,7 @@
 
     &__list-item {
       position: relative;
+      color: var(--black);
 
       &::before {
         content: url("/tick.svg");
