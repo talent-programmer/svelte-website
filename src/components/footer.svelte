@@ -43,17 +43,6 @@
         padding-bottom: var(--micro);
       }
 
-      ul {
-        @media (max-width: 768px) {
-          flex: 0 0 22%;
-          margin-bottom: var(--xx-small);
-        }
-
-        @media (max-width: 500px) {
-          flex: 0 0 35%;
-        }
-      }
-
       li {
         &:first-child {
           font-weight: 600;
@@ -103,6 +92,17 @@
           margin-right: var(--micro);
         }
       }
+    }
+  }
+
+  ul {
+    border: 2px solid red;
+    @media (max-width: 768px) {
+      margin-bottom: var(--xx-small);
+    }
+
+    @media (max-width: 560px) {
+      flex: 0 0 34%;
     }
   }
 
@@ -159,6 +159,9 @@
           </a>
         </li>
       </ul>
+      <!-- <div style="flex: 0 0 100%">
+        &nbsp;
+      </div> -->
       <ul>
         <li>Company</li>
         <li><a href="/about/">About</a></li>
