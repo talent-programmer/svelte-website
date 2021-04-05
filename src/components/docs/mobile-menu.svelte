@@ -99,6 +99,12 @@
 </script>
 
 <style lang="scss">
+  .mobile-menu {
+    @media (min-width: 769px) {
+      display: none;
+    }
+  }
+
   // override _forms.scss
   .menu-item {
     margin-bottom: 0;
