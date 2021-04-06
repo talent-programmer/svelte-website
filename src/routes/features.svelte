@@ -3,10 +3,12 @@
 </script>
 
 <script>
+  import Console from "../components/console.svelte";
   import OpenGraph from "../components/open-graph.svelte";
   import ScreencastPreview from "../components/screencasts/preview.svelte";
   import screencasts from "../contents/screencasts";
   import Workspaces from "../components/workspaces.svelte";
+  import { terminalSource } from "../contents/terminal";
 
   const firstThreeScreencasts = screencasts.slice(0, 3);
 </script>
@@ -57,14 +59,7 @@
 <section class="halfimages">
   <article>
     <div>
-      <!-- TODO: Insert the terminal output animation from the homepage -->
-      <img
-        src="/images/features/features-1.png"
-        alt=""
-        role="presentation"
-        height="688"
-        width="688"
-      />
+      <Console source={terminalSource} />
     </div>
     <div>
       <h2 class="h3">Save Time with Prebuilt Workspaces</h2>
@@ -113,15 +108,7 @@
     </p>
   </div>
   <div class="card">
-    <!-- TODO: Insert terminal image -->
-
-    <img
-      src="/images/features/features-4.png"
-      alt=""
-      role="presentation"
-      height="223"
-      width="483"
-    />
+    <Console source={terminalSource} dark={true} shadow={false} narrow={true} />
     <h2 class="h4">Full linux machine <span>(incl sudo/docker)</span></h2>
     <p class="text-large">
       Instantly start a container in the cloud based on your Docker image.
