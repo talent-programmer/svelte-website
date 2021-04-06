@@ -26,6 +26,9 @@
   height: 248px;
   overflow: hidden;
 }
+.blogPreview h2 {
+  font-size: var(--h4);
+}
 .blogPreview h2 a {
   text-decoration: none;
   color: var(--black);
