@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import topicsState from "./states/topics-state";
 
   const docSearchJSVersion = "2.6.3";
   const docSearchInputSelector = "search-doc-input";
@@ -30,6 +31,10 @@
 
     @media (max-width: 768px) {
       @apply mb-4;
+
+      &:not(.topics-active) {
+        display: none;
+      }
     }
   }
 
@@ -63,7 +68,7 @@
     src="https://cdn.jsdelivr.net/npm/docsearch.js@{docSearchJSVersion}/dist/cdn/docsearch.min.js"></script>
 </svelte:head>
 
-<div class="input-container">
+<div class={`input-container ${$topicsState ? "topics-active" : ""}`}>
   <label for={docSearchInputSelector} class="sr-only">Search</label>
   <div class="relative">
     <input

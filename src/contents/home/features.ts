@@ -3,7 +3,7 @@ import { terminalSource } from "../terminal";
 
 export const features: Feature[] = [
   {
-    title: "Introducing Pre-builds",
+    title: "Think CI/CD for dev environments",
     paragraph:
       "We invented prebuilds so application code, configuration and infrastructure can all be stored as machine-executable code in your git repositories and applied to dev environments automatically and continuously.",
     moreButton: {

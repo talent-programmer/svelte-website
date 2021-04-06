@@ -37,11 +37,13 @@
 </style>
 
 <Section>
-  <h2 class="h1">Widespread already.</h2>
-  <Carousel>
-    {#each testimonials as testimonial}
-      <Testimonial {testimonial} />
-    {/each}
-  </Carousel>
-  <Brands />
+  <div class="row">
+    <h2 class="h1">Used by 350,000 developers.</h2>
+    <Carousel>
+      {#each testimonials as testimonial}
+        <Testimonial {testimonial} />
+      {/each}
+    </Carousel>
+    <Brands />
+  </div>
 </Section>
