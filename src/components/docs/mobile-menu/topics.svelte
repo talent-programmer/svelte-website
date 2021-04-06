@@ -8,10 +8,12 @@
   export let MENU;
 </script>
 
-<ul>
-  {#each MENU as menuItem}
-    <MenuItem href={menuItem.path} onClick={() => ($topicsState = false)}>
-      {menuItem.title}
-    </MenuItem>
-  {/each}
-</ul>
+<nav>
+  <ul>
+    {#each MENU as menuItem}
+      <MenuItem href={menuItem.path} onClick={() => ($topicsState = false)}>
+        {menuItem.title}
+      </MenuItem>
+    {/each}
+  </ul>
+</nav>

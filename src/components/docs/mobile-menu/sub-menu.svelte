@@ -88,6 +88,8 @@
     <button
       class="toggle-button w-full"
       type="button"
+      aria-controls="sub-menu"
+      aria-expanded={$subMenuState}
       on:click={() => ($subMenuState = !$subMenuState)}
     >
       <div class="toggle-button__label">{currentSection.title}</div>
@@ -102,14 +104,14 @@
       </div>
     </button>
 
-    {#if $subMenuState}
-      <ul class="sub-menu px-4">
+    <nav class={`px-4 ${$subMenuState ? "block" : "hidden"}`} id="sub-menu">
+      <ul>
         {#each currentSection.subMenu as sub}
           <MenuItem href={sub.path} onClick={() => ($subMenuState = false)}>
             {sub.title}
           </MenuItem>
         {/each}
       </ul>
-    {/if}
+    </nav>
   </div>
 {/if}
