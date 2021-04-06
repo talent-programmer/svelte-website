@@ -111,7 +111,7 @@
         style="top: {100 * (top / wrapper_height)}%; left: {100 *
           (left / wrapper_width)}%; width: {100 * (width / wrapper_width)}%;"
         in:fade={{ duration: 1500, easing: linear }}
-        out:zoom={{ duration: 1500, factor: 1.15, easing: linear }}
+        out:zoom={{ duration: 1500, factor: 1.075, easing: linear }}
         on:outroend={shuffle}
       >
         <svelte:component this={Component} />
