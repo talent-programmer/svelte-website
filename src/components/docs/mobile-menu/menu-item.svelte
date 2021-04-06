@@ -45,7 +45,7 @@
         <img
           class="menu-item__icon-arrow"
           src="/arrow.svg"
-          alt="TODO"
+          alt="See more"
           width="12"
           height="7"
         />
