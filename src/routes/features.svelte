@@ -169,7 +169,6 @@
       height="223"
       width="382"
     />
-    <!-- TODO: Insert emojis -->
     <h2 class="h4">Collaboration with Workspace Sharing</h2>
     <p class="text-large">
       Collaborate with your friends, co-workers, and clients. Whenever you want
@@ -195,8 +194,6 @@
 
 <section class="cards triple">
   <div class="card">
-    <!-- TODO: Insert icon -->
-
     <img
       src="/images/features/features-5.svg"
       alt=""
@@ -212,8 +209,6 @@
     <a href="/docs/vscode-extensions/">More about customization</a>
   </div>
   <div class="card">
-    <!-- TODO: Insert icon -->
-
     <img
       src="/images/features/features-6.svg"
       alt=""
@@ -226,12 +221,9 @@
       Start your workflow from your Git hosting platform and let Gitpod beam you
       in a ready-to-code dev environment.
     </p>
-    <!-- TODO: Figure out where to link to: -->
     <a href="/docs/integrations/">More about Integrations</a>
   </div>
   <div class="card">
-    <!-- TODO: Insert icon -->
-
     <img
       src="/images/features/features-7.svg"
       alt=""
@@ -254,8 +246,6 @@
     Install any VS Code extension with one click via the integrated
     vendor-neutral marketplace Open VSX.
   </p>
-  <!-- TODO: Insert the VS Code Gitpod theme screenshot -->
-
   <img
     src="/images/features/gitpod-extensions.png"
     alt=""
