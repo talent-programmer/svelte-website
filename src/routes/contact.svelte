@@ -138,13 +138,13 @@
   </p>
 </header>
 
-<div class="cards double">
+<div class="cards double mx-8">
   {#each contactCards as contactCard}
     <Card {contactCard} />
   {/each}
 </div>
 
-<section class="card">
+<section class="card shadow-xl mb-32 mx-8">
   <form on:submit|preventDefault={handleSubmit} novalidate>
     <h3 class="text-center mb-8">Send us a message</h3>
     <ul>
@@ -234,10 +234,8 @@
         >
       </li>
       <li>
-        <button
-          type="submit"
-          class="btn-conversion"
-          disabled={isFormDirty && !isFormValid}>Send message</button
+        <button type="submit" class="btn" disabled={isFormDirty && !isFormValid}
+          >Send message</button
         >
       </li>
     </ul>
