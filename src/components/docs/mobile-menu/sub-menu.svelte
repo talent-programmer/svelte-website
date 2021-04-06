@@ -5,6 +5,8 @@
   // States
   import topicsState from "./topics-state";
   import subMenuState from "./sub-menu-state";
+
+  export let MENU;
 </script>
 
 <style lang="scss">
@@ -56,7 +58,10 @@
 <button
   class="back-button"
   type="button"
-  on:click={() => ($topicsState = !$topicsState)}
+  on:click={() => {
+    $topicsState = true;
+    $subMenuState = false;
+  }}
 >
   <div class="back-button__icon">
     <img
@@ -90,11 +95,7 @@
 
   {#if $subMenuState}
     <ul class="sub-menu px-4">
-      <MenuItem />
-      <MenuItem />
-      <MenuItem />
-      <MenuItem />
-      <MenuItem />
+      <MenuItem onClick={() => ($subMenuState = false)}>TEST</MenuItem>
     </ul>
   {/if}
 </div>

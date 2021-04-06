@@ -1,8 +1,12 @@
 <script>
+  // Components
   import MobileMenuTopics from "./topics.svelte";
   import MobileMenuSubMenu from "./sub-menu.svelte";
 
+  // States
   import topicsState from "./topics-state";
+
+  export let MENU;
 </script>
 
 <style lang="scss">
@@ -17,8 +21,8 @@
 
 <div class="mobile-menu">
   {#if $topicsState}
-    <MobileMenuTopics />
+    <MobileMenuTopics {MENU} />
   {:else}
-    <MobileMenuSubMenu />
+    <MobileMenuSubMenu {MENU} />
   {/if}
 </div>

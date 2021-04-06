@@ -1,3 +1,11 @@
+<script lang="ts">
+  import { page } from "$app/stores";
+  import topicsState from "./topics-state";
+
+  export let href: string;
+  export let onClick;
+</script>
+
 <style lang="scss">
   // override _forms.scss
   .menu-item {
@@ -29,8 +37,8 @@
 </style>
 
 <li class="menu-item">
-  <a href="#" class="menu-item__link">
-    <div class="menu-item__label">TITLE</div>
+  <a {href} class="menu-item__link" {...$$props} on:click={onClick}>
+    <div class="menu-item__label"><slot /></div>
     <div class="menu-item__icon" aria-hidden="true">
       <img
         class="menu-item__icon-arrow"
