@@ -15,9 +15,6 @@
 </script>
 
 <style lang="scss">
-  p {
-    color: var(--dark-grey);
-  }
   .feature {
     display: flex;
     justify-content: space-between;

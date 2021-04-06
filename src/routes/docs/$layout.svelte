@@ -1,15 +1,42 @@
 <script>
   import Menu from "../../components/docs/menu.svelte";
+  import MobileMenu from "../../components/docs/mobile-menu.svelte";
   import Search from "../../components/docs/search.svelte";
   import "../../assets/docs.scss";
 </script>
 
-<div class="row flex mx-auto px-8 py-10 w-screen">
-  <div class="w-2/5 pt-20">
+<style>
+  .docs-layout {
+    @apply pb-10;
+
+    @media (min-width: 769px) {
+      @apply flex;
+      @apply pt-10;
+    }
+  }
+
+  .menu {
+    @apply w-2/5 pt-24 pr-8;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .doc-contents {
+    @media (min-width: 769px) {
+      @apply w-3/5;
+    }
+  }
+</style>
+
+<div class="docs-layout row">
+  <div class="menu">
     <Menu />
   </div>
-  <div class="w-3/5">
+  <div class="doc-contents">
     <Search />
+    <MobileMenu />
     <slot />
   </div>
 </div>

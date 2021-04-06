@@ -1,3 +1,16 @@
+<script lang="ts">
+  import { onMount } from "svelte";
+
+  let githubStarsEl: HTMLAnchorElement;
+
+  onMount(async () => {
+    const githubButtons = await import("github-buttons");
+    githubButtons.render(githubStarsEl, (el) => {
+      githubStarsEl.parentNode.replaceChild(el, githubStarsEl);
+    });
+  });
+</script>
+
 <style lang="scss">
   .hero {
     display: flex;
@@ -103,6 +116,10 @@
       }
     }
 
+    &__stars {
+      height: 2rem;
+    }
+
     &__illustration {
       max-width: 700px;
       flex: 1;
@@ -136,7 +153,7 @@
             Instantly link to your Git provider.
           </p>
         </div>
-        <div class="hero__stars">
+        <div>
           <div class="hero__icons">
             <img
               src="/svg/bitbucket.svg"
@@ -157,9 +174,9 @@
               height="30"
             />
           </div>
-          <div>
-            <!-- Place this tag where you want the button to render. -->
+          <div class="hero__stars">
             <a
+              bind:this={githubStarsEl}
               class="github-button"
               href="https://github.com/gitpod-io/gitpod"
               data-icon="octicon-star"

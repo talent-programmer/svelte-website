@@ -18,6 +18,10 @@
     color: var(--light-grey);
   }
 
+  strong {
+    color: var(--black);
+  }
+
   .self-hosted-pricing :global(.btn-cta) {
     padding: 0.75rem 1.5rem;
   }

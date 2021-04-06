@@ -20,12 +20,8 @@
       label: "Blog",
     },
     {
-      href: "/docs",
+      href: "/docs/",
       label: "Docs",
-    },
-    {
-      href: "/changelog",
-      label: "Changelog",
     },
   ];
 </script>

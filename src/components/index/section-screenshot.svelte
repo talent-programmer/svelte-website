@@ -38,7 +38,6 @@
 
     p {
       margin: var(--small) 0;
-      color: var(--dark-grey);
     }
   }
 
@@ -58,7 +57,7 @@
     <h1>Remote-first. Secure by Design.</h1>
     <img
       class="screenshot"
-      src="/images/gitpod-screenshot.png"
+      src="/images/gitpod-editor.jpg"
       alt="Gitpod"
       height="819"
       width="1269"

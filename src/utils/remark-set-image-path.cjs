@@ -12,8 +12,8 @@ const visitor = (node) => {
 
 module.exports = () => async (tree, vFile) => {
   if (
-    vFile.filename.startsWith("src/routes/docs/") ||
-    vFile.filename.startsWith("src/routes/blog/")
+    vFile.filename.indexOf("src/routes/docs/") > 0 ||
+    vFile.filename.indexOf("src/routes/blog/") > 0
   ) {
     visit(tree, visitor);
   }

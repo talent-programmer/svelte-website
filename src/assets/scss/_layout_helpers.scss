@@ -10,22 +10,25 @@ main {
     max-width: 98vw;
   } */
 }
-main > header:first-child,
 .header,
-.brief {
+.brief,
+main > header:first-child {
   text-align: center;
-  margin: 3rem auto 5em;
+  margin: 3rem auto;
   width: 100%;
 }
-main > header:first-child {
-  max-width: 600px;
+@media (min-width: 900px) {
+  main > header:first-child {
+    max-width: 736px;
+    margin: 10rem auto 3rem;
+  }
+}
+main > header:first-child p {
+  font-size: var(--p-large);
+  margin-top: 1rem;
 }
 .brief h2 {
   margin-bottom: 2rem;
-}
-
-main > header {
-  margin-bottom: 8rem;
 }
 
 .row {

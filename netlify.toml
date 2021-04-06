@@ -2,3 +2,8 @@
   command = "npm run deploy"
   publish = "build/"
   functions = "lambda"
+
+[[redirects]]
+  from = "/changelog"
+  to = "/docs/changelog/"
+  status = 301
