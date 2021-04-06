@@ -187,7 +187,7 @@
     </p>
 
     <a href="https://www.youtube.com/watch?v=iYLCHQgj0fE" target="_blank"
-      >Todo</a
+      >Watch video to learn more</a
     >
   </div>
 </section>
