@@ -21,11 +21,12 @@
     <p class="excerpt">{post.excerpt}</p>
     <p>
       <span
-        >{new Date(Date.parse(post.date)).toLocaleDateString(undefined, {
+        ><Author author={post.author} showIconOnly />
+        {new Date(Date.parse(post.date)).toLocaleDateString(undefined, {
           year: "numeric",
           month: "short",
           day: "numeric",
-        })} by <Author author={post.author} showIconOnly />
+        })}
       </span>
     </p>
   </div>

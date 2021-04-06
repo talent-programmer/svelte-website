@@ -55,6 +55,9 @@
   width: 25px;
   border-radius: 9999px;
 }
+.blogPreview .author a {
+  text-decoration: none;
+}
 .blogPreview .author a:not(:first-of-type) {
   margin-left: -10px;
 }
