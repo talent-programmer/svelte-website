@@ -83,8 +83,8 @@
           left: 30,
         };
       } else {
-        font_size = 18;
-        line_height = 33;
+        font_size = narrow ? 16 : 18;
+        line_height = narrow ? 28 : 33;
 
         margins = {
           top: 48 + line_height,
