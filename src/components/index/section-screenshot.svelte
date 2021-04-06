@@ -54,7 +54,7 @@
 
 <Section>
   <div class="row">
-    <h1>Remote-first. Secure by Design.</h1>
+    <h1>Remote-first. Secure by design.</h1>
     <img
       class="screenshot"
       src="/images/gitpod-editor.jpg"

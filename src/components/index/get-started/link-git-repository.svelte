@@ -65,9 +65,9 @@
   }
 </style>
 
-<h3>Link Git repository</h3>
+<h3>Connect Git repository</h3>
 <p class="text-large">
-  1-click-link to you chosen provider to jump into your own projects
+  Select a Git provider to start with an existing project from any Git context.
 </p>
 <div class="buttons">
   <a href="https://gitpod.io/login" class="btn btn--github">
@@ -80,7 +80,7 @@
         fill="#F9F9F9"
       />
     </svg>
-    Link with GitHub
+    Continue with GitHub
   </a>
   <a href="https://gitpod.io/login" class="btn btn--bitbucket">
     <svg viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,7 +90,7 @@
         fill="#fff"
       />
     </svg>
-    Link with Bitbucket
+    Continue with Bitbucket
   </a>
   <a href="https://gitpod.io/login" class="btn btn--gitlab">
     <svg viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,7 +122,7 @@
         fill-opacity=".85"
       /></svg
     >
-    Link with GitLab
+    Continue with GitLab
   </a>
   <!-- <a href="#" class="link--light-grey">Third-party providers ↗</a> -->
 </div>
