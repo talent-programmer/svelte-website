@@ -11,7 +11,11 @@
 <nav>
   <ul>
     {#each MENU as menuItem}
-      <MenuItem href={menuItem.path} onClick={() => ($topicsState = false)}>
+      <MenuItem
+        href={menuItem.path}
+        showIcon={true}
+        onClick={() => ($topicsState = false)}
+      >
         {menuItem.title}
       </MenuItem>
     {/each}

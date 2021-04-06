@@ -4,6 +4,7 @@
 
   export let href: string;
   export let onClick;
+  export let showIcon: boolean;
 </script>
 
 <style lang="scss">
@@ -39,14 +40,16 @@
 <li class="menu-item">
   <a {href} class="menu-item__link" {...$$props} on:click={onClick}>
     <div class="menu-item__label"><slot /></div>
-    <div class="menu-item__icon" aria-hidden="true">
-      <img
-        class="menu-item__icon-arrow"
-        src="/arrow.svg"
-        alt="TODO"
-        width="12"
-        height="7"
-      />
-    </div>
+    {#if showIcon}
+      <div class="menu-item__icon" aria-hidden="true">
+        <img
+          class="menu-item__icon-arrow"
+          src="/arrow.svg"
+          alt="TODO"
+          width="12"
+          height="7"
+        />
+      </div>
+    {/if}
   </a>
 </li>
