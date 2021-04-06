@@ -8,9 +8,7 @@
 >
   <g clip-path="url(#workspace-4-clip0)">
     <rect width="372" height="296" fill="#F9F9F9" />
-    <g filter="url(#workspace-4-filter0_b)">
-      <rect width="432" height="44" fill="#F3F1F0" />
-    </g>
+    <rect width="432" height="44" fill="#F3F1F0" />
     <circle cx="30" cy="22" r="6" fill="#ECE7E5" />
     <rect
       x="103"
@@ -37,29 +35,6 @@
     />
   </g>
   <defs>
-    <filter
-      id="workspace-4-filter0_b"
-      x="-10"
-      y="-10"
-      width="452"
-      height="64"
-      filterUnits="userSpaceOnUse"
-      color-interpolation-filters="sRGB"
-    >
-      <feFlood flood-opacity="0" result="BackgroundImageFix" />
-      <feGaussianBlur in="BackgroundImage" stdDeviation="5" />
-      <feComposite
-        in2="SourceAlpha"
-        operator="in"
-        result="effect1_backgroundBlur"
-      />
-      <feBlend
-        mode="normal"
-        in="SourceGraphic"
-        in2="effect1_backgroundBlur"
-        result="shape"
-      />
-    </filter>
     <linearGradient
       id="workspace-4-paint0_linear"
       x1="125.5"

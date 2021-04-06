@@ -7,12 +7,8 @@
   aria-hidden="true"
 >
   <rect width="337" height="296" fill="#F9F9F9" />
-  <g filter="url(#workspace-3-filter0_b)">
-    <rect width="337" height="44" fill="#F3F1F0" />
-  </g>
-  <g filter="url(#workspace-3-filter1_b)">
-    <rect y="252" width="337" height="44" fill="#FF8A00" />
-  </g>
+  <rect width="337" height="44" fill="#F3F1F0" />
+  <rect y="252" width="337" height="44" fill="#FF8A00" />
   <circle cx="30" cy="22" r="6" fill="#ECE7E5" />
   <rect x="101" y="79" width="149" height="13" fill="#F3F1F0" />
   <rect x="101" y="203" width="80" height="13" fill="#F3F1F0" />
@@ -20,52 +16,4 @@
   <rect x="142" y="141" width="149" height="13" fill="#F3F1F0" />
   <rect x="142" y="172" width="149" height="13" fill="#F3F1F0" />
   <rect x="4" y="48" width="69" height="200" fill="#F3F1F0" />
-  <defs>
-    <filter
-      id="workspace-3-filter0_b"
-      x="-10"
-      y="-10"
-      width="357"
-      height="64"
-      filterUnits="userSpaceOnUse"
-      color-interpolation-filters="sRGB"
-    >
-      <feFlood flood-opacity="0" result="BackgroundImageFix" />
-      <feGaussianBlur in="BackgroundImage" stdDeviation="5" />
-      <feComposite
-        in2="SourceAlpha"
-        operator="in"
-        result="effect1_backgroundBlur"
-      />
-      <feBlend
-        mode="normal"
-        in="SourceGraphic"
-        in2="effect1_backgroundBlur"
-        result="shape"
-      />
-    </filter>
-    <filter
-      id="workspace-3-filter1_b"
-      x="-10"
-      y="242"
-      width="357"
-      height="64"
-      filterUnits="userSpaceOnUse"
-      color-interpolation-filters="sRGB"
-    >
-      <feFlood flood-opacity="0" result="BackgroundImageFix" />
-      <feGaussianBlur in="BackgroundImage" stdDeviation="5" />
-      <feComposite
-        in2="SourceAlpha"
-        operator="in"
-        result="effect1_backgroundBlur"
-      />
-      <feBlend
-        mode="normal"
-        in="SourceGraphic"
-        in2="effect1_backgroundBlur"
-        result="shape"
-      />
-    </filter>
-  </defs>
 </svg>
