@@ -56,7 +56,7 @@ Examples:
 
 # Going further
 
-- Using a [custom domain](../domain/)
-- Configuring a [custom Docker registry](../docker-registry/)
-- Configuring a [storage backend](../storage/)
-- Configuring [workspace sizes](../workspaces/)
+- Using a [custom domain](./domain/)
+- Configuring a [custom Docker registry](./docker-registry/)
+- Configuring a [storage backend](./storage/)
+- Configuring [workspace sizes](./workspaces/)

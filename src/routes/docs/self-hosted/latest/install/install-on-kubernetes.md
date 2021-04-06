@@ -8,8 +8,8 @@ This section describes how to install Gitpod on any Kubernetes cluster using [He
 
 For some cloud providers, we offer [Terraform](https://www.terraform.io/) scripts packaged into an installer. The installer aims to use the managed services from your cloud provider (Kubernetes Cluster, database, storage, image registry) rather than installing them along with the chart. Also, the script configures the cluster for best performance and cost-efficiency. We recommend using the installer if your cloud provider is supported. Once the installer has created the cluster, it will pre-configure and install this Gitpod helm chart into it.
 
-- [Installer for Google Cloud Platform (GCP)](../install-on-gcp-script/).
-- [Installer for Amazon Web Services (AWS)](../install-on-aws-script/).
+- [Installer for Google Cloud Platform (GCP)](./install-on-gcp-script/).
+- [Installer for Amazon Web Services (AWS)](./install-on-aws-script/).
 
 ## Prerequisites
 
@@ -43,15 +43,15 @@ To install Gitpod in your Kubernetes cluster, follow these steps:
    helm install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.7.0
    ```
 
-1. Configure [domain and https](../configure-ingress/).
+1. Configure [domain and https](./configure-ingress/).
 
-1. Run `kubectl get pods` and verify that all pods are in state `RUNNING`. If some are not, please see the [Troubleshooting Guide](../troubleshooting/).
+1. Run `kubectl get pods` and verify that all pods are in state `RUNNING`. If some are not, please see the [Troubleshooting Guide](./troubleshooting/).
 
 1. Go to [https://\<your-domain.com\>](https://<your-domain.com>) and follow the steps to complete the installation.
 
 ## Upgrade
 
-1.  Check the [Upgrade Guide](../upgrade/) and follow the steps outlined there.
+1.  Check the [Upgrade Guide](./upgrade/) and follow the steps outlined there.
 
 1.  Run the update
 
@@ -59,22 +59,22 @@ To install Gitpod in your Kubernetes cluster, follow these steps:
     helm install -f values.custom.yaml gitpod gitpod.io/gitpod --version=0.7.0
     ```
 
-1.  Run `kubectl get pods` and verify that all pods are in state `RUNNING`. If some are not, please see the [Troubleshooting Guide](../troubleshooting/).
+1.  Run `kubectl get pods` and verify that all pods are in state `RUNNING`. If some are not, please see the [Troubleshooting Guide](./troubleshooting/).
 
 ## Recommended Configuration
 
 By default, the Helm chart installs a working Gitpod installation in a lot of scenarios. Yet, there are certain things you might want to review when installing Gitpod for long term use and/or a bigger audience:
 
-- [**Database**](../database/): Configure where Gitpod stores all internal runtime data.
-- [**Storage**](../storage/): Configure where Gitpod persists workspace content.
-- [**Docker Registry**](../docker-registry/): Configure where Gitpod stores workspace images.
+- [**Database**](./database/): Configure where Gitpod stores all internal runtime data.
+- [**Storage**](./storage/): Configure where Gitpod persists workspace content.
+- [**Docker Registry**](./docker-registry/): Configure where Gitpod stores workspace images.
 
 ## Customization
 
 Further customizations:
 
-- [**Kubernetes Nodes**](../nodes/): Configure file system layout and the workspace's node associativity.
-- [**Workspaces**](../workspaces/): Configure workspace sizing.
+- [**Kubernetes Nodes**](./nodes/): Configure file system layout and the workspace's node associativity.
+- [**Workspaces**](./workspaces/): Configure workspace sizing.
 
 ## Install Branch Build
 
