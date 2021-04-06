@@ -14,7 +14,12 @@
   <Section>
     <img src="/images/illustration-small.png" alt="" />
     <h1>{status}</h1>
-    <p>Oh, no! The page you are looking for can’t be found.</p>
+    <p>Oh, no! Something went wrong on our side.</p>
+
+    {#if dev}
+      <p>{error.message}</p>
+    {/if}
+
     <p>
       <a href="/contact">Contact Us</a>
       —
