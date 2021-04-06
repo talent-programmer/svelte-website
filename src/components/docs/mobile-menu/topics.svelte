@@ -99,12 +99,6 @@
 </script>
 
 <style lang="scss">
-  .mobile-menu {
-    @media (min-width: 769px) {
-      display: none;
-    }
-  }
-
   // override _forms.scss
   .menu-item {
     margin-bottom: 0;
@@ -131,7 +125,7 @@
   }
 </style>
 
-<ul class="mobile-menu">
+<ul>
   {#each MENU as menuItem}
     <li class="menu-item">
       <a href={menuItem.path} class="menu-item__link">

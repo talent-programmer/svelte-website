@@ -3,8 +3,8 @@
   .menu-item {
     margin-bottom: 0;
 
-    + .menu-item {
-      border-top: var(--border-light);
+    &:not(:last-child) {
+      border-bottom: var(--border-light);
     }
   }
 
