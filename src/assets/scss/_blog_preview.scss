@@ -1,0 +1,69 @@
+.posts {
+  display: grid;
+  max-width: 78rem;
+  width: 98vw;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, 25rem);
+  grid-template-rows: auto-fit;
+}
+.blogPreview {
+  border-radius: 0.75rem 0.75rem 0 0;
+  min-width: 20rem;
+  max-width: 25rem;
+  margin: 1rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: var(--off-white);
+}
+.blogPreview > a {
+  flex: 0 0 248px;
+}
+.blogPreview > a img {
+  object-fit: cover;
+  margin: auto;
+  border-radius: 0.75rem 0.75rem 0 0;
+  height: 248px;
+  overflow: hidden;
+}
+.blogPreview h3 a {
+  text-decoration: none;
+  color: var(--black);
+}
+.blogPreview h3 a:focus,
+.blogPreview h3 a:hover {
+  background-color: var(--brand-light);
+}
+.blogPreview p {
+  margin: 1rem 0 0;
+}
+.blogPreview .blurb {
+  padding: 3rem 2rem 2rem;
+  display: flex;
+  flex-flow: column;
+  height: calc(100% - 248px);
+}
+.blogPreview > * {
+  flex: 0 1 auto;
+}
+.blogPreview .excerpt {
+  flex-grow: 1;
+}
+.author img {
+  display: inline;
+  height: 24px;
+  width: 24px;
+  border-radius: 9999px;
+  border: 1px solid var(--off-white);
+}
+.blogPreview .author a {
+  text-decoration: none;
+}
+.blogPreview .author a:focus,
+.blogPreview .author a:hover {
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+  transition-duration: 0;
+}
+.blogPreview .author a:not(:first-of-type) {
+  margin-left: -0.5rem;
+}

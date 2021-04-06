@@ -3,35 +3,9 @@
 /* -------------------------------------- */
 
 main {
-  max-width: 90rem;
-  width: 98vw;
-  margin: auto;
-  /* @media (max-width: 73rem) {
-    max-width: 98vw;
-  } */
-}
-main > header:first-child,
-.header,
-.brief {
-  text-align: center;
-  margin: 3rem auto 5em;
-  width: 100%;
-}
-main > header:first-child {
-  max-width: 900px;
-}
-.brief h2 {
-  margin-bottom: 2rem;
-}
-
-main > header {
-  margin-bottom: 8rem;
-}
-
-.row {
   width: 90%;
   margin: 0 auto;
-  max-width: 98vw;
+  max-width: 87.5rem;
 
   @media (max-width: 1032px) {
     width: 94%;
@@ -51,6 +25,42 @@ main > header {
   }
 }
 
+main > header:first-child,
+.header,
+.brief {
+  text-align: center;
+  margin: var(--xx-large) auto;
+  width: 100%;
+
+  @media (max-width: 972px) {
+    margin: var(--x-large) 0;
+  }
+}
+main > header:first-child {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 1140px) {
+    max-width: 600px;
+  }
+
+  @media (max-width: 1040px) {
+    padding: 0 var(--small);
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 var(--xx-small);
+  }
+}
+.brief h2 {
+  margin-bottom: 2rem;
+}
+
+main > header {
+  margin-bottom: 8rem;
+}
+
 /* CARDS */
 .halfimages {
   /* cards have the margin */
@@ -59,11 +69,14 @@ main > header {
 .halfimages article,
 .cards {
   display: flex;
-  grid-gap: 2rem;
   flex-flow: row wrap;
   margin-bottom: 2rem;
   justify-content: center;
   max-width: 98vw;
+
+  & > * {
+    margin: 0 1rem 2rem;
+  }
 }
 .cards img {
   margin: 0 auto 1em;
@@ -80,20 +93,40 @@ main > header {
   flex: 0 1 calc(50% - 2rem);
   min-width: 400px;
   align-self: center;
+
+  @media (max-width: 768px) {
+    min-width: 350px;
+  }
+
+  @media (max-width: 400px) {
+    min-width: 300px;
+  }
 }
 .halfimages article p {
   margin-bottom: 2rem;
 }
 .cards.double > div {
-  flex: 0 1 calc(50% - 1rem);
+  flex: 0 1 calc(50% - 2rem);
   min-width: 400px;
   align-self: stretch;
+
+  @media (max-width: 768px) {
+    min-width: 350px;
+  }
+
+  @media (max-width: 400px) {
+    min-width: 300px;
+  }
 }
 .cards.triple > div {
   flex: 0 1 calc(33% - 2rem);
   min-width: 300px;
   align-self: stretch;
   text-align: center;
+
+  @media (max-width: 768px) {
+    min-width: 280px;
+  }
 }
 .triple .card {
   display: grid;

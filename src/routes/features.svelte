@@ -3,37 +3,109 @@
 </script>
 
 <script>
+  import Header from "../components/features/header.svelte";
+  import Console from "../components/console.svelte";
   import OpenGraph from "../components/open-graph.svelte";
   import ScreencastPreview from "../components/screencasts/preview.svelte";
   import screencasts from "../contents/screencasts";
+  import Workspaces from "../components/workspaces.svelte";
+  import { terminalSource } from "../contents/terminal";
 
   const firstThreeScreencasts = screencasts.slice(0, 3);
 </script>
 
 <style lang="scss">
-  .double img {
-    height: 223px;
+  article {
+    margin-bottom: var(--x-large);
   }
 
-  .triple img {
-    height: 90px;
-  }
-  .triple h3 {
-    min-height: 3rem;
+  .double {
+    margin-bottom: var(--x-large);
+    flex-direction: column-reverse;
+
+    @media (min-width: 50em) {
+      flex-direction: initial;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .h4 {
+      margin-top: 1rem;
+    }
+
+    a {
+      display: block;
+      margin-top: var(--micro);
+      font-size: var(--p-large);
+    }
+
+    img {
+      height: 223px;
+    }
   }
 
-  .triple a {
+  .triple {
+    img {
+      height: 90px;
+    }
+
+    h3 {
+      min-height: 3rem;
+    }
+
+    p {
+      margin: var(--xx-small) 0;
+      font-size: var(--p-small);
+      line-height: 150%;
+    }
+  }
+
+  .triple a,
+  .double a {
     /* TOD0: better contrast for AA */
     color: var(--brand-ripe);
   }
+
+  .halfimages .text-large {
+    margin: var(--x-small) 0;
+  }
+
+  .halfimages .prebuilds-p {
+    margin-bottom: var(--x-large);
+
+    @media (max-width: 768px) {
+      margin-bottom: var(--x-small);
+    }
+  }
+
+  .double .h4 {
+    margin-bottom: var(--micro);
+  }
+
   section h3:first-child,
   section h3:first-child + p {
     text-align: center;
   }
+
   .brief > img {
     width: 1100px;
     max-width: 90vw;
     margin: 2rem auto;
+    box-shadow: var(--shadow-brand);
+    border-radius: 0.875rem;
+  }
+
+  .brief > p {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .screencasts-container {
+    margin-top: 0;
   }
 </style>
 
@@ -45,35 +117,23 @@
     type: "website",
   }}
 />
-<header>
-  <h1 class="h2">Features</h1>
-  <p class="text-large">
-    Gitpod will always have a free-to-use option. For those looking for a little
-    more we have a few powerful solutions.
-  </p>
-</header>
+
+<Header />
 
 <section class="halfimages">
   <article>
     <div>
-      <!-- TODO: Insert the terminal output animation from the homepage -->
-      <img
-        src="/images/features/features-1.png"
-        alt=""
-        role="presentation"
-        height="688"
-        width="688"
-      />
+      <Console source={terminalSource} />
     </div>
     <div>
-      <h2 class="h3">Save Time with Prebuilt Workspaces</h2>
-      <p class="text-large">
+      <h2 class="h4">Save Time with Prebuilds</h2>
+      <p class="text-large prebuilds-p">
         Gitpod continuously builds your git branches like a CI server. This
         means no more waiting for dependencies to be downloaded and builds to
         finish.
       </p>
       <p>
-        <a href="/docs/prebuilds/" class="btn-secondary"
+        <a href="/docs/prebuilds/" class="btn-primary"
           >More about Prebuilt Workspaces</a
         >
       </p>
@@ -82,21 +142,19 @@
 
   <article>
     <div>
-      <img
-        src="/images/features/features-2.png"
-        alt=""
-        role="presentation"
-        height="688"
-        width="570"
-      />
-      <!-- TODO: Insert "Preparing workspace" images -->
+      <Workspaces />
     </div>
     <div>
-      <h2 class="h3">Start Fresh with Ephemeral Dev Environments</h2>
+      <h2 class="h4">Start Fresh with Ephemeral Dev Environments</h2>
       <p class="text-large">
         Dev environment as code assures you are always starting from a clean
         state and never gets dragged into long-living stateful environments. The
         end of all works-on-my-machine situations.
+      </p>
+      <p style="text-align: center">
+        <a href="/blog/dev-env-as-code/" class="btn-secondary">
+          More about Dev-Environments-as-Code</a
+        >
       </p>
     </div>
   </article>
@@ -105,85 +163,76 @@
 <section class="cards double">
   <div class="card">
     <img
-      src="/images/features/features-3.png"
+      src="/images/features/features-3.svg"
       alt=""
       role="presentation"
       height="223"
       width="382"
     />
-    <!-- TODO: Insert emojis -->
     <h2 class="h4">Collaboration with Workspace Sharing</h2>
     <p class="text-large">
-      Collaborate with your friends, colleagues, and clients and run software or
-      hunt down bugs together.
+      Collaborate with your friends, co-workers, and clients. Whenever you want
+      to share a reproducible example of code or hunt down a bug together,
+      simply take Snapshot.
     </p>
+
+    <a href="/docs/sharing-and-collaboration/"> More about collaboration. </a>
   </div>
   <div class="card">
-    <!-- TODO: Insert terminal image -->
-
-    <img
-      src="/images/features/features-4.png"
-      alt=""
-      role="presentation"
-      height="223"
-      width="483"
-    />
+    <Console source={terminalSource} dark={true} shadow={false} narrow={true} />
     <h2 class="h4">Full linux machine <span>(incl sudo/docker)</span></h2>
     <p class="text-large">
       Instantly start a container in the cloud based on your Docker image.
-      Install and confugire tools easily.
+      Install and configure tools easily.
     </p>
+
+    <a href="https://www.youtube.com/watch?v=iYLCHQgj0fE" target="_blank"
+      >Watch video to learn more</a
+    >
   </div>
 </section>
 
 <section class="cards triple">
   <div class="card">
-    <!-- TODO: Insert icon -->
-
     <img
-      src="/images/features/features-5.png"
+      src="/images/features/features-5.svg"
       alt=""
       role="presentation"
       height="90"
       width="185"
     />
     <h3 class="h5">Customize your workspace</h3>
-    <p class="p-small">
+    <p>
       Tweak your environment to suit your needs. From themes to extensions you
       have full control over it all.
     </p>
-    <a href="/docs/config-docker">More about customization</a>
+    <a href="/docs/vscode-extensions/">More about customization</a>
   </div>
   <div class="card">
-    <!-- TODO: Insert icon -->
-
     <img
-      src="/images/features/features-6.png"
+      src="/images/features/features-6.svg"
       alt=""
       role="presentation"
       height="90"
       width="322"
     />
     <h3 class="h5">GitLab, GitHub, and Bitbucket Integration</h3>
-    <p class="p-small">
+    <p>
       Start your workflow from your Git hosting platform and let Gitpod beam you
       in a ready-to-code dev environment.
     </p>
-    <!-- TODO: Figure out where to link to: -->
-    <a href="TODO:">More about Integrations</a>
+    <a href="/docs/integrations/">More about Integrations</a>
   </div>
   <div class="card">
-    <!-- TODO: Insert icon -->
-
     <img
-      src="/images/features/features-7.png"
+      src="/images/features/features-7.svg"
       alt=""
       role="presentation"
       height="90"
       width="130"
     />
     <h3 class="h5">Code Reviews Within the IDE</h3>
-    <p class="p-small">
+    <p>
       Open pull requests in Gitpod to run, navigate, and review the code. Reply
       to comments and publish code reviews right within Gitpod.
     </p>
@@ -197,10 +246,8 @@
     Install any VS Code extension with one click via the integrated
     vendor-neutral marketplace Open VSX.
   </p>
-  <!-- TODO: Insert the VS Code Gitpod theme screenshot -->
-
   <img
-    src="/images/features/gitpod-extensions.jpg"
+    src="/images/features/gitpod-extensions.png"
     alt=""
     role="presentation"
     height="1110"
@@ -208,7 +255,7 @@
   />
 </section>
 
-<section class="brief">
+<section class="brief screencasts-container">
   <h2>Get started with screencasts</h2>
   <div class="screencasts">
     {#each firstThreeScreencasts as screencast, index}

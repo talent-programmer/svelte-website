@@ -2,6 +2,14 @@
   padding: var(--medium);
   background: var(--off-white);
   border-radius: 1.25rem;
+
+  @media (max-width: 768px) {
+    padding: var(--small);
+  }
+
+  @media (max-width: 375px) {
+    padding: var(--xx-small);
+  }
 }
 .halfimages p small {
   display: inline-block;

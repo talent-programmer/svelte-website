@@ -22,52 +22,9 @@
   section h2 {
     margin-top: 3rem;
   }
-
   section p,
-  section h2,
-  .jobs {
+  section h2 {
     padding-left: 2rem;
-  }
-  .perks {
-    max-width: 46rem;
-    columns: 2 20rem;
-    padding-left: 3rem;
-    margin-top: 1rem;
-    column-gap: 1.5rem;
-  }
-  .perks li {
-    background-color: var(--off-white);
-    border-radius: 0.75rem;
-    padding: 10px;
-    break-inside: avoid;
-    margin: 0 1rem 1rem;
-  }
-  section article h2 {
-    border-left: 0.25rem solid var(--brand-ripe);
-    padding-left: 1.75rem;
-  }
-  .jobs {
-    margin-top: 2rem;
-  }
-  .jobs li {
-    margin: 1rem 0;
-  }
-  .jobs button {
-    background-color: var(--off-white);
-    border-radius: 1rem;
-    padding: 1.75rem 2rem;
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-  .jobs button::after {
-    content: "";
-    float: right;
-    height: 1rem;
-    width: 1rem;
-    border: 2px solid;
-    transform: translatey(0.25rem) rotate(45deg);
-    border-color: currentColor currentColor transparent transparent;
   }
 </style>
 
@@ -97,7 +54,7 @@
 />
 
 <section>
-  <article>
+  <article class="hilited">
     <h2 class="h4">
       We want to make software engineering collaborative and joyful again.
     </h2>

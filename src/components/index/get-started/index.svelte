@@ -38,15 +38,13 @@
 </style>
 
 <Section id="get-started">
-  <div class="row">
-    <h1>Get started now</h1>
-    <div class="wrapper">
-      <div class="card">
-        <LinkGitRepository />
-      </div>
-      <div class="card">
-        <LaunchExampleWorkspace />
-      </div>
+  <h1>Get started now</h1>
+  <div class="wrapper">
+    <div class="card">
+      <LinkGitRepository />
+    </div>
+    <div class="card">
+      <LaunchExampleWorkspace />
     </div>
   </div>
 </Section>

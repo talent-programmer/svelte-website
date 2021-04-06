@@ -21,12 +21,11 @@
     type: "website",
   }}
 />
-<div class="mx-auto max-w-row">
-  <h3 class="py-20 text-center">From the team at Gitpod</h3>
-
-  <div class="flex flex-wrap justify-between">
-    {#each posts as post}
-      <PostPreview {post} />
-    {/each}
-  </div>
+<header>
+  <h1>From the team at Gitpod</h1>
+</header>
+<div class="posts">
+  {#each posts as post}
+    <PostPreview {post} />
+  {/each}
 </div>
