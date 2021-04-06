@@ -76,6 +76,10 @@
 
   .halfimages .prebuilds-p {
     margin-bottom: var(--x-large);
+
+    @media (max-width: 768px) {
+      margin-bottom: var(--x-small);
+    }
   }
 
   .double .h4 {
