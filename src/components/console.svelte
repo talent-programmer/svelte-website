@@ -170,7 +170,7 @@
           state.character = 0;
 
           if (state.character < state.lines[state.line].input.characters - 1) {
-            state.triggers.character = state.tick + random(1, 1);
+            state.triggers.character = state.tick + random(2, 3);
           } else {
             state.triggers.line = state.tick + random(1, 2);
           }
@@ -180,13 +180,13 @@
       if (now(state.triggers.character)) {
         if (state.character < state.lines[state.line].input.characters - 1) {
           state.character += 1;
-          state.triggers.character = state.tick + random(1, 1);
+          state.triggers.character = state.tick + random(2, 3);
         } else {
           if (state.line < state.lines.length - 1) {
             if (state.lines[state.line + 1].output.characters) {
-              state.triggers.line = state.tick + random(10, 20);
+              state.triggers.line = state.tick + random(20, 30);
             } else {
-              state.triggers.line = state.tick + random(1, 1);
+              state.triggers.line = state.tick + random(2, 3);
             }
           }
         }
@@ -229,9 +229,9 @@
             if (time % 1000 < 500) {
               c.fillRect(
                 margins.left + (offset + run_length) * char_width + 0.5,
-                margins.top + line_height * i - scroll_y - line_height * 0.675,
+                margins.top + line_height * i - scroll_y - line_height * 0.575,
                 char_width,
-                line_height * 0.8
+                line_height * 0.7
               );
             }
           } else {
