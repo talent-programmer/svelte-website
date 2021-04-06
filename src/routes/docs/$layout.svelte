@@ -1,6 +1,6 @@
 <script>
   import Menu from "../../components/docs/menu.svelte";
-  import MobileMenu from "../../components/docs/mobile-menu.svelte";
+  import MobileMenu from "../../components/docs/mobile-menu/index.svelte";
   import Search from "../../components/docs/search.svelte";
   import "../../assets/docs.scss";
 </script>
