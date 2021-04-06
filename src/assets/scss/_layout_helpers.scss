@@ -69,11 +69,14 @@ main > header {
 .halfimages article,
 .cards {
   display: flex;
-  grid-gap: 2rem;
   flex-flow: row wrap;
   margin-bottom: 2rem;
   justify-content: center;
   max-width: 98vw;
+
+  & > * {
+    margin: 0 1rem 2rem;
+  }
 }
 .cards img {
   margin: 0 auto 1em;
@@ -103,7 +106,7 @@ main > header {
   margin-bottom: 2rem;
 }
 .cards.double > div {
-  flex: 0 1 calc(50% - 1rem);
+  flex: 0 1 calc(50% - 2rem);
   min-width: 400px;
   align-self: stretch;
 

@@ -18,6 +18,11 @@
 
   .double {
     margin-bottom: var(--x-large);
+    flex-direction: column-reverse;
+
+    @media (min-width: 50em) {
+      flex-direction: initial;
+    }
 
     .card {
       display: flex;
