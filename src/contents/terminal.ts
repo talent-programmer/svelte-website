@@ -104,7 +104,7 @@ export const terminalSource = `\u001b[33mGitpod\u001b[39m \u001b[34m/Workspace\u
   \u001b[33mFinished\u001b[39m dev target(s) in 3m 20s
 
  exit
- 🤘 This task ran as a workspace prebuild
- 🎉 Well done on saving 3mins
+ 🤙 This task ran as a workspace prebuild
+ 🎉 Well done on saving 12mins
 
 \u001b[33mGitpod\u001b[39m \u001b[34m/Workspace\u001b[39m $ `;
