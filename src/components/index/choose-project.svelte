@@ -156,20 +156,18 @@
   }
 </style>
 
-<div class="row">
-  <Section>
-    <h2 class="h1">
-      Choose project,
-      <br />
-      {#each Object.entries(animatedTexts) as [device, texts]}
-        <del class={device}>
-          {#each texts as { isVisible, text }}
-            <span class:strikethrough={isVisible}>{text}</span>
-          {/each}
-        </del>
-      {/each}
-      <br />
-      start coding.
-    </h2>
-  </Section>
-</div>
+<Section>
+  <h2 class="h1">
+    Choose project,
+    <br />
+    {#each Object.entries(animatedTexts) as [device, texts]}
+      <del class={device}>
+        {#each texts as { isVisible, text }}
+          <span class:strikethrough={isVisible}>{text}</span>
+        {/each}
+      </del>
+    {/each}
+    <br />
+    start coding.
+  </h2>
+</Section>

@@ -2,11 +2,10 @@
 /* --- Layout Helpers --- */
 /* -------------------------------------- */
 
-main,
-.row {
+main {
   width: 90%;
   margin: 0 auto;
-  max-width: 98vw;
+  max-width: 87.5rem;
 
   @media (max-width: 1032px) {
     width: 94%;

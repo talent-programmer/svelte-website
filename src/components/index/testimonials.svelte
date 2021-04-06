@@ -37,13 +37,11 @@
 </style>
 
 <Section>
-  <div class="row">
-    <h2 class="h1">Widespread already.</h2>
-    <Carousel>
-      {#each testimonials as testimonial}
-        <Testimonial {testimonial} />
-      {/each}
-    </Carousel>
-    <Brands />
-  </div>
+  <h2 class="h1">Widespread already.</h2>
+  <Carousel>
+    {#each testimonials as testimonial}
+      <Testimonial {testimonial} />
+    {/each}
+  </Carousel>
+  <Brands />
 </Section>

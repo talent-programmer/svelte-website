@@ -53,30 +53,28 @@
 </style>
 
 <Section>
-  <div class="row">
-    <h1>Remote-first. Secure by Design.</h1>
-    <img
-      class="screenshot"
-      src="/images/gitpod-editor.jpg"
-      alt="Gitpod"
-      height="819"
-      width="1269"
-    />
-    <div class="content">
-      <p class="text-large">
-        You no longer need an over-powered laptop to code, Gitpod works just as
-        smoothly on a Chromebook or iPad. All you need is a browser. Gitpod
-        centralizes all source code and never stores it on insecure machines and
-        networks.
-      </p>
-      <div class="buttons-wrapper">
-        {#each buttons as { href, icon, text }}
-          <a {href} target="_blank" class="btn-otherbrand text-medium">
-            <img src={`/${icon}`} alt={text} width="24" height="24" />
-            {text}
-          </a>
-        {/each}
-      </div>
+  <h1>Remote-first. Secure by Design.</h1>
+  <img
+    class="screenshot"
+    src="/images/gitpod-editor.jpg"
+    alt="Gitpod"
+    height="819"
+    width="1269"
+  />
+  <div class="content">
+    <p class="text-large">
+      You no longer need an over-powered laptop to code, Gitpod works just as
+      smoothly on a Chromebook or iPad. All you need is a browser. Gitpod
+      centralizes all source code and never stores it on insecure machines and
+      networks.
+    </p>
+    <div class="buttons-wrapper">
+      {#each buttons as { href, icon, text }}
+        <a {href} target="_blank" class="btn-otherbrand text-medium">
+          <img src={`/${icon}`} alt={text} width="24" height="24" />
+          {text}
+        </a>
+      {/each}
     </div>
   </div>
 </Section>

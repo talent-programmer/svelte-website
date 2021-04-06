@@ -30,7 +30,7 @@
   nav {
     height: var(--header-height);
     width: 100%;
-    max-width: 1440px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 1.25rem var(--x-small);
     color: var(--black);
