@@ -5,14 +5,12 @@
 </script>
 
 <style>
-  .row {
+  h1 {
     text-align: center;
   }
 </style>
 
-<div class="row">
-  <Section>
-    <h1>Plans and pricing</h1>
-    <PricingBoxes {pricingPlans} />
-  </Section>
-</div>
+<Section>
+  <h1>Plans and pricing</h1>
+  <PricingBoxes {pricingPlans} />
+</Section>

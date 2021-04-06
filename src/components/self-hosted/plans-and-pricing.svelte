@@ -5,7 +5,8 @@
 </script>
 
 <style>
-  .row {
+  h1,
+  p {
     text-align: center;
   }
 
@@ -27,15 +28,13 @@
   }
 </style>
 
-<div class="row">
-  <Section>
-    <h1>Self-hosted plans</h1>
-    <p>
-      Install Gitpod Self-Hosted on <strong>Google Cloud Platform</strong>,
-      <strong>AWS</strong>, or on <strong>Vanilla Kubernetes</strong>.
-    </p>
-    <div class="self-hosted-pricing">
-      <PricingBoxes {pricingPlans} />
-    </div>
-  </Section>
-</div>
+<Section>
+  <h1>Self-hosted plans</h1>
+  <p>
+    Install Gitpod Self-Hosted on <strong>Google Cloud Platform</strong>,
+    <strong>AWS</strong>, or on <strong>Vanilla Kubernetes</strong>.
+  </p>
+  <div class="self-hosted-pricing">
+    <PricingBoxes {pricingPlans} />
+  </div>
+</Section>

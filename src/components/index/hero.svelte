@@ -131,70 +131,55 @@
   }
 </style>
 
-<div class="row">
-  <div class="hero">
-    <div class="hero__text">
-      <h1 class="homeh1">Always<br /> Ready to Code.</h1>
-      <p
-        id="choose-project-observer-target"
-        class="hero__intro-text text-large"
-      >
-        Spin up fresh, automated dev environments<br />
-        for each task, in the cloud, in seconds.
-      </p>
-      <div class="hero__action">
-        <div class="hero__try-now text-small">
-          <div>
-            <a href="#get-started" class="btn-conversion">Try Now</a>
-          </div>
-          <p>
-            Open a workspace.
-            <br />
-            Start from any Git context.
-          </p>
-        </div>
+<div class="hero">
+  <div class="hero__text">
+    <h1 class="homeh1">Always<br /> Ready to Code.</h1>
+    <p id="choose-project-observer-target" class="hero__intro-text text-large">
+      Spin up fresh, automated dev environments<br />
+      for each task, in the cloud, in seconds.
+    </p>
+    <div class="hero__action">
+      <div class="hero__try-now text-small">
         <div>
-          <div class="hero__icons">
-            <img
-              src="/svg/bitbucket.svg"
-              alt="Bitbucket logo"
-              width="30"
-              height="30"
-            />
-            <img
-              src="/svg/github.svg"
-              alt="GitHub logo"
-              width="30"
-              height="30"
-            />
-            <img
-              src="/svg/gitlab.svg"
-              alt="GitLab logo"
-              width="30"
-              height="30"
-            />
-          </div>
-          <div class="hero__stars">
-            <a
-              bind:this={githubStarsEl}
-              class="github-button"
-              href="https://github.com/gitpod-io/gitpod"
-              data-icon="octicon-star"
-              data-size="large"
-              data-show-count="true"
-              aria-label="Star the Gitpod Repo on GitHub">Star</a
-            >
-          </div>
+          <a href="#get-started" class="btn-conversion">Try Now</a>
+        </div>
+        <p>
+          Open a workspace.
+          <br />
+          Start from any Git context.
+        </p>
+      </div>
+      <div>
+        <div class="hero__icons">
+          <img
+            src="/svg/bitbucket.svg"
+            alt="Bitbucket logo"
+            width="30"
+            height="30"
+          />
+          <img src="/svg/github.svg" alt="GitHub logo" width="30" height="30" />
+          <img src="/svg/gitlab.svg" alt="GitLab logo" width="30" height="30" />
+        </div>
+        <div class="hero__stars">
+          <a
+            bind:this={githubStarsEl}
+            class="github-button"
+            href="https://github.com/gitpod-io/gitpod"
+            data-icon="octicon-star"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Star the Gitpod Repo on GitHub">Star</a
+          >
         </div>
       </div>
     </div>
-    <div class="hero__illustration">
-      <img
-        src="/images/illustration-placeholder.png"
-        alt="Gitpod in a Nutshell"
-        width="700"
-        height="724"
-      />
-    </div>
+  </div>
+  <div class="hero__illustration">
+    <img
+      src="/images/illustration-placeholder.png"
+      alt="Gitpod in a Nutshell"
+      width="700"
+      height="724"
+    />
   </div>
 </div>

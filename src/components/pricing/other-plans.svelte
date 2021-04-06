@@ -39,21 +39,19 @@
   }
 </style>
 
-<div class="row">
-  <h1>Open source, self hosting, and Students</h1>
-  <div class="plans">
-    {#each otherPlans as p}
-      <div class="plan divider">
-        <div class="plan__header">
-          <h3 class="h4">{p.title}</h3>
-        </div>
-        <div class="plan__body">
-          {#each p.paragraphs as para}
-            <p>{@html para}</p>
-          {/each}
-          <a href={p.btnHref} class="btn-cta">{p.btnText}</a>
-        </div>
+<h1>Open source, self hosting, and Students</h1>
+<div class="plans">
+  {#each otherPlans as p}
+    <div class="plan divider">
+      <div class="plan__header">
+        <h3 class="h4">{p.title}</h3>
       </div>
-    {/each}
-  </div>
+      <div class="plan__body">
+        {#each p.paragraphs as para}
+          <p>{@html para}</p>
+        {/each}
+        <a href={p.btnHref} class="btn-cta">{p.btnText}</a>
+      </div>
+    </div>
+  {/each}
 </div>
