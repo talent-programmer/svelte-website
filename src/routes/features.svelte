@@ -4,9 +4,12 @@
 
 <script>
   import Header from "../components/features/header.svelte";
+  import Console from "../components/console.svelte";
   import OpenGraph from "../components/open-graph.svelte";
   import ScreencastPreview from "../components/screencasts/preview.svelte";
   import screencasts from "../contents/screencasts";
+  import Workspaces from "../components/workspaces.svelte";
+  import { terminalSource } from "../contents/terminal";
 
   const firstThreeScreencasts = screencasts.slice(0, 3);
 </script>
@@ -112,14 +115,7 @@
 <section class="halfimages">
   <article>
     <div>
-      <!-- TODO: Insert the terminal output animation from the homepage -->
-      <img
-        src="/images/features/features-1.png"
-        alt=""
-        role="presentation"
-        height="688"
-        width="688"
-      />
+      <Console source={terminalSource} />
     </div>
     <div>
       <h2 class="h4">Save Time with Prebuilds</h2>
@@ -138,14 +134,7 @@
 
   <article>
     <div>
-      <img
-        src="/images/features/features-2.png"
-        alt=""
-        role="presentation"
-        height="688"
-        width="570"
-      />
-      <!-- TODO: Insert "Preparing workspace" images -->
+      <Workspaces />
     </div>
     <div>
       <h2 class="h4">Start Fresh with Ephemeral Dev Environments</h2>
@@ -183,15 +172,7 @@
     <a href="/docs/sharing-and-collaboration/"> More about collaboration. </a>
   </div>
   <div class="card">
-    <!-- TODO: Insert terminal image -->
-
-    <img
-      src="/images/features/features-4.svg"
-      alt=""
-      role="presentation"
-      height="223"
-      width="483"
-    />
+    <Console source={terminalSource} dark={true} shadow={false} narrow={true} />
     <h2 class="h4">Full linux machine <span>(incl sudo/docker)</span></h2>
     <p class="text-large">
       Instantly start a container in the cloud based on your Docker image.
