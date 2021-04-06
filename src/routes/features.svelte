@@ -79,6 +79,8 @@
     width: 1100px;
     max-width: 90vw;
     margin: 2rem auto;
+    box-shadow: var(--shadow-brand);
+    border-radius: 0.875rem;
   }
 
   .brief > p {
@@ -261,7 +263,7 @@
   <!-- TODO: Insert the VS Code Gitpod theme screenshot -->
 
   <img
-    src="/images/features/gitpod-extensions.jpg"
+    src="/images/features/gitpod-extensions.png"
     alt=""
     role="presentation"
     height="1110"
