@@ -21,14 +21,13 @@
   .back-button {
     display: inline-flex;
     align-items: center;
-    color: black;
     line-height: 138%;
+    color: var(--black);
   }
 
   .back-button__icon {
     flex: 0 0 auto;
     margin-right: 1rem;
-    color: black;
   }
 
   .back-button__icon-arrow {
@@ -46,6 +45,7 @@
     align-items: center;
     padding: 0.8125rem 1rem;
     line-height: 138%;
+    color: var(--black);
   }
 
   .toggle-button__label {
