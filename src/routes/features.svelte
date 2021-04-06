@@ -211,7 +211,7 @@
       Tweak your environment to suit your needs. From themes to extensions you
       have full control over it all.
     </p>
-    <a href="/docs/config-docker">More about customization</a>
+    <a href="/docs/vscode-extensions/">More about customization</a>
   </div>
   <div class="card">
     <!-- TODO: Insert icon -->
@@ -229,7 +229,7 @@
       in a ready-to-code dev environment.
     </p>
     <!-- TODO: Figure out where to link to: -->
-    <a href="TODO:">More about Integrations</a>
+    <a href="/docs/integrations/">More about Integrations</a>
   </div>
   <div class="card">
     <!-- TODO: Insert icon -->
