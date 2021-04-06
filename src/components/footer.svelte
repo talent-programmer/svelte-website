@@ -151,11 +151,7 @@
           >
         </li>
         <li>
-          <a
-            href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
-            target="_blank"
-            >Community
-          </a>
+          <a href="https://community.gitpod.io" target="_blank">Community </a>
         </li>
       </ul>
       <!-- <div style="flex: 0 0 100%">
