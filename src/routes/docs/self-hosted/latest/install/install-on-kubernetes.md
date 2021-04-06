@@ -13,7 +13,7 @@ For some cloud providers, we offer [Terraform](https://www.terraform.io/) script
 
 ## Prerequisites
 
-- A Kubernetes cluster in version 1.15 <= x <= 1.17.
+- A Kubernetes cluster in version `1.15 <= x <= 1.17`.
 
 - local `kubectl` with connection to your cluster
 
