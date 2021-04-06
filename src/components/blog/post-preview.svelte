@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Author from "./author.svelte";
   import type { BlogPost } from "../../types/blog-post.type";
 
   export let post: BlogPost;
@@ -24,8 +25,8 @@
           year: "numeric",
           month: "short",
           day: "numeric",
-        })} by <a href="">{post.author}</a></span
-      >
+        })} by <Author author={post.author} showIconOnly />
+      </span>
     </p>
   </div>
 </div>

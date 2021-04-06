@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Author from "./author.svelte";
   import OpenGraph from "../../components/open-graph.svelte";
 
   export let date;
@@ -18,10 +19,6 @@
   });
 </script>
 
-<style lang="scss" global>
-  @import "../../assets/blog";
-</style>
-
 <OpenGraph
   data={{
     description: excerpt,
@@ -34,7 +31,7 @@
   <img src="/images/blog/{slug}/{teaserImage || image}" alt={`${title}`} />
   <h1>{title}</h1>
   <p>
-    <span>{dateDisplay} by {author}</span>
+    <span>{dateDisplay} by <Author {author} /></span>
   </p>
   <div>TODO: Share icons</div>
   <div>
