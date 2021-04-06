@@ -124,11 +124,15 @@
     distributed team with humans from all over the world.
   </p>
   <p>
-    <a class="btn-otherbrand" href="TODO:"
+    <a
+      class="btn-otherbrand"
+      href="https://www.notion.so/gitpod/Gitpod-s-Direction-be35d064c0704fbda61c542b84e07ef6"
       ><span class="icon">🗺️</span> <span class="arrow">↗︎</span>Gitpod's
       Direction</a
     >
-    <a class="btn-otherbrand" href="TODO:"
+    <a
+      class="btn-otherbrand"
+      href="https://www.notion.so/gitpod/Product-Roadmap-b9b5eac0a15147ac8d2dd25cf0519203"
       ><span class="icon">🛣</span> <span class="arrow">↗︎</span> Gitpod's Roadmap</a
     >
   </p>
@@ -145,7 +149,9 @@
     opinions, but are not opinionated. We integrate, don't dictate.
   </p>
   <p>
-    <a class="btn-otherbrand" href="TODO:"
+    <a
+      class="btn-otherbrand"
+      href="https://www.notion.so/gitpod/Brand-Values-2ed4c2f93c84499b98e3b5389980992e"
       ><span class="icon">✨</span> <span class="arrow">↗︎</span> Brand &amp; Values</a
     >
   </p>
@@ -223,10 +229,14 @@
     through some of our public Notion pages.
   </p>
   <p>
-    <a class="btn-otherbrand" href="TODO:"
+    <a
+      class="btn-otherbrand"
+      href="https://www.notion.so/gitpod/How-we-work-0f9159f282d24f9d9776372e0c7dbab4"
       ><span class="icon">💻</span> <span class="arrow">↗︎</span>How we work</a
     >
-    <a class="btn-otherbrand" href="TODO:"
+    <a
+      class="btn-otherbrand"
+      href="https://www.notion.so/gitpod/Development-Process-2b105f72847440ec8f4a1d87ac25801b"
       ><span class="icon">🔨</span> <span class="arrow">↗︎</span> How we develop</a
     >
   </p>
@@ -258,7 +268,9 @@
   <h2>Gitpod in the news</h2>
   <ul class="cardlike">
     <li>
-      <a href="TODO:_link_to_article">
+      <a
+        href="https://www.theregister.com/2020/08/25/gitpod_open_sources_cloud_development_platform/"
+      >
         <img
           src="/images/about/TheRegister.png"
           alt="The Register"
@@ -268,12 +280,14 @@
       </a>
     </li>
     <li>
-      <a href="TODO:_link_to_article">
+      <a href="https://www.infoq.com/articles/cloud-based-development/">
         <img src="/images/about/InfoQ.png" alt="Info Q" height="" width="" />
       </a>
     </li>
     <li>
-      <a href="TODO:_link_to_article">
+      <a
+        href="https://devops.com/gitpod-open-sources-automated-local-development-environment/"
+      >
         <img
           src="/images/about/DevOpsDotCom.png"
           alt="DevOps.com"
@@ -283,7 +297,7 @@
       </a>
     </li>
     <li>
-      <a href="TODO:_link_to_article">
+      <a href="https://thenewstack.io/gitpod-open-sources-a-holistic-ide/">
         <img
           src="/images/about/NewStake.png"
           alt="The New Stack"
