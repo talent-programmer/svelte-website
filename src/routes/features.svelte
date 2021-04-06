@@ -47,6 +47,8 @@
 
     p {
       margin: var(--xx-small) 0;
+      font-size: var(--p-small);
+      line-height: 150%;
     }
   }
 
@@ -205,7 +207,7 @@
       width="185"
     />
     <h3 class="h5">Customize your workspace</h3>
-    <p class="text-small">
+    <p>
       Tweak your environment to suit your needs. From themes to extensions you
       have full control over it all.
     </p>
@@ -222,7 +224,7 @@
       width="322"
     />
     <h3 class="h5">GitLab, GitHub, and Bitbucket Integration</h3>
-    <p class="text-small">
+    <p>
       Start your workflow from your Git hosting platform and let Gitpod beam you
       in a ready-to-code dev environment.
     </p>
@@ -240,7 +242,7 @@
       width="130"
     />
     <h3 class="h5">Code Reviews Within the IDE</h3>
-    <p class="text-small">
+    <p>
       Open pull requests in Gitpod to run, navigate, and review the code. Reply
       to comments and publish code reviews right within Gitpod.
     </p>
