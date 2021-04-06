@@ -7,6 +7,20 @@
   export let narrow = false;
   export let alt = "";
 
+  $: colors = dark
+    ? {
+        black: "#F9F9F9",
+        orange: "#fc8800",
+        green: "#57c700",
+        blue: "#FFE4BC",
+      }
+    : {
+        black: "rgba(18, 16, 12, 0.7)",
+        orange: "#fc8800",
+        green: "#57c700",
+        blue: "#0099EF",
+      };
+
   let wrapper: HTMLDivElement;
   let canvas: HTMLCanvasElement;
 
@@ -37,20 +51,6 @@
     let font_size;
     let line_height;
     let margins;
-
-    let colors = dark
-      ? {
-          black: "#F9F9F9",
-          orange: "#fc8800",
-          green: "#57c700",
-          blue: "#FFE4BC",
-        }
-      : {
-          black: "rgba(18, 16, 12, 0.7)",
-          orange: "#fc8800",
-          green: "#57c700",
-          blue: "#0099EF",
-        };
 
     let c = canvas.getContext("2d");
 
