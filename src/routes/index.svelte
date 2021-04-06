@@ -26,7 +26,7 @@
 
 <Hero />
 <ChooseProject />
-<div id="choose-project-observer-target">
+<div id="choose-project-observer-target-bottom">
   <Features {features} />
 </div>
 <SectionScreenshot />
