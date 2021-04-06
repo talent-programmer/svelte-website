@@ -101,7 +101,7 @@ export const terminalSource = `\u001b[33mGitpod\u001b[39m \u001b[34m/Workspace\u
  \u001b[33mCompiling\u001b[39m shadow-rs v0.5.24
  \u001b[33mCompiling\u001b[39m nu v0.28.0
 \u001b[33mInstalling\u001b[39m /workspace/.cargo/bin/nu
-  \u001b[33mFinished\u001b[39m dev target(s) in 3m 20s
+  \u001b[33mFinished\u001b[39m dev target(s) in 12m 30s
 
  exit
  🤙 This task ran as a workspace prebuild
