@@ -79,7 +79,7 @@
         margins = {
           top: 48 + line_height,
           right: 10,
-          bottom: 48,
+          bottom: 30,
           left: 30,
         };
       } else {
@@ -88,9 +88,9 @@
 
         margins = {
           top: 48 + line_height,
-          right: 40,
-          bottom: 48,
-          left: 40,
+          right: narrow ? 30 : 40,
+          bottom: narrow ? 30 : 48,
+          left: narrow ? 30 : 40,
         };
       }
 
@@ -225,8 +225,9 @@
 
       let scroll_y = 0;
 
-      if ((state.line + 2) * line_height >= height - margins.top) {
-        scroll_y = (state.line + 2) * line_height - height + margins.top;
+      if (state.line * line_height + margins.top >= height - margins.bottom) {
+        scroll_y =
+          state.line * line_height - height + margins.top + margins.bottom;
       }
 
       for (let i = 0; i <= state.line; i++) {
@@ -336,13 +337,16 @@
     display: block;
     padding-bottom: 125%;
   }
+  .aspect.narrow::before {
+    padding-bottom: 70%;
+  }
   @media (min-width: 769px) {
     .aspect::before {
       padding-bottom: 80%;
     }
-  }
-  .aspect.narrow::before {
-    padding-bottom: 40%;
+    .aspect.narrow::before {
+      padding-bottom: 40%;
+    }
   }
   .wrapper {
     position: absolute;
