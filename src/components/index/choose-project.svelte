@@ -37,19 +37,12 @@
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: [0.7],
+      threshold: [0.13],
     };
 
     const beTouching = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          Object.entries(animatedTexts).forEach(([, texts]) =>
-            texts.forEach((text) => {
-              text.isVisible = false;
-            })
-          );
-          animatedTexts = animatedTexts; // This triggers Svelte's reactivity
-        } else {
           let t = 0;
           Object.entries(animatedTexts).forEach(([, texts]) =>
             texts.forEach((text) => {
@@ -60,6 +53,13 @@
               t = t + 400;
             })
           );
+        } else {
+          Object.entries(animatedTexts).forEach(([, texts]) =>
+            texts.forEach((text) => {
+              text.isVisible = false;
+            })
+          );
+          animatedTexts = animatedTexts; // This triggers Svelte's reactivity
         }
       });
     };
@@ -140,8 +140,8 @@
     height: 3px;
     margin-top: -0.6em;
     transform-origin: center left;
-    animation: strikethrough 1s 0.5s cubic-bezier(0.55, 0, 0.1, 1) 1 forwards;
-    transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+    animation: strikethrough 0.6s 0.4s cubic-bezier(0.55, 0, 0.1, 1) 1 forwards;
+    transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1);
   }
 
   @keyframes strikethrough {
