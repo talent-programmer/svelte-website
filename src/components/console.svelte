@@ -31,20 +31,15 @@
   }
 
   onMount(() => {
-    let font_size = 16;
-    let line_height = 22;
-
-    let margins = {
-      top: 72 + line_height,
-      right: 20,
-      bottom: 20,
-      left: 20,
-    };
+    let font_size;
+    let line_height;
+    let margins;
 
     let colors = {
       black: "rgba(18, 16, 12, 0.7)",
       orange: "#fc8800",
       green: "#57c700",
+      blue: "#0099EF",
     };
 
     let c = canvas.getContext("2d");
@@ -66,6 +61,28 @@
       canvas.style.height = height + "px";
 
       c.scale(dpr, dpr);
+
+      if (window.innerWidth < 768) {
+        font_size = 12;
+        line_height = 19;
+
+        margins = {
+          top: 72 + line_height,
+          right: 10,
+          bottom: 72,
+          left: 30,
+        };
+      } else {
+        font_size = 18;
+        line_height = 33;
+
+        margins = {
+          top: 72 + line_height,
+          right: 40,
+          bottom: 72,
+          left: 40,
+        };
+      }
 
       c.font = `${font_size}px SF Mono, monospace`;
       c.fillStyle = colors.black;
