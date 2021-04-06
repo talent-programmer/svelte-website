@@ -42,6 +42,8 @@
 }
 .blogPreview a.date {
   text-decoration: none;
+  font-size: var(--p-small);
+  margin-left: 0.5rem;
 }
 .blogPreview .blurb {
   padding: 3rem 2rem 2rem;
