@@ -13,20 +13,22 @@
     />
   </a>
   <div class="blurb">
-    <h3>
+    <h2>
       <a href="/blog/{post.slug}" sveltekit:prefetch>
         {post.title}
       </a>
-    </h3>
+    </h2>
     <p class="excerpt">{post.excerpt}</p>
     <p>
       <span
         ><Author author={post.author} showIconOnly />
-        {new Date(Date.parse(post.date)).toLocaleDateString(undefined, {
-          year: "numeric",
-          month: "short",
-          day: "numeric",
-        })}
+        <a href="/blog/{post.slug}" class="date" sveltekit:prefetch>
+          {new Date(Date.parse(post.date)).toLocaleDateString(undefined, {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+          })}
+        </a>
       </span>
     </p>
   </div>
