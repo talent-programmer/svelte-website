@@ -113,15 +113,7 @@
     </p>
   </div>
   <div class="card">
-    <!-- TODO: Insert terminal image -->
-
-    <img
-      src="/images/features/features-4.png"
-      alt=""
-      role="presentation"
-      height="223"
-      width="483"
-    />
+    <Console source={terminalSource} dark={true} shadow={false} narrow={true} />
     <h2 class="h4">Full linux machine <span>(incl sudo/docker)</span></h2>
     <p>
       Instantly start a container in the cloud based on your Docker image.
