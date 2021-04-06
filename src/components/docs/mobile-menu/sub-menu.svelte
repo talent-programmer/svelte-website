@@ -6,15 +6,7 @@
   import topicsState from "../states/topics-state";
   import subMenuState from "../states/sub-menu-state";
 
-  import docsCurrentSectionStore from "../../../stores/docs-current-section";
-
-  export let MENU;
-
-  $: currentSection = MENU.find(({ path }) =>
-    $docsCurrentSectionStore
-      ? path.indexOf($docsCurrentSectionStore) >= 0
-      : /\/docs\/$/.test(path)
-  );
+  export let currentSection;
 </script>
 
 <style lang="scss">

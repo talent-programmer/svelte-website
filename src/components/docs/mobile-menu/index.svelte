@@ -6,7 +6,14 @@
   // States
   import topicsState from "../states/topics-state";
 
+  import docsCurrentSectionStore from "../../../stores/docs-current-section";
   export let MENU;
+
+  $: currentSection = MENU.find(({ path }) =>
+    $docsCurrentSectionStore
+      ? path.indexOf($docsCurrentSectionStore) >= 0
+      : /\/docs\/$/.test(path)
+  );
 </script>
 
 <style lang="scss">
@@ -23,6 +30,6 @@
   {#if $topicsState}
     <MobileMenuTopics {MENU} />
   {:else}
-    <MobileMenuSubMenu {MENU} />
+    <MobileMenuSubMenu {currentSection} />
   {/if}
 </div>
