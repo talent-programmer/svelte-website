@@ -4,7 +4,7 @@
   import MobileMenuSubMenu from "./sub-menu.svelte";
 
   // States
-  import topicsState from "./topics-state";
+  import topicsState from "../states/topics-state";
 
   export let MENU;
 </script>

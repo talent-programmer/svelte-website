@@ -1,12 +1,20 @@
-<script>
+<script lang="ts">
   // Components
   import MenuItem from "./menu-item.svelte";
 
   // States
-  import topicsState from "./topics-state";
-  import subMenuState from "./sub-menu-state";
+  import topicsState from "../states/topics-state";
+  import subMenuState from "../states/sub-menu-state";
+
+  import docsCurrentSectionStore from "../../../stores/docs-current-section";
 
   export let MENU;
+
+  $: currentSection = MENU.find(({ path }) =>
+    $docsCurrentSectionStore
+      ? path.indexOf($docsCurrentSectionStore) >= 0
+      : /\/docs\/$/.test(path)
+  );
 </script>
 
 <style lang="scss">
@@ -75,27 +83,33 @@
   All topics
 </button>
 
-<div class="sub-menu-container bg-white">
-  <button
-    class="toggle-button w-full"
-    type="button"
-    on:click={() => ($subMenuState = !$subMenuState)}
-  >
-    <div class="toggle-button__label">NAME</div>
-    <div class="toggle-button__icon">
-      <img
-        class={`toggle-button__icon-arrow ${$subMenuState ? "open" : ""}`}
-        src="/arrow.svg"
-        alt="Toggle sub menu"
-        width="12"
-        height="7"
-      />
-    </div>
-  </button>
+{#if currentSection.subMenu}
+  <div class="sub-menu-container bg-white">
+    <button
+      class="toggle-button w-full"
+      type="button"
+      on:click={() => ($subMenuState = !$subMenuState)}
+    >
+      <div class="toggle-button__label">{currentSection.title}</div>
+      <div class="toggle-button__icon">
+        <img
+          class={`toggle-button__icon-arrow ${$subMenuState ? "open" : ""}`}
+          src="/arrow.svg"
+          alt="Toggle sub menu"
+          width="12"
+          height="7"
+        />
+      </div>
+    </button>
 
-  {#if $subMenuState}
-    <ul class="sub-menu px-4">
-      <MenuItem onClick={() => ($subMenuState = false)}>TEST</MenuItem>
-    </ul>
-  {/if}
-</div>
+    {#if $subMenuState}
+      <ul class="sub-menu px-4">
+        {#each currentSection.subMenu as sub}
+          <MenuItem href={sub.path} onClick={() => ($subMenuState = false)}>
+            {sub.title}
+          </MenuItem>
+        {/each}
+      </ul>
+    {/if}
+  </div>
+{/if}

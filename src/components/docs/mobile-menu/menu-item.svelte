@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from "$app/stores";
-  import topicsState from "./topics-state";
+  import topicsState from "../states/topics-state";
 
   export let href: string;
   export let onClick;
