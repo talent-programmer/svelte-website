@@ -3,9 +3,11 @@
 </script>
 
 <script>
+  import Console from "../components/console.svelte";
   import OpenGraph from "../components/open-graph.svelte";
   import ScreencastPreview from "../components/screencasts/preview.svelte";
   import screencasts from "../contents/screencasts";
+  import { terminalSource } from "../contents/terminal";
 
   const firstThreeScreencasts = screencasts.slice(0, 3);
 </script>
@@ -55,14 +57,7 @@
 <section class="halfimages">
   <article>
     <div>
-      <!-- TODO: Insert the terminal output animation from the homepage -->
-      <img
-        src="/images/features/features-1.png"
-        alt=""
-        role="presentation"
-        height="688"
-        width="688"
-      />
+      <Console source={terminalSource} />
     </div>
     <div>
       <h2 class="h3">Save Time with Prebuilt Workspaces</h2>
