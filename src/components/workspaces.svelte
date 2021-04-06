@@ -40,23 +40,13 @@
     };
   }
 
-  let mounted = true;
-
   function shuffle() {
-    if (!mounted) {
-      return;
-    }
-
     items = [available[next], ...items.slice(0, max - 1)];
     next = (next + 1) % available.length;
   }
 
   onMount(() => {
     shuffle();
-
-    return () => {
-      mounted = false;
-    };
   });
 </script>
 
@@ -111,7 +101,7 @@
         style="top: {100 * (top / wrapper_height)}%; left: {100 *
           (left / wrapper_width)}%; width: {100 * (width / wrapper_width)}%;"
         in:fade={{ duration: 1500, easing: linear }}
-        out:zoom={{ duration: 1500, factor: 1.075, easing: linear }}
+        out:zoom|local={{ duration: 1500, factor: 1.075, easing: linear }}
         on:outroend={shuffle}
       >
         <svelte:component this={Component} />
