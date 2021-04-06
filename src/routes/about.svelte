@@ -4,6 +4,7 @@
 
 <script lang="ts">
   import OpenGraph from "../components/open-graph.svelte";
+  import { careers } from "../contents/careers";
 
   const investors = [
     {
@@ -56,17 +57,60 @@
     type: "website",
   }}
 />
-<h1>On a mission to make developers' lives easier!</h1>
-<p>
-  We’re a fully distributed and engineering-led team of developer tool
-  specialists and long time open-source contributors. We believe that in a few
-  years working with automated, ready-to-code dev environments is going to be as
-  common as using version control or having CI/CD.
-</p>
-<!-- TODO: Insert team photo -->
+<header>
+  <h1>Gitpod</h1>
+  <p>
+    Open source developer platform. Originally from Kiel now from all around the
+    globe.
+  </p>
+</header>
 
-<div>
-  <h2>Democratizing Software Development</h2>
+<div class="hilited redirector">
+  <h2 class="h4">
+    Remove all friction from the developer experience to be always ready-to-code
+    and make software engineering more collaborative, joyful, and secure.
+  </h2>
+</div>
+
+<ul class="imageCarousel">
+  <li>
+    <img
+      src="/images/about/team-1.jpg"
+      alt=""
+      height="310"
+      width="310"
+      role="presentation"
+    />
+  </li>
+  <li>
+    <img
+      src="/images/about/team-2.jpg"
+      alt="TODO: who is this?"
+      height="310"
+      width="310"
+    />
+  </li>
+  <li>
+    <img
+      src="/images/about/team-3.jpg"
+      alt=""
+      height="310"
+      width="310"
+      role="presentation"
+    />
+  </li>
+  <li>
+    <img
+      src="/images/about/team-4.jpg"
+      alt="TODO: who is this?"
+      height="310"
+      width="310"
+    />
+  </li>
+</ul>
+
+<div class="redirector">
+  <h2>Obsessed with developer experience.</h2>
   <p>
     We have built developer tools, created programming languages and
     successfully grew open source communities over the last 10 years. We are
@@ -75,52 +119,201 @@
     international investors support us on our journey. We are a fully
     distributed team with humans from all over the world.
   </p>
+  <p>
+    <a
+      class="btn-otherbrand"
+      href="https://www.notion.so/gitpod/Gitpod-s-Direction-be35d064c0704fbda61c542b84e07ef6"
+      target="_blank"
+      ><span class="icon">🗺️</span> <span class="arrow">↗︎</span>Gitpod's
+      Direction</a
+    >
+    <a
+      class="btn-otherbrand"
+      href="https://www.notion.so/gitpod/Product-Roadmap-b9b5eac0a15147ac8d2dd25cf0519203"
+      target="_blank"
+      ><span class="icon">🛣</span> <span class="arrow">↗︎</span> Gitpod's Roadmap</a
+    >
+  </p>
 </div>
 
-<div>
-  <!-- TODO: Insert images as per design -->
-</div>
-
-<div>
-  <h2>Diversity at Gitpod</h2>
+<div class="redirector">
+  <h2>Built on Shared Principles</h2>
   <p>
     Values are important to us. We are developer-led and aim for a frictionless
     experience when interacting with our product, our company and our brand: no
     hurdles, no BS, no unnecessary extra steps. We believe in the benefits of an
     open culture. We are open minded, inclusive, transparent and curious. We
     always remain students of the game, not masters of the game. We have
-    opinions, but are not opinionated. We integrate, don't dictate. We are also
-    not as diverse as we would like to be.
+    opinions, but are not opinionated. We integrate, don't dictate.
+  </p>
+  <p>
+    <a
+      class="btn-otherbrand"
+      href="https://www.notion.so/gitpod/Brand-Values-2ed4c2f93c84499b98e3b5389980992e"
+      target="_blank"
+      ><span class="icon">✨</span> <span class="arrow">↗︎</span> Brand &amp; Values</a
+    >
   </p>
 </div>
 
-<div>
-  <!-- TODO: Insert cube icon -->
-  <h2>We have 8 open positions</h2>
-  <!-- TODO: Figure out a way to dynamically set the number of open positions -->
+<ul class="imageCarousel">
+  <li>
+    <img
+      src="/images/about/team-1.jpg"
+      alt=""
+      height="310"
+      width="310"
+      role="presentation"
+    />
+  </li>
+  <li>
+    <img
+      src="/images/about/team-2.jpg"
+      alt="TODO: who is this?"
+      height="310"
+      width="310"
+    />
+  </li>
+  <li>
+    <img
+      src="/images/about/team-3.jpg"
+      alt=""
+      height="310"
+      width="310"
+      role="presentation"
+    />
+  </li>
+  <li>
+    <img
+      src="/images/about/team-4.jpg"
+      alt="TODO: who is this?"
+      height="310"
+      width="310"
+    />
+  </li>
+</ul>
+
+<div class="redirector">
+  <h2>Backed by the best investors</h2>
   <p>
-    We’re on the hunt for new talent, as what we’re building is going to take a
-    lot of it
+    Gitpod Inc. was founded in 2020 and to-date we raised over $13m from General
+    Catalyst and a syndicate of experienced, international investors and great
+    individuals who have been early backers of <span class="othercompanies"
+      ><span>SignalFX</span>, <span>Cloudera</span>, <span>Couchbase</span>,
+      <span>Snyk</span>, <span>Render</span>, <span>BuildKite</span>,
+      <span>LaunchDarkly</span>, <span>H20</span>, <span>Hasura</span>,
+      <span>Instana</span></span
+    >, and several other exciting companies in the world of developer tools and
+    open source software.
+    <!--
+    {#each investors as investor}
+      <div>
+        <img
+          src={investor.logo}
+          alt="{investor.name} logo"
+          height={investor.imgHeight}
+          width={investor.imgWidth}
+        />
+        <p><strong>{investor.name}</strong></p>
+        <p>{investor.description}</p>
+      </div>
+    {/each} -->
   </p>
-  <a href="/careers">See openings</a>
 </div>
 
-<div>
-  <h2>We’re backed by some of the best</h2>
+<div class="redirector">
+  <h2>Find out more. We are open!</h2>
   <p>
-    These fine investors share the same values we do, and believe in what we’re
-    doing enough to come along for the ride.
+    We have always built in the open. If you want to learn more take a look
+    through some of our public Notion pages.
   </p>
-  {#each investors as investor}
-    <div>
-      <img
-        src={investor.logo}
-        alt="{investor.name} logo"
-        height={investor.imgHeight}
-        width={investor.imgWidth}
-      />
-      <p><strong>{investor.name}</strong></p>
-      <p>{investor.description}</p>
+  <p>
+    <a
+      class="btn-otherbrand"
+      href="https://www.notion.so/gitpod/How-we-work-0f9159f282d24f9d9776372e0c7dbab4"
+      target="_blank"
+      ><span class="icon">💻</span> <span class="arrow">↗︎</span>How we work</a
+    >
+    <a
+      class="btn-otherbrand"
+      href="https://www.notion.so/gitpod/Development-Process-2b105f72847440ec8f4a1d87ac25801b"
+      target="_blank"
+      ><span class="icon">🔨</span> <span class="arrow">↗︎</span> How we develop</a
+    >
+  </p>
+</div>
+
+<div class="row">
+  <section>
+    <div class="explore">
+      <div class="explore__text">
+        <h1>
+          We have {careers.length} open position{careers.length == 1 ? "" : "s"}
+        </h1>
+        <p class="h4">Come join us.</p>
+        <p><a href="/careers" class="btn-conversion">See openings</a></p>
+      </div>
+      <div class="explore__illustration">
+        <img src="/images/illustration.png" alt="Gitpod in a Nutshell" />
+        <img
+          src="/images/illustration-small.png"
+          class="small"
+          alt="Gitpod in a Nutshell"
+        />
+      </div>
     </div>
-  {/each}
+  </section>
+</div>
+
+<div class="redirector header">
+  <h2>Gitpod in the news</h2>
+  <ul class="cardlike">
+    <li>
+      <a
+        href="https://www.theregister.com/2020/08/25/gitpod_open_sources_cloud_development_platform/"
+        target="_blank"
+      >
+        <img
+          src="/images/about/TheRegister.png"
+          alt="The Register"
+          height=""
+          width=""
+        />
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.infoq.com/articles/cloud-based-development/"
+        target="_blank"
+      >
+        <img src="/images/about/InfoQ.png" alt="Info Q" height="" width="" />
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://devops.com/gitpod-open-sources-automated-local-development-environment/"
+        target="_blank"
+      >
+        <img
+          src="/images/about/DevOpsDotCom.png"
+          alt="DevOps.com"
+          height=""
+          width=""
+        />
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://thenewstack.io/gitpod-open-sources-a-holistic-ide/"
+        target="_blank"
+      >
+        <img
+          src="/images/about/NewStake.png"
+          alt="The New Stack"
+          height=""
+          width=""
+        />
+      </a>
+    </li>
+  </ul>
 </div>
