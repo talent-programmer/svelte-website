@@ -17,7 +17,7 @@
 {#if showCookieConsent}
   <div
     out:fade
-    class="fixed bottom-0 px-4 py-3 flex justify-between items-center w-full bg-orange-700 text-xs sm:text-sm md:text-base"
+    class="fixed bottom-0 px-4 py-3 flex justify-between items-center w-full bg-orange-700 shadow-sm text-xs sm:text-sm md:text-base"
   >
     <p class="w-7/12 md:w-9/12">
       This website uses cookies to enhance the user experience. Read our <a
