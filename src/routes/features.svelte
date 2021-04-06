@@ -191,7 +191,9 @@
       Install and configure tools easily.
     </p>
 
-    <a href="/docs/sharing-and-collaboration/"> More about collaboration. </a>
+    <a href="https://www.youtube.com/watch?v=iYLCHQgj0fE" target="_blank"
+      >Todo</a
+    >
   </div>
 </section>
 
