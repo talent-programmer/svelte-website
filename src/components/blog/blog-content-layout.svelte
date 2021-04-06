@@ -17,6 +17,25 @@
     month: "short",
     day: "numeric",
   });
+
+  const socialLinks = [
+    {
+      /* TODO: create real links */
+      href: "https://twitter.com/intent/tweet?link=addtext",
+      alt: "Twitter",
+      icon: "/svg/brands/twitter.svg",
+    },
+    {
+      href: "https://github.com/?gitpod-io",
+      alt: "GitHub",
+      icon: "/svg/brands/github.svg",
+    },
+    {
+      href: "https://community.gitpod.io/?",
+      alt: "Discourse",
+      icon: "/svg/brands/discourse.svg",
+    },
+  ];
 </script>
 
 <OpenGraph
@@ -27,14 +46,30 @@
     image: `images/blog/${slug}/${image}`,
   }}
 />
-<div class=" text-blob">
-  <img src="/images/blog/{slug}/{teaserImage || image}" alt={`${title}`} />
+<div class="post text-blob">
+  <img
+    src="/images/blog/{slug}/{teaserImage || image}"
+    alt={`${title}`}
+    class="headerImage"
+  />
+  <p class="date">{dateDisplay}</p>
   <h1>{title}</h1>
   <p>
-    <span>{dateDisplay} by <Author {author} /></span>
+    <span><Author {author} /></span>
   </p>
-  <div>TODO: Share icons</div>
   <div>
     <slot />
   </div>
+  <section class="share">
+    <h4>Share this post:</h4>
+    <ul>
+      {#each socialLinks as link}
+        <li>
+          <a href={link.href}>
+            <img src={link.icon} alt={link.alt} height="24" width="24" />
+          </a>
+        </li>
+      {/each}
+    </ul>
+  </section>
 </div>
