@@ -50,10 +50,6 @@
   ];
 </script>
 
-<style>
-</style>
-
-;
 <OpenGraph
   data={{
     description: "On a mission to make developers' lives easier!",
