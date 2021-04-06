@@ -123,12 +123,14 @@
     <a
       class="btn-otherbrand"
       href="https://www.notion.so/gitpod/Gitpod-s-Direction-be35d064c0704fbda61c542b84e07ef6"
+      target="_blank"
       ><span class="icon">🗺️</span> <span class="arrow">↗︎</span>Gitpod's
       Direction</a
     >
     <a
       class="btn-otherbrand"
       href="https://www.notion.so/gitpod/Product-Roadmap-b9b5eac0a15147ac8d2dd25cf0519203"
+      target="_blank"
       ><span class="icon">🛣</span> <span class="arrow">↗︎</span> Gitpod's Roadmap</a
     >
   </p>
@@ -148,6 +150,7 @@
     <a
       class="btn-otherbrand"
       href="https://www.notion.so/gitpod/Brand-Values-2ed4c2f93c84499b98e3b5389980992e"
+      target="_blank"
       ><span class="icon">✨</span> <span class="arrow">↗︎</span> Brand &amp; Values</a
     >
   </p>
@@ -228,11 +231,13 @@
     <a
       class="btn-otherbrand"
       href="https://www.notion.so/gitpod/How-we-work-0f9159f282d24f9d9776372e0c7dbab4"
+      target="_blank"
       ><span class="icon">💻</span> <span class="arrow">↗︎</span>How we work</a
     >
     <a
       class="btn-otherbrand"
       href="https://www.notion.so/gitpod/Development-Process-2b105f72847440ec8f4a1d87ac25801b"
+      target="_blank"
       ><span class="icon">🔨</span> <span class="arrow">↗︎</span> How we develop</a
     >
   </p>
@@ -266,6 +271,7 @@
     <li>
       <a
         href="https://www.theregister.com/2020/08/25/gitpod_open_sources_cloud_development_platform/"
+        target="_blank"
       >
         <img
           src="/images/about/TheRegister.png"
@@ -276,13 +282,17 @@
       </a>
     </li>
     <li>
-      <a href="https://www.infoq.com/articles/cloud-based-development/">
+      <a
+        href="https://www.infoq.com/articles/cloud-based-development/"
+        target="_blank"
+      >
         <img src="/images/about/InfoQ.png" alt="Info Q" height="" width="" />
       </a>
     </li>
     <li>
       <a
         href="https://devops.com/gitpod-open-sources-automated-local-development-environment/"
+        target="_blank"
       >
         <img
           src="/images/about/DevOpsDotCom.png"
@@ -293,7 +303,10 @@
       </a>
     </li>
     <li>
-      <a href="https://thenewstack.io/gitpod-open-sources-a-holistic-ide/">
+      <a
+        href="https://thenewstack.io/gitpod-open-sources-a-holistic-ide/"
+        target="_blank"
+      >
         <img
           src="/images/about/NewStake.png"
           alt="The New Stack"
