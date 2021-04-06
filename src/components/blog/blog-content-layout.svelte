@@ -30,18 +30,14 @@
     image: `images/blog/${slug}/${image}`,
   }}
 />
-
-<img
-  src="/images/blog/{slug}/{teaserImage || image}"
-  alt={`Preview image for the blog post titled ${title}`}
-/>
-<div class="p-8">
-  <h3 class="text-h3">{title}</h3>
-  <p class="pt-8">
+<div class=" text-blob">
+  <img src="/images/blog/{slug}/{teaserImage || image}" alt={`${title}`} />
+  <h1>{title}</h1>
+  <p>
     <span>{dateDisplay} by {author}</span>
   </p>
-</div>
-<div>TODO: Share icons</div>
-<div class="pt-8 content-blog">
-  <slot />
+  <div>TODO: Share icons</div>
+  <div>
+    <slot />
+  </div>
 </div>
