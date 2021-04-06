@@ -40,13 +40,23 @@
     };
   }
 
+  let mounted = true;
+
   function shuffle() {
+    if (!mounted) {
+      return;
+    }
+
     items = [available[next], ...items.slice(0, max - 1)];
     next = (next + 1) % available.length;
   }
 
   onMount(() => {
     shuffle();
+
+    return () => {
+      mounted = false;
+    };
   });
 </script>
 
