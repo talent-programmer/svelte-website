@@ -2,6 +2,9 @@
   import { onMount } from "svelte";
 
   export let source = "";
+  export let dark = false;
+  export let shadow = true;
+  export let narrow = false;
   export let alt = "";
 
   let wrapper: HTMLDivElement;
@@ -35,12 +38,19 @@
     let line_height;
     let margins;
 
-    let colors = {
-      black: "rgba(18, 16, 12, 0.7)",
-      orange: "#fc8800",
-      green: "#57c700",
-      blue: "#0099EF",
-    };
+    let colors = dark
+      ? {
+          black: "#F9F9F9",
+          orange: "#fc8800",
+          green: "#57c700",
+          blue: "#FFE4BC",
+        }
+      : {
+          black: "rgba(18, 16, 12, 0.7)",
+          orange: "#fc8800",
+          green: "#57c700",
+          blue: "#0099EF",
+        };
 
     let c = canvas.getContext("2d");
 
@@ -67,9 +77,9 @@
         line_height = 19;
 
         margins = {
-          top: 72 + line_height,
+          top: 48 + line_height,
           right: 10,
-          bottom: 72,
+          bottom: 48,
           left: 30,
         };
       } else {
@@ -77,9 +87,9 @@
         line_height = 33;
 
         margins = {
-          top: 72 + line_height,
+          top: 48 + line_height,
           right: 40,
-          bottom: 72,
+          bottom: 48,
           left: 40,
         };
       }
@@ -331,6 +341,9 @@
       padding-bottom: 80%;
     }
   }
+  .aspect.narrow::before {
+    padding-bottom: 40%;
+  }
   .wrapper {
     position: absolute;
     top: 0;
@@ -338,10 +351,15 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: linear-gradient(256.32deg, #fdfdfd 1.45%, #f8f8f8 89.31%);
-    box-shadow: 0px 11px 39px #ffca64, 0px 17px 49px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
     border-radius: 20px;
     transform: translate3d(0px, 0px, 0px);
+  }
+  .wrapper.dark {
+    background: rgba(18, 16, 12, 0.7);
+  }
+  .wrapper.shadow {
+    box-shadow: 0px 11px 39px #ffca64, 0px 17px 49px rgba(0, 0, 0, 0.1);
   }
   .titlebar {
     z-index: 1;
@@ -349,10 +367,13 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 72px;
+    height: 48px;
     background: rgba(249, 249, 249, 0.9);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+  }
+  .dark .titlebar {
+    background: #696662;
   }
   .titlebar::before {
     content: "";
@@ -360,10 +381,13 @@
     width: 16px;
     height: 16px;
     position: absolute;
-    top: 32px;
-    left: 32px;
+    top: 16px;
+    left: 16px;
     border-radius: 8px;
     background: #e7e7e7;
+  }
+  .dark .titlebar::before {
+    background: #807c78;
   }
   figcaption {
     clip: rect(0 0 0 0);
@@ -376,8 +400,8 @@
   }
 </style>
 
-<div class="aspect">
-  <figure class="wrapper" bind:this={wrapper}>
+<div class="aspect" class:narrow>
+  <figure class="wrapper" class:dark class:shadow bind:this={wrapper}>
     <div class="titlebar" />
     <canvas bind:this={canvas} />
     {#if alt}
