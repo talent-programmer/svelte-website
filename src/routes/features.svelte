@@ -6,6 +6,7 @@
   import OpenGraph from "../components/open-graph.svelte";
   import ScreencastPreview from "../components/screencasts/preview.svelte";
   import screencasts from "../contents/screencasts";
+  import Workspaces from "../components/workspaces.svelte";
 
   const firstThreeScreencasts = screencasts.slice(0, 3);
 </script>
@@ -82,14 +83,7 @@
 
   <article>
     <div>
-      <img
-        src="/images/features/features-2.png"
-        alt=""
-        role="presentation"
-        height="688"
-        width="570"
-      />
-      <!-- TODO: Insert "Preparing workspace" images -->
+      <Workspaces />
     </div>
     <div>
       <h2 class="h3">Start Fresh with Ephemeral Dev Environments</h2>
