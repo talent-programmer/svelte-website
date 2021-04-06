@@ -38,7 +38,7 @@
 </style>
 
 <li class="menu-item">
-  <a {href} class="menu-item__link" {...$$props} on:click={onClick}>
+  <a {href} class="menu-item__link" on:click={onClick}>
     <div class="menu-item__label"><slot /></div>
     {#if showIcon}
       <div class="menu-item__icon" aria-hidden="true">
