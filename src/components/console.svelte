@@ -92,12 +92,13 @@
 
       function parse_chunk(type, chunk) {
         chunk.replace(
-          /(\u001b\[30m)|(\u001b\[31m)|(\u001b\[32m)|(\u001b\[33m)|(\u001b\[39m)|([^\u001b]+)/g,
-          (_, c_black, c_red, c_green, c_yellow, c_default, str) => {
+          /(\u001b\[30m)|(\u001b\[31m)|(\u001b\[32m)|(\u001b\[33m)|(\u001b\[34m)|(\u001b\[39m)|([^\u001b]+)/g,
+          (_, c_black, c_red, c_green, c_yellow, c_blue, c_default, str) => {
             if (c_black) color = colors.black;
             if (c_red) color = colors.orange;
             if (c_green) color = colors.green;
             if (c_yellow) color = colors.orange;
+            if (c_blue) color = colors.blue;
             if (c_default) color = colors.black;
 
             if (str) {
