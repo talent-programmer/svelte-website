@@ -139,8 +139,8 @@
         id="choose-project-observer-target"
         class="hero__intro-text text-large"
       >
-        Spin up fresh, automated dev environments for each task, in the cloud,
-        in seconds.
+        Spin up fresh, automated dev environments<br />
+        for each task, in the cloud, in seconds.
       </p>
       <div class="hero__action">
         <div class="hero__try-now text-small">
