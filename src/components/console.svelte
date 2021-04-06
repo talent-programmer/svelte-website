@@ -276,6 +276,13 @@
 
     let handle_resize = debounce(
       () => {
+        if (width === wrapper.clientWidth) {
+          // iOS Safari gives us a resize event when the toolbar is hidden or shown.
+          // We don't want to invalidate the layout then, as the width stays the same.
+          return;
+        }
+
+        // If the width has changed, we invalidate the layout as the total number of lines may have changed.
         resize();
         state = {
           tick: -1,
