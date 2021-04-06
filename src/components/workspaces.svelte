@@ -79,14 +79,15 @@
   .item {
     position: absolute;
     transform-origin: center center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08),
+      0px 5px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    overflow: hidden;
   }
   .item > :global(*) {
     display: block;
     width: 100%;
     height: auto;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08),
-      0px 5px 20px rgba(0, 0, 0, 0.12);
-    border-radius: 20px;
   }
   figcaption {
     clip: rect(0 0 0 0);
