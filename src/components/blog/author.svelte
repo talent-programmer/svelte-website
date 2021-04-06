@@ -5,17 +5,18 @@
   export let showIconOnly: boolean;
 </script>
 
+<!-- We use the GitHub profile image because the Twitter profile image needs an authenticated API call -->
 <span class="author">
   {#each author.split(", ") as username}
     {#if showIconOnly}
-      <a href="https://github.com/{authors[username].socialProfiles.github}"
+      <a href="https://twitter.com/{authors[username].socialProfiles.twitter}"
         ><img
           src="https://github.com/{authors[username].socialProfiles.github}.png"
           alt="Avatar of {authors[username].name}"
         />
       </a>
     {:else}
-      <a href="https://github.com/{authors[username].socialProfiles.github}"
+      <a href="https://twitter.com/{authors[username].socialProfiles.twitter}"
         ><img
           src="https://github.com/{authors[username].socialProfiles.github}.png"
           alt="Avatar of {authors[username].name}"
