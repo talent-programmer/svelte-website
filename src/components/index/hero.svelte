@@ -131,35 +131,22 @@
   }
 </style>
 
-<div class="row">
-  <div class="hero">
-    <div class="hero__text">
-      <h1 class="homeh1">Always<br /> Ready to Code.</h1>
-      <p
-        id="choose-project-observer-target"
-        class="hero__intro-text text-large"
-      >
-        Spin up fresh, automated dev environments<br />
-        for each task, in the cloud, in seconds.
-      </p>
-      <div class="hero__action">
-        <div class="hero__try-now text-small">
-          <div>
-            <a href="#get-started" class="btn-conversion">Try Now</a>
-          </div>
-          <p>
-            Open a workspace.
-            <br />
-            Start from any Git context.
-          </p>
-        </div>
+<div class="hero">
+  <div class="hero__text">
+    <h1 class="homeh1">Always<br /> Ready to Code.</h1>
+    <p id="choose-project-observer-target" class="hero__intro-text text-large">
+      Spin up fresh, automated dev environments<br />
+      for each task, in the cloud, in seconds.
+    </p>
+    <div class="hero__action">
+      <div class="hero__try-now text-small">
         <div>
           <a href="#get-started" class="btn-conversion">Try Now</a>
         </div>
         <p>
-          Give an example space a try right now.
+          Open a workspace.
           <br />
-          Instantly link to your Git provider.
+          Start from any Git context.
         </p>
       </div>
       <div>
