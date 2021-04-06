@@ -159,7 +159,7 @@
 <div class="row">
   <Section>
     <h2 class="h1">
-      Choose project,
+      Select project,
       <br />
       {#each Object.entries(animatedTexts) as [device, texts]}
         <del class={device}>
