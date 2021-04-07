@@ -153,14 +153,14 @@
       </div>
       <div>
         <div class="hero__icons">
+          <img src="/svg/gitlab.svg" alt="GitLab logo" width="30" height="30" />
+          <img src="/svg/github.svg" alt="GitHub logo" width="30" height="30" />
           <img
             src="/svg/bitbucket.svg"
             alt="Bitbucket logo"
             width="30"
             height="30"
           />
-          <img src="/svg/github.svg" alt="GitHub logo" width="30" height="30" />
-          <img src="/svg/gitlab.svg" alt="GitLab logo" width="30" height="30" />
         </div>
         <div class="hero__stars">
           <a
