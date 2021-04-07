@@ -12,6 +12,8 @@
       <img
         src="/images/blog/{post.slug}/{post.image}"
         alt={`Blog post: ${post.title}`}
+        height="248"
+        width="400"
       />
     </a>
   {/if}
