@@ -20,9 +20,8 @@ title: Next Chapter for Gitpod
     margin-bottom: var(--x-small);
   }
 
-  p > img {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+  img[src$="brand.jpg"] {
+    border-bottom-right-radius: 1rem;
   }
 </style>
 
