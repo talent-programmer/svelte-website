@@ -22,10 +22,19 @@
   }}
 />
 <header>
-  <h1>From the team at Gitpod</h1>
+  <h1>Blog</h1>
 </header>
 <div class="posts">
-  {#each posts as post}
+  {#each posts.slice(0, 6) as post}
+    <PostPreview {post} />
+  {/each}
+</div>
+
+<header>
+  <h2>Previous posts</h2>
+</header>
+<div class="posts">
+  {#each posts.slice(6) as post}
     <PostPreview {post} />
   {/each}
 </div>
