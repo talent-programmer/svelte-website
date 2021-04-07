@@ -133,8 +133,13 @@
     }
   }
 
+  .table-container {
+    overflow-x: auto;
+  }
+
   table {
     width: 100%;
+    min-width: 31.25rem;
     margin: var(--micro) 0;
     overflow: hidden;
     border-radius: 1rem;
@@ -157,6 +162,7 @@
 
   td {
     @apply py-4;
+    line-height: 150%;
   }
 
   th {
