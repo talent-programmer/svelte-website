@@ -23,6 +23,10 @@
       href: "/docs",
       label: "Docs",
     },
+    {
+      href: "/careers",
+      label: "We're hiring",
+    },
   ];
 </script>
 
