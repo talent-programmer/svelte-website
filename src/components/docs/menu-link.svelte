@@ -2,6 +2,11 @@
   import { page } from "$app/stores";
 
   export let href: string;
+
+  $: normalizedPath = /self-hosted\/\d\.\d\.\d/.test($page.path)
+    ? $page.path.replace(/\d\.\d\.\d/, "latest")
+    : $page.path;
+  $: active = href === normalizedPath || href === `${normalizedPath}/`;
 </script>
 
 <style>
@@ -10,9 +15,4 @@
   }
 </style>
 
-<a
-  class:active={href === $page.path || href === `${$page.path}/`}
-  {href}
-  sveltekit:prefetch
-  {...$$props}><slot /></a
->
+<a class:active {href} sveltekit:prefetch {...$$props}><slot /></a>
