@@ -92,7 +92,7 @@
   <div>
     <ul class="jobs">
       {#each careers as career}
-        <li>
+        <li id={career.title.toLowerCase().replace(/\s/g, "-")}>
           <button
             on:click={() => {
               selectedCareer = career;
