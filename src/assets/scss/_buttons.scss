@@ -69,6 +69,7 @@ a {
 
   &:hover,
   &:focus {
+    color: var(--white);
     background-color: var(--black-hover);
   }
 }
