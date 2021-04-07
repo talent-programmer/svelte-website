@@ -35,12 +35,13 @@
 
   /*
    * In order to trigger the animated text at the right time on both desktop and mobile,
-   * we kick off the animation when the hero element starts to move out of the viewport
+   * we kick off the animation when the nav element starts to move out of the viewport
    * and the next section starts to enter the viewport. At that time, the animated Gitpod
    * benefits text is placed roughly at the center of the browser's viewport.
    */
   let isTopHidden = false;
   let isBottomShown = false;
+  let hasAnimated = false;
 
   const startAnimation = () => {
     let t = 0;
@@ -53,22 +54,12 @@
         t = t + 400;
       })
     );
-  };
-
-  const stopAnimation = () => {
-    Object.entries(animatedTexts).forEach(([, texts]) =>
-      texts.forEach((text) => {
-        text.isVisible = false;
-      })
-    );
-    animatedTexts = animatedTexts; // This triggers Svelte's reactivity
+    hasAnimated = true;
   };
 
   const manageAnimation = () => {
-    if (isTopHidden && isBottomShown) {
+    if (isTopHidden && isBottomShown && !hasAnimated) {
       startAnimation();
-    } else {
-      stopAnimation();
     }
   };
 
