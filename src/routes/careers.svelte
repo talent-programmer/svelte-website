@@ -36,7 +36,7 @@
   }}
 />
 <header>
-  <h1>Always read to code.</h1>
+  <h1>Always ready to code.</h1>
   <p>Gitpod is a developers first company.</p>
   <p>
     <a href="#jobs" class="btn-conversion">View {careers.length} openings</a>
