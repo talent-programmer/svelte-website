@@ -123,9 +123,6 @@
       font-size: var(--h3);
     }
 
-    @media (max-width: 850px) {
-    }
-
     @media (max-width: 682px) {
       max-width: 23.75rem;
     }
