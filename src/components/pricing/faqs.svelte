@@ -36,10 +36,9 @@
   >
     <p>
       Yes, qualified educational institutions may receive a special discount.
-      Please visit{" "}
-      <a href="/education/">Gitpod Education</a> for more information or
-      <a href="/contact/">Contact Sales</a>. If you are a student, you may use
-      the Student Unlimited Plan for {isEurope() ? "€8" : "$9"} per month (usually{" "}
+      Please
+      <a href="/contact/">Contact us</a>. If you are a student, you may use the
+      Student Unlimited Plan for {isEurope() ? "€8" : "$9"} per month (usually{" "}
 
       {isEurope() ? "€35" : "$39"}). See
       <a href="#plans">Gitpod for Students</a> for more information.

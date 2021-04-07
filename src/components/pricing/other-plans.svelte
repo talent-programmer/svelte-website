@@ -42,7 +42,7 @@
 </style>
 
 <Section>
-  <h1>Open source, self hosting, and Students</h1>
+  <h1>Open source, self hosting, and students</h1>
   <div class="plans">
     {#each otherPlans as p}
       <div class="plan divider">

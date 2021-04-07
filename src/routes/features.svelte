@@ -114,16 +114,14 @@
 <section class="">
   <div class="flex md:flex-row flex-col-reverse md:space-x-32 mx-8">
     <div class="lg:w-1/2 lg:pt-8 xl:pt-16">
-      <h2 class="h4">Save Time with Prebuilds</h2>
+      <h2 class="h4">Save time with Prebuilds</h2>
       <p class="text-large mt-8 mb-16">
-        Gitpod continuously builds your git branches like a CI server. This
+        Gitpod continuously builds your Git branches like a CI server. This
         means no more waiting for dependencies to be downloaded and builds to
         finish.
       </p>
       <p>
-        <a href="/docs/prebuilds/" class="btn-primary"
-          >More about Prebuilt Workspaces</a
-        >
+        <a href="/docs/prebuilds/" class="btn-primary">More about Prebuilds</a>
       </p>
     </div>
     <div class="lg:w-1/2 w-full mb-16">
@@ -136,10 +134,10 @@
       <Workspaces />
     </div>
     <div class="lg:w-1/2">
-      <h2 class="h4">Start Fresh with Ephemeral Dev Environments</h2>
+      <h2 class="h4">Start fresh with ephemeral dev environments</h2>
       <p class="text-large mt-8 mb-16">
-        Dev environment as code assures you are always starting from a clean
-        state and never gets dragged into long-living stateful environments. The
+        Dev-environments-as-code assure you are always starting from a clean
+        state and never get dragged into long-living stateful environments. The
         end of all works-on-my-machine situations.
       </p>
       <p>
@@ -162,7 +160,7 @@
         width="382"
       />
     </div>
-    <h2 class="h4">Collaboration with Workspace Sharing</h2>
+    <h2 class="h4">Collaboration with workspace sharing</h2>
     <p class="text-large">
       Collaborate with your friends, co-workers, and clients. Whenever you want
       to share a reproducible example of code or hunt down a bug together,
@@ -183,11 +181,12 @@
     <h2 class="h4">Full linux machine <span>(incl sudo/docker)</span></h2>
     <p class="text-large">
       Instantly start a container in the cloud based on your Docker image.
-      Install and configure tools easily.
+      Leverage the power of the cloud and free yourself from the limitations of
+      local silicon.
     </p>
 
     <a href="https://www.youtube.com/watch?v=iYLCHQgj0fE" target="_blank"
-      >Watch video to learn more</a
+      >Learn more about sudo/Docker in Gitpod.</a
     >
   </div>
 </section>
@@ -206,7 +205,7 @@
       Tweak your environment to suit your needs. From themes to extensions you
       have full control over it all.
     </p>
-    <a href="/docs/vscode-extensions/">More about customization</a>
+    <a href="/docs/vscode-extensions/">More about customization.</a>
   </div>
   <div class="card">
     <img
@@ -216,12 +215,12 @@
       height="90"
       width="322"
     />
-    <h3 class="h5">GitLab, GitHub, and Bitbucket Integration</h3>
+    <h3 class="h5">GitLab, GitHub, and Bitbucket integration</h3>
     <p>
-      Start your workflow from your Git hosting platform and let Gitpod beam you
-      in a ready-to-code dev environment.
+      Start your workflow from the Git hosting platform of your choice and let
+      Gitpod beam you in a ready-to-code dev environment.
     </p>
-    <a href="/docs/integrations/">More about Integrations</a>
+    <a href="/docs/integrations/">More about integrations.</a>
   </div>
   <div class="card">
     <img
@@ -231,12 +230,12 @@
       height="90"
       width="130"
     />
-    <h3 class="h5">Code Reviews Within the IDE</h3>
+    <h3 class="h5">Code reviews within the IDE</h3>
     <p>
       Open pull requests in Gitpod to run, navigate, and review the code. Reply
       to comments and publish code reviews right within Gitpod.
     </p>
-    <a href="/blog/when-code-reviews-lgtm">More about Code Reviews</a>
+    <a href="/blog/when-code-reviews-lgtm">More about code reviews.</a>
   </div>
 </section>
 
