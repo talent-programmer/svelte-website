@@ -67,7 +67,7 @@
   height: calc(100% - 248px);
 }
 .blogPreview .blurb:only-child {
-  height: 100%;
+  flex-grow: 1;
   padding-top: 1.5rem;
 }
 .blogPreview > * {
