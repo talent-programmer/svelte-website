@@ -39,8 +39,7 @@
   <h1>Always read to code.</h1>
   <p>Gitpod is a developers first company.</p>
   <p>
-    <a href="#openings" class="btn-conversion">View {careers.length} openings</a
-    >
+    <a href="#jobs" class="btn-conversion">View {careers.length} openings</a>
   </p>
 </header>
 
@@ -83,7 +82,7 @@
     {/each}
   </ul>
 
-  <h2 id="openings" class="h4">Open positions</h2>
+  <h2 id="jobs" class="h4">Open positions</h2>
   <p>
     If there isn't an open position for you but you'd still want to work at
     Gitpod let us know via <a href="mailto:career@gitpod.io">career@gitpod.io</a
@@ -93,7 +92,7 @@
   <div>
     <ul class="jobs">
       {#each careers as career}
-        <li>
+        <li id={career.title.toLowerCase().replace(/\s/g, "-")}>
           <button
             on:click={() => {
               selectedCareer = career;
