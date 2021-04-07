@@ -256,7 +256,7 @@
       <div class="explore__illustration">
         <img src="/images/illustration.png" alt="Gitpod in a Nutshell" />
         <img
-          src="/images/illustration-small.png"
+          src="/images/illustration-small.jpg"
           class="small"
           alt="Gitpod in a Nutshell"
         />

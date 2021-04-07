@@ -181,7 +181,7 @@
   </div>
   <div class="hero__illustration">
     <img
-      src="/images/illustration-placeholder.png"
+      src="/images/illustration-large.jpg"
       alt="Gitpod in a Nutshell"
       width="700"
       height="724"
