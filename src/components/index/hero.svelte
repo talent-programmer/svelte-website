@@ -43,7 +43,7 @@
     }
 
     &__intro-text {
-      margin-top: var(--micro);
+      margin-top: -16px;
 
       @media (max-width: 972px) {
         font-size: var(--p-medium);
@@ -59,10 +59,10 @@
 
       & > * {
         display: grid;
-        grid-template-columns: 32% 2fr;
+        grid-template-columns: 160px 100%;
         gap: var(--xx-small);
 
-        @media (max-width: 972px) {
+        @media (max-width: 1140px) {
           display: flex;
           gap: initial;
 
@@ -122,10 +122,13 @@
 
     &__illustration {
       max-width: 700px;
+      padding-left: 70px;
+      padding-top: 20px;
       flex: 1;
 
-      @media (max-width: 642px) {
+      @media (max-width: 972px) {
         margin-top: var(--micro);
+        padding: 0;
       }
     }
   }
