@@ -20,6 +20,10 @@ title: Next Chapter for Gitpod
     margin-bottom: var(--x-small);
   }
 
+  img[src$="funding.jpg"] {
+    margin-top: var(--large);
+  }
+
   img[src$="brand.jpg"] {
     border-bottom-right-radius: 1rem;
   }

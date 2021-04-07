@@ -42,11 +42,7 @@
   margin: 1rem 1rem 1rem 0;
 }
 
+/* This div wraps around the blog article contents */
 .post > div:first-of-type {
   margin-top: 2.5rem;
-}
-
-.post p[class]:not(.date) {
-  margin-top: var(--large);
-  margin-bottom: var(--small);
 }
