@@ -11,7 +11,7 @@
 
 <style>
   .active {
-    color: var(--brand-ripe);
+    color: var(--black);
   }
 </style>
 
