@@ -1,6 +1,7 @@
 <script lang="ts">
   import Author from "./author.svelte";
   import OpenGraph from "../../components/open-graph.svelte";
+  import { authors } from "../../contents/blog";
 
   export let date;
   export let author;
@@ -12,6 +13,8 @@
   export let excerpt;
   // export let slug;
 
+  const blogBaseUrl = "https://www.gitpod.io/blog/";
+
   let dateDisplay = new Date(Date.parse(date)).toLocaleDateString(undefined, {
     year: "numeric",
     month: "short",
@@ -20,20 +23,21 @@
 
   const socialLinks = [
     {
-      /* TODO: create real links */
-      href: "https://twitter.com/intent/tweet?link=addtext",
+      href: `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+        `${title} by ${author
+          .split(", ")
+          .map((username) => "@" + authors[username].socialProfiles.twitter)
+          .join(", ")} ${blogBaseUrl}${slug}`
+      )}`,
       alt: "Twitter",
       icon: "/svg/brands/twitter.svg",
     },
     {
-      href: "https://github.com/?gitpod-io",
-      alt: "GitHub",
-      icon: "/svg/brands/github.svg",
-    },
-    {
-      href: "https://community.gitpod.io/?",
-      alt: "Discourse",
-      icon: "/svg/brands/discourse.svg",
+      href: `http://www.reddit.com/submit?url=${encodeURIComponent(
+        `${blogBaseUrl}${slug}&title=${title}`
+      )}`,
+      alt: "Reddit",
+      icon: "/svg/brands/reddit.svg",
     },
   ];
 </script>
