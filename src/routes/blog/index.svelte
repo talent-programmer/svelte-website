@@ -26,14 +26,14 @@
 </header>
 <div class="posts">
   {#each posts.slice(0, 6) as post}
-    <PostPreview {post} />
+    <PostPreview {post} isMostRecent />
   {/each}
 </div>
 
 <header>
   <h2>Previous posts</h2>
 </header>
-<div class="posts">
+<div class="posts previous">
   {#each posts.slice(6) as post}
     <PostPreview {post} />
   {/each}

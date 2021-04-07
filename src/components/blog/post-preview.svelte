@@ -3,15 +3,18 @@
   import type { BlogPost } from "../../types/blog-post.type";
 
   export let post: BlogPost;
+  export let isMostRecent: boolean = false;
 </script>
 
-<div class="blogPreview">
-  <a href="/blog/{post.slug}" sveltekit:prefetch>
-    <img
-      src="/images/blog/{post.slug}/{post.image}"
-      alt={`Blog post: ${post.title}`}
-    />
-  </a>
+<div class:previous={!isMostRecent} class="blogPreview">
+  {#if isMostRecent}
+    <a href="/blog/{post.slug}" sveltekit:prefetch>
+      <img
+        src="/images/blog/{post.slug}/{post.image}"
+        alt={`Blog post: ${post.title}`}
+      />
+    </a>
+  {/if}
   <div class="blurb">
     <h2>
       <a href="/blog/{post.slug}" sveltekit:prefetch>
