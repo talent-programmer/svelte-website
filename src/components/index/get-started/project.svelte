@@ -68,6 +68,7 @@
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     opacity: 0;
+    line-height: 1.4;
 
     @media (max-width: 500px) {
       display: none;
