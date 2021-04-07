@@ -16,6 +16,9 @@
   align-items: center;
   background: var(--off-white);
 }
+.blogPreview.previous {
+  background: var(--sand-dark);
+}
 .blogPreview > a {
   flex: 0 0 248px;
 }
