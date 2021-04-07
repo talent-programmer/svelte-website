@@ -110,11 +110,7 @@
     max-width: 67.7rem;
     margin: 0 auto;
 
-    @media (max-width: 1140px) {
-      max-width: 50rem;
-    }
-
-    @media (max-width: 850px) {
+    @media (max-width: 1194px) {
       font-size: var(--h3);
     }
 
