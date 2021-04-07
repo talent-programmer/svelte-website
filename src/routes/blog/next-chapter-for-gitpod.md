@@ -9,6 +9,18 @@ teaserImage: teaser.jpg
 title: Next Chapter for Gitpod
 ---
 
+<style>
+  .redirector {
+    margin-top: var(--xx-small);
+    margin-bottom: var(--x-large);
+  }
+
+  h2 {
+    margin-top: var(--small);
+    margin-bottom: var(--x-small);
+  }
+</style>
+
 At Gitpod our focus has always been to remove all friction from the developer experience to empower developers to be always ready-to-code. Today we are excited to announce a $13m funding round led by [General Catalyst](https://www.generalcatalyst.com/team/dr-steve-herrod), a fully revamped visual & brand identity as well as several product milestones aimed at defining a new product category in modern software development.
 
 ![An enter key on its own](../../../static/images/blog/next-chapter-for-gitpod/funding.jpg)
