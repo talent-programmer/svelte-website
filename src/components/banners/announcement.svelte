@@ -12,7 +12,7 @@
 
 <Banner storageKey="announcement-{announcementDate}" let:closeBanner>
   <p class="relative flex-1 text-center">
-    Gitpod Release 21.03 + USD 13m Funding Round | <a
+    Gitpod March 2021 Release + $13M Funding Round | <a
       href="/blog/next-chapter-for-gitpod">Read more</a
     >
     💫
