@@ -45,7 +45,7 @@
 </header>
 
 <img
-  src="/images/careers/careers-hero.png"
+  src="/images/illustration-zoom.jpg"
   alt=""
   role="presentation"
   width="1136"
