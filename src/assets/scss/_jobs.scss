@@ -43,13 +43,15 @@
   align-items: center;
   width: 100%;
   text-align: left;
+  color: var(--black);
+  font-weight: bold;
 }
 .jobs button::after {
   content: "";
   float: right;
-  height: 1rem;
-  width: 1rem;
-  border: 2px solid;
+  height: 0.75rem;
+  width: 0.75rem;
+  border: 3px solid;
   transform: translatey(0.25rem) rotate(45deg);
   border-color: currentColor currentColor transparent transparent;
 }
