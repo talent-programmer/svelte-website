@@ -5,12 +5,7 @@ export const pricingPlans: Pricing[] = [
   {
     title: "Open Source",
     price: "Free",
-    features: [
-      "50 hours/month",
-      "Limited Prebuilds",
-      "Public Repos",
-      "Private repos 30d trial",
-    ],
+    features: ["Unlimited Users", "Public Repos", "Private Repos"],
     btnText: "Install now",
     btnHref: "/docs/self-hosted/latest/self-hosted",
   },
@@ -19,13 +14,14 @@ export const pricingPlans: Pricing[] = [
     price: isEurope() ? "€18" : "$20",
     duration: "Per User/Month",
     features: [
+      "Everything in Free",
       "Unlimited Prebuilds",
-      "Admin Dashboard",
-      "Unlimited hours",
       "Shared Workspaces",
-      "Teams",
+      "Snapshots",
+      "Admin Dashboard",
     ],
-    btnText: "Request license",
+    btnText: "Get License",
     btnHref: "/enterprise-license",
+    spiced: true,
   },
 ];
