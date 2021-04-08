@@ -25,6 +25,6 @@
   }
 </style>
 
-<div class="flex overflow-x-scroll space-x-8 md:space-x-16" dir="ltr">
+<div class="flex overflow-x-scroll space-x-6" dir="ltr">
   <slot />
 </div>
