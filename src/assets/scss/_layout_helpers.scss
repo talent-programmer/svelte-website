@@ -53,12 +53,21 @@ main > header:first-child {
     padding: 0 var(--xx-small);
   }
 }
+main > header:first-child h1 {
+  font-size: var(--h2);
+  margin-bottom: var(--x-small);
+}
+main > header:first-child h1 + p {
+  font-size: var(--p-large);
+  line-height: 133.33%;
+}
+
 .brief h2 {
   margin-bottom: 2rem;
 }
 
 main > header {
-  margin-bottom: 8rem;
+  margin-bottom: var(--huge);
 }
 
 /* CARDS */
