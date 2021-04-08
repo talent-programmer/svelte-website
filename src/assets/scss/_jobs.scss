@@ -38,7 +38,9 @@
   background-color: var(--off-white);
   border-radius: 1rem;
   padding: 1.75rem 2rem;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   text-align: left;
 }
