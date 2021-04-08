@@ -3,8 +3,9 @@
 
   export let source = "";
   export let dark = false;
-  export let shadow = true;
+  export let shadow: "grey" | "brand" | false = "grey";
   export let narrow = false;
+  export let skipToEnd = false;
   export let alt = "";
 
   $: colors = dark
@@ -77,20 +78,20 @@
         line_height = 19;
 
         margins = {
-          top: 48 + line_height,
+          top: 52 + line_height,
           right: 10,
-          bottom: 30,
-          left: 30,
+          bottom: 15,
+          left: 15,
         };
       } else {
         font_size = narrow ? 16 : 18;
         line_height = narrow ? 28 : 33;
 
         margins = {
-          top: 48 + line_height,
-          right: narrow ? 30 : 40,
-          bottom: narrow ? 30 : 48,
-          left: narrow ? 30 : 40,
+          top: 52 + line_height,
+          right: narrow ? 20 : 40,
+          bottom: narrow ? 20 : 48,
+          left: narrow ? 20 : 40,
         };
       }
 
@@ -135,7 +136,7 @@
               while ((text = str.slice(start, end))) {
                 line[type].push({ type, color, text });
                 offset += end - start;
-                if (offset >= char_max) {
+                if (offset >= char_max && end < str.length) {
                   new_line();
                 }
                 start = end;
@@ -148,8 +149,12 @@
 
       for (let str of source.split("\n")) {
         new_line();
-        if (str.indexOf("$") !== -1 || str.indexOf(">") !== -1) {
-          let [, prompt, text] = str.match(/([^$>]+(?:[$>]))(.*)/);
+        if (
+          str.indexOf("$") !== -1 ||
+          str.indexOf(">") !== -1 ||
+          str.indexOf("#") !== -1
+        ) {
+          let [, prompt, text] = str.match(/([^$>#]+(?:[$>#]))(.*)/);
           parse_chunk("output", prompt);
           parse_chunk("input", text);
         } else {
@@ -169,16 +174,37 @@
       return lines;
     }
 
-    let state = {
-      tick: -1,
-      line: -1,
-      character: -1,
-      lines: parse(source),
-      triggers: {
-        line: 0,
-        character: -1,
-      },
-    };
+    let state;
+
+    function init() {
+      let lines = parse(source);
+
+      if (skipToEnd) {
+        state = {
+          tick: -1,
+          line: lines.length - 1,
+          character: lines[lines.length - 1].input.characters - 1,
+          lines: lines,
+          triggers: {
+            line: 0,
+            character: -1,
+          },
+        };
+      } else {
+        state = {
+          tick: -1,
+          line: -1,
+          character: -1,
+          lines: lines,
+          triggers: {
+            line: 0,
+            character: -1,
+          },
+        };
+      }
+    }
+
+    init();
 
     function now(trigger) {
       return state.tick === trigger;
@@ -284,16 +310,7 @@
 
         // If the width has changed, we invalidate the layout as the total number of lines may have changed.
         resize();
-        state = {
-          tick: -1,
-          line: -1,
-          character: -1,
-          lines: parse(source),
-          triggers: {
-            line: 0,
-            character: -1,
-          },
-        };
+        init();
       },
       1000,
       false
@@ -340,7 +357,7 @@
     position: relative;
     height: 100%;
     max-height: 500px;
-    min-height: 300px;
+    min-height: 240px;
   }
   .aspect::before {
     content: "";
@@ -372,9 +389,12 @@
   .wrapper.dark {
     background: rgba(18, 16, 12, 0.7);
   }
-  .wrapper.shadow {
+  .wrapper.shadowGrey {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08),
       0px 5px 20px rgba(0, 0, 0, 0.12);
+  }
+  .wrapper.shadowBrand {
+    box-shadow: var(--shadow-brand);
   }
   .titlebar {
     z-index: 1;
@@ -416,7 +436,13 @@
 </style>
 
 <div class="aspect" class:narrow>
-  <figure class="wrapper" class:dark class:shadow bind:this={wrapper}>
+  <figure
+    class="wrapper"
+    class:dark
+    class:shadowGrey={shadow === "grey"}
+    class:shadowBrand={shadow === "brand"}
+    bind:this={wrapper}
+  >
     <div class="titlebar" />
     <canvas bind:this={canvas} />
     {#if alt}
