@@ -12,6 +12,9 @@
   border-left: 0.25rem solid var(--brand-ripe);
   padding-left: 1.75rem;
 }
+.hilited p + p {
+  margin-top: 1.5rem;
+}
 .perks {
   max-width: 46rem;
   columns: 2 20rem;
