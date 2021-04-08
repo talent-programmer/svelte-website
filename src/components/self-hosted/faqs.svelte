@@ -20,7 +20,7 @@
       existing instance with a purchased license key. Self-hosted Gitpod
       licenses can currently only be purchased by request. Please request a
       license key <a href="/enterprise-license">here</a> or
-      <a href="/contact">Contact sales</a> if you have any questions.
+      <a href="/contact">Get in touch</a> if you have any questions.
     </p>
   </Faq>
   <Faq title="Can I add more users to my plan at any time?">
@@ -45,10 +45,8 @@
   <Faq title="How can I install Self-Hosted?">
     <p>
       You can either install <strong>Gitpod Self-Hosted</strong> on
-      <strong>Google Cloud Platform</strong>, <strong>AWS</strong>, or on
-      <strong>Vanilla Kubernetes</strong>. Enhanced support for
-      <strong>Azure</strong>
-      and <strong>OpenShift</strong> is coming soon. See
+      <strong>Google Cloud Platform</strong> or on
+      <strong>K3s</strong>. See
       <a href="/docs/self-hosted/latest/self-hosted">Self-Hosted Installation</a
       > for more information.
     </p>
@@ -59,7 +57,7 @@
       request. Please request a license key
       <a href="/enterprise-license">here</a>
       and we'll reach out to you. If you have any questions, please
-      <a href="/contact">Contact sales</a>. All our plans can be paid via
+      <a href="/contact">Get in touch</a>. All our plans can be paid via
       invoice.
     </p>
   </Faq>

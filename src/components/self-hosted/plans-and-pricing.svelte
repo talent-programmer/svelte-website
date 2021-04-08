@@ -31,8 +31,8 @@
 <Section>
   <h1>Self-hosted plans</h1>
   <p>
-    Install Gitpod Self-Hosted on <strong>Google Cloud Platform</strong>,
-    <strong>AWS</strong>, or on <strong>Vanilla Kubernetes</strong>.
+    Install Gitpod Self-Hosted or <strong>Google Cloud Platform</strong> and
+    <strong>K3s</strong>.
   </p>
   <div class="self-hosted-pricing">
     <PricingBoxes {pricingPlans} />
