@@ -9,7 +9,7 @@
   import ScreencastPreview from "../components/screencasts/preview.svelte";
   import screencasts from "../contents/screencasts";
   import Workspaces from "../components/workspaces.svelte";
-  import { terminalSource } from "../contents/terminal";
+  import { linuxSource, terminalSource } from "../contents/terminal";
 
   const firstThreeScreencasts = screencasts.slice(0, 3);
 </script>
@@ -172,7 +172,7 @@
   <div class="card">
     <div class="h-72 pb-6">
       <Console
-        source={terminalSource}
+        source={linuxSource}
         dark={true}
         shadow={false}
         narrow={true}

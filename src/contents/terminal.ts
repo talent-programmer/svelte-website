@@ -108,3 +108,6 @@ export const terminalSource = `\u001b[33mGitpod\u001b[39m \u001b[34m/Workspace\u
  🎉 Well done on saving 12mins
 
 \u001b[33mGitpod\u001b[39m \u001b[34m/Workspace\u001b[39m $ `;
+
+export const linuxSource = `\u001b[33mGitpod\u001b[39m \u001b[34m/Workspace\u001b[39m $ sudo apt-get install mc
+\u001b[33mGitpod\u001b[39m \u001b[34m/Workspace\u001b[39m $ docker run -it alpine:latest`;
