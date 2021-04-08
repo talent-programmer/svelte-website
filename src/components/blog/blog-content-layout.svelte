@@ -49,6 +49,7 @@
     title,
     type: "article",
     image: `images/blog/${slug}/${image}`,
+    imageTwitter: `images/blog/${slug}/${image}`,
   }}
 />
 <div class="post text-blob">

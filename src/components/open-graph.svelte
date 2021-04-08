@@ -4,8 +4,13 @@
 
   export let data: OpenGraph;
 
-  const { description, image = "images/media-image.jpg", title, type } =
-    data || {};
+  const {
+    description,
+    image = "images/media-image.jpg",
+    title,
+    type,
+    imageTwitter = "images/media-image-twitter.jpg",
+  } = data || {};
 
   const url = `https://${$page.host}${$page.path}`;
 </script>
@@ -29,4 +34,5 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@gitpod" />
   <meta name="twitter:creator" content="@gitpod" />
+  <meta name="twitter:image" content="https://www.gitpod.io/{imageTwitter}" />
 </svelte:head>
