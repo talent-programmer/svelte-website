@@ -3,7 +3,7 @@
 
   /**
    * Each announcement must have a unique `storageKey` to ensure people who
-   * dismiss announcement A will see a new banenr for announcement B.
+   * dismiss announcement A will see a new banner for announcement B.
    * For simplicity, the announcement `storageKey` is the date the announcement
    * was made, in the `yyyy-mm-dd` format.
    */
