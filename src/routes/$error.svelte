@@ -12,7 +12,7 @@
 
 <div class="error-page row">
   <Section>
-    <img src="/images/illustration-small.png" alt="" />
+    <img src="/images/illustration-large.jpg" alt="" />
     <h1>{status}</h1>
     <p>Oh, no! Something went wrong on our side.</p>
 
