@@ -13,6 +13,7 @@
 <style>
   .heroImage {
     margin: 2rem auto;
+    border-radius: 1rem;
   }
   section {
     width: 50rem;

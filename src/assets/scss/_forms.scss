@@ -57,6 +57,10 @@ textarea {
   font-size: 1.5rem;
   line-height: 1.1;
   text-align: center;
+}
+
+[type="checkbox"] + label::before,
+.error.error.error [type="checkbox"] + label::before {
   color: transparent;
 }
 .error,

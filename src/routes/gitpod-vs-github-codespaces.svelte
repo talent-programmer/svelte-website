@@ -134,8 +134,8 @@
   }}
 />
 <header>
-  <h1 class="h2">Gitpod vs GitHub Codespaces</h1>
-  <p class="text-large">
+  <h1>Gitpod vs GitHub Codespaces</h1>
+  <p>
     Gitpod is the faster, more powerful, open-source platform that integrates
     with your individual stack.
   </p>
