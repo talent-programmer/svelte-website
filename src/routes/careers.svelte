@@ -37,8 +37,8 @@
   }}
 />
 <header class="tight">
-  <h1>Always ready to code.</h1>
-  <p>Gitpod is a developers first company.</p>
+  <h1>To remove all friction from the developer experience.</h1>
+  <p>Bring back joy and speed to dev workflows.</p>
   <p>
     <a href="#jobs" class="btn-conversion">View {careers.length} openings</a>
   </p>
@@ -56,27 +56,64 @@
 <section>
   <article class="hilited">
     <h2 class="h4">
-      We want to make software engineering collaborative and joyful again.
+      Make software engineering collaborative and joyful again.
     </h2>
     <p>
-      We are a highly motivated, fully-remote team, organized in a flat
-      hierarchy, and led by technical founders. We love open-source, have
-      started and lead many popular open-source projects, and contribute to many
-      others. In this fashion, we present at international conferences and
-      collaborate openly around the globe.
-    </p>
-    <h2 class="h4">Gitpod was founded for developers by developers</h2>
-    <p>
-      Everybody should have a frictionless experience with Gitpod, our product
-      and our comany: no hurdles, no BS, no unnecessary extra steps.
+      Developers write software within languages/frameworks, build tools, glue
+      them together to (tool) chains, develop against APIs and communicate and
+      collaborate with our colleagues. All of that should be efficient, joyful
+      and secure.
     </p>
     <p>
-      Developers architect our future. We are developers ourselves and built
-      Gitpod to make lives of developers easier.
+      Yet it is not. Devs constantly struggle with larger codebases, cluttered
+      dependencies, security policies and unnecessary friction in their
+      workflows.
+    </p>
+    <p>
+      We want to make developers feel again that everything is at their
+      fingertips.
+    </p>
+    <h2 class="h4">
+      Gitpod was founded because we were frustrated by manually setting up and
+      maintaining dev environments.
+    </h2>
+    <p>
+      We are building Gitpod in the open to easily spin-up fresh dev
+      environments for any task. Those ephemeral environments are fast &
+      powerful, fully automated & initialized. They empower developers to
+      immediately start coding, debugging, and testing their code.
+    </p>
+    <p>Only then developers are always ready-to-code.</p>
+    <h2 class="h4">
+      The company was established in 2020 and today over 350,000 devs
+      gitpodified their workflows.
+    </h2>
+    <p>
+      We are greateful to be backed by some of the best venture firms and
+      advisors of the world. We recently announced a 13m funding round.
+    </p>
+    <p>
+      Come join a quickly growing venture-backed team and work together with
+      incredible humans from four continents 🌍
+    </p>
+    <p>
+      We are open minded, transparent and curious. We remain students of the
+      game, not masters of the game.We aim for a frictionless experience when
+      interacting with our product, our company and our brand: no hurdles, no
+      BS, no unnecessary extra steps.
+    </p>
+    <p>
+      We are fully-distributed. You can work from anywhere and schedule your
+      working hours the way it fits best for you. We make sure you are all set
+      and will treat you well.We are not as diverse as we would like to be.
+    </p>
+    <p>
+      Help us to change that and shape Gitpod’s future from anywhere in the
+      world! 🌈 🌍
     </p>
   </article>
 
-  <h2 class="h4">Perks And Recreation</h2>
+  <h2 class="h4">What we offer</h2>
   <ul class="perks">
     {#each perks as { title }}
       <li>{title}</li>
