@@ -5,4 +5,5 @@ export type OpenGraph = {
   title: string;
   type: Type;
   image?: string;
+  imageTwitter?: string;
 };
