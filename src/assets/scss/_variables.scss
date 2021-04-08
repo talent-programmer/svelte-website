@@ -69,10 +69,13 @@
     --btn-small: 0.75rem;
     --fine-print: 0.75rem;
     --huge: 6rem;
+    --not-huge: 4.5rem;
+
     --small: 2.5rem;
   }
   @media (max-width: 768px) {
     --huge: 3rem;
+    --not-huge: 1.5rem;
     --x-small: 1rem;
   }
 }
