@@ -3,6 +3,7 @@
 </script>
 
 <script lang="ts">
+  import LogoAnimated from "../components/logo-animated.svelte";
   import OpenGraph from "../components/open-graph.svelte";
   import { careers } from "../contents/careers";
 
@@ -54,6 +55,16 @@
   .cardlike a {
     padding: 1.5rem;
   }
+
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 </style>
 
 <OpenGraph
@@ -64,10 +75,11 @@
   }}
 />
 <header class="tight">
-  <h1>Gitpod</h1>
+  <h1 class="visually-hidden">Gitpod</h1>
+  <LogoAnimated center={true} iterations={1} />
   <p>
-    Open source developer platform. Originally from Kiel now from all around the
-    globe.
+    Open source developer platform. Originally from Kiel now fully-remote from
+    all around the globe.
   </p>
 </header>
 
@@ -116,7 +128,7 @@
 </ul>
 
 <div class="redirector">
-  <h2>Obsessed with developer experience.</h2>
+  <h2>Obsessed with developer experience</h2>
   <p>
     We have built developer tools, created programming languages and
     successfully grew open source communities over the last 10 years. We are
@@ -143,7 +155,7 @@
 </div>
 
 <div class="redirector">
-  <h2>Built on Shared Principles</h2>
+  <h2>Built on shared principles</h2>
   <p>
     Values are important to us. We are developer-led and aim for a frictionless
     experience when interacting with our product, our company and our brand: no
@@ -163,10 +175,11 @@
 </div>
 
 <div class="redirector">
-  <h2>Backed by the best investors</h2>
+  <h2>Backed by great investors</h2>
   <p>
-    Gitpod Inc. was founded in 2020 and to-date we raised over $13m from General
-    Catalyst and a syndicate of experienced, international investors and great
+    Gitpod Inc. was founded in 2020 and in early 2021 we raised $13m from
+    General Catalyst and our early backers Speedinvest, Crane and Vertex. We are
+    proud to work with experienced, international investors and great
     individuals who have been early backers of <span class="othercompanies"
       ><span>SignalFX</span>, <span>Cloudera</span>, <span>Couchbase</span>,
       <span>Snyk</span>, <span>Render</span>, <span>BuildKite</span>,
@@ -191,10 +204,10 @@
 </div>
 
 <div class="redirector">
-  <h2>Find out more. We are open!</h2>
+  <h2>Find out more. We are open</h2>
   <p>
-    We have always built in the open. If you want to learn more take a look
-    through some of our public Notion pages.
+    We have always built in the open. If you want to learn skim through some of
+    our public Notion pages.
   </p>
   <p>
     <a
