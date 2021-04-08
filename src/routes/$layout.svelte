@@ -4,9 +4,11 @@
   import LayoutRoot from "../components/layout-root.svelte";
   import Nav from "../components/main-nav/index.svelte";
   import Footer from "../components/footer.svelte";
-  import CookieConsent from "../components/cookie-consent.svelte";
+  import AnnouncementBanner from "../components/banners/announcement.svelte";
+  import CookieConsent from "../components/banners/cookie-consent.svelte";
 </script>
 
+<AnnouncementBanner />
 <LayoutRoot>
   <Nav />
   <LayoutMain>
