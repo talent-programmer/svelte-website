@@ -1,7 +1,7 @@
 ---
 author: svenefftinge
 date: Thu Dec 07 2020 11:49:24 GMT+0000 (UTC)
-excerpt: The team has been focussing on shipping some major new features, which mark important milestones on our goal to eliminate all friction
+excerpt: The team has been focussing on shipping some major new features, which mark important milestones on our goal to eliminate all friction.
 image: teaser.jpg
 slug: root-docker-and-vscode
 subtitle: New Release

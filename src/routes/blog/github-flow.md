@@ -1,7 +1,7 @@
 ---
 author: svenefftinge
 date: Thu Jul 05 2018 11:49:24 GMT+0000 (UTC)
-excerpt: As software developers, we already spend a lot of our time in browsers. Be it for searching Google/StackOverflow, checking our latest
+excerpt: As software developers, we already spend a lot of our time in browsers.
 image: a-better-github-flow.png
 slug: github-flow
 subtitle: Stop setting up, start coding!

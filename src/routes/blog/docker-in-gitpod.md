@@ -1,7 +1,7 @@
 ---
 author: geropl
 date: Wed Sep 12 2018 08:25:15 GMT+0000 (UTC)
-excerpt: Since we released Gitpod into Public Beta it has been incredibly exciting to see people from all over the world use our service. Even more
+excerpt: Since we released Gitpod into Public Beta it has been incredibly exciting to see people from all over the world use our service.
 image: docker-in-gitpod.jpeg
 slug: docker-in-gitpod
 title: Bring your own (Docker) image to Gitpod
