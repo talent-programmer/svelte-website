@@ -5,7 +5,7 @@
 
 <style lang="scss">
   .projects {
-    margin: var(--small) 0;
+    margin: var(--x-small) 0;
   }
 </style>
 
