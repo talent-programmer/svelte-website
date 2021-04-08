@@ -1,7 +1,7 @@
 ---
 author: anudeepreddy
 date: Wed Jun 26 2019 11:57:00 GMT+0000 (UTC)
-excerpt:
+excerpt: Build your webhook for your Google Assistant action and host it temporarily on Gitpod and test your code.
 image: Build-and-test-your-webhook.png
 slug: build-a-webhook-for-google-assistant
 subtitle: Build and test your webhook using Gitpod

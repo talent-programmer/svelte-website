@@ -1,7 +1,7 @@
 ---
 author: jankeromnes
 date: Wed Jan 8 2020 09:00:00 GMT+0000 UTC
-excerpt: Are you tired of apt-get? Can’t use sudo right now? ... You can now ’brew install anything’ in Gitpod! 🎉 ✓ Easily install any Linux tool or
+excerpt: Are you tired of apt-get? Can’t use sudo right now? ... You can now ’brew install anything’ in Gitpod! 🎉
 image: teaser-brew.png
 slug: brew
 subtitle: "'brew install anything' in Gitpod"

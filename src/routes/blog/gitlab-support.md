@@ -1,7 +1,7 @@
 ---
 author: svenefftinge
 date: Wed Dec 04 2019 13:49:24 GMT+0000 (UTC)
-excerpt: We are happy to announce that you can finally enjoy Gitpod's frictionless ready-to-code dev environments on GitLab as well. Starting a dev
+excerpt: We are happy to announce that you can finally enjoy Gitpod's frictionless ready-to-code dev environments on GitLab as well.
 image: teaser-gitlab-cover.png
 slug: gitlab-support
 subtitle: Your devops toolchain is finally complete!

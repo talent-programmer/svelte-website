@@ -1,7 +1,7 @@
 ---
 author: svenefftinge
 date: Wed Aug 07 2019 11:57:00 GMT+0000 (UTC)
-excerpt: DevOps has been all the rage for the last couple of years. Today, something like GitHub / GitLab with Continuous Integration seems to be the
+excerpt: Continuous dev environments reduce friction in onboarding and task switching and improves reproducibility across the project.
 image: devops.jpg
 slug: continuous-dev-environment-in-devops
 subtitle: The Missing Piece in DevOps?

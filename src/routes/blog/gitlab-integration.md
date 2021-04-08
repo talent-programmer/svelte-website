@@ -1,7 +1,7 @@
 ---
 author: corneliusludmann, svenefftinge
 date: Thu, 06 Oct 2020 14:00:00 UTC
-excerpt: At Gitpod we want to make developers’ lives easier. Starting automated dev environments for your daily coding tasks is already very easy
+excerpt: Today, we are super excited to share that we’ve partnered with GitLab and built a native Gitpod integration in GitLab’s UI.
 image: teaser.jpg
 slug: gitlab-integration
 subtitle: Launch Gitpod workspace from GitLab

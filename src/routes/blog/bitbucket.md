@@ -1,7 +1,7 @@
 ---
 author: jankeromnes
 date: Thu, 02 Jul 2020 14:00:00 UTC
-excerpt: Today, we’re excited to bring you instant development environments for all Bitbucket projects. Simply type  in front of any Bitbucket
+excerpt: We’re excited to bring you instant development environments for all Bitbucket projects.
 image: teaser.jpg
 slug: bitbucket
 subtitle: Instant dev environments for all Bitbucket projects

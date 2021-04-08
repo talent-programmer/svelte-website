@@ -184,7 +184,7 @@
       </p>
     </div>
     <div>
-      <h2 class="max-w-30rem flex-grow">Work on a mighty Linux rig</h2>
+      <h2 class="max-w-30rem flex-grow">3x more power</h2>
       <p class="text-large max-w-30rem">
         By leveraging cloud technologies like containers and Kubernetes, Gitpod
         achieves best-in-class resource-efficiency with scalable workspaces
@@ -414,7 +414,7 @@
 
 <div class="cards double mt-1rem mb-7rem">
   <div class="card p-4rem">
-    <h3>thefuture.yml</h3>
+    <h3>Automation-first</h3>
     <p class="flex-grow">
       Simply add your build command into a .gitpod.yml file and let Gitpod do
       the heavy-lifting. Once you’ve experienced the freedom of ephemeral
