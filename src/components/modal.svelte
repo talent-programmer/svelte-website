@@ -22,7 +22,7 @@
   <div class="modal">
     <!-- TODO: Insert backdrop -->
     <div class="content text-blob">
-      <button aria-label="close this popup" on:click={closeModal}>x</button>
+      <button aria-label="close this popup" on:click={closeModal}>X</button>
       <slot />
     </div>
   </div>
