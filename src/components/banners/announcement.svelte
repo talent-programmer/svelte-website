@@ -16,21 +16,21 @@
       href="/blog/next-chapter-for-gitpod">Read more</a
     >
     💫
-    <button on:click={closeBanner} class="absolute right-0 px-3 py-1 md:px-6"
-      ><svg
-        width="16"
-        height="16"
-        viewBox="0 0 16 16"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M3.00107 3L13 13M12.9989 3L3 13"
-          stroke="#12100C"
-          stroke-opacity="0.75"
-          stroke-linecap="round"
-        />
-      </svg>
-    </button>
   </p>
+  <button on:click={closeBanner} class="absolute right-0 px-4 py-1 md:px-6"
+    ><svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3.00107 3L13 13M12.9989 3L3 13"
+        stroke="#12100C"
+        stroke-opacity="0.75"
+        stroke-linecap="round"
+      />
+    </svg>
+  </button>
 </Banner>
