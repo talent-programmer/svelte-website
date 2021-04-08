@@ -3,7 +3,7 @@
 
   export let source = "";
   export let dark = false;
-  export let shadow = true;
+  export let shadow: "grey" | "brand" | false = "grey";
   export let narrow = false;
   export let skipToEnd = false;
   export let alt = "";
@@ -357,7 +357,7 @@
     position: relative;
     height: 100%;
     max-height: 500px;
-    min-height: 300px;
+    min-height: 240px;
   }
   .aspect::before {
     content: "";
@@ -389,9 +389,12 @@
   .wrapper.dark {
     background: rgba(18, 16, 12, 0.7);
   }
-  .wrapper.shadow {
+  .wrapper.shadowGrey {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08),
       0px 5px 20px rgba(0, 0, 0, 0.12);
+  }
+  .wrapper.shadowBrand {
+    box-shadow: var(--shadow-brand);
   }
   .titlebar {
     z-index: 1;
@@ -433,7 +436,13 @@
 </style>
 
 <div class="aspect" class:narrow>
-  <figure class="wrapper" class:dark class:shadow bind:this={wrapper}>
+  <figure
+    class="wrapper"
+    class:dark
+    class:shadowGrey={shadow === "grey"}
+    class:shadowBrand={shadow === "brand"}
+    bind:this={wrapper}
+  >
     <div class="titlebar" />
     <canvas bind:this={canvas} />
     {#if alt}
