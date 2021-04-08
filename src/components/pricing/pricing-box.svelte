@@ -20,7 +20,7 @@
     justify-content: space-between;
     background: var(--off-white);
     padding: var(--x-small) var(--medium) var(--medium);
-    border-radius: 16px;
+    border-radius: 1rem;
     box-shadow: var(--shadow);
     text-align: center;
     transition: all 0.2s;

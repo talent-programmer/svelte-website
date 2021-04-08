@@ -14,7 +14,6 @@
 </script>
 
 <style>
-  header,
   section {
     margin-top: var(--xx-large);
     text-align: center;

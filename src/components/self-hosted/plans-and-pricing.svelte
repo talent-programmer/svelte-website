@@ -4,37 +4,13 @@
   import PricingBoxes from "../pricing/pricing-boxes.svelte";
 </script>
 
-<style>
-  h1,
-  p {
-    text-align: center;
-  }
-
-  h1 {
-    margin-bottom: var(--xx-small);
-  }
-
-  p {
-    margin-bottom: var(--small);
-    color: var(--light-grey);
-  }
-
-  strong {
-    color: var(--black);
-  }
-
-  .self-hosted-pricing :global(.btn-cta) {
-    padding: 0.75rem 1.5rem;
-  }
-</style>
-
-<Section>
+<header class="tight">
   <h1>Self-hosted plans</h1>
   <p>
     Install Gitpod Self-Hosted or <strong>Google Cloud Platform</strong> and
     <strong>K3s</strong>.
   </p>
-  <div class="self-hosted-pricing">
-    <PricingBoxes {pricingPlans} />
-  </div>
-</Section>
+</header>
+<div class="self-hosted-pricing">
+  <PricingBoxes {pricingPlans} />
+</div>

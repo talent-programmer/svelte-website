@@ -12,7 +12,7 @@
 
 <style>
   .heroImage {
-    margin: 2rem auto;
+    margin: 0 autho 2rem auto;
     border-radius: 1rem;
   }
   section {
@@ -36,7 +36,7 @@
     type: "website",
   }}
 />
-<header>
+<header class="tight">
   <h1>Always ready to code.</h1>
   <p>Gitpod is a developers first company.</p>
   <p>
