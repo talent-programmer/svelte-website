@@ -104,7 +104,7 @@
         out:zoom|local={{
           duration: 1500,
           delay: 1500,
-          factor: 1.0,
+          factor: 1.015,
           easing: cubicIn,
         }}
         on:outroend={shuffle}
