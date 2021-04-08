@@ -5,6 +5,7 @@
   export let dark = false;
   export let shadow = true;
   export let narrow = false;
+  export let skipToEnd = false;
   export let alt = "";
 
   $: colors = dark
@@ -169,16 +170,37 @@
       return lines;
     }
 
-    let state = {
-      tick: -1,
-      line: -1,
-      character: -1,
-      lines: parse(source),
-      triggers: {
-        line: 0,
-        character: -1,
-      },
-    };
+    let state;
+
+    function init() {
+      let lines = parse(source);
+
+      if (skipToEnd) {
+        state = {
+          tick: -1,
+          line: lines.length - 1,
+          character: lines[lines.length - 1].input.characters - 1,
+          lines: lines,
+          triggers: {
+            line: 0,
+            character: -1,
+          },
+        };
+      } else {
+        state = {
+          tick: -1,
+          line: -1,
+          character: -1,
+          lines: lines,
+          triggers: {
+            line: 0,
+            character: -1,
+          },
+        };
+      }
+    }
+
+    init();
 
     function now(trigger) {
       return state.tick === trigger;
@@ -284,16 +306,7 @@
 
         // If the width has changed, we invalidate the layout as the total number of lines may have changed.
         resize();
-        state = {
-          tick: -1,
-          line: -1,
-          character: -1,
-          lines: parse(source),
-          triggers: {
-            line: 0,
-            character: -1,
-          },
-        };
+        init();
       },
       1000,
       false

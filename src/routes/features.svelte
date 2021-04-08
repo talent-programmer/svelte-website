@@ -125,7 +125,7 @@
       </p>
     </div>
     <div class="lg:w-1/2 w-full mb-16">
-      <Console source={terminalSource} />
+      <Console source={terminalSource} skipToEnd={true} />
     </div>
   </div>
 
@@ -176,6 +176,7 @@
         dark={true}
         shadow={false}
         narrow={true}
+        skipToEnd={true}
       />
     </div>
     <h2 class="h4">Full linux machine <span>(incl sudo/docker)</span></h2>
