@@ -8,7 +8,9 @@
   import Workspace_4 from "./svgs/workspace-4.svelte";
 
   export let alt = "";
+  export let iterations = 3;
 
+  let wrapper;
   let wrapper_width = 632;
   let wrapper_height = 564;
 
@@ -22,6 +24,7 @@
   let max = 2;
   let items = available.slice(0, max);
   let next = max;
+  let remaining = iterations;
 
   function zoom(node, params) {
     const existingTransform = getComputedStyle(node).transform.replace(
@@ -41,12 +44,26 @@
   }
 
   function shuffle() {
+    if (remaining === 0) {
+      items = [available[next], ...items];
+      return;
+    }
     items = [available[next], ...items.slice(0, max - 1)];
     next = (next + 1) % available.length;
+    remaining--;
   }
 
   onMount(() => {
-    shuffle();
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        observer.unobserve(wrapper);
+        shuffle();
+      }
+    });
+    observer.observe(wrapper);
+    return () => {
+      observer.disconnect();
+    };
   });
 </script>
 
@@ -93,6 +110,7 @@
 <figure
   class="aspect"
   style="--width: {wrapper_width}; --height: {wrapper_height};"
+  bind:this={wrapper}
 >
   <div class="container">
     {#each items as { Component, top, left, width, id } (id)}
