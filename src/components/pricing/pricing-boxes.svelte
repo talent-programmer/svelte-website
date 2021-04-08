@@ -5,16 +5,7 @@
   export let pricingPlans: Pricing[];
 </script>
 
-<style lang="scss">
-  div {
-    margin-top: var(--large);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-</style>
-
-<div>
+<div class="pricingContainer">
   {#each pricingPlans as pricing}
     <PricingBox {pricing} />
   {/each}

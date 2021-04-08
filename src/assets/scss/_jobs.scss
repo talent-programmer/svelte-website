@@ -15,7 +15,7 @@
 .perks {
   max-width: 46rem;
   columns: 2 20rem;
-  padding-left: 3rem;
+  padding-left: 1rem;
   margin-top: 1rem;
   column-gap: 1.5rem;
 }
@@ -29,6 +29,7 @@
 .jobs {
   margin-top: 2rem;
   padding-left: 2rem;
+  padding-right: 2rem;
 }
 .jobs li {
   margin: 1rem 0;
@@ -37,16 +38,20 @@
   background-color: var(--off-white);
   border-radius: 1rem;
   padding: 1.75rem 2rem;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   text-align: left;
+  color: var(--black);
+  font-weight: bold;
 }
 .jobs button::after {
   content: "";
   float: right;
-  height: 1rem;
-  width: 1rem;
-  border: 2px solid;
+  height: 0.75rem;
+  width: 0.75rem;
+  border: 3px solid;
   transform: translatey(0.25rem) rotate(45deg);
   border-color: currentColor currentColor transparent transparent;
 }

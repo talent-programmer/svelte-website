@@ -57,7 +57,7 @@
     type: "website",
   }}
 />
-<header>
+<header class="tight">
   <h1>Gitpod</h1>
   <p>
     Open source developer platform. Originally from Kiel now from all around the
@@ -73,15 +73,6 @@
 </div>
 
 <ul class="imageCarousel">
-  <li>
-    <img
-      src="/images/about/team-1.jpg"
-      alt=""
-      height="310"
-      width="310"
-      role="presentation"
-    />
-  </li>
   <li>
     <img
       src="/images/about/team-2.jpg"
@@ -101,7 +92,16 @@
   </li>
   <li>
     <img
-      src="/images/about/team-4.jpg"
+      src="/images/about/about-6.png"
+      alt=""
+      height="310"
+      width="310"
+      role="presentation"
+    />
+  </li>
+  <li>
+    <img
+      src="/images/about/about-5.png"
       alt="TODO: who is this?"
       height="310"
       width="310"
@@ -155,43 +155,6 @@
     >
   </p>
 </div>
-
-<ul class="imageCarousel">
-  <li>
-    <img
-      src="/images/about/team-1.jpg"
-      alt=""
-      height="310"
-      width="310"
-      role="presentation"
-    />
-  </li>
-  <li>
-    <img
-      src="/images/about/team-2.jpg"
-      alt="TODO: who is this?"
-      height="310"
-      width="310"
-    />
-  </li>
-  <li>
-    <img
-      src="/images/about/team-3.jpg"
-      alt=""
-      height="310"
-      width="310"
-      role="presentation"
-    />
-  </li>
-  <li>
-    <img
-      src="/images/about/team-4.jpg"
-      alt="TODO: who is this?"
-      height="310"
-      width="310"
-    />
-  </li>
-</ul>
 
 <div class="redirector">
   <h2>Backed by the best investors</h2>

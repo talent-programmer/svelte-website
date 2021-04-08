@@ -131,7 +131,7 @@
     type: "website",
   }}
 />
-<header>
+<header class="tight">
   <h1>Contact us</h1>
   <p>Please reach out if you have any questions regarding Gitpod.</p>
 </header>
