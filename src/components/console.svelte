@@ -78,20 +78,20 @@
         line_height = 19;
 
         margins = {
-          top: 48 + line_height,
+          top: 52 + line_height,
           right: 10,
-          bottom: 30,
-          left: 30,
+          bottom: 15,
+          left: 15,
         };
       } else {
         font_size = narrow ? 16 : 18;
         line_height = narrow ? 28 : 33;
 
         margins = {
-          top: 48 + line_height,
-          right: narrow ? 30 : 40,
-          bottom: narrow ? 30 : 48,
-          left: narrow ? 30 : 40,
+          top: 52 + line_height,
+          right: narrow ? 20 : 40,
+          bottom: narrow ? 20 : 48,
+          left: narrow ? 20 : 40,
         };
       }
 
@@ -136,7 +136,7 @@
               while ((text = str.slice(start, end))) {
                 line[type].push({ type, color, text });
                 offset += end - start;
-                if (offset >= char_max) {
+                if (offset >= char_max && end < str.length) {
                   new_line();
                 }
                 start = end;
