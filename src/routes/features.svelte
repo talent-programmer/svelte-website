@@ -125,7 +125,7 @@
       </p>
     </div>
     <div class="lg:w-1/2 w-full mb-16">
-      <Console source={terminalSource} shadow="brand" skipToEnd={true} />
+      <Console source={terminalSource} skipToEnd={true} />
     </div>
   </div>
 
