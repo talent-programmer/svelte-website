@@ -4,7 +4,6 @@
 
 <style lang="scss">
   .faq {
-    padding: var(--medium);
     border-radius: 16px;
     background: var(--sand-dark);
     border: 1px solid transparent;
@@ -28,6 +27,7 @@
 
     &__top {
       display: flex;
+      padding: var(--medium);
       justify-content: space-between;
       align-items: center;
       width: 100%;
@@ -61,7 +61,8 @@
     }
 
     &__text {
-      margin-top: var(--micro);
+      margin: var(--medium);
+      margin-top: -2.5rem;
     }
 
     & :global(a) {
