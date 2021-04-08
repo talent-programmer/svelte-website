@@ -128,7 +128,7 @@
     <p class="text-2xl">
       We are fully-distributed. You can work from anywhere and schedule your
       working hours the way it fits best for you. We make sure you are all set
-      and will treat you well.We are not as diverse as we would like to be.
+      and will treat you well.
     </p>
     <p class="text-2xl font-bold">
       We are not as diverse as we would like to be.
