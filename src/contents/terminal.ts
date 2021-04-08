@@ -110,4 +110,9 @@ export const terminalSource = `\u001b[33mGitpod\u001b[39m \u001b[34m/Workspace\u
 \u001b[33mGitpod\u001b[39m \u001b[34m/Workspace\u001b[39m $ `;
 
 export const linuxSource = `\u001b[33mGitpod\u001b[39m \u001b[34m/Workspace\u001b[39m $ sudo apt-get install mc
-\u001b[33mGitpod\u001b[39m \u001b[34m/Workspace\u001b[39m $ docker run -it alpine:latest`;
+\u001b[33mGitpod\u001b[39m \u001b[34m/Workspace\u001b[39m $ docker run -it alpine:latest
+Unable to find image 'alpine:latest' locally
+latest: Pulling from library/alpine
+Digest: sha256:ec14c7992a97fc11425907e908340c6c3d6ff602f5f13d899e6b7027c9b4133a
+Status: Downloaded newer image for alpine:latest
+/ # `;

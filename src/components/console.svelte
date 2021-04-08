@@ -149,8 +149,12 @@
 
       for (let str of source.split("\n")) {
         new_line();
-        if (str.indexOf("$") !== -1 || str.indexOf(">") !== -1) {
-          let [, prompt, text] = str.match(/([^$>]+(?:[$>]))(.*)/);
+        if (
+          str.indexOf("$") !== -1 ||
+          str.indexOf(">") !== -1 ||
+          str.indexOf("#") !== -1
+        ) {
+          let [, prompt, text] = str.match(/([^$>#]+(?:[$>#]))(.*)/);
           parse_chunk("output", prompt);
           parse_chunk("input", text);
         } else {
