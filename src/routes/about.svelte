@@ -223,7 +223,7 @@
         <p><a href="/careers" class="btn-conversion">See openings</a></p>
       </div>
       <div class="explore__illustration">
-        <img src="/images/illustration.png" alt="Gitpod in a Nutshell" />
+        <img src="/images/illustration-grid.jpg" alt="Gitpod in a Nutshell" />
         <img
           src="/images/illustration-small.jpg"
           class="small"
