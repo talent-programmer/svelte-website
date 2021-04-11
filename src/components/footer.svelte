@@ -42,11 +42,14 @@
         <li>
           <a
             href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
-            target="_blank">Report a bug</a
+            target="_blank"
+            rel="noopener">Report a bug</a
           >
         </li>
         <li>
-          <a href="https://community.gitpod.io" target="_blank">Community </a>
+          <a href="https://community.gitpod.io" target="_blank" rel="noopener"
+            >Community
+          </a>
         </li>
       </ul>
       <!-- <div style="flex: 0 0 100%">
@@ -74,9 +77,16 @@
 
     <div class="footer__bottom">
       <div class="footer__copy">
-        <a href="/"><div class="logo-wrapper"><LogoTextless /></div></a><span
-          >Copyright &copy; Gitpod</span
-        >
+        <a href="/"
+          ><div class="logo-wrapper">
+            <img
+              src="/svg/logo-textless.svg"
+              alt="Gitpod"
+              height="24"
+              width="24"
+            />
+          </div></a
+        ><span>Copyright &copy; Gitpod</span>
       </div>
       <div class="footer__social">
         {#each socialLinks as link}
