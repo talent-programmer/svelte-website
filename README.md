@@ -7,9 +7,6 @@ This repository contains the website hosted on https://www.gitpod.io as of April
 
 Gitpod removes all friction from the developer experience to be always ready-to-code and makes software engineering more collaborative, joyful, and secure.
 
-Contributing is as easy as starting a new workspace:
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/website-kumquat)
 
 ## Technology stack
 
